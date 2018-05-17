@@ -4,5 +4,5 @@
     18 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  Sample_Negative.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\Sample_Negative.exe
-  Sample_Negative.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\Sample_Negative.pdb (Full PDB)
+  Sample_Negative.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\Sample_Negative.exe
+  Sample_Negative.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\Sample_Negative.pdb (Full PDB)

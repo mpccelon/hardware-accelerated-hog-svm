@@ -221,6 +221,7 @@ Args Args::read(int argc, char** argv)
 		else if (string(argv[i]) == "--dst_video") args.dst_video = argv[++i];
 		else if (string(argv[i]) == "--dst_video_fps") args.dst_video_fps = atof(argv[++i]);
 		else if (string(argv[i]) == "--help") printHelp();
+		else if (string(argv[i]) == "--help") printHelp();
 		else if (string(argv[i]) == "--video") { args.src = argv[++i]; args.src_is_video = true; }
 		else if (string(argv[i]) == "--camera") { args.camera_id = atoi(argv[++i]); args.src_is_camera = true; }
 		else if (string(argv[i]) == "--folder") { args.src = argv[++i]; args.src_is_folder = true; }
@@ -446,6 +447,7 @@ void App::run()
 			{
 				if (!video_writer.isOpened())
 				{
+					cout << "opening video writer to " << args.dst_video << endl;
 					video_writer.open(args.dst_video, VideoWriter::fourcc('x', 'v', 'i', 'd'), args.dst_video_fps,
 						img_to_show.size(), true);
 					if (!video_writer.isOpened())

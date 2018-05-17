@@ -4,5 +4,5 @@
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  opencv_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\opencv_benchmark.exe
-  opencv_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\opencv_benchmark.pdb (Full PDB)
+  opencv_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\opencv_benchmark.exe
+  opencv_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\opencv_benchmark.pdb (Full PDB)

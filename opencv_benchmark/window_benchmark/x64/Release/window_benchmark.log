@@ -1,7 +1,9 @@
 ﻿  stdafx.cpp
   window_benchmark.cpp
   Generating code
-  All 490 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  488 of 490 functions (99.6%) were compiled, the rest were copied from previous compilation.
+    18 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  window_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\window_benchmark.exe
-  window_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\window_benchmark.pdb (Full PDB)
+  window_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\window_benchmark.exe
+  window_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\window_benchmark.pdb (Full PDB)
