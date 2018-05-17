@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vivado/2018.1/msys/bin/g++.exe"
+   Compiling apatb_xillybus_wrapper.cpp
+   Compiling hardware_approximation.cpp_pre.cpp.tb.cpp
+   Compiling tb_xillybus_wrapper.cpp_pre.cpp.tb.cpp
+   Compiling xillybus_wrapper.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

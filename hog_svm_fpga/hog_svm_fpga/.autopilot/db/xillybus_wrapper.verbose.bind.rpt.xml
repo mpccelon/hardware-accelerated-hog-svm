@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'xillybus_wrapper'" level="0">
+<item name = "Date">Thu May 17 18:21:37 2018
+</item>
+<item name = "Version">2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)</item>
+<item name = "Project">hog_svm_fpga</item>
+<item name = "Solution">hog_svm_fpga</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.75, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">25173, 25173, 9922, 9922, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_svm_detect_fu_62">svm_detect, 4874, 4874, 4874, 4874, none</column>
+<column name="grp_compute_gradients_fu_71">compute_gradients, 8197, 8197, 8197, 8197, none</column>
+<column name="grp_compute_cells_fu_78">compute_cells, 9921, 9921, 9921, 9921, none</column>
+<column name="grp_Loop_1_proc_fu_86">Loop_1_proc, 2177, 2177, 2177, 2177, none</column>
+<column name="StgValue_31_Block_arrayctor_loop_fu_94">Block_arrayctor_loop, 0, 0, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

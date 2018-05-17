@@ -1,0 +1,7 @@
+Running: xsim.dir/xillybus_wrapper/xsimk.exe -simmode gui -wdb xillybus_wrapper.wdb -simrunnum 0 -socket 6372
+Design successfully loaded
+Design Loading Memory Usage: 8188 KB (Peak: 8188 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 11432 KB (Peak: 11432 KB)
+Simulation CPU Usage: 3483 ms

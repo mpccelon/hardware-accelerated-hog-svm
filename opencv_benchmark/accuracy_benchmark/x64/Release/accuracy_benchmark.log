@@ -1,0 +1,8 @@
+﻿  accuracy_benchmark.cpp
+  Generating code
+  542 of 544 functions (99.6%) were compiled, the rest were copied from previous compilation.
+    72 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  accuracy_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\accuracy_benchmark.exe
+  accuracy_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\accuracy_benchmark.pdb (Full PDB)

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue May 15 01:27:07 2018
+# Process ID: 19144
+# Current directory: D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog
+# Command line: wbtcv.exe -mode batch -source D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/xsim.dir/xillybus_wrapper/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/webtalk.log
+# Journal file: D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/xsim.dir/xillybus_wrapper/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/xsim.dir/xillybus_wrapper/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue May 15 01:27:10 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue May 15 01:27:10 2018...

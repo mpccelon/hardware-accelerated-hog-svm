@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue May 15 01:27:19 2018
+# Process ID: 5316
+# Current directory: D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog
+# Command line: wbtcv.exe -mode batch -source D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/xsim.dir/xillybus_wrapper/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/webtalk.log
+# Journal file: D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga/hog_svm_fpga/sim/verilog/xsim.dir/xillybus_wrapper/webtalk/xsim_webtalk.tcl -notrace

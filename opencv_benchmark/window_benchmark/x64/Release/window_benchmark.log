@@ -1,0 +1,7 @@
+﻿  stdafx.cpp
+  window_benchmark.cpp
+  Generating code
+  All 490 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  window_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\window_benchmark.exe
+  window_benchmark.vcxproj -> D:\lolic\Documents\Thesis\hog_svm_fpga\opencv_benchmark\x64\Release\window_benchmark.pdb (Full PDB)
