@@ -7,7 +7,7 @@
 
 #ifndef __xillybus_wrapper_dEe__HH__
 #define __xillybus_wrapper_dEe__HH__
-#include "ACMP_fsub.h"
+#include "ACMP_fmul.h"
 #include <systemc>
 
 template<
@@ -26,15 +26,15 @@ SC_MODULE(xillybus_wrapper_dEe) {
 
 
 
-    ACMP_fsub<ID, 5, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_fsub_U;
+    ACMP_fmul<ID, 4, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_fmul_U;
 
-    SC_CTOR(xillybus_wrapper_dEe):  ACMP_fsub_U ("ACMP_fsub_U") {
-        ACMP_fsub_U.clk(clk);
-        ACMP_fsub_U.reset(reset);
-        ACMP_fsub_U.ce(ce);
-        ACMP_fsub_U.din0(din0);
-        ACMP_fsub_U.din1(din1);
-        ACMP_fsub_U.dout(dout);
+    SC_CTOR(xillybus_wrapper_dEe):  ACMP_fmul_U ("ACMP_fmul_U") {
+        ACMP_fmul_U.clk(clk);
+        ACMP_fmul_U.reset(reset);
+        ACMP_fmul_U.ce(ce);
+        ACMP_fmul_U.din0(din0);
+        ACMP_fmul_U.din1(din1);
+        ACMP_fmul_U.dout(dout);
 
     }
 

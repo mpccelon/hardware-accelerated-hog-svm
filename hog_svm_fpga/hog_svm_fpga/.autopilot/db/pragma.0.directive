@@ -287,20 +287,81 @@
 <directive functionLabel="" functionName="trunc_fixed" label="">
 <pragma name="PIPELINE"/>
 </directive>
-<directive functionLabel="" functionName="quadrant" label="">
-<pragma name="INLINE"/>
+<directive functionLabel="" functionName="compute_gradients" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
 </directive>
-<directive functionLabel="" functionName="sqrt_approx" label="">
-<pragma name="INLINE"/>
+<directive functionLabel="" functionName="compute_gradients" label="">
+<pragma name="PIPELINE"/>
 </directive>
-<directive functionLabel="" functionName="float_to_decimal" label="">
-<pragma name="INLINE"/>
+<directive functionLabel="" functionName="initialize_cells" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
 </directive>
-<directive functionLabel="" functionName="decimal_to_float" label="">
-<pragma name="INLINE"/>
+<directive functionLabel="" functionName="compute_cells" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
 </directive>
-<directive functionLabel="" functionName="fast_inv_sqrt" label="">
-<pragma name="INLINE"/>
+<directive functionLabel="" functionName="compute_cells" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="compute_cells" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="svm_detect" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_detect" label="">
+<pragma name="ALLOCATION">
+<option name="instances" positionalBoolean="4" value="mul"/>
+<option name="limit" value="2"/>
+<option name="operation" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="svm_detect" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="SVM_detector"/>
+<option name="core" value="ROM_2P_LUTRAM"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="compute_blocks" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="compute_blocks" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="xillybus_wrapper" label="">
+<pragma name="INTERFACE">
+<option name="ap_fifo" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xillybus_wrapper" label="">
+<pragma name="INTERFACE">
+<option name="ap_fifo" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xillybus_wrapper" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="xillybus_wrapper" label="">
+<pragma name="DATAFLOW"/>
 </directive>
 </sourceFile>
 </AutoPilot:ProjectResources>

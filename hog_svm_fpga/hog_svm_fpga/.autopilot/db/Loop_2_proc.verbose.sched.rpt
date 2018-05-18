@@ -1,0 +1,146 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_2_proc'
+================================================================
+* Date:           Fri May 18 16:31:12 2018
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        hog_svm_fpga
+* Solution:       hog_svm_fpga
+* Product family: zynq
+* Target device:  xc7z010clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      6.89|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  3529|  3529|  3529|  3529|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |          |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  3528|  3528|         2|          -|          -|  1764|    no    |
+        +----------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	2  / true
+
+* FSM state operations: 
+
+ <State 1> : 1.77ns
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %out_r, [8 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"
+ST_1 : Operation 5 [1/1] (1.76ns)   --->   "br label %0" [hog_svm_fpga/xillybus_wrapper.cpp:240]
+
+ <State 2> : 3.25ns
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%p_04_rec = phi i11 [ 0, %newFuncRoot ], [ %i, %1 ]"
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%p_04_rec_cast = zext i11 %p_04_rec to i64" [hog_svm_fpga/xillybus_wrapper.cpp:243]
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1764, i64 1764, i64 1764) nounwind"
+ST_2 : Operation 9 [1/1] (1.88ns)   --->   "%exitcond = icmp eq i11 %p_04_rec, -284" [hog_svm_fpga/xillybus_wrapper.cpp:240]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (1.63ns)   --->   "%i = add i11 %p_04_rec, 1" [hog_svm_fpga/xillybus_wrapper.cpp:243]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.exitStub, label %1" [hog_svm_fpga/xillybus_wrapper.cpp:240]
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%hog_addr = getelementptr inbounds [1764 x float]* %hog, i64 0, i64 %p_04_rec_cast" [hog_svm_fpga/xillybus_wrapper.cpp:242]
+ST_2 : Operation 13 [2/2] (3.25ns)   --->   "%hog_load = load float* %hog_addr, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:242]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1764> <RAM>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "ret void"
+
+ <State 3> : 6.89ns
+ST_3 : Operation 15 [1/2] (3.25ns)   --->   "%hog_load = load float* %hog_addr, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:242]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1764> <RAM>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%temp = bitcast float %hog_load to i32" [hog_svm_fpga/xillybus_wrapper.cpp:242]
+ST_3 : Operation 17 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %out_r, i32 %temp) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:243]   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "br label %0" [hog_svm_fpga/xillybus_wrapper.cpp:240]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', hog_svm_fpga/xillybus_wrapper.cpp:243) [6]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', hog_svm_fpga/xillybus_wrapper.cpp:243) [6]  (0 ns)
+	'getelementptr' operation ('hog_addr', hog_svm_fpga/xillybus_wrapper.cpp:242) [13]  (0 ns)
+	'load' operation ('hog_load', hog_svm_fpga/xillybus_wrapper.cpp:242) on array 'hog' [14]  (3.25 ns)
+
+ <State 3>: 6.89ns
+The critical path consists of the following:
+	'load' operation ('hog_load', hog_svm_fpga/xillybus_wrapper.cpp:242) on array 'hog' [14]  (3.25 ns)
+	fifo write on port 'out_r' (hog_svm_fpga/xillybus_wrapper.cpp:243) [16]  (3.63 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -7,7 +7,7 @@
 
 #ifndef __xillybus_wrapper_fYi__HH__
 #define __xillybus_wrapper_fYi__HH__
-#include "ACMP_uitofp.h"
+#include "ACMP_fpext_comb.h"
 #include <systemc>
 
 template<
@@ -16,22 +16,16 @@ template<
     int din0_WIDTH,
     int dout_WIDTH>
 SC_MODULE(xillybus_wrapper_fYi) {
-    sc_core::sc_in_clk clk;
-    sc_core::sc_in<sc_dt::sc_logic> reset;
-    sc_core::sc_in<sc_dt::sc_logic> ce;
     sc_core::sc_in< sc_dt::sc_lv<din0_WIDTH> >   din0;
     sc_core::sc_out< sc_dt::sc_lv<dout_WIDTH> >   dout;
 
 
 
-    ACMP_uitofp<ID, 6, din0_WIDTH, dout_WIDTH> ACMP_uitofp_U;
+    ACMP_fpext_comb<ID, 1, din0_WIDTH, dout_WIDTH> ACMP_fpext_comb_U;
 
-    SC_CTOR(xillybus_wrapper_fYi):  ACMP_uitofp_U ("ACMP_uitofp_U") {
-        ACMP_uitofp_U.clk(clk);
-        ACMP_uitofp_U.reset(reset);
-        ACMP_uitofp_U.ce(ce);
-        ACMP_uitofp_U.din0(din0);
-        ACMP_uitofp_U.dout(dout);
+    SC_CTOR(xillybus_wrapper_fYi):  ACMP_fpext_comb_U ("ACMP_fpext_comb_U") {
+        ACMP_fpext_comb_U.din0(din0);
+        ACMP_fpext_comb_U.dout(dout);
 
     }
 

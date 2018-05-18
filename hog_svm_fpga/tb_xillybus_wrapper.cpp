@@ -15,7 +15,7 @@ int main()
 //	memset(image, 0, IMAGE_HEIGHT*IMAGE_WIDTH*sizeof(unsigned char));
 
 	ifstream data;
-	data.open("test_pos.txt");
+	data.open("vehicle.txt");
 
 	const int size = 1007;
 
@@ -34,17 +34,22 @@ int main()
 				image[i][j] = x;
 			}
 		}
+#ifdef SVM
 		float result = 0;
 		xillybus_wrapper((int *) image, (int*) &result);
 		printf("%lf\n", result);
+#endif
+
+#ifdef HOG
+		float result[SVM_DESC_SIZE] = {};
+		xillybus_wrapper((int *) image, (int *) result);
+
+		for(int i = 0; i < SVM_DESC_SIZE; i++)
+		{
+			printf("%lf\n", result[i]);
+		}
+#endif
 	}
 
-//	float result[SVM_DESC_SIZE] = {};
-//	xillybus_wrapper((int *) image, (int *) result);
-//
-//	for(int i = 0; i < SVM_DESC_SIZE; i++)
-//	{
-//		printf("%lf\n", result[i]);
-//	}
 	return 0;
 }

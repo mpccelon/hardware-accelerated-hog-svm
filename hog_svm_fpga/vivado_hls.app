@@ -5,15 +5,15 @@
         <SimFlow name="csim" optimizeCompile="true" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
-        <file name="../../../Source/HOG_SVM_detector/x64/Release/vehicle_data.txt" sc="0" tb="1" cflags=" "/>
-        <file name="../vehicle.txt" sc="0" tb="1" cflags=" "/>
-        <file name="../../../Source/HOG_SVM_detector/x64/Release/test_pos.txt" sc="0" tb="1" cflags=" "/>
-        <file name="../tb_xillybus_wrapper.cpp" sc="0" tb="1" cflags=" "/>
-        <file name="../../../Source/HOG_SVM_detector/x64/Release/non-vehicle_data.txt" sc="0" tb="1" cflags=" "/>
-        <file name="../img_data.txt" sc="0" tb="1" cflags=" "/>
         <file name="../gray_ver.txt" sc="0" tb="1" cflags=" "/>
-        <file name="hog_svm_fpga/hardware_approximation.cpp" sc="0" tb="false" cflags=""/>
+        <file name="../img_data.txt" sc="0" tb="1" cflags=" "/>
+        <file name="../../../Source/HOG_SVM_detector/x64/Release/non-vehicle_data.txt" sc="0" tb="1" cflags=" "/>
+        <file name="../tb_xillybus_wrapper.cpp" sc="0" tb="1" cflags=" "/>
+        <file name="../../../Source/HOG_SVM_detector/x64/Release/test_pos.txt" sc="0" tb="1" cflags=" "/>
+        <file name="../vehicle.txt" sc="0" tb="1" cflags=" "/>
+        <file name="../../../Source/HOG_SVM_detector/x64/Release/vehicle_data.txt" sc="0" tb="1" cflags=" "/>
         <file name="hog_svm_fpga/xillybus_wrapper.cpp" sc="0" tb="false" cflags=""/>
+        <file name="hog_svm_fpga/hardware_approximation.cpp" sc="0" tb="false" cflags=""/>
     </files>
     <solutions xmlns="">
         <solution name="hog_svm_fpga" status="active"/>

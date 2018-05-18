@@ -1,8 +1,8 @@
 ﻿  cuda_hog.cpp
   Generating code
-  367 of 369 functions (99.5%) were compiled, the rest were copied from previous compilation.
-    1 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  8 of 369 functions ( 2.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    16 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   cuda_hog.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\cuda_hog.exe
   cuda_hog.vcxproj -> D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm\opencv_benchmark\x64\Release\cuda_hog.pdb (Full PDB)

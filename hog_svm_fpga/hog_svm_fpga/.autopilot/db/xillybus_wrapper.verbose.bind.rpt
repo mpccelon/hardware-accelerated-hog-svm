@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'xillybus_wrapper'
 ================================================================
-* Date:           Thu May 17 18:21:37 2018
+* Date:           Fri May 18 16:31:13 2018
 
 * Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
 * Project:        hog_svm_fpga
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.75|        1.25|
+    |ap_clk  |  10.00|      8.56|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,21 +29,21 @@
     |    Latency    |   Interval  | Pipeline |
     |  min  |  max  |  min |  max |   Type   |
     +-------+-------+------+------+----------+
-    |  25173|  25173|  9922|  9922| dataflow |
+    |  27210|  27210|  9922|  9922| dataflow |
     +-------+-------+------+------+----------+
 
     + Detail: 
         * Instance: 
-        +----------------------------------------+----------------------+------+------+------+------+---------+
-        |                                        |                      |   Latency   |   Interval  | Pipeline|
-        |                Instance                |        Module        |  min |  max |  min |  max |   Type  |
-        +----------------------------------------+----------------------+------+------+------+------+---------+
-        |grp_svm_detect_fu_62                    |svm_detect            |  4874|  4874|  4874|  4874|   none  |
-        |grp_compute_gradients_fu_71             |compute_gradients     |  8197|  8197|  8197|  8197|   none  |
-        |grp_compute_cells_fu_78                 |compute_cells         |  9921|  9921|  9921|  9921|   none  |
-        |grp_Loop_1_proc_fu_86                   |Loop_1_proc           |  2177|  2177|  2177|  2177|   none  |
-        |StgValue_31_Block_arrayctor_loop_fu_94  |Block_arrayctor_loop  |     0|     0|     0|     0|   none  |
-        +----------------------------------------+----------------------+------+------+------+------+---------+
+        +-----------------------------+-------------------+------+------+------+------+---------+
+        |                             |                   |   Latency   |   Interval  | Pipeline|
+        |           Instance          |       Module      |  min |  max |  min |  max |   Type  |
+        +-----------------------------+-------------------+------+------+------+------+---------+
+        |grp_compute_blocks_fu_60     |compute_blocks     |  3382|  3382|  3382|  3382|   none  |
+        |grp_compute_gradients_fu_67  |compute_gradients  |  8197|  8197|  8197|  8197|   none  |
+        |grp_compute_cells_fu_74      |compute_cells      |  9921|  9921|  9921|  9921|   none  |
+        |grp_Loop_1_proc_fu_82        |Loop_1_proc        |  2177|  2177|  2177|  2177|   none  |
+        |grp_Loop_2_proc_fu_90        |Loop_2_proc        |  3529|  3529|  3529|  3529|   none  |
+        +-----------------------------+-------------------+------+------+------+------+---------+
 
         * Loop: 
         N/A
@@ -74,10 +74,10 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 9
+* Number of FSM states : 10
 * Pipeline : 0
 * Dataflow Pipeline: 1
-  DF-Pipeline-0: Size = 9, States = { 1 2 3 4 5 6 7 8 9 }
+  DF-Pipeline-0: Size = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
 
 * FSM state transitions: 
 1 --> 
@@ -97,49 +97,54 @@ IsGatedGlobalClock: 0
 8 --> 
 	9  / true
 9 --> 
+	10  / true
+10 --> 
 
 * FSM state operations: 
 
  <State 1> : 3.25ns
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_channel = alloca float, align 4"   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 11 [1/1] (3.25ns)   --->   "%image_V = alloca [4096 x i8], align 1"
-ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%cells_bin_V = alloca [576 x i32], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:203]
-ST_1 : Operation 13 [1/1] (3.25ns)   --->   "%cells_mag_sq_V = alloca [64 x i64], align 8" [hog_svm_fpga/xillybus_wrapper.cpp:203]
-ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%grad_vote_magnitude_s = alloca [4096 x i26], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:221]
-ST_1 : Operation 15 [1/1] (3.25ns)   --->   "%grad_vote_bin_V = alloca [4096 x i4], align 1" [hog_svm_fpga/xillybus_wrapper.cpp:221]
-ST_1 : Operation 16 [2/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 12 [1/1] (3.25ns)   --->   "%cells_bin_V = alloca [576 x i32], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:207]
+ST_1 : Operation 13 [1/1] (3.25ns)   --->   "%cells_mag_sq_V = alloca [64 x i64], align 8" [hog_svm_fpga/xillybus_wrapper.cpp:207]
+ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%hog = alloca [1764 x float], align 16"
+ST_1 : Operation 15 [1/1] (3.25ns)   --->   "%grad_vote_magnitude_s = alloca [4096 x i26], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:225]
+ST_1 : Operation 16 [1/1] (3.25ns)   --->   "%grad_vote_bin_V = alloca [4096 x i4], align 1" [hog_svm_fpga/xillybus_wrapper.cpp:225]
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 2> : 0.00ns
-ST_2 : Operation 17 [1/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 3> : 0.00ns
-ST_3 : Operation 18 [2/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:222]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:226]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 4> : 0.00ns
-ST_4 : Operation 19 [1/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:222]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 20 [1/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:226]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 5> : 0.00ns
-ST_5 : Operation 20 [2/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:225]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 21 [2/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:229]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 6> : 0.00ns
-ST_6 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:225]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:229]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 7> : 0.00ns
-ST_7 : Operation 22 [2/2] (0.00ns)   --->   "call fastcc void @svm_detect(float* %tmp_channel, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:228]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @compute_blocks([576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V, [1764 x float]* %hog) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:239]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
- <State 8> : 4.37ns
-ST_8 : Operation 23 [1/2] (4.36ns)   --->   "call fastcc void @svm_detect(float* %tmp_channel, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:228]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ <State 8> : 0.00ns
+ST_8 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @compute_blocks([576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V, [1764 x float]* %hog) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:239]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
- <State 9> : 3.63ns
-ST_9 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:196]
-ST_9 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %in_r) nounwind, !map !172"
-ST_9 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_r) nounwind, !map !176"
-ST_9 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @xillybus_wrapper_str) nounwind"
-ST_9 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %in_r, [8 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:192]
-ST_9 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %out_r, [8 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:193]
-ST_9 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:194]
-ST_9 : Operation 31 [1/1] (3.63ns)   --->   "call fastcc void @Block_arrayctor.loop(float* %tmp_channel, i32* %out_r) nounwind"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_9 : Operation 32 [1/1] (0.00ns)   --->   "ret void" [hog_svm_fpga/xillybus_wrapper.cpp:238]
+ <State 9> : 0.00ns
+ST_9 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %out_r, [1764 x float]* %hog)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 10> : 0.00ns
+ST_10 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:200]
+ST_10 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %in_r) nounwind, !map !172"
+ST_10 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_r) nounwind, !map !176"
+ST_10 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @xillybus_wrapper_str) nounwind"
+ST_10 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %in_r, [8 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:196]
+ST_10 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %out_r, [8 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:197]
+ST_10 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:198]
+ST_10 : Operation 33 [1/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %out_r, [1764 x float]* %hog)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 34 [1/1] (0.00ns)   --->   "ret void" [hog_svm_fpga/xillybus_wrapper.cpp:246]
 
 
 ============================================================
@@ -155,32 +160,31 @@ STG Binding:
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_none:ce=0
 Port [ in_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
 Port [ out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ SVM_detector_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
 
 <LifeTime>
 <method=bitvector/>
-tmp_channel           (alloca              ) [ 0011111111]
-image_V               (alloca              ) [ 0011100000]
-cells_bin_V           (alloca              ) [ 0011111110]
-cells_mag_sq_V        (alloca              ) [ 0011111110]
-grad_vote_magnitude_s (alloca              ) [ 0011111000]
-grad_vote_bin_V       (alloca              ) [ 0011111000]
-StgValue_17           (call                ) [ 0000000000]
-StgValue_19           (call                ) [ 0000000000]
-StgValue_21           (call                ) [ 0000000000]
-StgValue_23           (call                ) [ 0000000000]
-StgValue_24           (specdataflowpipeline) [ 0000000000]
-StgValue_25           (specbitsmap         ) [ 0000000000]
-StgValue_26           (specbitsmap         ) [ 0000000000]
-StgValue_27           (spectopmodule       ) [ 0000000000]
-StgValue_28           (specinterface       ) [ 0000000000]
-StgValue_29           (specinterface       ) [ 0000000000]
-StgValue_30           (specinterface       ) [ 0000000000]
-StgValue_31           (call                ) [ 0000000000]
-StgValue_32           (ret                 ) [ 0000000000]
+image_V               (alloca              ) [ 00111000000]
+cells_bin_V           (alloca              ) [ 00111111100]
+cells_mag_sq_V        (alloca              ) [ 00111111100]
+hog                   (alloca              ) [ 00111111111]
+grad_vote_magnitude_s (alloca              ) [ 00111110000]
+grad_vote_bin_V       (alloca              ) [ 00111110000]
+StgValue_18           (call                ) [ 00000000000]
+StgValue_20           (call                ) [ 00000000000]
+StgValue_22           (call                ) [ 00000000000]
+StgValue_24           (call                ) [ 00000000000]
+StgValue_26           (specdataflowpipeline) [ 00000000000]
+StgValue_27           (specbitsmap         ) [ 00000000000]
+StgValue_28           (specbitsmap         ) [ 00000000000]
+StgValue_29           (spectopmodule       ) [ 00000000000]
+StgValue_30           (specinterface       ) [ 00000000000]
+StgValue_31           (specinterface       ) [ 00000000000]
+StgValue_32           (specinterface       ) [ 00000000000]
+StgValue_33           (call                ) [ 00000000000]
+StgValue_34           (ret                 ) [ 00000000000]
 </LifeTime>
 
 <model>
@@ -204,13 +208,12 @@ StgValue_32           (ret                 ) [ 0000000000]
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="SVM_detector_V">
+<comp id="4" class="1001" name="const_4">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="SVM_detector_V"/><MemPortTyVec>1 1 </MemPortTyVec>
-</StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -219,7 +222,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="Loop_1_proc"/></StgValue>
 </bind>
 </comp>
 
@@ -228,7 +231,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="Loop_1_proc"/></StgValue>
+<StgValue><ssdm name="compute_gradients"/></StgValue>
 </bind>
 </comp>
 
@@ -237,7 +240,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="compute_gradients"/></StgValue>
+<StgValue><ssdm name="compute_cells"/></StgValue>
 </bind>
 </comp>
 
@@ -246,7 +249,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="13" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="compute_cells"/></StgValue>
+<StgValue><ssdm name="compute_blocks"/></StgValue>
 </bind>
 </comp>
 
@@ -255,7 +258,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="svm_detect"/></StgValue>
+<StgValue><ssdm name="Loop_2_proc"/></StgValue>
 </bind>
 </comp>
 
@@ -327,7 +330,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str8"/></StgValue>
+<StgValue><ssdm name="p_str9"/></StgValue>
 </bind>
 </comp>
 
@@ -345,34 +348,14 @@ StgValue_32           (ret                 ) [ 0000000000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str4"/></StgValue>
+<StgValue><ssdm name="p_str"/></StgValue>
 </bind>
 </comp>
 
-<comp id="36" class="1001" name="const_36">
+<comp id="36" class="1004" name="image_V_alloca_fu_36">
 <pin_list>
-<pin id="37" dir="1" index="0" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<StgValue><ssdm name="Block_arrayctor.loop"/></StgValue>
-</bind>
-</comp>
-
-<comp id="38" class="1004" name="tmp_channel_fu_38">
-<pin_list>
-<pin id="39" dir="0" index="0" bw="1" slack="0"/>
-<pin id="40" dir="1" index="1" bw="32" slack="6"/>
-</pin_list>
-<bind>
-<opcode="alloca(26) " fcode="alloca"/>
-<opset="tmp_channel/1 "/>
-</bind>
-</comp>
-
-<comp id="42" class="1004" name="image_V_alloca_fu_42">
-<pin_list>
-<pin id="43" dir="0" index="0" bw="1" slack="0"/>
-<pin id="44" dir="1" index="1" bw="8" slack="0"/>
+<pin id="37" dir="0" index="0" bw="1" slack="0"/>
+<pin id="38" dir="1" index="1" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -380,10 +363,10 @@ StgValue_32           (ret                 ) [ 0000000000]
 </bind>
 </comp>
 
-<comp id="46" class="1004" name="cells_bin_V_alloca_fu_46">
+<comp id="40" class="1004" name="cells_bin_V_alloca_fu_40">
 <pin_list>
-<pin id="47" dir="0" index="0" bw="1" slack="0"/>
-<pin id="48" dir="1" index="1" bw="32" slack="2147483647"/>
+<pin id="41" dir="0" index="0" bw="1" slack="0"/>
+<pin id="42" dir="1" index="1" bw="32" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -391,10 +374,10 @@ StgValue_32           (ret                 ) [ 0000000000]
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="cells_mag_sq_V_alloca_fu_50">
+<comp id="44" class="1004" name="cells_mag_sq_V_alloca_fu_44">
 <pin_list>
-<pin id="51" dir="0" index="0" bw="1" slack="0"/>
-<pin id="52" dir="1" index="1" bw="64" slack="2147483647"/>
+<pin id="45" dir="0" index="0" bw="1" slack="0"/>
+<pin id="46" dir="1" index="1" bw="64" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -402,10 +385,21 @@ StgValue_32           (ret                 ) [ 0000000000]
 </bind>
 </comp>
 
-<comp id="54" class="1004" name="grad_vote_magnitude_s_alloca_fu_54">
+<comp id="48" class="1004" name="hog_alloca_fu_48">
 <pin_list>
-<pin id="55" dir="0" index="0" bw="1" slack="0"/>
-<pin id="56" dir="1" index="1" bw="26" slack="2147483647"/>
+<pin id="49" dir="0" index="0" bw="1" slack="0"/>
+<pin id="50" dir="1" index="1" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="hog/1 "/>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="grad_vote_magnitude_s_alloca_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="1" slack="0"/>
+<pin id="54" dir="1" index="1" bw="26" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -413,10 +407,10 @@ StgValue_32           (ret                 ) [ 0000000000]
 </bind>
 </comp>
 
-<comp id="58" class="1004" name="grad_vote_bin_V_alloca_fu_58">
+<comp id="56" class="1004" name="grad_vote_bin_V_alloca_fu_56">
 <pin_list>
-<pin id="59" dir="0" index="0" bw="1" slack="0"/>
-<pin id="60" dir="1" index="1" bw="4" slack="2147483647"/>
+<pin id="57" dir="0" index="0" bw="1" slack="0"/>
+<pin id="58" dir="1" index="1" bw="4" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -424,124 +418,105 @@ StgValue_32           (ret                 ) [ 0000000000]
 </bind>
 </comp>
 
-<comp id="62" class="1004" name="grp_svm_detect_fu_62">
+<comp id="60" class="1004" name="grp_compute_blocks_fu_60">
 <pin_list>
-<pin id="63" dir="0" index="0" bw="0" slack="0"/>
-<pin id="64" dir="0" index="1" bw="32" slack="6"/>
-<pin id="65" dir="0" index="2" bw="32" slack="2147483647"/>
-<pin id="66" dir="0" index="3" bw="64" slack="2147483647"/>
-<pin id="67" dir="0" index="4" bw="14" slack="0"/>
-<pin id="68" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="61" dir="0" index="0" bw="0" slack="0"/>
+<pin id="62" dir="0" index="1" bw="32" slack="2147483647"/>
+<pin id="63" dir="0" index="2" bw="64" slack="2147483647"/>
+<pin id="64" dir="0" index="3" bw="32" slack="2147483647"/>
+<pin id="65" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="StgValue_22/7 "/>
+<opset="StgValue_23/7 "/>
 </bind>
 </comp>
 
-<comp id="71" class="1004" name="grp_compute_gradients_fu_71">
+<comp id="67" class="1004" name="grp_compute_gradients_fu_67">
 <pin_list>
-<pin id="72" dir="0" index="0" bw="0" slack="0"/>
-<pin id="73" dir="0" index="1" bw="8" slack="2147483647"/>
-<pin id="74" dir="0" index="2" bw="26" slack="2147483647"/>
-<pin id="75" dir="0" index="3" bw="4" slack="2147483647"/>
-<pin id="76" dir="1" index="4" bw="0" slack="2147483647"/>
+<pin id="68" dir="0" index="0" bw="0" slack="0"/>
+<pin id="69" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="70" dir="0" index="2" bw="26" slack="2147483647"/>
+<pin id="71" dir="0" index="3" bw="4" slack="2147483647"/>
+<pin id="72" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="StgValue_18/3 "/>
+<opset="StgValue_19/3 "/>
 </bind>
 </comp>
 
-<comp id="78" class="1004" name="grp_compute_cells_fu_78">
+<comp id="74" class="1004" name="grp_compute_cells_fu_74">
 <pin_list>
-<pin id="79" dir="0" index="0" bw="0" slack="0"/>
-<pin id="80" dir="0" index="1" bw="26" slack="2147483647"/>
-<pin id="81" dir="0" index="2" bw="4" slack="2147483647"/>
-<pin id="82" dir="0" index="3" bw="32" slack="2147483647"/>
-<pin id="83" dir="0" index="4" bw="64" slack="2147483647"/>
-<pin id="84" dir="1" index="5" bw="0" slack="2147483647"/>
+<pin id="75" dir="0" index="0" bw="0" slack="0"/>
+<pin id="76" dir="0" index="1" bw="26" slack="2147483647"/>
+<pin id="77" dir="0" index="2" bw="4" slack="2147483647"/>
+<pin id="78" dir="0" index="3" bw="32" slack="2147483647"/>
+<pin id="79" dir="0" index="4" bw="64" slack="2147483647"/>
+<pin id="80" dir="1" index="5" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="StgValue_20/5 "/>
+<opset="StgValue_21/5 "/>
 </bind>
 </comp>
 
-<comp id="86" class="1004" name="grp_Loop_1_proc_fu_86">
+<comp id="82" class="1004" name="grp_Loop_1_proc_fu_82">
 <pin_list>
-<pin id="87" dir="0" index="0" bw="0" slack="0"/>
-<pin id="88" dir="0" index="1" bw="32" slack="0"/>
-<pin id="89" dir="0" index="2" bw="8" slack="0"/>
-<pin id="90" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="83" dir="0" index="0" bw="0" slack="0"/>
+<pin id="84" dir="0" index="1" bw="32" slack="0"/>
+<pin id="85" dir="0" index="2" bw="8" slack="0"/>
+<pin id="86" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="StgValue_16/1 "/>
+<opset="StgValue_17/1 "/>
 </bind>
 </comp>
 
-<comp id="94" class="1004" name="StgValue_31_Block_arrayctor_loop_fu_94">
+<comp id="90" class="1004" name="grp_Loop_2_proc_fu_90">
 <pin_list>
-<pin id="95" dir="0" index="0" bw="0" slack="0"/>
-<pin id="96" dir="0" index="1" bw="32" slack="8"/>
-<pin id="97" dir="0" index="2" bw="32" slack="0"/>
-<pin id="98" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="91" dir="0" index="0" bw="0" slack="0"/>
+<pin id="92" dir="0" index="1" bw="32" slack="0"/>
+<pin id="93" dir="0" index="2" bw="32" slack="2147483647"/>
+<pin id="94" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="StgValue_31/9 "/>
-</bind>
-</comp>
-
-<comp id="101" class="1005" name="tmp_channel_reg_101">
-<pin_list>
-<pin id="102" dir="0" index="0" bw="32" slack="6"/>
-<pin id="103" dir="1" index="1" bw="32" slack="6"/>
-</pin_list>
-<bind>
-<opset="tmp_channel "/>
+<opset="StgValue_25/9 "/>
 </bind>
 </comp>
 
 </comp_list>
 
 <net_list>
-<net id="41"><net_src comp="6" pin="0"/><net_sink comp="38" pin=0"/></net>
+<net id="39"><net_src comp="4" pin="0"/><net_sink comp="36" pin=0"/></net>
 
-<net id="45"><net_src comp="6" pin="0"/><net_sink comp="42" pin=0"/></net>
+<net id="43"><net_src comp="4" pin="0"/><net_sink comp="40" pin=0"/></net>
 
-<net id="49"><net_src comp="6" pin="0"/><net_sink comp="46" pin=0"/></net>
+<net id="47"><net_src comp="4" pin="0"/><net_sink comp="44" pin=0"/></net>
 
-<net id="53"><net_src comp="6" pin="0"/><net_sink comp="50" pin=0"/></net>
+<net id="51"><net_src comp="4" pin="0"/><net_sink comp="48" pin=0"/></net>
 
-<net id="57"><net_src comp="6" pin="0"/><net_sink comp="54" pin=0"/></net>
+<net id="55"><net_src comp="4" pin="0"/><net_sink comp="52" pin=0"/></net>
 
-<net id="61"><net_src comp="6" pin="0"/><net_sink comp="58" pin=0"/></net>
+<net id="59"><net_src comp="4" pin="0"/><net_sink comp="56" pin=0"/></net>
 
-<net id="69"><net_src comp="14" pin="0"/><net_sink comp="62" pin=0"/></net>
+<net id="66"><net_src comp="12" pin="0"/><net_sink comp="60" pin=0"/></net>
 
-<net id="70"><net_src comp="4" pin="0"/><net_sink comp="62" pin=4"/></net>
+<net id="73"><net_src comp="8" pin="0"/><net_sink comp="67" pin=0"/></net>
 
-<net id="77"><net_src comp="10" pin="0"/><net_sink comp="71" pin=0"/></net>
+<net id="81"><net_src comp="10" pin="0"/><net_sink comp="74" pin=0"/></net>
 
-<net id="85"><net_src comp="12" pin="0"/><net_sink comp="78" pin=0"/></net>
+<net id="87"><net_src comp="6" pin="0"/><net_sink comp="82" pin=0"/></net>
 
-<net id="91"><net_src comp="8" pin="0"/><net_sink comp="86" pin=0"/></net>
+<net id="88"><net_src comp="0" pin="0"/><net_sink comp="82" pin=1"/></net>
 
-<net id="92"><net_src comp="0" pin="0"/><net_sink comp="86" pin=1"/></net>
+<net id="89"><net_src comp="36" pin="1"/><net_sink comp="82" pin=2"/></net>
 
-<net id="93"><net_src comp="42" pin="1"/><net_sink comp="86" pin=2"/></net>
+<net id="95"><net_src comp="14" pin="0"/><net_sink comp="90" pin=0"/></net>
 
-<net id="99"><net_src comp="36" pin="0"/><net_sink comp="94" pin=0"/></net>
-
-<net id="100"><net_src comp="2" pin="0"/><net_sink comp="94" pin=2"/></net>
-
-<net id="104"><net_src comp="38" pin="1"/><net_sink comp="101" pin=0"/></net>
-
-<net id="105"><net_src comp="101" pin="1"/><net_sink comp="62" pin=1"/></net>
-
-<net id="106"><net_src comp="101" pin="1"/><net_sink comp="94" pin=1"/></net>
+<net id="96"><net_src comp="2" pin="0"/><net_sink comp="90" pin=1"/></net>
 
 </net_list>
 
@@ -550,13 +525,12 @@ StgValue_32           (ret                 ) [ 0000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: out_r | {9 }
+	Port: out_r | {9 10 }
  - Input state : 
 	Port: xillybus_wrapper : in_r | {1 2 }
-	Port: xillybus_wrapper : SVM_detector_V | {7 8 }
   - Chain level:
 	State 1
-		StgValue_16 : 1
+		StgValue_17 : 1
 	State 2
 	State 3
 	State 4
@@ -565,6 +539,7 @@ StgValue_32           (ret                 ) [ 0000000000]
 	State 7
 	State 8
 	State 9
+	State 10
 
 
 ============================================================
@@ -572,40 +547,34 @@ StgValue_32           (ret                 ) [ 0000000000]
 ============================================================
 
 * Functional unit list:
-|----------|----------------------------------------|---------|---------|---------|---------|---------|
-| Operation|             Functional Unit            |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
-|----------|----------------------------------------|---------|---------|---------|---------|---------|
-|          |          grp_svm_detect_fu_62          |    0    |    29   | 20.0537 |   2731  |   4109  |
-|          |       grp_compute_gradients_fu_71      |    0    |    0    |  3.721  |   191   |   993   |
-|   call   |         grp_compute_cells_fu_78        |    0    |    3    | 10.7513 |   481   |   517   |
-|          |          grp_Loop_1_proc_fu_86         |    0    |    0    |  8.845  |    74   |   129   |
-|          | StgValue_31_Block_arrayctor_loop_fu_94 |    0    |    0    |    0    |    0    |    0    |
-|----------|----------------------------------------|---------|---------|---------|---------|---------|
-|   Total  |                                        |    0    |    32   |  43.371 |   3477  |   5748  |
-|----------|----------------------------------------|---------|---------|---------|---------|---------|
+|----------|-----------------------------|---------|---------|---------|---------|---------|
+| Operation|       Functional Unit       |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|-----------------------------|---------|---------|---------|---------|---------|
+|          |   grp_compute_blocks_fu_60  |    0    |    32   | 26.2409 |   6566  |  11204  |
+|          | grp_compute_gradients_fu_67 |    0    |    0    |  3.721  |   215   |   994   |
+|   call   |   grp_compute_cells_fu_74   |    0    |    3    | 10.7513 |   481   |   517   |
+|          |    grp_Loop_1_proc_fu_82    |    0    |    0    |  8.845  |    74   |   129   |
+|          |    grp_Loop_2_proc_fu_90    |    0    |    0    |  1.769  |    33   |    35   |
+|----------|-----------------------------|---------|---------|---------|---------|---------|
+|   Total  |                             |    0    |    35   | 51.3272 |   7369  |  12879  |
+|----------|-----------------------------|---------|---------|---------|---------|---------|
 
 Memories:
 +---------------------+--------+--------+--------+
 |                     |  BRAM  |   FF   |   LUT  |
 +---------------------+--------+--------+--------+
-|    SVM_detector_V   |    -   |   28   |   386  |
 |     cells_bin_V     |    2   |    0   |    0   |
 |    cells_mag_sq_V   |    4   |    0   |    0   |
 |   grad_vote_bin_V   |    1   |    0   |    0   |
 |grad_vote_magnitude_s|    6   |    0   |    0   |
+|         hog         |    4   |    0   |    0   |
 |       image_V       |    2   |    0   |    0   |
 +---------------------+--------+--------+--------+
-|        Total        |   15   |   28   |   386  |
+|        Total        |   19   |    0   |    0   |
 +---------------------+--------+--------+--------+
 
 * Register list:
-+-------------------+--------+
-|                   |   FF   |
-+-------------------+--------+
-|tmp_channel_reg_101|   32   |
-+-------------------+--------+
-|       Total       |   32   |
-+-------------------+--------+
+N/A
 
 * Multiplexer (MUX) list: 
 |--------|------|------|------|--------|
@@ -620,10 +589,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    0   |   32   |   43   |  3477  |  5748  |
-|   Memory  |   15   |    -   |    -   |   28   |   386  |
+|  Function |    0   |   35   |   51   |  7369  |  12879 |
+|   Memory  |   19   |    -   |    -   |    0   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
-|  Register |    -   |    -   |    -   |   32   |    -   |
+|  Register |    -   |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |   15   |   32   |   43   |  3537  |  6134  |
+|   Total   |   19   |   35   |   51   |  7369  |  12879 |
 +-----------+--------+--------+--------+--------+--------+

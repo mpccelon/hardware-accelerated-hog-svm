@@ -23,10 +23,13 @@ const sc_lv<10> xillybus_wrapper::ap_const_lv10_0 = "0000000000";
 const sc_lv<10> xillybus_wrapper::ap_const_lv10_1 = "1";
 const sc_lv<6> xillybus_wrapper::ap_const_lv6_0 = "000000";
 const sc_lv<6> xillybus_wrapper::ap_const_lv6_1 = "1";
+const sc_lv<11> xillybus_wrapper::ap_const_lv11_0 = "00000000000";
+const sc_lv<11> xillybus_wrapper::ap_const_lv11_1 = "1";
+const sc_lv<32> xillybus_wrapper::ap_const_lv32_1 = "1";
 const bool xillybus_wrapper::ap_const_boolean_1 = true;
 
 xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    image_V_U = new xillybus_wrapper_hbi("image_V_U");
+    image_V_U = new xillybus_wrapper_g8j("image_V_U");
     image_V_U->clk(ap_clk);
     image_V_U->reset(ap_rst);
     image_V_U->i_address0(Loop_1_proc_U0_image_V_address0);
@@ -55,7 +58,7 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     image_V_U->i_write(Loop_1_proc_U0_ap_done);
     image_V_U->t_empty_n(image_V_t_empty_n);
     image_V_U->t_read(compute_gradients_U0_ap_ready);
-    cells_bin_V_U = new xillybus_wrapper_ibs("cells_bin_V_U");
+    cells_bin_V_U = new xillybus_wrapper_hbi("cells_bin_V_U");
     cells_bin_V_U->clk(ap_clk);
     cells_bin_V_U->reset(ap_rst);
     cells_bin_V_U->i_address0(compute_cells_U0_cells_bin_V_address0);
@@ -66,21 +69,21 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     cells_bin_V_U->i_address1(ap_var_for_const3);
     cells_bin_V_U->i_ce1(ap_var_for_const0);
     cells_bin_V_U->i_q1(cells_bin_V_i_q1);
-    cells_bin_V_U->t_address0(svm_detect_U0_cells_bin_V_address0);
-    cells_bin_V_U->t_ce0(svm_detect_U0_cells_bin_V_ce0);
+    cells_bin_V_U->t_address0(compute_blocks_U0_cells_bin_V_address0);
+    cells_bin_V_U->t_ce0(compute_blocks_U0_cells_bin_V_ce0);
     cells_bin_V_U->t_we0(ap_var_for_const0);
     cells_bin_V_U->t_d0(ap_var_for_const4);
     cells_bin_V_U->t_q0(cells_bin_V_t_q0);
-    cells_bin_V_U->t_address1(svm_detect_U0_cells_bin_V_address1);
-    cells_bin_V_U->t_ce1(svm_detect_U0_cells_bin_V_ce1);
+    cells_bin_V_U->t_address1(compute_blocks_U0_cells_bin_V_address1);
+    cells_bin_V_U->t_ce1(compute_blocks_U0_cells_bin_V_ce1);
     cells_bin_V_U->t_q1(cells_bin_V_t_q1);
     cells_bin_V_U->i_ce(ap_var_for_const2);
     cells_bin_V_U->t_ce(ap_var_for_const2);
     cells_bin_V_U->i_full_n(cells_bin_V_i_full_n);
     cells_bin_V_U->i_write(ap_channel_done_cells_bin_V);
     cells_bin_V_U->t_empty_n(cells_bin_V_t_empty_n);
-    cells_bin_V_U->t_read(svm_detect_U0_ap_ready);
-    cells_mag_sq_V_U = new xillybus_wrapper_jbC("cells_mag_sq_V_U");
+    cells_bin_V_U->t_read(compute_blocks_U0_ap_ready);
+    cells_mag_sq_V_U = new xillybus_wrapper_ibs("cells_mag_sq_V_U");
     cells_mag_sq_V_U->clk(ap_clk);
     cells_mag_sq_V_U->reset(ap_rst);
     cells_mag_sq_V_U->i_address0(compute_cells_U0_cells_mag_sq_V_address0);
@@ -91,20 +94,47 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     cells_mag_sq_V_U->i_address1(ap_var_for_const5);
     cells_mag_sq_V_U->i_ce1(ap_var_for_const0);
     cells_mag_sq_V_U->i_q1(cells_mag_sq_V_i_q1);
-    cells_mag_sq_V_U->t_address0(svm_detect_U0_cells_mag_sq_V_address0);
-    cells_mag_sq_V_U->t_ce0(svm_detect_U0_cells_mag_sq_V_ce0);
+    cells_mag_sq_V_U->t_address0(compute_blocks_U0_cells_mag_sq_V_address0);
+    cells_mag_sq_V_U->t_ce0(compute_blocks_U0_cells_mag_sq_V_ce0);
     cells_mag_sq_V_U->t_we0(ap_var_for_const0);
     cells_mag_sq_V_U->t_d0(ap_var_for_const6);
     cells_mag_sq_V_U->t_q0(cells_mag_sq_V_t_q0);
-    cells_mag_sq_V_U->t_address1(svm_detect_U0_cells_mag_sq_V_address1);
-    cells_mag_sq_V_U->t_ce1(svm_detect_U0_cells_mag_sq_V_ce1);
+    cells_mag_sq_V_U->t_address1(compute_blocks_U0_cells_mag_sq_V_address1);
+    cells_mag_sq_V_U->t_ce1(compute_blocks_U0_cells_mag_sq_V_ce1);
     cells_mag_sq_V_U->t_q1(cells_mag_sq_V_t_q1);
     cells_mag_sq_V_U->i_ce(ap_var_for_const2);
     cells_mag_sq_V_U->t_ce(ap_var_for_const2);
     cells_mag_sq_V_U->i_full_n(cells_mag_sq_V_i_full_n);
     cells_mag_sq_V_U->i_write(ap_channel_done_cells_mag_sq_V);
     cells_mag_sq_V_U->t_empty_n(cells_mag_sq_V_t_empty_n);
-    cells_mag_sq_V_U->t_read(svm_detect_U0_ap_ready);
+    cells_mag_sq_V_U->t_read(compute_blocks_U0_ap_ready);
+    hog_U = new xillybus_wrapper_jbC("hog_U");
+    hog_U->clk(ap_clk);
+    hog_U->reset(ap_rst);
+    hog_U->i_address0(compute_blocks_U0_hog_address0);
+    hog_U->i_ce0(compute_blocks_U0_hog_ce0);
+    hog_U->i_we0(compute_blocks_U0_hog_we0);
+    hog_U->i_d0(compute_blocks_U0_hog_d0);
+    hog_U->i_q0(hog_i_q0);
+    hog_U->i_address1(compute_blocks_U0_hog_address1);
+    hog_U->i_ce1(compute_blocks_U0_hog_ce1);
+    hog_U->i_we1(compute_blocks_U0_hog_we1);
+    hog_U->i_d1(compute_blocks_U0_hog_d1);
+    hog_U->t_address0(Loop_2_proc_U0_hog_address0);
+    hog_U->t_ce0(Loop_2_proc_U0_hog_ce0);
+    hog_U->t_we0(ap_var_for_const0);
+    hog_U->t_d0(ap_var_for_const4);
+    hog_U->t_q0(hog_t_q0);
+    hog_U->t_address1(ap_var_for_const7);
+    hog_U->t_ce1(ap_var_for_const0);
+    hog_U->t_we1(ap_var_for_const0);
+    hog_U->t_d1(ap_var_for_const4);
+    hog_U->i_ce(ap_var_for_const2);
+    hog_U->t_ce(ap_var_for_const2);
+    hog_U->i_full_n(hog_i_full_n);
+    hog_U->i_write(compute_blocks_U0_ap_done);
+    hog_U->t_empty_n(hog_t_empty_n);
+    hog_U->t_read(Loop_2_proc_U0_ap_ready);
     grad_vote_magnitude_s_U = new xillybus_wrapper_kbM("grad_vote_magnitude_s_U");
     grad_vote_magnitude_s_U->clk(ap_clk);
     grad_vote_magnitude_s_U->reset(ap_rst);
@@ -116,7 +146,7 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     grad_vote_magnitude_s_U->t_address0(compute_cells_U0_grad_vote_magnitude_s_address0);
     grad_vote_magnitude_s_U->t_ce0(compute_cells_U0_grad_vote_magnitude_s_ce0);
     grad_vote_magnitude_s_U->t_we0(ap_var_for_const0);
-    grad_vote_magnitude_s_U->t_d0(ap_var_for_const7);
+    grad_vote_magnitude_s_U->t_d0(ap_var_for_const8);
     grad_vote_magnitude_s_U->t_q0(grad_vote_magnitude_s_t_q0);
     grad_vote_magnitude_s_U->i_ce(ap_var_for_const2);
     grad_vote_magnitude_s_U->t_ce(ap_var_for_const2);
@@ -135,7 +165,7 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     grad_vote_bin_V_U->t_address0(compute_cells_U0_grad_vote_bin_V_address0);
     grad_vote_bin_V_U->t_ce0(compute_cells_U0_grad_vote_bin_V_ce0);
     grad_vote_bin_V_U->t_we0(ap_var_for_const0);
-    grad_vote_bin_V_U->t_d0(ap_var_for_const8);
+    grad_vote_bin_V_U->t_d0(ap_var_for_const9);
     grad_vote_bin_V_U->t_q0(grad_vote_bin_V_t_q0);
     grad_vote_bin_V_U->i_ce(ap_var_for_const2);
     grad_vote_bin_V_U->t_ce(ap_var_for_const2);
@@ -206,64 +236,52 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     compute_cells_U0->cells_mag_sq_V_ce0(compute_cells_U0_cells_mag_sq_V_ce0);
     compute_cells_U0->cells_mag_sq_V_we0(compute_cells_U0_cells_mag_sq_V_we0);
     compute_cells_U0->cells_mag_sq_V_d0(compute_cells_U0_cells_mag_sq_V_d0);
-    svm_detect_U0 = new svm_detect("svm_detect_U0");
-    svm_detect_U0->ap_clk(ap_clk);
-    svm_detect_U0->ap_rst(ap_rst);
-    svm_detect_U0->ap_start(svm_detect_U0_ap_start);
-    svm_detect_U0->ap_done(svm_detect_U0_ap_done);
-    svm_detect_U0->ap_continue(svm_detect_U0_ap_continue);
-    svm_detect_U0->ap_idle(svm_detect_U0_ap_idle);
-    svm_detect_U0->ap_ready(svm_detect_U0_ap_ready);
-    svm_detect_U0->cells_bin_V_2(svm_detect_U0_cells_bin_V_2);
-    svm_detect_U0->cells_bin_V_2_ap_vld(svm_detect_U0_cells_bin_V_2_ap_vld);
-    svm_detect_U0->cells_bin_V_address0(svm_detect_U0_cells_bin_V_address0);
-    svm_detect_U0->cells_bin_V_ce0(svm_detect_U0_cells_bin_V_ce0);
-    svm_detect_U0->cells_bin_V_q0(cells_bin_V_t_q0);
-    svm_detect_U0->cells_bin_V_address1(svm_detect_U0_cells_bin_V_address1);
-    svm_detect_U0->cells_bin_V_ce1(svm_detect_U0_cells_bin_V_ce1);
-    svm_detect_U0->cells_bin_V_q1(cells_bin_V_t_q1);
-    svm_detect_U0->cells_mag_sq_V_address0(svm_detect_U0_cells_mag_sq_V_address0);
-    svm_detect_U0->cells_mag_sq_V_ce0(svm_detect_U0_cells_mag_sq_V_ce0);
-    svm_detect_U0->cells_mag_sq_V_q0(cells_mag_sq_V_t_q0);
-    svm_detect_U0->cells_mag_sq_V_address1(svm_detect_U0_cells_mag_sq_V_address1);
-    svm_detect_U0->cells_mag_sq_V_ce1(svm_detect_U0_cells_mag_sq_V_ce1);
-    svm_detect_U0->cells_mag_sq_V_q1(cells_mag_sq_V_t_q1);
-    Block_arrayctor_loop_U0 = new Block_arrayctor_loop("Block_arrayctor_loop_U0");
-    Block_arrayctor_loop_U0->ap_clk(ap_clk);
-    Block_arrayctor_loop_U0->ap_rst(ap_rst);
-    Block_arrayctor_loop_U0->ap_start(Block_arrayctor_loop_U0_ap_start);
-    Block_arrayctor_loop_U0->ap_done(Block_arrayctor_loop_U0_ap_done);
-    Block_arrayctor_loop_U0->ap_continue(Block_arrayctor_loop_U0_ap_continue);
-    Block_arrayctor_loop_U0->ap_idle(Block_arrayctor_loop_U0_ap_idle);
-    Block_arrayctor_loop_U0->ap_ready(Block_arrayctor_loop_U0_ap_ready);
-    Block_arrayctor_loop_U0->tmp(tmp_channel_dout);
-    Block_arrayctor_loop_U0->out_r_din(Block_arrayctor_loop_U0_out_r_din);
-    Block_arrayctor_loop_U0->out_r_full_n(out_r_full_n);
-    Block_arrayctor_loop_U0->out_r_write(Block_arrayctor_loop_U0_out_r_write);
-    tmp_channel_U = new fifo_w32_d2_A("tmp_channel_U");
-    tmp_channel_U->clk(ap_clk);
-    tmp_channel_U->reset(ap_rst);
-    tmp_channel_U->if_read_ce(ap_var_for_const2);
-    tmp_channel_U->if_write_ce(ap_var_for_const2);
-    tmp_channel_U->if_din(svm_detect_U0_cells_bin_V_2);
-    tmp_channel_U->if_full_n(tmp_channel_full_n);
-    tmp_channel_U->if_write(svm_detect_U0_ap_done);
-    tmp_channel_U->if_dout(tmp_channel_dout);
-    tmp_channel_U->if_empty_n(tmp_channel_empty_n);
-    tmp_channel_U->if_read(Block_arrayctor_loop_U0_ap_ready);
+    compute_blocks_U0 = new compute_blocks("compute_blocks_U0");
+    compute_blocks_U0->ap_clk(ap_clk);
+    compute_blocks_U0->ap_rst(ap_rst);
+    compute_blocks_U0->ap_start(compute_blocks_U0_ap_start);
+    compute_blocks_U0->ap_done(compute_blocks_U0_ap_done);
+    compute_blocks_U0->ap_continue(compute_blocks_U0_ap_continue);
+    compute_blocks_U0->ap_idle(compute_blocks_U0_ap_idle);
+    compute_blocks_U0->ap_ready(compute_blocks_U0_ap_ready);
+    compute_blocks_U0->cells_bin_V_address0(compute_blocks_U0_cells_bin_V_address0);
+    compute_blocks_U0->cells_bin_V_ce0(compute_blocks_U0_cells_bin_V_ce0);
+    compute_blocks_U0->cells_bin_V_q0(cells_bin_V_t_q0);
+    compute_blocks_U0->cells_bin_V_address1(compute_blocks_U0_cells_bin_V_address1);
+    compute_blocks_U0->cells_bin_V_ce1(compute_blocks_U0_cells_bin_V_ce1);
+    compute_blocks_U0->cells_bin_V_q1(cells_bin_V_t_q1);
+    compute_blocks_U0->cells_mag_sq_V_address0(compute_blocks_U0_cells_mag_sq_V_address0);
+    compute_blocks_U0->cells_mag_sq_V_ce0(compute_blocks_U0_cells_mag_sq_V_ce0);
+    compute_blocks_U0->cells_mag_sq_V_q0(cells_mag_sq_V_t_q0);
+    compute_blocks_U0->cells_mag_sq_V_address1(compute_blocks_U0_cells_mag_sq_V_address1);
+    compute_blocks_U0->cells_mag_sq_V_ce1(compute_blocks_U0_cells_mag_sq_V_ce1);
+    compute_blocks_U0->cells_mag_sq_V_q1(cells_mag_sq_V_t_q1);
+    compute_blocks_U0->hog_address0(compute_blocks_U0_hog_address0);
+    compute_blocks_U0->hog_ce0(compute_blocks_U0_hog_ce0);
+    compute_blocks_U0->hog_we0(compute_blocks_U0_hog_we0);
+    compute_blocks_U0->hog_d0(compute_blocks_U0_hog_d0);
+    compute_blocks_U0->hog_address1(compute_blocks_U0_hog_address1);
+    compute_blocks_U0->hog_ce1(compute_blocks_U0_hog_ce1);
+    compute_blocks_U0->hog_we1(compute_blocks_U0_hog_we1);
+    compute_blocks_U0->hog_d1(compute_blocks_U0_hog_d1);
+    Loop_2_proc_U0 = new Loop_2_proc("Loop_2_proc_U0");
+    Loop_2_proc_U0->ap_clk(ap_clk);
+    Loop_2_proc_U0->ap_rst(ap_rst);
+    Loop_2_proc_U0->ap_start(Loop_2_proc_U0_ap_start);
+    Loop_2_proc_U0->ap_done(Loop_2_proc_U0_ap_done);
+    Loop_2_proc_U0->ap_continue(Loop_2_proc_U0_ap_continue);
+    Loop_2_proc_U0->ap_idle(Loop_2_proc_U0_ap_idle);
+    Loop_2_proc_U0->ap_ready(Loop_2_proc_U0_ap_ready);
+    Loop_2_proc_U0->out_r_din(Loop_2_proc_U0_out_r_din);
+    Loop_2_proc_U0->out_r_full_n(out_r_full_n);
+    Loop_2_proc_U0->out_r_write(Loop_2_proc_U0_out_r_write);
+    Loop_2_proc_U0->hog_address0(Loop_2_proc_U0_hog_address0);
+    Loop_2_proc_U0->hog_ce0(Loop_2_proc_U0_hog_ce0);
+    Loop_2_proc_U0->hog_q0(hog_t_q0);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
     sensitive << ( ap_clk.pos() );
-
-    SC_METHOD(thread_Block_arrayctor_loop_U0_ap_continue);
-
-    SC_METHOD(thread_Block_arrayctor_loop_U0_ap_start);
-    sensitive << ( tmp_channel_empty_n );
-
-    SC_METHOD(thread_Block_arrayctor_loop_U0_start_full_n);
-
-    SC_METHOD(thread_Block_arrayctor_loop_U0_start_write);
 
     SC_METHOD(thread_Loop_1_proc_U0_ap_continue);
     sensitive << ( image_V_i_full_n );
@@ -274,6 +292,15 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     SC_METHOD(thread_Loop_1_proc_U0_start_full_n);
 
     SC_METHOD(thread_Loop_1_proc_U0_start_write);
+
+    SC_METHOD(thread_Loop_2_proc_U0_ap_continue);
+
+    SC_METHOD(thread_Loop_2_proc_U0_ap_start);
+    sensitive << ( hog_t_empty_n );
+
+    SC_METHOD(thread_Loop_2_proc_U0_start_full_n);
+
+    SC_METHOD(thread_Loop_2_proc_U0_start_write);
 
     SC_METHOD(thread_ap_channel_done_cells_bin_V);
     sensitive << ( compute_cells_U0_ap_done );
@@ -291,11 +318,11 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     sensitive << ( compute_gradients_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_grad_vote_magnitude_s );
 
+    SC_METHOD(thread_ap_channel_done_hog);
+    sensitive << ( compute_blocks_U0_ap_done );
+
     SC_METHOD(thread_ap_channel_done_image_V);
     sensitive << ( Loop_1_proc_U0_ap_done );
-
-    SC_METHOD(thread_ap_channel_done_tmp_channel);
-    sensitive << ( svm_detect_U0_ap_done );
 
     SC_METHOD(thread_ap_sync_channel_write_cells_bin_V);
     sensitive << ( ap_channel_done_cells_bin_V );
@@ -326,6 +353,20 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     SC_METHOD(thread_cells_mag_sq_V_t_d1);
 
     SC_METHOD(thread_cells_mag_sq_V_t_we1);
+
+    SC_METHOD(thread_compute_blocks_U0_ap_continue);
+    sensitive << ( hog_i_full_n );
+
+    SC_METHOD(thread_compute_blocks_U0_ap_start);
+    sensitive << ( cells_bin_V_t_empty_n );
+    sensitive << ( cells_mag_sq_V_t_empty_n );
+
+    SC_METHOD(thread_compute_blocks_U0_hog_full_n);
+    sensitive << ( hog_i_full_n );
+
+    SC_METHOD(thread_compute_blocks_U0_start_full_n);
+
+    SC_METHOD(thread_compute_blocks_U0_start_write);
 
     SC_METHOD(thread_compute_cells_U0_ap_continue);
     sensitive << ( ap_sync_channel_write_cells_mag_sq_V );
@@ -366,21 +407,10 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     sensitive << ( Loop_1_proc_U0_in_r_read );
 
     SC_METHOD(thread_out_r_din);
-    sensitive << ( Block_arrayctor_loop_U0_out_r_din );
+    sensitive << ( Loop_2_proc_U0_out_r_din );
 
     SC_METHOD(thread_out_r_write);
-    sensitive << ( Block_arrayctor_loop_U0_out_r_write );
-
-    SC_METHOD(thread_svm_detect_U0_ap_continue);
-    sensitive << ( tmp_channel_full_n );
-
-    SC_METHOD(thread_svm_detect_U0_ap_start);
-    sensitive << ( cells_bin_V_t_empty_n );
-    sensitive << ( cells_mag_sq_V_t_empty_n );
-
-    SC_METHOD(thread_svm_detect_U0_start_full_n);
-
-    SC_METHOD(thread_svm_detect_U0_start_write);
+    sensitive << ( Loop_2_proc_U0_out_r_write );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_clk.pos() );
@@ -393,15 +423,17 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
 
     SC_THREAD(thread_ap_var_for_const1);
 
-    SC_THREAD(thread_ap_var_for_const7);
-
     SC_THREAD(thread_ap_var_for_const8);
+
+    SC_THREAD(thread_ap_var_for_const9);
 
     SC_THREAD(thread_ap_var_for_const6);
 
     SC_THREAD(thread_ap_var_for_const3);
 
     SC_THREAD(thread_ap_var_for_const5);
+
+    SC_THREAD(thread_ap_var_for_const7);
 
     Loop_1_proc_U0_ap_start = SC_LOGIC_0;
     ap_sync_reg_channel_write_grad_vote_bin_V = SC_LOGIC_0;
@@ -438,6 +470,8 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     sc_trace(mVcdFile, cells_mag_sq_V_i_q1, "cells_mag_sq_V_i_q1");
     sc_trace(mVcdFile, cells_mag_sq_V_t_q0, "cells_mag_sq_V_t_q0");
     sc_trace(mVcdFile, cells_mag_sq_V_t_q1, "cells_mag_sq_V_t_q1");
+    sc_trace(mVcdFile, hog_i_q0, "hog_i_q0");
+    sc_trace(mVcdFile, hog_t_q0, "hog_t_q0");
     sc_trace(mVcdFile, grad_vote_magnitude_s_i_q0, "grad_vote_magnitude_s_i_q0");
     sc_trace(mVcdFile, grad_vote_magnitude_s_t_q0, "grad_vote_magnitude_s_t_q0");
     sc_trace(mVcdFile, grad_vote_bin_V_i_q0, "grad_vote_bin_V_i_q0");
@@ -508,30 +542,38 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     sc_trace(mVcdFile, compute_cells_U0_cells_bin_V_full_n, "compute_cells_U0_cells_bin_V_full_n");
     sc_trace(mVcdFile, ap_sync_reg_channel_write_cells_bin_V, "ap_sync_reg_channel_write_cells_bin_V");
     sc_trace(mVcdFile, ap_sync_channel_write_cells_bin_V, "ap_sync_channel_write_cells_bin_V");
-    sc_trace(mVcdFile, svm_detect_U0_ap_start, "svm_detect_U0_ap_start");
-    sc_trace(mVcdFile, svm_detect_U0_ap_done, "svm_detect_U0_ap_done");
-    sc_trace(mVcdFile, svm_detect_U0_ap_continue, "svm_detect_U0_ap_continue");
-    sc_trace(mVcdFile, svm_detect_U0_ap_idle, "svm_detect_U0_ap_idle");
-    sc_trace(mVcdFile, svm_detect_U0_ap_ready, "svm_detect_U0_ap_ready");
-    sc_trace(mVcdFile, svm_detect_U0_cells_bin_V_2, "svm_detect_U0_cells_bin_V_2");
-    sc_trace(mVcdFile, svm_detect_U0_cells_bin_V_2_ap_vld, "svm_detect_U0_cells_bin_V_2_ap_vld");
-    sc_trace(mVcdFile, svm_detect_U0_cells_bin_V_address0, "svm_detect_U0_cells_bin_V_address0");
-    sc_trace(mVcdFile, svm_detect_U0_cells_bin_V_ce0, "svm_detect_U0_cells_bin_V_ce0");
-    sc_trace(mVcdFile, svm_detect_U0_cells_bin_V_address1, "svm_detect_U0_cells_bin_V_address1");
-    sc_trace(mVcdFile, svm_detect_U0_cells_bin_V_ce1, "svm_detect_U0_cells_bin_V_ce1");
-    sc_trace(mVcdFile, svm_detect_U0_cells_mag_sq_V_address0, "svm_detect_U0_cells_mag_sq_V_address0");
-    sc_trace(mVcdFile, svm_detect_U0_cells_mag_sq_V_ce0, "svm_detect_U0_cells_mag_sq_V_ce0");
-    sc_trace(mVcdFile, svm_detect_U0_cells_mag_sq_V_address1, "svm_detect_U0_cells_mag_sq_V_address1");
-    sc_trace(mVcdFile, svm_detect_U0_cells_mag_sq_V_ce1, "svm_detect_U0_cells_mag_sq_V_ce1");
-    sc_trace(mVcdFile, ap_channel_done_tmp_channel, "ap_channel_done_tmp_channel");
-    sc_trace(mVcdFile, tmp_channel_full_n, "tmp_channel_full_n");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_ap_start, "Block_arrayctor_loop_U0_ap_start");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_ap_done, "Block_arrayctor_loop_U0_ap_done");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_ap_continue, "Block_arrayctor_loop_U0_ap_continue");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_ap_idle, "Block_arrayctor_loop_U0_ap_idle");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_ap_ready, "Block_arrayctor_loop_U0_ap_ready");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_out_r_din, "Block_arrayctor_loop_U0_out_r_din");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_out_r_write, "Block_arrayctor_loop_U0_out_r_write");
+    sc_trace(mVcdFile, compute_blocks_U0_ap_start, "compute_blocks_U0_ap_start");
+    sc_trace(mVcdFile, compute_blocks_U0_ap_done, "compute_blocks_U0_ap_done");
+    sc_trace(mVcdFile, compute_blocks_U0_ap_continue, "compute_blocks_U0_ap_continue");
+    sc_trace(mVcdFile, compute_blocks_U0_ap_idle, "compute_blocks_U0_ap_idle");
+    sc_trace(mVcdFile, compute_blocks_U0_ap_ready, "compute_blocks_U0_ap_ready");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_bin_V_address0, "compute_blocks_U0_cells_bin_V_address0");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_bin_V_ce0, "compute_blocks_U0_cells_bin_V_ce0");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_bin_V_address1, "compute_blocks_U0_cells_bin_V_address1");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_bin_V_ce1, "compute_blocks_U0_cells_bin_V_ce1");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_mag_sq_V_address0, "compute_blocks_U0_cells_mag_sq_V_address0");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_mag_sq_V_ce0, "compute_blocks_U0_cells_mag_sq_V_ce0");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_mag_sq_V_address1, "compute_blocks_U0_cells_mag_sq_V_address1");
+    sc_trace(mVcdFile, compute_blocks_U0_cells_mag_sq_V_ce1, "compute_blocks_U0_cells_mag_sq_V_ce1");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_address0, "compute_blocks_U0_hog_address0");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_ce0, "compute_blocks_U0_hog_ce0");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_we0, "compute_blocks_U0_hog_we0");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_d0, "compute_blocks_U0_hog_d0");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_address1, "compute_blocks_U0_hog_address1");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_ce1, "compute_blocks_U0_hog_ce1");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_we1, "compute_blocks_U0_hog_we1");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_d1, "compute_blocks_U0_hog_d1");
+    sc_trace(mVcdFile, ap_channel_done_hog, "ap_channel_done_hog");
+    sc_trace(mVcdFile, compute_blocks_U0_hog_full_n, "compute_blocks_U0_hog_full_n");
+    sc_trace(mVcdFile, Loop_2_proc_U0_ap_start, "Loop_2_proc_U0_ap_start");
+    sc_trace(mVcdFile, Loop_2_proc_U0_ap_done, "Loop_2_proc_U0_ap_done");
+    sc_trace(mVcdFile, Loop_2_proc_U0_ap_continue, "Loop_2_proc_U0_ap_continue");
+    sc_trace(mVcdFile, Loop_2_proc_U0_ap_idle, "Loop_2_proc_U0_ap_idle");
+    sc_trace(mVcdFile, Loop_2_proc_U0_ap_ready, "Loop_2_proc_U0_ap_ready");
+    sc_trace(mVcdFile, Loop_2_proc_U0_out_r_din, "Loop_2_proc_U0_out_r_din");
+    sc_trace(mVcdFile, Loop_2_proc_U0_out_r_write, "Loop_2_proc_U0_out_r_write");
+    sc_trace(mVcdFile, Loop_2_proc_U0_hog_address0, "Loop_2_proc_U0_hog_address0");
+    sc_trace(mVcdFile, Loop_2_proc_U0_hog_ce0, "Loop_2_proc_U0_hog_ce0");
     sc_trace(mVcdFile, ap_sync_continue, "ap_sync_continue");
     sc_trace(mVcdFile, image_V_i_full_n, "image_V_i_full_n");
     sc_trace(mVcdFile, image_V_t_empty_n, "image_V_t_empty_n");
@@ -547,18 +589,18 @@ xillybus_wrapper::xillybus_wrapper(sc_module_name name) : sc_module(name), mVcdF
     sc_trace(mVcdFile, cells_mag_sq_V_t_empty_n, "cells_mag_sq_V_t_empty_n");
     sc_trace(mVcdFile, cells_mag_sq_V_t_d1, "cells_mag_sq_V_t_d1");
     sc_trace(mVcdFile, cells_mag_sq_V_t_we1, "cells_mag_sq_V_t_we1");
-    sc_trace(mVcdFile, tmp_channel_dout, "tmp_channel_dout");
-    sc_trace(mVcdFile, tmp_channel_empty_n, "tmp_channel_empty_n");
+    sc_trace(mVcdFile, hog_i_full_n, "hog_i_full_n");
+    sc_trace(mVcdFile, hog_t_empty_n, "hog_t_empty_n");
     sc_trace(mVcdFile, Loop_1_proc_U0_start_full_n, "Loop_1_proc_U0_start_full_n");
     sc_trace(mVcdFile, Loop_1_proc_U0_start_write, "Loop_1_proc_U0_start_write");
     sc_trace(mVcdFile, compute_gradients_U0_start_full_n, "compute_gradients_U0_start_full_n");
     sc_trace(mVcdFile, compute_gradients_U0_start_write, "compute_gradients_U0_start_write");
     sc_trace(mVcdFile, compute_cells_U0_start_full_n, "compute_cells_U0_start_full_n");
     sc_trace(mVcdFile, compute_cells_U0_start_write, "compute_cells_U0_start_write");
-    sc_trace(mVcdFile, svm_detect_U0_start_full_n, "svm_detect_U0_start_full_n");
-    sc_trace(mVcdFile, svm_detect_U0_start_write, "svm_detect_U0_start_write");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_start_full_n, "Block_arrayctor_loop_U0_start_full_n");
-    sc_trace(mVcdFile, Block_arrayctor_loop_U0_start_write, "Block_arrayctor_loop_U0_start_write");
+    sc_trace(mVcdFile, compute_blocks_U0_start_full_n, "compute_blocks_U0_start_full_n");
+    sc_trace(mVcdFile, compute_blocks_U0_start_write, "compute_blocks_U0_start_write");
+    sc_trace(mVcdFile, Loop_2_proc_U0_start_full_n, "Loop_2_proc_U0_start_full_n");
+    sc_trace(mVcdFile, Loop_2_proc_U0_start_write, "Loop_2_proc_U0_start_write");
 #endif
 
     }
@@ -577,14 +619,14 @@ xillybus_wrapper::~xillybus_wrapper() {
     delete image_V_U;
     delete cells_bin_V_U;
     delete cells_mag_sq_V_U;
+    delete hog_U;
     delete grad_vote_magnitude_s_U;
     delete grad_vote_bin_V_U;
     delete Loop_1_proc_U0;
     delete compute_gradients_U0;
     delete compute_cells_U0;
-    delete svm_detect_U0;
-    delete Block_arrayctor_loop_U0;
-    delete tmp_channel_U;
+    delete compute_blocks_U0;
+    delete Loop_2_proc_U0;
 }
 
 void xillybus_wrapper::thread_ap_var_for_const2() {
@@ -603,12 +645,12 @@ void xillybus_wrapper::thread_ap_var_for_const1() {
     ap_var_for_const1 = ap_const_lv8_0;
 }
 
-void xillybus_wrapper::thread_ap_var_for_const7() {
-    ap_var_for_const7 = ap_const_lv26_0;
+void xillybus_wrapper::thread_ap_var_for_const8() {
+    ap_var_for_const8 = ap_const_lv26_0;
 }
 
-void xillybus_wrapper::thread_ap_var_for_const8() {
-    ap_var_for_const8 = ap_const_lv4_0;
+void xillybus_wrapper::thread_ap_var_for_const9() {
+    ap_var_for_const9 = ap_const_lv4_0;
 }
 
 void xillybus_wrapper::thread_ap_var_for_const6() {
@@ -621,6 +663,10 @@ void xillybus_wrapper::thread_ap_var_for_const3() {
 
 void xillybus_wrapper::thread_ap_var_for_const5() {
     ap_var_for_const5 = ap_const_lv6_0;
+}
+
+void xillybus_wrapper::thread_ap_var_for_const7() {
+    ap_var_for_const7 = ap_const_lv11_0;
 }
 
 void xillybus_wrapper::thread_ap_clk_no_reset_() {
@@ -671,22 +717,6 @@ void xillybus_wrapper::thread_ap_clk_no_reset_() {
     }
 }
 
-void xillybus_wrapper::thread_Block_arrayctor_loop_U0_ap_continue() {
-    Block_arrayctor_loop_U0_ap_continue = ap_const_logic_1;
-}
-
-void xillybus_wrapper::thread_Block_arrayctor_loop_U0_ap_start() {
-    Block_arrayctor_loop_U0_ap_start = tmp_channel_empty_n.read();
-}
-
-void xillybus_wrapper::thread_Block_arrayctor_loop_U0_start_full_n() {
-    Block_arrayctor_loop_U0_start_full_n = ap_const_logic_1;
-}
-
-void xillybus_wrapper::thread_Block_arrayctor_loop_U0_start_write() {
-    Block_arrayctor_loop_U0_start_write = ap_const_logic_0;
-}
-
 void xillybus_wrapper::thread_Loop_1_proc_U0_ap_continue() {
     Loop_1_proc_U0_ap_continue = image_V_i_full_n.read();
 }
@@ -701,6 +731,22 @@ void xillybus_wrapper::thread_Loop_1_proc_U0_start_full_n() {
 
 void xillybus_wrapper::thread_Loop_1_proc_U0_start_write() {
     Loop_1_proc_U0_start_write = ap_const_logic_0;
+}
+
+void xillybus_wrapper::thread_Loop_2_proc_U0_ap_continue() {
+    Loop_2_proc_U0_ap_continue = ap_const_logic_1;
+}
+
+void xillybus_wrapper::thread_Loop_2_proc_U0_ap_start() {
+    Loop_2_proc_U0_ap_start = hog_t_empty_n.read();
+}
+
+void xillybus_wrapper::thread_Loop_2_proc_U0_start_full_n() {
+    Loop_2_proc_U0_start_full_n = ap_const_logic_1;
+}
+
+void xillybus_wrapper::thread_Loop_2_proc_U0_start_write() {
+    Loop_2_proc_U0_start_write = ap_const_logic_0;
 }
 
 void xillybus_wrapper::thread_ap_channel_done_cells_bin_V() {
@@ -723,12 +769,12 @@ void xillybus_wrapper::thread_ap_channel_done_grad_vote_magnitude_s() {
   ap_const_logic_1));
 }
 
-void xillybus_wrapper::thread_ap_channel_done_image_V() {
-    ap_channel_done_image_V = Loop_1_proc_U0_ap_done.read();
+void xillybus_wrapper::thread_ap_channel_done_hog() {
+    ap_channel_done_hog = compute_blocks_U0_ap_done.read();
 }
 
-void xillybus_wrapper::thread_ap_channel_done_tmp_channel() {
-    ap_channel_done_tmp_channel = svm_detect_U0_ap_done.read();
+void xillybus_wrapper::thread_ap_channel_done_image_V() {
+    ap_channel_done_image_V = Loop_1_proc_U0_ap_done.read();
 }
 
 void xillybus_wrapper::thread_ap_sync_channel_write_cells_bin_V() {
@@ -769,6 +815,26 @@ void xillybus_wrapper::thread_cells_mag_sq_V_t_d1() {
 
 void xillybus_wrapper::thread_cells_mag_sq_V_t_we1() {
     cells_mag_sq_V_t_we1 = ap_const_logic_0;
+}
+
+void xillybus_wrapper::thread_compute_blocks_U0_ap_continue() {
+    compute_blocks_U0_ap_continue = hog_i_full_n.read();
+}
+
+void xillybus_wrapper::thread_compute_blocks_U0_ap_start() {
+    compute_blocks_U0_ap_start = (cells_bin_V_t_empty_n.read() & cells_mag_sq_V_t_empty_n.read());
+}
+
+void xillybus_wrapper::thread_compute_blocks_U0_hog_full_n() {
+    compute_blocks_U0_hog_full_n = hog_i_full_n.read();
+}
+
+void xillybus_wrapper::thread_compute_blocks_U0_start_full_n() {
+    compute_blocks_U0_start_full_n = ap_const_logic_1;
+}
+
+void xillybus_wrapper::thread_compute_blocks_U0_start_write() {
+    compute_blocks_U0_start_write = ap_const_logic_0;
 }
 
 void xillybus_wrapper::thread_compute_cells_U0_ap_continue() {
@@ -824,27 +890,11 @@ void xillybus_wrapper::thread_in_r_read() {
 }
 
 void xillybus_wrapper::thread_out_r_din() {
-    out_r_din = Block_arrayctor_loop_U0_out_r_din.read();
+    out_r_din = Loop_2_proc_U0_out_r_din.read();
 }
 
 void xillybus_wrapper::thread_out_r_write() {
-    out_r_write = Block_arrayctor_loop_U0_out_r_write.read();
-}
-
-void xillybus_wrapper::thread_svm_detect_U0_ap_continue() {
-    svm_detect_U0_ap_continue = tmp_channel_full_n.read();
-}
-
-void xillybus_wrapper::thread_svm_detect_U0_ap_start() {
-    svm_detect_U0_ap_start = (cells_bin_V_t_empty_n.read() & cells_mag_sq_V_t_empty_n.read());
-}
-
-void xillybus_wrapper::thread_svm_detect_U0_start_full_n() {
-    svm_detect_U0_start_full_n = ap_const_logic_1;
-}
-
-void xillybus_wrapper::thread_svm_detect_U0_start_write() {
-    svm_detect_U0_start_write = ap_const_logic_0;
+    out_r_write = Loop_2_proc_U0_out_r_write.read();
 }
 
 void xillybus_wrapper::thread_hdltv_gen() {

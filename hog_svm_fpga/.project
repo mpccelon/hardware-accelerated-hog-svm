@@ -29,37 +29,37 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/.apc/.src</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/.apc/.tb</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/.apc/.tb</location>
 		</link>
 		<link>
 			<name>hog_svm_fpga/constraints</name>
 			<type>2</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.tcls</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.tcls</location>
 		</link>
 		<link>
 			<name>source/hardware_approximation.cpp</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hardware_approximation.cpp</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hardware_approximation.cpp</location>
 		</link>
 		<link>
 			<name>source/xillybus_wrapper.cpp</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/xillybus_wrapper.cpp</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/xillybus_wrapper.cpp</location>
 		</link>
 		<link>
 			<name>testbench/gray_ver.txt</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/gray_ver.txt</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/gray_ver.txt</location>
 		</link>
 		<link>
 			<name>testbench/img_data.txt</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/img_data.txt</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/img_data.txt</location>
 		</link>
 		<link>
 			<name>testbench/non-vehicle_data.txt</name>
@@ -69,7 +69,7 @@
 		<link>
 			<name>testbench/tb_xillybus_wrapper.cpp</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/tb_xillybus_wrapper.cpp</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/tb_xillybus_wrapper.cpp</location>
 		</link>
 		<link>
 			<name>testbench/test_pos.txt</name>
@@ -79,7 +79,7 @@
 		<link>
 			<name>testbench/vehicle.txt</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/vehicle.txt</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/vehicle.txt</location>
 		</link>
 		<link>
 			<name>testbench/vehicle_data.txt</name>
@@ -89,17 +89,17 @@
 		<link>
 			<name>hog_svm_fpga/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga.directive</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga.directive</location>
 		</link>
 		<link>
 			<name>hog_svm_fpga/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/directives.tcl</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/directives.tcl</location>
 		</link>
 		<link>
 			<name>hog_svm_fpga/constraints/script.tcl</name>
 			<type>1</type>
-			<location>D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/script.tcl</location>
+			<location>D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,5 +1,5 @@
-# 1 "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp"
-# 1 "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp" 1
+# 1 "D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp"
+# 1 "D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 152 "<built-in>" 3
@@ -145,7 +145,7 @@ extern "C" {
 }
 # 9 "<command line>" 2
 # 1 "<built-in>" 2
-# 1 "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp" 2
+# 1 "D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp" 2
 # 1 "hog_svm_fpga/hardware_approximation.cpp"
 # 1 "hog_svm_fpga/hardware_approximation.cpp" 1
 # 1 "<built-in>" 1

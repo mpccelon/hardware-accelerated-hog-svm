@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'compute_cells'
 ================================================================
-* Date:           Thu May 17 18:21:39 2018
+* Date:           Fri May 18 16:31:14 2018
 
 * Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
 * Project:        hog_svm_fpga
@@ -94,7 +94,7 @@
     +--------------------------------+----------+-------+---+----+------------+------------+
     |          Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------------------+----------+-------+---+----+------------+------------+
-    |p_Val2_1_fu_572_p2              |     *    |      3|  0|  20|          32|          32|
+    |p_Val2_4_fu_572_p2              |     *    |      3|  0|  20|          32|          32|
     |addconv_fu_562_p2               |     +    |      0|  0|  39|          32|          32|
     |i_fu_280_p2                     |     +    |      0|  0|  15|           7|           4|
     |ii_V_fu_349_p2                  |     +    |      0|  0|  13|           4|           1|
@@ -102,26 +102,26 @@
     |indvar_flatten_next_fu_343_p2   |     +    |      0|  0|  15|           7|           1|
     |j_fu_583_p2                     |     +    |      0|  0|  15|           7|           4|
     |jj_V_fu_421_p2                  |     +    |      0|  0|  13|           4|           1|
-    |k_2_fu_326_p2                   |     +    |      0|  0|  13|           4|           1|
-    |k_3_fu_491_p2                   |     +    |      0|  0|  13|           4|           1|
+    |k_1_fu_326_p2                   |     +    |      0|  0|  13|           4|           1|
+    |k_2_fu_491_p2                   |     +    |      0|  0|  13|           4|           1|
     |mag_sq_V_fu_578_p2              |     +    |      0|  0|  71|          64|          64|
     |p_Val2_s_fu_434_p2              |     +    |      0|  0|  39|          32|          32|
     |r_V_fu_400_p2                   |     +    |      0|  0|  15|           7|           7|
-    |tmp_106_fu_479_p2               |     +    |      0|  0|  14|          10|          10|
-    |tmp_109_fu_409_p2               |     +    |      0|  0|  19|          14|          14|
-    |tmp_110_fu_506_p2               |     +    |      0|  0|  14|          10|          10|
-    |tmp_95_mid2_v_fu_380_p2         |     +    |      0|  0|  15|           7|           7|
-    |exitcond5_fu_320_p2             |   icmp   |      0|  0|   9|           4|           4|
+    |tmp_26_mid2_v_fu_380_p2         |     +    |      0|  0|  15|           7|           7|
+    |tmp_32_fu_479_p2                |     +    |      0|  0|  14|          10|          10|
+    |tmp_34_fu_409_p2                |     +    |      0|  0|  19|          14|          14|
+    |tmp_35_fu_506_p2                |     +    |      0|  0|  14|          10|          10|
+    |exitcond4_fu_320_p2             |   icmp   |      0|  0|   9|           4|           4|
     |exitcond_flatten8_fu_268_p2     |   icmp   |      0|  0|  11|           7|           8|
     |exitcond_flatten_fu_337_p2      |   icmp   |      0|  0|  11|           7|           8|
     |exitcond_fu_485_p2              |   icmp   |      0|  0|   9|           4|           4|
-    |tmp_107_fu_355_p2               |   icmp   |      0|  0|  11|           4|           5|
-    |tmp_92_fu_511_p2                |   icmp   |      0|  0|  11|           4|           5|
+    |tmp_27_fu_511_p2                |   icmp   |      0|  0|  11|           4|           5|
+    |tmp_2_fu_355_p2                 |   icmp   |      0|  0|  11|           4|           5|
     |ap_block_state1                 |    or    |      0|  0|   2|           1|           1|
     |i_op_assign_mid2_fu_294_p3      |  select  |      0|  0|   7|           1|           1|
-    |t_V_3_mid2_fu_361_p3            |  select  |      0|  0|   4|           1|           1|
-    |tmp_93_fu_517_p3                |  select  |      0|  0|   4|           1|           1|
-    |tmp_95_mid2_v_v_v_fu_369_p3     |  select  |      0|  0|   4|           1|           4|
+    |t_V_1_mid2_fu_361_p3            |  select  |      0|  0|   4|           1|           1|
+    |tmp_26_mid2_v_v_v_fu_369_p3     |  select  |      0|  0|   4|           1|           4|
+    |tmp_28_fu_517_p3                |  select  |      0|  0|   4|           1|           1|
     |tmp_mid2_v_v_v_fu_302_p3        |  select  |      0|  0|   7|           1|           7|
     |ap_enable_pp0                   |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_pp1                   |    xor   |      0|  0|   2|           1|           2|
@@ -142,7 +142,7 @@
     |ap_enable_reg_pp1_iter3                  |   9|          2|    1|          2|
     |ap_phi_mux_indvar_flatten_phi_fu_215_p4  |   9|          2|    7|         14|
     |ap_phi_mux_k1_phi_fu_261_p4              |   9|          2|    4|          8|
-    |ap_phi_mux_t_V_3_phi_fu_237_p4           |   9|          2|    4|          8|
+    |ap_phi_mux_t_V_1_phi_fu_237_p4           |   9|          2|    4|          8|
     |ap_phi_mux_t_V_phi_fu_226_p4             |   9|          2|    4|          8|
     |bin_vote_V_address0                      |  27|          5|    4|         20|
     |bin_vote_V_d0                            |  15|          3|   32|         96|
@@ -152,8 +152,8 @@
     |indvar_flatten_reg_211                   |   9|          2|    7|         14|
     |k1_reg_257                               |   9|          2|    4|          8|
     |k_reg_200                                |   9|          2|    4|          8|
-    |p_Val2_8_reg_244                         |   9|          2|   64|        128|
-    |t_V_3_reg_233                            |   9|          2|    4|          8|
+    |p_Val2_2_reg_244                         |   9|          2|   64|        128|
+    |t_V_1_reg_233                            |   9|          2|    4|          8|
     |t_V_reg_222                              |   9|          2|    4|          8|
     +-----------------------------------------+----+-----------+-----+-----------+
     |Total                                    | 245|         52|  168|        388|
@@ -187,16 +187,16 @@
     |indvar_flatten_reg_211                  |   7|   0|    7|          0|
     |jj_V_reg_655                            |   4|   0|    4|          0|
     |k1_reg_257                              |   4|   0|    4|          0|
-    |k_3_reg_684                             |   4|   0|    4|          0|
+    |k_2_reg_684                             |   4|   0|    4|          0|
     |k_reg_200                               |   4|   0|    4|          0|
-    |p_Val2_1_reg_709                        |  64|   0|   64|          0|
-    |p_Val2_8_reg_244                        |  64|   0|   64|          0|
-    |t_V_3_mid2_reg_633                      |   4|   0|    4|          0|
-    |t_V_3_reg_233                           |   4|   0|    4|          0|
+    |p_Val2_2_reg_244                        |  64|   0|   64|          0|
+    |p_Val2_4_reg_709                        |  64|   0|   64|          0|
+    |t_V_1_mid2_reg_633                      |   4|   0|    4|          0|
+    |t_V_1_reg_233                           |   4|   0|    4|          0|
     |t_V_reg_222                             |   4|   0|    4|          0|
-    |tmp_106_reg_670                         |  10|   0|   10|          0|
-    |tmp_110_reg_689                         |  10|   0|   10|          0|
-    |tmp_95_mid2_v_v_v_reg_639               |   4|   0|    4|          0|
+    |tmp_26_mid2_v_v_v_reg_639               |   4|   0|    4|          0|
+    |tmp_32_reg_670                          |  10|   0|   10|          0|
+    |tmp_35_reg_689                          |  10|   0|   10|          0|
     |tmp_mid2_v_reg_609                      |   3|   0|    3|          0|
     |tmp_mid2_v_v_v_reg_603                  |   7|   0|    7|          0|
     |exitcond_reg_680                        |  64|  32|    1|          0|
@@ -278,8 +278,8 @@ IsGatedGlobalClock: 0
 2 --> 
 	3  / (!exitcond_flatten8)
 3 --> 
-	3  / (!exitcond5)
-	4  / (exitcond5)
+	3  / (!exitcond4)
+	4  / (exitcond4)
 4 --> 
 	8  / (exitcond_flatten)
 	5  / (!exitcond_flatten)
@@ -306,140 +306,140 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
  <State 1> : 2.32ns
-ST_1 : Operation 14 [1/1] (2.32ns)   --->   "%bin_vote_V = alloca [9 x i32], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:68]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:62]
-ST_1 : Operation 16 [1/1] (1.76ns)   --->   "br label %.preheader230" [hog_svm_fpga/xillybus_wrapper.cpp:64]
+ST_1 : Operation 14 [1/1] (2.32ns)   --->   "%bin_vote_V = alloca [9 x i32], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:72]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:66]
+ST_1 : Operation 16 [1/1] (1.76ns)   --->   "br label %.preheader230" [hog_svm_fpga/xillybus_wrapper.cpp:68]
 
  <State 2> : 2.86ns
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%indvar_flatten6 = phi i7 [ 0, %0 ], [ %indvar_flatten_next7, %3 ]"
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%i_op_assign_1 = phi i7 [ 0, %0 ], [ %tmp_mid2_v_v_v, %3 ]" [hog_svm_fpga/xillybus_wrapper.cpp:95]
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%i_op_assign_1 = phi i7 [ 0, %0 ], [ %tmp_mid2_v_v_v, %3 ]" [hog_svm_fpga/xillybus_wrapper.cpp:99]
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%i_op_assign = phi i7 [ 0, %0 ], [ %j, %3 ]"
 ST_2 : Operation 20 [1/1] (1.48ns)   --->   "%exitcond_flatten8 = icmp eq i7 %indvar_flatten6, -64"   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"
-ST_2 : Operation 22 [1/1] (1.87ns)   --->   "%indvar_flatten_next7 = add i7 %indvar_flatten6, 1"   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (1.87ns)   --->   "%indvar_flatten_next7 = add i7 %indvar_flatten6, 1"   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten8, label %4, label %.preheader230.preheader"
-ST_2 : Operation 24 [1/1] (1.87ns)   --->   "%i = add i7 %i_op_assign_1, 8" [hog_svm_fpga/xillybus_wrapper.cpp:64]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_117 = call i1 @_ssdm_op_BitSelect.i1.i7.i32(i7 %i_op_assign, i32 6)" [hog_svm_fpga/xillybus_wrapper.cpp:66]
-ST_2 : Operation 26 [1/1] (0.99ns)   --->   "%i_op_assign_mid2 = select i1 %tmp_117, i7 0, i7 %i_op_assign" [hog_svm_fpga/xillybus_wrapper.cpp:66]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.99ns)   --->   "%tmp_mid2_v_v_v = select i1 %tmp_117, i7 %i, i7 %i_op_assign_1" [hog_svm_fpga/xillybus_wrapper.cpp:95]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_mid2_v = call i3 @_ssdm_op_PartSelect.i3.i7.i32.i32(i7 %tmp_mid2_v_v_v, i32 3, i32 5)" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_2 : Operation 29 [1/1] (1.76ns)   --->   "br label %.preheader227" [hog_svm_fpga/xillybus_wrapper.cpp:71]
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "ret void" [hog_svm_fpga/xillybus_wrapper.cpp:102]
+ST_2 : Operation 24 [1/1] (1.87ns)   --->   "%i = add i7 %i_op_assign_1, 8" [hog_svm_fpga/xillybus_wrapper.cpp:68]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_30 = call i1 @_ssdm_op_BitSelect.i1.i7.i32(i7 %i_op_assign, i32 6)" [hog_svm_fpga/xillybus_wrapper.cpp:70]
+ST_2 : Operation 26 [1/1] (0.99ns)   --->   "%i_op_assign_mid2 = select i1 %tmp_30, i7 0, i7 %i_op_assign" [hog_svm_fpga/xillybus_wrapper.cpp:70]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (0.99ns)   --->   "%tmp_mid2_v_v_v = select i1 %tmp_30, i7 %i, i7 %i_op_assign_1" [hog_svm_fpga/xillybus_wrapper.cpp:99]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_mid2_v = call i3 @_ssdm_op_PartSelect.i3.i7.i32.i32(i7 %tmp_mid2_v_v_v, i32 3, i32 5)" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_2 : Operation 29 [1/1] (1.76ns)   --->   "br label %.preheader227" [hog_svm_fpga/xillybus_wrapper.cpp:75]
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "ret void" [hog_svm_fpga/xillybus_wrapper.cpp:106]
 
  <State 3> : 2.32ns
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%k = phi i4 [ %k_2, %1 ], [ 0, %.preheader230.preheader ]"
-ST_3 : Operation 32 [1/1] (1.30ns)   --->   "%exitcond5 = icmp eq i4 %k, -7" [hog_svm_fpga/xillybus_wrapper.cpp:71]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9)"
-ST_3 : Operation 34 [1/1] (1.73ns)   --->   "%k_2 = add i4 %k, 1" [hog_svm_fpga/xillybus_wrapper.cpp:71]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "br i1 %exitcond5, label %.preheader226.preheader, label %1" [hog_svm_fpga/xillybus_wrapper.cpp:71]
-ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_83 = zext i4 %k to i64" [hog_svm_fpga/xillybus_wrapper.cpp:73]
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%bin_vote_V_addr = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_83" [hog_svm_fpga/xillybus_wrapper.cpp:73]
-ST_3 : Operation 38 [1/1] (2.32ns)   --->   "store i32 0, i32* %bin_vote_V_addr, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:73]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "br label %.preheader227" [hog_svm_fpga/xillybus_wrapper.cpp:71]
-ST_3 : Operation 40 [1/1] (1.76ns)   --->   "br label %.preheader226" [hog_svm_fpga/xillybus_wrapper.cpp:80]
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%k = phi i4 [ %k_1, %1 ], [ 0, %.preheader230.preheader ]"
+ST_3 : Operation 32 [1/1] (1.30ns)   --->   "%exitcond4 = icmp eq i4 %k, -7" [hog_svm_fpga/xillybus_wrapper.cpp:75]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%empty_19 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9)"
+ST_3 : Operation 34 [1/1] (1.73ns)   --->   "%k_1 = add i4 %k, 1" [hog_svm_fpga/xillybus_wrapper.cpp:75]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "br i1 %exitcond4, label %.preheader226.preheader, label %1" [hog_svm_fpga/xillybus_wrapper.cpp:75]
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%tmp_23 = zext i4 %k to i64" [hog_svm_fpga/xillybus_wrapper.cpp:77]
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%bin_vote_V_addr = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_23" [hog_svm_fpga/xillybus_wrapper.cpp:77]
+ST_3 : Operation 38 [1/1] (2.32ns)   --->   "store i32 0, i32* %bin_vote_V_addr, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:77]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "br label %.preheader227" [hog_svm_fpga/xillybus_wrapper.cpp:75]
+ST_3 : Operation 40 [1/1] (1.76ns)   --->   "br label %.preheader226" [hog_svm_fpga/xillybus_wrapper.cpp:84]
 
  <State 4> : 2.76ns
 ST_4 : Operation 41 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i7 [ %indvar_flatten_next, %.preheader23 ], [ 0, %.preheader226.preheader ]"
-ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%t_V = phi i4 [ %tmp_95_mid2_v_v_v, %.preheader23 ], [ 0, %.preheader226.preheader ]" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%t_V_3 = phi i4 [ %jj_V, %.preheader23 ], [ 0, %.preheader226.preheader ]"
+ST_4 : Operation 42 [1/1] (0.00ns)   --->   "%t_V = phi i4 [ %tmp_26_mid2_v_v_v, %.preheader23 ], [ 0, %.preheader226.preheader ]" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%t_V_1 = phi i4 [ %jj_V, %.preheader23 ], [ 0, %.preheader226.preheader ]"
 ST_4 : Operation 44 [1/1] (1.48ns)   --->   "%exitcond_flatten = icmp eq i7 %indvar_flatten, -64"   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"
-ST_4 : Operation 46 [1/1] (1.87ns)   --->   "%indvar_flatten_next = add i7 %indvar_flatten, 1"   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%empty_20 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64)"
+ST_4 : Operation 46 [1/1] (1.87ns)   --->   "%indvar_flatten_next = add i7 %indvar_flatten, 1"   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 47 [1/1] (0.00ns)   --->   "br i1 %exitcond_flatten, label %.preheader.preheader, label %.preheader23"
-ST_4 : Operation 48 [1/1] (1.73ns)   --->   "%ii_V = add i4 %t_V, 1" [hog_svm_fpga/xillybus_wrapper.cpp:80]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 49 [1/1] (1.30ns)   --->   "%tmp_107 = icmp eq i4 %t_V_3, -8" [hog_svm_fpga/xillybus_wrapper.cpp:82]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 50 [1/1] (1.02ns)   --->   "%t_V_3_mid2 = select i1 %tmp_107, i4 0, i4 %t_V_3" [hog_svm_fpga/xillybus_wrapper.cpp:82]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_4 : Operation 51 [1/1] (1.02ns)   --->   "%tmp_95_mid2_v_v_v = select i1 %tmp_107, i4 %ii_V, i4 %t_V" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (1.73ns)   --->   "%ii_V = add i4 %t_V, 1" [hog_svm_fpga/xillybus_wrapper.cpp:84]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (1.30ns)   --->   "%tmp_2 = icmp eq i4 %t_V_1, -8" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (1.02ns)   --->   "%t_V_1_mid2 = select i1 %tmp_2, i4 0, i4 %t_V_1" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 51 [1/1] (1.02ns)   --->   "%tmp_26_mid2_v_v_v = select i1 %tmp_2, i4 %ii_V, i4 %t_V" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
  <State 5> : 6.80ns
-ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_95_mid2_v_v = zext i4 %tmp_95_mid2_v_v_v to i7" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 53 [1/1] (1.87ns)   --->   "%tmp_95_mid2_v = add i7 %tmp_mid2_v_v_v, %tmp_95_mid2_v_v" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_108 = call i13 @_ssdm_op_BitConcatenate.i13.i7.i6(i7 %tmp_95_mid2_v, i6 0)" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_114_cast = zext i13 %tmp_108 to i14" [hog_svm_fpga/xillybus_wrapper.cpp:83]
-ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%rhs_V_cast = zext i4 %t_V_3_mid2 to i7" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 57 [1/1] (1.87ns)   --->   "%r_V = add i7 %i_op_assign_mid2, %rhs_V_cast" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_87_cast = zext i7 %r_V to i14" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 59 [1/1] (1.67ns)   --->   "%tmp_109 = add i14 %tmp_87_cast, %tmp_114_cast" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_115_cast = zext i14 %tmp_109 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%grad_vote_magnitude_2 = getelementptr [4096 x i26]* %grad_vote_magnitude_s, i64 0, i64 %tmp_115_cast" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%grad_vote_bin_V_addr = getelementptr [4096 x i4]* %grad_vote_bin_V, i64 0, i64 %tmp_115_cast" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_5 : Operation 63 [2/2] (3.25ns)   --->   "%grad_vote_magnitude_3 = load i26* %grad_vote_magnitude_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_5 : Operation 64 [2/2] (3.25ns)   --->   "%grad_vote_bin_V_load = load i4* %grad_vote_bin_V_addr, align 1" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_5 : Operation 65 [1/1] (1.73ns)   --->   "%jj_V = add i4 %t_V_3_mid2, 1" [hog_svm_fpga/xillybus_wrapper.cpp:82]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_26_mid2_v_v = zext i4 %tmp_26_mid2_v_v_v to i7" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 53 [1/1] (1.87ns)   --->   "%tmp_26_mid2_v = add i7 %tmp_mid2_v_v_v, %tmp_26_mid2_v_v" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_33 = call i13 @_ssdm_op_BitConcatenate.i13.i7.i6(i7 %tmp_26_mid2_v, i6 0)" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_38_cast = zext i13 %tmp_33 to i14" [hog_svm_fpga/xillybus_wrapper.cpp:87]
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%rhs_V_cast = zext i4 %t_V_1_mid2 to i7" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 57 [1/1] (1.87ns)   --->   "%r_V = add i7 %i_op_assign_mid2, %rhs_V_cast" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_24_cast = zext i7 %r_V to i14" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 59 [1/1] (1.67ns)   --->   "%tmp_34 = add i14 %tmp_24_cast, %tmp_38_cast" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%tmp_39_cast = zext i14 %tmp_34 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%grad_vote_magnitude_2 = getelementptr [4096 x i26]* %grad_vote_magnitude_s, i64 0, i64 %tmp_39_cast" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%grad_vote_bin_V_addr = getelementptr [4096 x i4]* %grad_vote_bin_V, i64 0, i64 %tmp_39_cast" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_5 : Operation 63 [2/2] (3.25ns)   --->   "%grad_vote_magnitude_3 = load i26* %grad_vote_magnitude_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_5 : Operation 64 [2/2] (3.25ns)   --->   "%grad_vote_bin_V_load = load i4* %grad_vote_bin_V_addr, align 1" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_5 : Operation 65 [1/1] (1.73ns)   --->   "%jj_V = add i4 %t_V_1_mid2, 1" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
  <State 6> : 5.58ns
-ST_6 : Operation 66 [1/2] (3.25ns)   --->   "%grad_vote_magnitude_3 = load i26* %grad_vote_magnitude_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_6 : Operation 67 [1/2] (3.25ns)   --->   "%grad_vote_bin_V_load = load i4* %grad_vote_bin_V_addr, align 1" [hog_svm_fpga/xillybus_wrapper.cpp:85]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_88 = zext i4 %grad_vote_bin_V_load to i64" [hog_svm_fpga/xillybus_wrapper.cpp:86]
-ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%bin_vote_V_addr_3 = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_88" [hog_svm_fpga/xillybus_wrapper.cpp:86]
-ST_6 : Operation 70 [2/2] (2.32ns)   --->   "%p_Val2_42 = load i32* %bin_vote_V_addr_3, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_6 : Operation 66 [1/2] (3.25ns)   --->   "%grad_vote_magnitude_3 = load i26* %grad_vote_magnitude_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_6 : Operation 67 [1/2] (3.25ns)   --->   "%grad_vote_bin_V_load = load i4* %grad_vote_bin_V_addr, align 1" [hog_svm_fpga/xillybus_wrapper.cpp:89]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_25 = zext i4 %grad_vote_bin_V_load to i64" [hog_svm_fpga/xillybus_wrapper.cpp:90]
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%bin_vote_V_addr_3 = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_25" [hog_svm_fpga/xillybus_wrapper.cpp:90]
+ST_6 : Operation 70 [2/2] (2.32ns)   --->   "%p_Val2_8 = load i32* %bin_vote_V_addr_3, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:90]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
  <State 7> : 7.20ns
-ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_86 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str45)" [hog_svm_fpga/xillybus_wrapper.cpp:83]
-ST_7 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:84]
-ST_7 : Operation 73 [1/1] (0.00ns)   --->   "%p_Val2_43 = sext i26 %grad_vote_magnitude_3 to i32" [hog_svm_fpga/xillybus_wrapper.cpp:85]
-ST_7 : Operation 74 [1/2] (2.32ns)   --->   "%p_Val2_42 = load i32* %bin_vote_V_addr_3, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_7 : Operation 75 [1/1] (2.55ns)   --->   "%p_Val2_s = add i32 %p_Val2_43, %p_Val2_42" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 76 [1/1] (2.32ns)   --->   "store i32 %p_Val2_s, i32* %bin_vote_V_addr_3, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:86]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str45, i32 %tmp_86)" [hog_svm_fpga/xillybus_wrapper.cpp:87]
-ST_7 : Operation 78 [1/1] (0.00ns)   --->   "br label %.preheader226" [hog_svm_fpga/xillybus_wrapper.cpp:82]
+ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_21 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str4)" [hog_svm_fpga/xillybus_wrapper.cpp:87]
+ST_7 : Operation 72 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:88]
+ST_7 : Operation 73 [1/1] (0.00ns)   --->   "%p_Val2_9 = zext i26 %grad_vote_magnitude_3 to i32" [hog_svm_fpga/xillybus_wrapper.cpp:89]
+ST_7 : Operation 74 [1/2] (2.32ns)   --->   "%p_Val2_8 = load i32* %bin_vote_V_addr_3, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:90]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_7 : Operation 75 [1/1] (2.55ns)   --->   "%p_Val2_s = add i32 %p_Val2_9, %p_Val2_8" [hog_svm_fpga/xillybus_wrapper.cpp:90]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 76 [1/1] (2.32ns)   --->   "store i32 %p_Val2_s, i32* %bin_vote_V_addr_3, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:90]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%empty_21 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str4, i32 %tmp_21)" [hog_svm_fpga/xillybus_wrapper.cpp:91]
+ST_7 : Operation 78 [1/1] (0.00ns)   --->   "br label %.preheader226" [hog_svm_fpga/xillybus_wrapper.cpp:86]
 
  <State 8> : 1.82ns
-ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_85 = call i3 @_ssdm_op_PartSelect.i3.i7.i32.i32(i7 %i_op_assign_mid2, i32 3, i32 5)" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%tmp = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tmp_mid2_v, i3 %tmp_85)" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_s = zext i6 %tmp to i64" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_110_cast = zext i6 %tmp to i10" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_105 = call i9 @_ssdm_op_BitConcatenate.i9.i3.i3.i3(i3 %tmp_mid2_v, i3 %tmp_85, i3 0)" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%p_shl_cast = zext i9 %tmp_105 to i10" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_8 : Operation 85 [1/1] (1.82ns)   --->   "%tmp_106 = add i10 %p_shl_cast, %tmp_110_cast" [hog_svm_fpga/xillybus_wrapper.cpp:95]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%cells_mag_sq_V_addr = getelementptr [64 x i64]* %cells_mag_sq_V, i64 0, i64 %tmp_s" [hog_svm_fpga/xillybus_wrapper.cpp:99]
-ST_8 : Operation 87 [1/1] (1.76ns)   --->   "br label %.preheader" [hog_svm_fpga/xillybus_wrapper.cpp:91]
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%tmp_15 = call i3 @_ssdm_op_PartSelect.i3.i7.i32.i32(i7 %i_op_assign_mid2, i32 3, i32 5)" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%tmp = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tmp_mid2_v, i3 %tmp_15)" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%tmp_s = zext i6 %tmp to i64" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_8 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_34_cast = zext i6 %tmp to i10" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_31 = call i9 @_ssdm_op_BitConcatenate.i9.i3.i3.i3(i3 %tmp_mid2_v, i3 %tmp_15, i3 0)" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%p_shl_cast = zext i9 %tmp_31 to i10" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_8 : Operation 85 [1/1] (1.82ns)   --->   "%tmp_32 = add i10 %p_shl_cast, %tmp_34_cast" [hog_svm_fpga/xillybus_wrapper.cpp:99]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 86 [1/1] (0.00ns)   --->   "%cells_mag_sq_V_addr = getelementptr [64 x i64]* %cells_mag_sq_V, i64 0, i64 %tmp_s" [hog_svm_fpga/xillybus_wrapper.cpp:103]
+ST_8 : Operation 87 [1/1] (1.76ns)   --->   "br label %.preheader" [hog_svm_fpga/xillybus_wrapper.cpp:95]
 
  <State 9> : 5.08ns
-ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%p_Val2_8 = phi i64 [ 0, %.preheader.preheader ], [ %mag_sq_V, %2 ]"
-ST_9 : Operation 89 [1/1] (0.00ns)   --->   "%k1 = phi i4 [ 0, %.preheader.preheader ], [ %k_3, %2 ]"
-ST_9 : Operation 90 [1/1] (1.30ns)   --->   "%exitcond = icmp eq i4 %k1, -7" [hog_svm_fpga/xillybus_wrapper.cpp:91]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9)"
-ST_9 : Operation 92 [1/1] (1.73ns)   --->   "%k_3 = add i4 %k1, 1" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 93 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [hog_svm_fpga/xillybus_wrapper.cpp:91]
-ST_9 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_90 = zext i4 %k1 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_9 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_90_cast = zext i4 %k1 to i10" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_9 : Operation 96 [1/1] (1.73ns)   --->   "%tmp_110 = add i10 %tmp_106, %tmp_90_cast" [hog_svm_fpga/xillybus_wrapper.cpp:95]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 97 [1/1] (0.00ns)   --->   "%bin_vote_V_addr_1 = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_90" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_9 : Operation 98 [2/2] (2.32ns)   --->   "%bin_vote_V_load = load i32* %bin_vote_V_addr_1, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_9 : Operation 99 [1/1] (1.30ns)   --->   "%tmp_92 = icmp eq i4 %k1, -8" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_9 : Operation 100 [1/1] (1.02ns)   --->   "%tmp_93 = select i1 %tmp_92, i4 0, i4 %k_3" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_9 : Operation 101 [1/1] (0.00ns)   --->   "%tmp_94 = zext i4 %tmp_93 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%bin_vote_V_addr_2 = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_94" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_9 : Operation 103 [2/2] (2.32ns)   --->   "%bin_vote_V_load_1 = load i32* %bin_vote_V_addr_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%p_Val2_2 = phi i64 [ 0, %.preheader.preheader ], [ %mag_sq_V, %2 ]"
+ST_9 : Operation 89 [1/1] (0.00ns)   --->   "%k1 = phi i4 [ 0, %.preheader.preheader ], [ %k_2, %2 ]"
+ST_9 : Operation 90 [1/1] (1.30ns)   --->   "%exitcond = icmp eq i4 %k1, -7" [hog_svm_fpga/xillybus_wrapper.cpp:95]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%empty_22 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9)"
+ST_9 : Operation 92 [1/1] (1.73ns)   --->   "%k_2 = add i4 %k1, 1" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 93 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [hog_svm_fpga/xillybus_wrapper.cpp:95]
+ST_9 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_26 = zext i4 %k1 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_9 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_26_cast = zext i4 %k1 to i10" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_9 : Operation 96 [1/1] (1.73ns)   --->   "%tmp_35 = add i10 %tmp_32, %tmp_26_cast" [hog_svm_fpga/xillybus_wrapper.cpp:99]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 97 [1/1] (0.00ns)   --->   "%bin_vote_V_addr_1 = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_26" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_9 : Operation 98 [2/2] (2.32ns)   --->   "%bin_vote_V_load = load i32* %bin_vote_V_addr_1, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_9 : Operation 99 [1/1] (1.30ns)   --->   "%tmp_27 = icmp eq i4 %k1, -8" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.36> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 100 [1/1] (1.02ns)   --->   "%tmp_28 = select i1 %tmp_27, i4 0, i4 %k_2" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_9 : Operation 101 [1/1] (0.00ns)   --->   "%tmp_29 = zext i4 %tmp_28 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%bin_vote_V_addr_2 = getelementptr [9 x i32]* %bin_vote_V, i64 0, i64 %tmp_29" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_9 : Operation 103 [2/2] (2.32ns)   --->   "%bin_vote_V_load_1 = load i32* %bin_vote_V_addr_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
  <State 10> : 8.10ns
-ST_10 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_116_cast = zext i10 %tmp_110 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_10 : Operation 105 [1/1] (0.00ns)   --->   "%cells_bin_V_addr = getelementptr [576 x i32]* %cells_bin_V, i64 0, i64 %tmp_116_cast" [hog_svm_fpga/xillybus_wrapper.cpp:95]
-ST_10 : Operation 106 [1/2] (2.32ns)   --->   "%bin_vote_V_load = load i32* %bin_vote_V_addr_1, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_10 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_91 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %bin_vote_V_load, i32 1, i32 31)" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_10 : Operation 108 [1/1] (0.00ns)   --->   "%p_Val2_s_33 = sext i31 %tmp_91 to i32" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_10 : Operation 109 [1/2] (2.32ns)   --->   "%bin_vote_V_load_1 = load i32* %bin_vote_V_addr_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_10 : Operation 110 [1/1] (0.00ns)   --->   "%tmp_95 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %bin_vote_V_load_1, i32 1, i32 31)" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_10 : Operation 111 [1/1] (0.00ns)   --->   "%p_Val2_9 = sext i31 %tmp_95 to i32" [hog_svm_fpga/xillybus_wrapper.cpp:94]
-ST_10 : Operation 112 [1/1] (2.52ns)   --->   "%addconv = add nsw i32 %p_Val2_9, %p_Val2_s_33" [hog_svm_fpga/xillybus_wrapper.cpp:94]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_10 : Operation 113 [1/1] (3.25ns)   --->   "store i32 %addconv, i32* %cells_bin_V_addr, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:95]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_10 : Operation 104 [1/1] (0.00ns)   --->   "%tmp_40_cast = zext i10 %tmp_35 to i64" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_10 : Operation 105 [1/1] (0.00ns)   --->   "%cells_bin_V_addr = getelementptr [576 x i32]* %cells_bin_V, i64 0, i64 %tmp_40_cast" [hog_svm_fpga/xillybus_wrapper.cpp:99]
+ST_10 : Operation 106 [1/2] (2.32ns)   --->   "%bin_vote_V_load = load i32* %bin_vote_V_addr_1, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_10 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_18 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %bin_vote_V_load, i32 1, i32 31)" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_10 : Operation 108 [1/1] (0.00ns)   --->   "%p_Val2_s_23 = sext i31 %tmp_18 to i32" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_10 : Operation 109 [1/2] (2.32ns)   --->   "%bin_vote_V_load_1 = load i32* %bin_vote_V_addr_2, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_10 : Operation 110 [1/1] (0.00ns)   --->   "%tmp_20 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %bin_vote_V_load_1, i32 1, i32 31)" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_10 : Operation 111 [1/1] (0.00ns)   --->   "%p_Val2_3 = sext i31 %tmp_20 to i32" [hog_svm_fpga/xillybus_wrapper.cpp:98]
+ST_10 : Operation 112 [1/1] (2.52ns)   --->   "%addconv = add nsw i32 %p_Val2_3, %p_Val2_s_23" [hog_svm_fpga/xillybus_wrapper.cpp:98]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 113 [1/1] (3.25ns)   --->   "store i32 %addconv, i32* %cells_bin_V_addr, align 4" [hog_svm_fpga/xillybus_wrapper.cpp:99]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
 
  <State 11> : 8.51ns
-ST_11 : Operation 114 [1/1] (0.00ns)   --->   "%OP1_V = sext i32 %addconv to i64" [hog_svm_fpga/xillybus_wrapper.cpp:96]
-ST_11 : Operation 115 [1/1] (8.51ns)   --->   "%p_Val2_1 = mul nsw i64 %OP1_V, %OP1_V" [hog_svm_fpga/xillybus_wrapper.cpp:96]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 114 [1/1] (0.00ns)   --->   "%OP1_V = sext i32 %addconv to i64" [hog_svm_fpga/xillybus_wrapper.cpp:100]
+ST_11 : Operation 115 [1/1] (8.51ns)   --->   "%p_Val2_4 = mul nsw i64 %OP1_V, %OP1_V" [hog_svm_fpga/xillybus_wrapper.cpp:100]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
  <State 12> : 3.52ns
-ST_12 : Operation 116 [1/1] (0.00ns)   --->   "%tmp_89 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)" [hog_svm_fpga/xillybus_wrapper.cpp:92]
-ST_12 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:93]
-ST_12 : Operation 118 [1/1] (3.52ns)   --->   "%mag_sq_V = add i64 %p_Val2_8, %p_Val2_1" [hog_svm_fpga/xillybus_wrapper.cpp:96]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp_89)" [hog_svm_fpga/xillybus_wrapper.cpp:97]
-ST_12 : Operation 120 [1/1] (0.00ns)   --->   "br label %.preheader" [hog_svm_fpga/xillybus_wrapper.cpp:91]
+ST_12 : Operation 116 [1/1] (0.00ns)   --->   "%tmp_16 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)" [hog_svm_fpga/xillybus_wrapper.cpp:96]
+ST_12 : Operation 117 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:97]
+ST_12 : Operation 118 [1/1] (3.52ns)   --->   "%mag_sq_V = add i64 %p_Val2_2, %p_Val2_4" [hog_svm_fpga/xillybus_wrapper.cpp:100]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp_16)" [hog_svm_fpga/xillybus_wrapper.cpp:101]
+ST_12 : Operation 120 [1/1] (0.00ns)   --->   "br label %.preheader" [hog_svm_fpga/xillybus_wrapper.cpp:95]
 
  <State 13> : 3.25ns
-ST_13 : Operation 121 [1/1] (3.25ns)   --->   "store i64 %p_Val2_8, i64* %cells_mag_sq_V_addr, align 8" [hog_svm_fpga/xillybus_wrapper.cpp:99]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
-ST_13 : Operation 122 [1/1] (1.87ns)   --->   "%j = add i7 %i_op_assign_mid2, 8" [hog_svm_fpga/xillybus_wrapper.cpp:66]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_13 : Operation 123 [1/1] (0.00ns)   --->   "br label %.preheader230" [hog_svm_fpga/xillybus_wrapper.cpp:66]
+ST_13 : Operation 121 [1/1] (3.25ns)   --->   "store i64 %p_Val2_2, i64* %cells_mag_sq_V_addr, align 8" [hog_svm_fpga/xillybus_wrapper.cpp:103]   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 9> <RAM>
+ST_13 : Operation 122 [1/1] (1.87ns)   --->   "%j = add i7 %i_op_assign_mid2, 8" [hog_svm_fpga/xillybus_wrapper.cpp:70]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 123 [1/1] (0.00ns)   --->   "br label %.preheader230" [hog_svm_fpga/xillybus_wrapper.cpp:70]
 
 
 ============================================================
@@ -474,96 +474,96 @@ empty                 (speclooptripcount) [ 00000000000000]
 indvar_flatten_next7  (add              ) [ 01111111111111]
 StgValue_23           (br               ) [ 00000000000000]
 i                     (add              ) [ 00000000000000]
-tmp_117               (bitselect        ) [ 00000000000000]
+tmp_30                (bitselect        ) [ 00000000000000]
 i_op_assign_mid2      (select           ) [ 00011111111111]
 tmp_mid2_v_v_v        (select           ) [ 01111111111111]
 tmp_mid2_v            (partselect       ) [ 00011111100000]
 StgValue_29           (br               ) [ 00111111111111]
 StgValue_30           (ret              ) [ 00000000000000]
 k                     (phi              ) [ 00010000000000]
-exitcond5             (icmp             ) [ 00111111111111]
-empty_29              (speclooptripcount) [ 00000000000000]
-k_2                   (add              ) [ 00111111111111]
+exitcond4             (icmp             ) [ 00111111111111]
+empty_19              (speclooptripcount) [ 00000000000000]
+k_1                   (add              ) [ 00111111111111]
 StgValue_35           (br               ) [ 00000000000000]
-tmp_83                (zext             ) [ 00000000000000]
+tmp_23                (zext             ) [ 00000000000000]
 bin_vote_V_addr       (getelementptr    ) [ 00000000000000]
 StgValue_38           (store            ) [ 00000000000000]
 StgValue_39           (br               ) [ 00111111111111]
 StgValue_40           (br               ) [ 00111111111111]
 indvar_flatten        (phi              ) [ 00001000000000]
 t_V                   (phi              ) [ 00001000000000]
-t_V_3                 (phi              ) [ 00001000000000]
+t_V_1                 (phi              ) [ 00001000000000]
 exitcond_flatten      (icmp             ) [ 00111111111111]
-empty_30              (speclooptripcount) [ 00000000000000]
+empty_20              (speclooptripcount) [ 00000000000000]
 indvar_flatten_next   (add              ) [ 00111111111111]
 StgValue_47           (br               ) [ 00000000000000]
 ii_V                  (add              ) [ 00000000000000]
-tmp_107               (icmp             ) [ 00000000000000]
-t_V_3_mid2            (select           ) [ 00000100000000]
-tmp_95_mid2_v_v_v     (select           ) [ 00111111111111]
-tmp_95_mid2_v_v       (zext             ) [ 00000000000000]
-tmp_95_mid2_v         (add              ) [ 00000000000000]
-tmp_108               (bitconcatenate   ) [ 00000000000000]
-tmp_114_cast          (zext             ) [ 00000000000000]
+tmp_2                 (icmp             ) [ 00000000000000]
+t_V_1_mid2            (select           ) [ 00000100000000]
+tmp_26_mid2_v_v_v     (select           ) [ 00111111111111]
+tmp_26_mid2_v_v       (zext             ) [ 00000000000000]
+tmp_26_mid2_v         (add              ) [ 00000000000000]
+tmp_33                (bitconcatenate   ) [ 00000000000000]
+tmp_38_cast           (zext             ) [ 00000000000000]
 rhs_V_cast            (zext             ) [ 00000000000000]
 r_V                   (add              ) [ 00000000000000]
-tmp_87_cast           (zext             ) [ 00000000000000]
-tmp_109               (add              ) [ 00000000000000]
-tmp_115_cast          (zext             ) [ 00000000000000]
+tmp_24_cast           (zext             ) [ 00000000000000]
+tmp_34                (add              ) [ 00000000000000]
+tmp_39_cast           (zext             ) [ 00000000000000]
 grad_vote_magnitude_2 (getelementptr    ) [ 00001010000000]
 grad_vote_bin_V_addr  (getelementptr    ) [ 00001010000000]
 jj_V                  (add              ) [ 00111111111111]
 grad_vote_magnitude_3 (load             ) [ 00000101000000]
 grad_vote_bin_V_load  (load             ) [ 00000000000000]
-tmp_88                (zext             ) [ 00000000000000]
+tmp_25                (zext             ) [ 00000000000000]
 bin_vote_V_addr_3     (getelementptr    ) [ 00000101000000]
-tmp_86                (specregionbegin  ) [ 00000000000000]
+tmp_21                (specregionbegin  ) [ 00000000000000]
 StgValue_72           (specpipeline     ) [ 00000000000000]
-p_Val2_43             (sext             ) [ 00000000000000]
-p_Val2_42             (load             ) [ 00000000000000]
+p_Val2_9              (zext             ) [ 00000000000000]
+p_Val2_8              (load             ) [ 00000000000000]
 p_Val2_s              (add              ) [ 00000000000000]
 StgValue_76           (store            ) [ 00000000000000]
-empty_31              (specregionend    ) [ 00000000000000]
+empty_21              (specregionend    ) [ 00000000000000]
 StgValue_78           (br               ) [ 00111111111111]
-tmp_85                (partselect       ) [ 00000000000000]
+tmp_15                (partselect       ) [ 00000000000000]
 tmp                   (bitconcatenate   ) [ 00000000000000]
 tmp_s                 (zext             ) [ 00000000000000]
-tmp_110_cast          (zext             ) [ 00000000000000]
-tmp_105               (bitconcatenate   ) [ 00000000000000]
+tmp_34_cast           (zext             ) [ 00000000000000]
+tmp_31                (bitconcatenate   ) [ 00000000000000]
 p_shl_cast            (zext             ) [ 00000000000000]
-tmp_106               (add              ) [ 00000000011110]
+tmp_32                (add              ) [ 00000000011110]
 cells_mag_sq_V_addr   (getelementptr    ) [ 00000000011111]
 StgValue_87           (br               ) [ 00111111111111]
-p_Val2_8              (phi              ) [ 00000000011111]
+p_Val2_2              (phi              ) [ 00000000011111]
 k1                    (phi              ) [ 00000000010000]
 exitcond              (icmp             ) [ 00111111111111]
-empty_32              (speclooptripcount) [ 00000000000000]
-k_3                   (add              ) [ 00111111111111]
+empty_22              (speclooptripcount) [ 00000000000000]
+k_2                   (add              ) [ 00111111111111]
 StgValue_93           (br               ) [ 00000000000000]
-tmp_90                (zext             ) [ 00000000000000]
-tmp_90_cast           (zext             ) [ 00000000000000]
-tmp_110               (add              ) [ 00000000011000]
+tmp_26                (zext             ) [ 00000000000000]
+tmp_26_cast           (zext             ) [ 00000000000000]
+tmp_35                (add              ) [ 00000000011000]
 bin_vote_V_addr_1     (getelementptr    ) [ 00000000011000]
-tmp_92                (icmp             ) [ 00000000000000]
-tmp_93                (select           ) [ 00000000000000]
-tmp_94                (zext             ) [ 00000000000000]
+tmp_27                (icmp             ) [ 00000000000000]
+tmp_28                (select           ) [ 00000000000000]
+tmp_29                (zext             ) [ 00000000000000]
 bin_vote_V_addr_2     (getelementptr    ) [ 00000000011000]
-tmp_116_cast          (zext             ) [ 00000000000000]
+tmp_40_cast           (zext             ) [ 00000000000000]
 cells_bin_V_addr      (getelementptr    ) [ 00000000000000]
 bin_vote_V_load       (load             ) [ 00000000000000]
-tmp_91                (partselect       ) [ 00000000000000]
-p_Val2_s_33           (sext             ) [ 00000000000000]
+tmp_18                (partselect       ) [ 00000000000000]
+p_Val2_s_23           (sext             ) [ 00000000000000]
 bin_vote_V_load_1     (load             ) [ 00000000000000]
-tmp_95                (partselect       ) [ 00000000000000]
-p_Val2_9              (sext             ) [ 00000000000000]
+tmp_20                (partselect       ) [ 00000000000000]
+p_Val2_3              (sext             ) [ 00000000000000]
 addconv               (add              ) [ 00000000010100]
 StgValue_113          (store            ) [ 00000000000000]
 OP1_V                 (sext             ) [ 00000000000000]
-p_Val2_1              (mul              ) [ 00000000010010]
-tmp_89                (specregionbegin  ) [ 00000000000000]
+p_Val2_4              (mul              ) [ 00000000010010]
+tmp_16                (specregionbegin  ) [ 00000000000000]
 StgValue_117          (specpipeline     ) [ 00000000000000]
 mag_sq_V              (add              ) [ 00111111111111]
-empty_34              (specregionend    ) [ 00000000000000]
+empty_24              (specregionend    ) [ 00000000000000]
 StgValue_120          (br               ) [ 00111111111111]
 StgValue_121          (store            ) [ 00000000000000]
 j                     (add              ) [ 01111111111111]
@@ -645,7 +645,7 @@ StgValue_123          (br               ) [ 01111111111111]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str4"/></StgValue>
+<StgValue><ssdm name="p_str"/></StgValue>
 </bind>
 </comp>
 
@@ -843,7 +843,7 @@ StgValue_123          (br               ) [ 01111111111111]
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str45"/></StgValue>
+<StgValue><ssdm name="p_str4"/></StgValue>
 </bind>
 </comp>
 
@@ -972,7 +972,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="StgValue_38/3 p_Val2_42/6 StgValue_76/7 bin_vote_V_load/9 bin_vote_V_load_1/9 "/>
+<opset="StgValue_38/3 p_Val2_8/6 StgValue_76/7 bin_vote_V_load/9 bin_vote_V_load_1/9 "/>
 </bind>
 </comp>
 
@@ -1259,17 +1259,17 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="233" class="1005" name="t_V_3_reg_233">
+<comp id="233" class="1005" name="t_V_1_reg_233">
 <pin_list>
 <pin id="234" dir="0" index="0" bw="4" slack="1"/>
 <pin id="235" dir="1" index="1" bw="4" slack="1"/>
 </pin_list>
 <bind>
-<opset="t_V_3 (phireg) "/>
+<opset="t_V_1 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="237" class="1004" name="t_V_3_phi_fu_237">
+<comp id="237" class="1004" name="t_V_1_phi_fu_237">
 <pin_list>
 <pin id="238" dir="0" index="0" bw="4" slack="1"/>
 <pin id="239" dir="0" index="1" bw="0" slack="2147483647"/>
@@ -1279,21 +1279,21 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="t_V_3/4 "/>
+<opset="t_V_1/4 "/>
 </bind>
 </comp>
 
-<comp id="244" class="1005" name="p_Val2_8_reg_244">
+<comp id="244" class="1005" name="p_Val2_2_reg_244">
 <pin_list>
 <pin id="245" dir="0" index="0" bw="64" slack="1"/>
 <pin id="246" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="p_Val2_8 (phireg) "/>
+<opset="p_Val2_2 (phireg) "/>
 </bind>
 </comp>
 
-<comp id="249" class="1004" name="p_Val2_8_phi_fu_249">
+<comp id="249" class="1004" name="p_Val2_2_phi_fu_249">
 <pin_list>
 <pin id="250" dir="0" index="0" bw="1" slack="1"/>
 <pin id="251" dir="0" index="1" bw="0" slack="2147483647"/>
@@ -1303,7 +1303,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="p_Val2_8/9 "/>
+<opset="p_Val2_2/9 "/>
 </bind>
 </comp>
 
@@ -1367,7 +1367,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="286" class="1004" name="tmp_117_fu_286">
+<comp id="286" class="1004" name="tmp_30_fu_286">
 <pin_list>
 <pin id="287" dir="0" index="0" bw="1" slack="0"/>
 <pin id="288" dir="0" index="1" bw="7" slack="0"/>
@@ -1376,7 +1376,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="bitselect(1000) " fcode="bitselect"/>
-<opset="tmp_117/2 "/>
+<opset="tmp_30/2 "/>
 </bind>
 </comp>
 
@@ -1420,7 +1420,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="320" class="1004" name="exitcond5_fu_320">
+<comp id="320" class="1004" name="exitcond4_fu_320">
 <pin_list>
 <pin id="321" dir="0" index="0" bw="4" slack="0"/>
 <pin id="322" dir="0" index="1" bw="4" slack="0"/>
@@ -1428,11 +1428,11 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="exitcond5/3 "/>
+<opset="exitcond4/3 "/>
 </bind>
 </comp>
 
-<comp id="326" class="1004" name="k_2_fu_326">
+<comp id="326" class="1004" name="k_1_fu_326">
 <pin_list>
 <pin id="327" dir="0" index="0" bw="4" slack="0"/>
 <pin id="328" dir="0" index="1" bw="1" slack="0"/>
@@ -1440,18 +1440,18 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="k_2/3 "/>
+<opset="k_1/3 "/>
 </bind>
 </comp>
 
-<comp id="332" class="1004" name="tmp_83_fu_332">
+<comp id="332" class="1004" name="tmp_23_fu_332">
 <pin_list>
 <pin id="333" dir="0" index="0" bw="4" slack="0"/>
 <pin id="334" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_83/3 "/>
+<opset="tmp_23/3 "/>
 </bind>
 </comp>
 
@@ -1491,7 +1491,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="355" class="1004" name="tmp_107_fu_355">
+<comp id="355" class="1004" name="tmp_2_fu_355">
 <pin_list>
 <pin id="356" dir="0" index="0" bw="4" slack="0"/>
 <pin id="357" dir="0" index="1" bw="4" slack="0"/>
@@ -1499,11 +1499,11 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="tmp_107/4 "/>
+<opset="tmp_2/4 "/>
 </bind>
 </comp>
 
-<comp id="361" class="1004" name="t_V_3_mid2_fu_361">
+<comp id="361" class="1004" name="t_V_1_mid2_fu_361">
 <pin_list>
 <pin id="362" dir="0" index="0" bw="1" slack="0"/>
 <pin id="363" dir="0" index="1" bw="4" slack="0"/>
@@ -1512,11 +1512,11 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="t_V_3_mid2/4 "/>
+<opset="t_V_1_mid2/4 "/>
 </bind>
 </comp>
 
-<comp id="369" class="1004" name="tmp_95_mid2_v_v_v_fu_369">
+<comp id="369" class="1004" name="tmp_26_mid2_v_v_v_fu_369">
 <pin_list>
 <pin id="370" dir="0" index="0" bw="1" slack="0"/>
 <pin id="371" dir="0" index="1" bw="4" slack="0"/>
@@ -1525,22 +1525,22 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="tmp_95_mid2_v_v_v/4 "/>
+<opset="tmp_26_mid2_v_v_v/4 "/>
 </bind>
 </comp>
 
-<comp id="377" class="1004" name="tmp_95_mid2_v_v_fu_377">
+<comp id="377" class="1004" name="tmp_26_mid2_v_v_fu_377">
 <pin_list>
 <pin id="378" dir="0" index="0" bw="4" slack="1"/>
 <pin id="379" dir="1" index="1" bw="7" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_95_mid2_v_v/5 "/>
+<opset="tmp_26_mid2_v_v/5 "/>
 </bind>
 </comp>
 
-<comp id="380" class="1004" name="tmp_95_mid2_v_fu_380">
+<comp id="380" class="1004" name="tmp_26_mid2_v_fu_380">
 <pin_list>
 <pin id="381" dir="0" index="0" bw="7" slack="3"/>
 <pin id="382" dir="0" index="1" bw="4" slack="0"/>
@@ -1548,11 +1548,11 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="tmp_95_mid2_v/5 "/>
+<opset="tmp_26_mid2_v/5 "/>
 </bind>
 </comp>
 
-<comp id="385" class="1004" name="tmp_108_fu_385">
+<comp id="385" class="1004" name="tmp_33_fu_385">
 <pin_list>
 <pin id="386" dir="0" index="0" bw="13" slack="0"/>
 <pin id="387" dir="0" index="1" bw="7" slack="0"/>
@@ -1561,18 +1561,18 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_108/5 "/>
+<opset="tmp_33/5 "/>
 </bind>
 </comp>
 
-<comp id="393" class="1004" name="tmp_114_cast_fu_393">
+<comp id="393" class="1004" name="tmp_38_cast_fu_393">
 <pin_list>
 <pin id="394" dir="0" index="0" bw="13" slack="0"/>
 <pin id="395" dir="1" index="1" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_114_cast/5 "/>
+<opset="tmp_38_cast/5 "/>
 </bind>
 </comp>
 
@@ -1599,18 +1599,18 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="405" class="1004" name="tmp_87_cast_fu_405">
+<comp id="405" class="1004" name="tmp_24_cast_fu_405">
 <pin_list>
 <pin id="406" dir="0" index="0" bw="7" slack="0"/>
 <pin id="407" dir="1" index="1" bw="14" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_87_cast/5 "/>
+<opset="tmp_24_cast/5 "/>
 </bind>
 </comp>
 
-<comp id="409" class="1004" name="tmp_109_fu_409">
+<comp id="409" class="1004" name="tmp_34_fu_409">
 <pin_list>
 <pin id="410" dir="0" index="0" bw="7" slack="0"/>
 <pin id="411" dir="0" index="1" bw="13" slack="0"/>
@@ -1618,18 +1618,18 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="tmp_109/5 "/>
+<opset="tmp_34/5 "/>
 </bind>
 </comp>
 
-<comp id="415" class="1004" name="tmp_115_cast_fu_415">
+<comp id="415" class="1004" name="tmp_39_cast_fu_415">
 <pin_list>
 <pin id="416" dir="0" index="0" bw="14" slack="0"/>
 <pin id="417" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_115_cast/5 "/>
+<opset="tmp_39_cast/5 "/>
 </bind>
 </comp>
 
@@ -1645,25 +1645,25 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="426" class="1004" name="tmp_88_fu_426">
+<comp id="426" class="1004" name="tmp_25_fu_426">
 <pin_list>
 <pin id="427" dir="0" index="0" bw="4" slack="0"/>
 <pin id="428" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_88/6 "/>
+<opset="tmp_25/6 "/>
 </bind>
 </comp>
 
-<comp id="431" class="1004" name="p_Val2_43_fu_431">
+<comp id="431" class="1004" name="p_Val2_9_fu_431">
 <pin_list>
 <pin id="432" dir="0" index="0" bw="26" slack="1"/>
 <pin id="433" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
-<opcode="sext(35) " fcode="sext"/>
-<opset="p_Val2_43/7 "/>
+<opcode="zext(34) " fcode="zext"/>
+<opset="p_Val2_9/7 "/>
 </bind>
 </comp>
 
@@ -1679,7 +1679,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="441" class="1004" name="tmp_85_fu_441">
+<comp id="441" class="1004" name="tmp_15_fu_441">
 <pin_list>
 <pin id="442" dir="0" index="0" bw="3" slack="0"/>
 <pin id="443" dir="0" index="1" bw="7" slack="3"/>
@@ -1689,7 +1689,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_85/8 "/>
+<opset="tmp_15/8 "/>
 </bind>
 </comp>
 
@@ -1717,18 +1717,18 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="462" class="1004" name="tmp_110_cast_fu_462">
+<comp id="462" class="1004" name="tmp_34_cast_fu_462">
 <pin_list>
 <pin id="463" dir="0" index="0" bw="6" slack="0"/>
 <pin id="464" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_110_cast/8 "/>
+<opset="tmp_34_cast/8 "/>
 </bind>
 </comp>
 
-<comp id="466" class="1004" name="tmp_105_fu_466">
+<comp id="466" class="1004" name="tmp_31_fu_466">
 <pin_list>
 <pin id="467" dir="0" index="0" bw="9" slack="0"/>
 <pin id="468" dir="0" index="1" bw="3" slack="3"/>
@@ -1738,7 +1738,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_105/8 "/>
+<opset="tmp_31/8 "/>
 </bind>
 </comp>
 
@@ -1753,7 +1753,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="479" class="1004" name="tmp_106_fu_479">
+<comp id="479" class="1004" name="tmp_32_fu_479">
 <pin_list>
 <pin id="480" dir="0" index="0" bw="9" slack="0"/>
 <pin id="481" dir="0" index="1" bw="6" slack="0"/>
@@ -1761,7 +1761,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="tmp_106/8 "/>
+<opset="tmp_32/8 "/>
 </bind>
 </comp>
 
@@ -1777,7 +1777,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="491" class="1004" name="k_3_fu_491">
+<comp id="491" class="1004" name="k_2_fu_491">
 <pin_list>
 <pin id="492" dir="0" index="0" bw="4" slack="0"/>
 <pin id="493" dir="0" index="1" bw="1" slack="0"/>
@@ -1785,33 +1785,33 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="k_3/9 "/>
+<opset="k_2/9 "/>
 </bind>
 </comp>
 
-<comp id="497" class="1004" name="tmp_90_fu_497">
+<comp id="497" class="1004" name="tmp_26_fu_497">
 <pin_list>
 <pin id="498" dir="0" index="0" bw="4" slack="0"/>
 <pin id="499" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_90/9 "/>
+<opset="tmp_26/9 "/>
 </bind>
 </comp>
 
-<comp id="502" class="1004" name="tmp_90_cast_fu_502">
+<comp id="502" class="1004" name="tmp_26_cast_fu_502">
 <pin_list>
 <pin id="503" dir="0" index="0" bw="4" slack="0"/>
 <pin id="504" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_90_cast/9 "/>
+<opset="tmp_26_cast/9 "/>
 </bind>
 </comp>
 
-<comp id="506" class="1004" name="tmp_110_fu_506">
+<comp id="506" class="1004" name="tmp_35_fu_506">
 <pin_list>
 <pin id="507" dir="0" index="0" bw="10" slack="1"/>
 <pin id="508" dir="0" index="1" bw="4" slack="0"/>
@@ -1819,11 +1819,11 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="tmp_110/9 "/>
+<opset="tmp_35/9 "/>
 </bind>
 </comp>
 
-<comp id="511" class="1004" name="tmp_92_fu_511">
+<comp id="511" class="1004" name="tmp_27_fu_511">
 <pin_list>
 <pin id="512" dir="0" index="0" bw="4" slack="0"/>
 <pin id="513" dir="0" index="1" bw="4" slack="0"/>
@@ -1831,11 +1831,11 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="tmp_92/9 "/>
+<opset="tmp_27/9 "/>
 </bind>
 </comp>
 
-<comp id="517" class="1004" name="tmp_93_fu_517">
+<comp id="517" class="1004" name="tmp_28_fu_517">
 <pin_list>
 <pin id="518" dir="0" index="0" bw="1" slack="0"/>
 <pin id="519" dir="0" index="1" bw="4" slack="0"/>
@@ -1844,33 +1844,33 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="tmp_93/9 "/>
+<opset="tmp_28/9 "/>
 </bind>
 </comp>
 
-<comp id="525" class="1004" name="tmp_94_fu_525">
+<comp id="525" class="1004" name="tmp_29_fu_525">
 <pin_list>
 <pin id="526" dir="0" index="0" bw="4" slack="0"/>
 <pin id="527" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_94/9 "/>
+<opset="tmp_29/9 "/>
 </bind>
 </comp>
 
-<comp id="530" class="1004" name="tmp_116_cast_fu_530">
+<comp id="530" class="1004" name="tmp_40_cast_fu_530">
 <pin_list>
 <pin id="531" dir="0" index="0" bw="10" slack="1"/>
 <pin id="532" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="tmp_116_cast/10 "/>
+<opset="tmp_40_cast/10 "/>
 </bind>
 </comp>
 
-<comp id="534" class="1004" name="tmp_91_fu_534">
+<comp id="534" class="1004" name="tmp_18_fu_534">
 <pin_list>
 <pin id="535" dir="0" index="0" bw="31" slack="0"/>
 <pin id="536" dir="0" index="1" bw="32" slack="0"/>
@@ -1880,22 +1880,22 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_91/10 "/>
+<opset="tmp_18/10 "/>
 </bind>
 </comp>
 
-<comp id="544" class="1004" name="p_Val2_s_33_fu_544">
+<comp id="544" class="1004" name="p_Val2_s_23_fu_544">
 <pin_list>
 <pin id="545" dir="0" index="0" bw="31" slack="0"/>
 <pin id="546" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="p_Val2_s_33/10 "/>
+<opset="p_Val2_s_23/10 "/>
 </bind>
 </comp>
 
-<comp id="548" class="1004" name="tmp_95_fu_548">
+<comp id="548" class="1004" name="tmp_20_fu_548">
 <pin_list>
 <pin id="549" dir="0" index="0" bw="31" slack="0"/>
 <pin id="550" dir="0" index="1" bw="32" slack="0"/>
@@ -1905,18 +1905,18 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_95/10 "/>
+<opset="tmp_20/10 "/>
 </bind>
 </comp>
 
-<comp id="558" class="1004" name="p_Val2_9_fu_558">
+<comp id="558" class="1004" name="p_Val2_3_fu_558">
 <pin_list>
 <pin id="559" dir="0" index="0" bw="31" slack="0"/>
 <pin id="560" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
-<opset="p_Val2_9/10 "/>
+<opset="p_Val2_3/10 "/>
 </bind>
 </comp>
 
@@ -1943,7 +1943,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="572" class="1004" name="p_Val2_1_fu_572">
+<comp id="572" class="1004" name="p_Val2_4_fu_572">
 <pin_list>
 <pin id="573" dir="0" index="0" bw="32" slack="0"/>
 <pin id="574" dir="0" index="1" bw="32" slack="0"/>
@@ -1951,7 +1951,7 @@ StgValue_123          (br               ) [ 01111111111111]
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
-<opset="p_Val2_1/11 "/>
+<opset="p_Val2_4/11 "/>
 </bind>
 </comp>
 
@@ -2019,23 +2019,23 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="615" class="1005" name="exitcond5_reg_615">
+<comp id="615" class="1005" name="exitcond4_reg_615">
 <pin_list>
 <pin id="616" dir="0" index="0" bw="1" slack="1"/>
 <pin id="617" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="exitcond5 "/>
+<opset="exitcond4 "/>
 </bind>
 </comp>
 
-<comp id="619" class="1005" name="k_2_reg_619">
+<comp id="619" class="1005" name="k_1_reg_619">
 <pin_list>
 <pin id="620" dir="0" index="0" bw="4" slack="0"/>
 <pin id="621" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="k_2 "/>
+<opset="k_1 "/>
 </bind>
 </comp>
 
@@ -2059,23 +2059,23 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="633" class="1005" name="t_V_3_mid2_reg_633">
+<comp id="633" class="1005" name="t_V_1_mid2_reg_633">
 <pin_list>
 <pin id="634" dir="0" index="0" bw="4" slack="1"/>
 <pin id="635" dir="1" index="1" bw="4" slack="1"/>
 </pin_list>
 <bind>
-<opset="t_V_3_mid2 "/>
+<opset="t_V_1_mid2 "/>
 </bind>
 </comp>
 
-<comp id="639" class="1005" name="tmp_95_mid2_v_v_v_reg_639">
+<comp id="639" class="1005" name="tmp_26_mid2_v_v_v_reg_639">
 <pin_list>
 <pin id="640" dir="0" index="0" bw="4" slack="0"/>
 <pin id="641" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="tmp_95_mid2_v_v_v "/>
+<opset="tmp_26_mid2_v_v_v "/>
 </bind>
 </comp>
 
@@ -2129,13 +2129,13 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="670" class="1005" name="tmp_106_reg_670">
+<comp id="670" class="1005" name="tmp_32_reg_670">
 <pin_list>
 <pin id="671" dir="0" index="0" bw="10" slack="1"/>
 <pin id="672" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_106 "/>
+<opset="tmp_32 "/>
 </bind>
 </comp>
 
@@ -2159,23 +2159,23 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="684" class="1005" name="k_3_reg_684">
+<comp id="684" class="1005" name="k_2_reg_684">
 <pin_list>
 <pin id="685" dir="0" index="0" bw="4" slack="0"/>
 <pin id="686" dir="1" index="1" bw="4" slack="0"/>
 </pin_list>
 <bind>
-<opset="k_3 "/>
+<opset="k_2 "/>
 </bind>
 </comp>
 
-<comp id="689" class="1005" name="tmp_110_reg_689">
+<comp id="689" class="1005" name="tmp_35_reg_689">
 <pin_list>
 <pin id="690" dir="0" index="0" bw="10" slack="1"/>
 <pin id="691" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
-<opset="tmp_110 "/>
+<opset="tmp_35 "/>
 </bind>
 </comp>
 
@@ -2209,13 +2209,13 @@ StgValue_123          (br               ) [ 01111111111111]
 </bind>
 </comp>
 
-<comp id="709" class="1005" name="p_Val2_1_reg_709">
+<comp id="709" class="1005" name="p_Val2_4_reg_709">
 <pin_list>
 <pin id="710" dir="0" index="0" bw="64" slack="1"/>
 <pin id="711" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
-<opset="p_Val2_1 "/>
+<opset="p_Val2_4 "/>
 </bind>
 </comp>
 
@@ -2661,15 +2661,15 @@ StgValue_123          (br               ) [ 01111111111111]
 		indvar_flatten_next7 : 1
 		StgValue_23 : 2
 		i : 1
-		tmp_117 : 1
+		tmp_30 : 1
 		i_op_assign_mid2 : 2
 		tmp_mid2_v_v_v : 2
 		tmp_mid2_v : 3
 	State 3
-		exitcond5 : 1
-		k_2 : 1
+		exitcond4 : 1
+		k_1 : 1
 		StgValue_35 : 2
-		tmp_83 : 1
+		tmp_23 : 1
 		bin_vote_V_addr : 2
 		StgValue_38 : 3
 	State 4
@@ -2677,63 +2677,63 @@ StgValue_123          (br               ) [ 01111111111111]
 		indvar_flatten_next : 1
 		StgValue_47 : 2
 		ii_V : 1
-		tmp_107 : 1
-		t_V_3_mid2 : 2
-		tmp_95_mid2_v_v_v : 2
+		tmp_2 : 1
+		t_V_1_mid2 : 2
+		tmp_26_mid2_v_v_v : 2
 	State 5
-		tmp_95_mid2_v : 1
-		tmp_108 : 2
-		tmp_114_cast : 3
+		tmp_26_mid2_v : 1
+		tmp_33 : 2
+		tmp_38_cast : 3
 		r_V : 1
-		tmp_87_cast : 2
-		tmp_109 : 4
-		tmp_115_cast : 5
+		tmp_24_cast : 2
+		tmp_34 : 4
+		tmp_39_cast : 5
 		grad_vote_magnitude_2 : 6
 		grad_vote_bin_V_addr : 6
 		grad_vote_magnitude_3 : 7
 		grad_vote_bin_V_load : 7
 	State 6
-		tmp_88 : 1
+		tmp_25 : 1
 		bin_vote_V_addr_3 : 2
-		p_Val2_42 : 3
+		p_Val2_8 : 3
 	State 7
 		p_Val2_s : 1
 		StgValue_76 : 2
-		empty_31 : 1
+		empty_21 : 1
 	State 8
 		tmp : 1
 		tmp_s : 2
-		tmp_110_cast : 2
-		tmp_105 : 1
+		tmp_34_cast : 2
+		tmp_31 : 1
 		p_shl_cast : 2
-		tmp_106 : 3
+		tmp_32 : 3
 		cells_mag_sq_V_addr : 3
 	State 9
 		exitcond : 1
-		k_3 : 1
+		k_2 : 1
 		StgValue_93 : 2
-		tmp_90 : 1
-		tmp_90_cast : 1
-		tmp_110 : 2
+		tmp_26 : 1
+		tmp_26_cast : 1
+		tmp_35 : 2
 		bin_vote_V_addr_1 : 2
 		bin_vote_V_load : 3
-		tmp_92 : 1
-		tmp_93 : 2
-		tmp_94 : 3
+		tmp_27 : 1
+		tmp_28 : 2
+		tmp_29 : 3
 		bin_vote_V_addr_2 : 4
 		bin_vote_V_load_1 : 5
 	State 10
 		cells_bin_V_addr : 1
-		tmp_91 : 1
-		p_Val2_s_33 : 2
-		tmp_95 : 1
-		p_Val2_9 : 2
+		tmp_18 : 1
+		p_Val2_s_23 : 2
+		tmp_20 : 1
+		p_Val2_3 : 2
 		addconv : 3
 		StgValue_113 : 4
 	State 11
-		p_Val2_1 : 1
+		p_Val2_4 : 1
 	State 12
-		empty_34 : 1
+		empty_24 : 1
 	State 13
 
 
@@ -2747,65 +2747,65 @@ StgValue_123          (br               ) [ 01111111111111]
 |----------|-----------------------------|---------|---------|---------|
 |          | indvar_flatten_next7_fu_274 |    0    |    0    |    15   |
 |          |           i_fu_280          |    0    |    0    |    15   |
-|          |          k_2_fu_326         |    0    |    0    |    13   |
+|          |          k_1_fu_326         |    0    |    0    |    13   |
 |          |  indvar_flatten_next_fu_343 |    0    |    0    |    15   |
 |          |         ii_V_fu_349         |    0    |    0    |    13   |
-|          |     tmp_95_mid2_v_fu_380    |    0    |    0    |    15   |
+|          |     tmp_26_mid2_v_fu_380    |    0    |    0    |    15   |
 |          |          r_V_fu_400         |    0    |    0    |    15   |
-|    add   |        tmp_109_fu_409       |    0    |    0    |    17   |
+|    add   |        tmp_34_fu_409        |    0    |    0    |    17   |
 |          |         jj_V_fu_421         |    0    |    0    |    13   |
 |          |       p_Val2_s_fu_434       |    0    |    0    |    39   |
-|          |        tmp_106_fu_479       |    0    |    0    |    15   |
-|          |          k_3_fu_491         |    0    |    0    |    13   |
-|          |        tmp_110_fu_506       |    0    |    0    |    14   |
+|          |        tmp_32_fu_479        |    0    |    0    |    15   |
+|          |          k_2_fu_491         |    0    |    0    |    13   |
+|          |        tmp_35_fu_506        |    0    |    0    |    14   |
 |          |        addconv_fu_562       |    0    |    0    |    38   |
 |          |       mag_sq_V_fu_578       |    0    |    0    |    71   |
 |          |           j_fu_583          |    0    |    0    |    15   |
 |----------|-----------------------------|---------|---------|---------|
 |          |   exitcond_flatten8_fu_268  |    0    |    0    |    11   |
-|          |       exitcond5_fu_320      |    0    |    0    |    9    |
+|          |       exitcond4_fu_320      |    0    |    0    |    9    |
 |   icmp   |   exitcond_flatten_fu_337   |    0    |    0    |    11   |
-|          |        tmp_107_fu_355       |    0    |    0    |    9    |
+|          |         tmp_2_fu_355        |    0    |    0    |    9    |
 |          |       exitcond_fu_485       |    0    |    0    |    9    |
-|          |        tmp_92_fu_511        |    0    |    0    |    9    |
+|          |        tmp_27_fu_511        |    0    |    0    |    9    |
 |----------|-----------------------------|---------|---------|---------|
 |          |   i_op_assign_mid2_fu_294   |    0    |    0    |    7    |
 |          |    tmp_mid2_v_v_v_fu_302    |    0    |    0    |    7    |
-|  select  |      t_V_3_mid2_fu_361      |    0    |    0    |    4    |
-|          |   tmp_95_mid2_v_v_v_fu_369  |    0    |    0    |    4    |
-|          |        tmp_93_fu_517        |    0    |    0    |    4    |
+|  select  |      t_V_1_mid2_fu_361      |    0    |    0    |    4    |
+|          |   tmp_26_mid2_v_v_v_fu_369  |    0    |    0    |    4    |
+|          |        tmp_28_fu_517        |    0    |    0    |    4    |
 |----------|-----------------------------|---------|---------|---------|
-|    mul   |       p_Val2_1_fu_572       |    3    |    0    |    20   |
+|    mul   |       p_Val2_4_fu_572       |    3    |    0    |    20   |
 |----------|-----------------------------|---------|---------|---------|
-| bitselect|        tmp_117_fu_286       |    0    |    0    |    0    |
+| bitselect|        tmp_30_fu_286        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
 |          |      tmp_mid2_v_fu_310      |    0    |    0    |    0    |
-|partselect|        tmp_85_fu_441        |    0    |    0    |    0    |
-|          |        tmp_91_fu_534        |    0    |    0    |    0    |
-|          |        tmp_95_fu_548        |    0    |    0    |    0    |
+|partselect|        tmp_15_fu_441        |    0    |    0    |    0    |
+|          |        tmp_18_fu_534        |    0    |    0    |    0    |
+|          |        tmp_20_fu_548        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
-|          |        tmp_83_fu_332        |    0    |    0    |    0    |
-|          |    tmp_95_mid2_v_v_fu_377   |    0    |    0    |    0    |
-|          |     tmp_114_cast_fu_393     |    0    |    0    |    0    |
+|          |        tmp_23_fu_332        |    0    |    0    |    0    |
+|          |    tmp_26_mid2_v_v_fu_377   |    0    |    0    |    0    |
+|          |      tmp_38_cast_fu_393     |    0    |    0    |    0    |
 |          |      rhs_V_cast_fu_397      |    0    |    0    |    0    |
-|          |      tmp_87_cast_fu_405     |    0    |    0    |    0    |
-|          |     tmp_115_cast_fu_415     |    0    |    0    |    0    |
-|   zext   |        tmp_88_fu_426        |    0    |    0    |    0    |
+|          |      tmp_24_cast_fu_405     |    0    |    0    |    0    |
+|          |      tmp_39_cast_fu_415     |    0    |    0    |    0    |
+|          |        tmp_25_fu_426        |    0    |    0    |    0    |
+|   zext   |       p_Val2_9_fu_431       |    0    |    0    |    0    |
 |          |         tmp_s_fu_457        |    0    |    0    |    0    |
-|          |     tmp_110_cast_fu_462     |    0    |    0    |    0    |
+|          |      tmp_34_cast_fu_462     |    0    |    0    |    0    |
 |          |      p_shl_cast_fu_475      |    0    |    0    |    0    |
-|          |        tmp_90_fu_497        |    0    |    0    |    0    |
-|          |      tmp_90_cast_fu_502     |    0    |    0    |    0    |
-|          |        tmp_94_fu_525        |    0    |    0    |    0    |
-|          |     tmp_116_cast_fu_530     |    0    |    0    |    0    |
+|          |        tmp_26_fu_497        |    0    |    0    |    0    |
+|          |      tmp_26_cast_fu_502     |    0    |    0    |    0    |
+|          |        tmp_29_fu_525        |    0    |    0    |    0    |
+|          |      tmp_40_cast_fu_530     |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
-|          |        tmp_108_fu_385       |    0    |    0    |    0    |
+|          |        tmp_33_fu_385        |    0    |    0    |    0    |
 |bitconcatenate|          tmp_fu_450         |    0    |    0    |    0    |
-|          |        tmp_105_fu_466       |    0    |    0    |    0    |
+|          |        tmp_31_fu_466        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
-|          |       p_Val2_43_fu_431      |    0    |    0    |    0    |
-|   sext   |      p_Val2_s_33_fu_544     |    0    |    0    |    0    |
-|          |       p_Val2_9_fu_558       |    0    |    0    |    0    |
+|          |      p_Val2_s_23_fu_544     |    0    |    0    |    0    |
+|   sext   |       p_Val2_3_fu_558       |    0    |    0    |    0    |
 |          |         OP1_V_fu_569        |    0    |    0    |    0    |
 |----------|-----------------------------|---------|---------|---------|
 |   Total  |                             |    3    |    0    |   440   |
@@ -2829,7 +2829,7 @@ Memories:
 |  bin_vote_V_addr_2_reg_699  |    4   |
 |  bin_vote_V_addr_3_reg_665  |    4   |
 | cells_mag_sq_V_addr_reg_675 |    6   |
-|      exitcond5_reg_615      |    1   |
+|      exitcond4_reg_615      |    1   |
 |   exitcond_flatten_reg_624  |    1   |
 |       exitcond_reg_680      |    1   |
 | grad_vote_bin_V_addr_reg_650|   12   |
@@ -2845,18 +2845,18 @@ Memories:
 |          j_reg_719          |    7   |
 |         jj_V_reg_655        |    4   |
 |          k1_reg_257         |    4   |
-|         k_2_reg_619         |    4   |
-|         k_3_reg_684         |    4   |
+|         k_1_reg_619         |    4   |
+|         k_2_reg_684         |    4   |
 |          k_reg_200          |    4   |
 |       mag_sq_V_reg_714      |   64   |
-|       p_Val2_1_reg_709      |   64   |
-|       p_Val2_8_reg_244      |   64   |
-|      t_V_3_mid2_reg_633     |    4   |
-|        t_V_3_reg_233        |    4   |
+|       p_Val2_2_reg_244      |   64   |
+|       p_Val2_4_reg_709      |   64   |
+|      t_V_1_mid2_reg_633     |    4   |
+|        t_V_1_reg_233        |    4   |
 |         t_V_reg_222         |    4   |
-|       tmp_106_reg_670       |   10   |
-|       tmp_110_reg_689       |   10   |
-|  tmp_95_mid2_v_v_v_reg_639  |    4   |
+|  tmp_26_mid2_v_v_v_reg_639  |    4   |
+|        tmp_32_reg_670       |   10   |
+|        tmp_35_reg_689       |   10   |
 |      tmp_mid2_v_reg_609     |    3   |
 |    tmp_mid2_v_v_v_reg_603   |    7   |
 +-----------------------------+--------+
@@ -2872,7 +2872,7 @@ Memories:
 |  grp_access_fu_90 |  p3  |   2  |   4  |    8   ||    9    |
 | grp_access_fu_110 |  p0  |   2  |  12  |   24   ||    9    |
 | grp_access_fu_115 |  p0  |   2  |  12  |   24   ||    9    |
-|  p_Val2_8_reg_244 |  p0  |   2  |  64  |   128  ||    9    |
+|  p_Val2_2_reg_244 |  p0  |   2  |  64  |   128  ||    9    |
 |-------------------|------|------|------|--------||---------||---------|
 |       Total       |      |      |      |   268  || 10.7513 ||    72   |
 |-------------------|------|------|------|--------||---------||---------|

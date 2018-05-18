@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'xillybus_wrapper'
 ================================================================
-* Date:           Thu May 17 18:21:37 2018
+* Date:           Fri May 18 16:31:12 2018
 
 * Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
 * Project:        hog_svm_fpga
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      8.75|        1.25|
+    |ap_clk  |  10.00|      8.56|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -29,7 +29,7 @@
     |    Latency    |   Interval  | Pipeline |
     |  min  |  max  |  min |  max |   Type   |
     +-------+-------+------+------+----------+
-    |  25173|  25173|  9922|  9922| dataflow |
+    |  27210|  27210|  9922|  9922| dataflow |
     +-------+-------+------+------+----------+
 
     + Detail: 
@@ -65,10 +65,10 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 9
+* Number of FSM states : 10
 * Pipeline : 0
 * Dataflow Pipeline: 1
-  DF-Pipeline-0: Size = 9, States = { 1 2 3 4 5 6 7 8 9 }
+  DF-Pipeline-0: Size = 10, States = { 1 2 3 4 5 6 7 8 9 10 }
 
 * FSM state transitions: 
 1 --> 
@@ -88,49 +88,54 @@ IsGatedGlobalClock: 0
 8 --> 
 	9  / true
 9 --> 
+	10  / true
+10 --> 
 
 * FSM state operations: 
 
  <State 1> : 0.00ns
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_channel = alloca float, align 4"   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%image_V = alloca [4096 x i8], align 1"
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%cells_bin_V = alloca [576 x i32], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:203]
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%cells_mag_sq_V = alloca [64 x i64], align 8" [hog_svm_fpga/xillybus_wrapper.cpp:203]
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%grad_vote_magnitude_s = alloca [4096 x i26], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:221]
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%grad_vote_bin_V = alloca [4096 x i4], align 1" [hog_svm_fpga/xillybus_wrapper.cpp:221]
-ST_1 : Operation 16 [2/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%cells_bin_V = alloca [576 x i32], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:207]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%cells_mag_sq_V = alloca [64 x i64], align 8" [hog_svm_fpga/xillybus_wrapper.cpp:207]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%hog = alloca [1764 x float], align 16"
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%grad_vote_magnitude_s = alloca [4096 x i26], align 4" [hog_svm_fpga/xillybus_wrapper.cpp:225]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%grad_vote_bin_V = alloca [4096 x i4], align 1" [hog_svm_fpga/xillybus_wrapper.cpp:225]
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 2> : 0.00ns
-ST_2 : Operation 17 [1/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc(i32* %in_r, [4096 x i8]* %image_V)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 3> : 0.00ns
-ST_3 : Operation 18 [2/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:222]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:226]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 4> : 0.00ns
-ST_4 : Operation 19 [1/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:222]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 20 [1/2] (0.00ns)   --->   "call fastcc void @compute_gradients([4096 x i8]* %image_V, [4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:226]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 5> : 0.00ns
-ST_5 : Operation 20 [2/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:225]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 21 [2/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:229]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 6> : 0.00ns
-ST_6 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:225]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @compute_cells([4096 x i26]* %grad_vote_magnitude_s, [4096 x i4]* %grad_vote_bin_V, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:229]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
  <State 7> : 0.00ns
-ST_7 : Operation 22 [2/2] (0.00ns)   --->   "call fastcc void @svm_detect(float* %tmp_channel, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:228]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @compute_blocks([576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V, [1764 x float]* %hog) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:239]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
- <State 8> : 4.37ns
-ST_8 : Operation 23 [1/2] (4.36ns)   --->   "call fastcc void @svm_detect(float* %tmp_channel, [576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:228]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ <State 8> : 0.00ns
+ST_8 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @compute_blocks([576 x i32]* %cells_bin_V, [64 x i64]* %cells_mag_sq_V, [1764 x float]* %hog) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:239]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
- <State 9> : 3.63ns
-ST_9 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:196]
-ST_9 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %in_r) nounwind, !map !172"
-ST_9 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_r) nounwind, !map !176"
-ST_9 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @xillybus_wrapper_str) nounwind"
-ST_9 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %in_r, [8 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:192]
-ST_9 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %out_r, [8 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:193]
-ST_9 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:194]
-ST_9 : Operation 31 [1/1] (3.63ns)   --->   "call fastcc void @Block_arrayctor.loop(float* %tmp_channel, i32* %out_r) nounwind"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_9 : Operation 32 [1/1] (0.00ns)   --->   "ret void" [hog_svm_fpga/xillybus_wrapper.cpp:238]
+ <State 9> : 0.00ns
+ST_9 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %out_r, [1764 x float]* %hog)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+ <State 10> : 0.00ns
+ST_10 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:200]
+ST_10 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %in_r) nounwind, !map !172"
+ST_10 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %out_r) nounwind, !map !176"
+ST_10 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @xillybus_wrapper_str) nounwind"
+ST_10 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %in_r, [8 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:196]
+ST_10 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %out_r, [8 x i8]* @p_str9, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:197]
+ST_10 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [hog_svm_fpga/xillybus_wrapper.cpp:198]
+ST_10 : Operation 33 [1/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %out_r, [1764 x float]* %hog)"   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 34 [1/1] (0.00ns)   --->   "ret void" [hog_svm_fpga/xillybus_wrapper.cpp:246]
 
 
 ============================================================
@@ -159,13 +164,14 @@ The critical path consists of the following:
  <State 7>: 0ns
 The critical path consists of the following:
 
- <State 8>: 4.37ns
+ <State 8>: 0ns
 The critical path consists of the following:
-	'call' operation (hog_svm_fpga/xillybus_wrapper.cpp:228) to 'svm_detect' [20]  (4.37 ns)
 
- <State 9>: 3.63ns
+ <State 9>: 0ns
 The critical path consists of the following:
-	'call' operation to 'Block_arrayctor.loop' [21]  (3.63 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
 
 
 ============================================================
@@ -185,6 +191,7 @@ N/A
 	State 7
 	State 8
 	State 9
+	State 10
 
 
 ============================================================

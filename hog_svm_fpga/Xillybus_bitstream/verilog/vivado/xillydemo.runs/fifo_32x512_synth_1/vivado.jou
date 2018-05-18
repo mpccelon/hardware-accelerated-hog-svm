@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue May 15 04:05:25 2018
+# Process ID: 16508
+# Current directory: D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1
+# Command line: vivado.exe -log fifo_32x512.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_32x512.tcl
+# Log file: D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1/fifo_32x512.vds
+# Journal file: D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/verilog/vivado/xillydemo.runs/fifo_32x512_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_32x512.tcl -notrace

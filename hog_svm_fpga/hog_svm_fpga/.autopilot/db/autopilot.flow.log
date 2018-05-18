@@ -1,50 +1,50 @@
-INFO: [HLS 200-0] Workspace D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga opened at Thu May 17 18:20:38 +0800 2018
+INFO: [HLS 200-0] Workspace D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga opened at Fri May 18 16:31:27 +0800 2018
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Command     config_clock returned 0; 0.001 sec.
+Command     config_clock returned 0; 0 sec.
 Execute     open_platform DefaultPlatform 
-Command     open_platform returned 0; 0.001 sec.
+Command     open_platform returned 0; 0 sec.
 Execute     import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.lib 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.lib 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.lib 
-Command           ap_source returned 0; 0.004 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.lib 
-Command           ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.lib 
-Command           ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.lib 
-Command           ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.lib 
-Command           ap_source returned 0; 0.003 sec.
-Command         ap_source returned 0; 0.019 sec.
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.lib 
-Command         ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.lib 
-Command         ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.lib 
-Command         ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.lib 
-Command         ap_source returned 0; 0.003 sec.
-Command       ap_source returned 0; 0.04 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_old.lib 
-Command       ap_source returned 0; 0.003 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_vivado.lib 
+Command         ap_source returned 0; 0.001 sec.
 Command       ap_source returned 0; 0.004 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_old.lib 
+Command       ap_source returned 0; 0.001 sec.
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_vivado.lib 
+Command       ap_source returned 0; 0.001 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command         ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
-Command           ap_source returned 0; 0.004 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
-Command           ap_source returned 0; 0.003 sec.
-Command         ap_source returned 0; 0.011 sec.
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
-Command         ap_source returned 0; 0.011 sec.
-Command       ap_source returned 0; 0.046 sec.
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.004 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/dsp48e1.hlp 
-Command       ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0 sec.
 Execute       get_default_platform 
 Command       get_default_platform returned 0; 0 sec.
 Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
@@ -62,1344 +62,277 @@ Command           ap_source returned 0; 0 sec.
 Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
 Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.004 sec.
-Command     import_lib returned 0; 0.113 sec.
+Command       ap_source returned 0; 0.005 sec.
+Command     import_lib returned 0; 0.018 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command           ap_source returned 0; 0.005 sec.
+Command           ap_source returned 0; 0.002 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command           ap_source returned 0; 0.004 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command           ap_source returned 0; 0.006 sec.
+Command           ap_source returned 0; 0.002 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command             ap_source returned 0; 0.008 sec.
+Command             ap_source returned 0; 0.004 sec.
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command             ap_source returned 0; 0.013 sec.
-Command           ap_source returned 0; 0.024 sec.
+Command             ap_source returned 0; 0.008 sec.
+Command           ap_source returned 0; 0.012 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command           ap_source returned 0; 0.076 sec.
+Command           ap_source returned 0; 0.012 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command           ap_source returned 0; 0.013 sec.
+Command           ap_source returned 0; 0.008 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command           ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.004 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command           ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source returned 0; 0.104 sec.
+Command           ap_source returned 0; 0.102 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source returned 0; 0.005 sec.
-Command         ap_source returned 0; 0.251 sec.
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.144 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source returned 0; 0.004 sec.
-Command       ap_source returned 0; 0.262 sec.
-Command     ap_source returned 0; 0.264 sec.
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.147 sec.
+Command     ap_source returned 0; 0.147 sec.
 Execute     open_platform DefaultPlatform 
 Command     open_platform returned 0; 0 sec.
 Execute     import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv7.lib 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_hp.lib 
-Command         ap_source returned 0; 0.005 sec.
-Command       ap_source returned 0; 0.011 sec.
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.004 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command           ap_source returned 0; 0.035 sec.
+Command           ap_source returned 0; 0.037 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
 Command             ap_source returned 0; 0 sec.
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
-Command             ap_source returned 0; 0.001 sec.
+Command             ap_source returned 0; 0 sec.
 Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
 Command           ap_source returned 0; 0.002 sec.
-Command         ap_source returned 0; 0.039 sec.
-Command       ap_source returned 0; 0.045 sec.
+Command         ap_source returned 0; 0.042 sec.
+Command       ap_source returned 0; 0.042 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_hp.hlp 
-Command       ap_source returned 0; 0.006 sec.
-Command     import_lib returned 0; 0.081 sec.
+Command       ap_source returned 0; 0.002 sec.
+Command     import_lib returned 0; 0.058 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command       ap_source returned 0; 0.017 sec.
-Command     ap_source returned 0; 0.02 sec.
+Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.002 sec.
 Execute     set_part xc7z010clg400-1 
 Execute       add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
 Execute         get_default_platform 
 Command         get_default_platform returned 0; 0 sec.
 Execute         license_isbetapart xc7z010 
-Command         license_isbetapart returned 1; 0.011 sec.
+Command         license_isbetapart returned 1; 0.008 sec.
 Execute         get_default_platform 
 Command         get_default_platform returned 0; 0 sec.
 Execute         config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
 Command         config_chip_info returned 0; 0 sec.
 Execute         config_chip_info -quiet -speed slow 
 Command         config_chip_info returned 0; 0 sec.
-Command       add_library returned 0; 0.023 sec.
+Command       add_library returned 0; 0.019 sec.
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Command         get_default_platform returned 0; 0 sec.
-Execute         open_platform DefaultPlatform 
-Command         open_platform returned 0; 0 sec.
-Execute         import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_hp.lib 
-Command             ap_source returned 0; 0.002 sec.
-Command           ap_source returned 0; 0.005 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command               ap_source returned 0; 0.001 sec.
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
-Command                 ap_source returned 0; 0.001 sec.
-Execute                 source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
-Command                 ap_source returned 0; 0 sec.
-Command               ap_source returned 0; 0.001 sec.
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
-Command               ap_source returned 0; 0.002 sec.
-Command             ap_source returned 0; 0.006 sec.
-Command           ap_source returned 0; 0.007 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_hp.hlp 
-Command           ap_source returned 0; 0.003 sec.
-Command         import_lib returned 0; 0.028 sec.
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command           ap_source returned 0; 0.003 sec.
-Command         ap_source returned 0; 0.003 sec.
-Command       add_library returned 0; 0.037 sec.
+Command       add_library returned 0; 0.003 sec.
 INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
 Execute       get_default_platform 
 Command       get_default_platform returned 0; 0 sec.
-Command     set_part returned 0; 0.156 sec.
+Command     set_part returned 0; 0.099 sec.
 Execute     get_default_platform 
 Command     get_default_platform returned 0; 0 sec.
 Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
 Command     config_chip_info returned 0; 0 sec.
 Execute     config_chip_info -quiet -speed slow 
 Command     config_chip_info returned 0; 0 sec.
-Command   open_solution returned 0; 0.767 sec.
-Execute   set_part xc7z010clg400-1 
-Execute     add_library xilinx/zynq/zynq:xc7z010:clg400:-1 
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       license_isbetapart xc7z010 
-Command       license_isbetapart returned 1; 0 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
-Command       config_chip_info returned 0; 0 sec.
-Execute       config_chip_info -quiet -speed slow 
-Command       config_chip_info returned 0; 0 sec.
-Command     add_library returned 0; 0.011 sec.
-Execute     add_library xilinx/zynq/zynq_fpv6 
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       open_platform DefaultPlatform 
-Command       open_platform returned 0; 0 sec.
-Execute       import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_hp.lib 
+Command   open_solution returned 0; 0.395 sec.
+Execute   export_design -rtl verilog -format syn_dcp 
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
 Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.004 sec.
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
-Command               ap_source returned 0; 0 sec.
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
-Command               ap_source returned 0; 0.001 sec.
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
-Command             ap_source returned 0; 0.001 sec.
-Command           ap_source returned 0; 0.004 sec.
-Command         ap_source returned 0; 0.005 sec.
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_hp.hlp 
-Command         ap_source returned 0; 0.002 sec.
-Command       import_lib returned 0; 0.022 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command         ap_source returned 0; 0.002 sec.
-Command       ap_source returned 0; 0.003 sec.
-Command     add_library returned 0; 0.031 sec.
-Execute     get_default_platform 
-Command     get_default_platform returned 0; 0 sec.
-Command   set_part returned 0; 0.109 sec.
-Execute   create_clock -period 10 -name default 
-Command   create_clock returned 0; 0.006 sec.
-Execute   csynth_design 
-Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -enable_clang39=0 
-INFO: [HLS 200-10] Analyzing design file 'hog_svm_fpga/hardware_approximation.cpp' ...
-INFO: [HLS 200-0] Compiling one TU...
-Execute       is_m_axi_addr64 
-Command       is_m_axi_addr64 returned 0; 0 sec.
-INFO: [HLS 200-0] Handling hog_svm_fpga/hardware_approximation.cpp as C++
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       is_encrypted hog_svm_fpga/hardware_approximation.cpp 
-Command       is_encrypted returned 0; 0 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-0] Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "hog_svm_fpga/hardware_approximation.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -fno-exceptions -D__llvm__ -E hog_svm_fpga/hardware_approximation.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp
-Command       clang returned 0; 1.854 sec.
-INFO: [HLS 200-0] Syntax Checking before pre-processing...
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp"  -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/useless.bc"  
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/useless.bc
-Command       clang returned 0; 2.728 sec.
-INFO: [HLS 200-0] GCC PP time: 4 seconds per iteration
-Execute       list_core -type functional_unit 
-Command       list_core returned 0; 0 sec.
-INFO: [HLS 200-0] CDT Preprocessing...
-INFO: [HLS 200-0] Marker-Pragma convertor: D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp.ap-line.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp.ap-line.cpp.CXX 1
-INFO: [HLS 200-0] Converting Markers to Pragmas...
-Execute       cdt  "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp.ap-line.cpp"  -m "xillybus_wrapper" -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp.ap-cdt.cpp" --pp --directive D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga.directive --source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hardware_approximation.cpp --error D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db --ca --es --gf --pd --p2d D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db --sd --scff D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/.systemc_flag --ad 
-Command       cdt returned 0; 9.945 sec.
-INFO: [HLS 200-0] Marker-Pragma convertor: D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pp.0.cpp.ap-cdt.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.0.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.0.cpp.ap-line.CXX 0
-INFO: [HLS 200-0] Converting Pragmas to Markers...
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/pragma.status.tcl 
-Command       ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-0] Pragma Handling...
-INFO: [HLS 200-0] Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.2.cpp" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -fno-exceptions -D__llvm__ -E D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.2.cpp
-Command       clang returned 0; 0.756 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-0] Processing labels
-Execute       clang  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.g.bc" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.g.bc
-Command       clang returned 0; 2.869 sec.
-INFO: [HLS 200-10] Analyzing design file 'hog_svm_fpga/xillybus_wrapper.cpp' ...
-INFO: [HLS 200-0] Compiling one TU...
-Execute       is_m_axi_addr64 
-Command       is_m_axi_addr64 returned 0; 0 sec.
-INFO: [HLS 200-0] Handling hog_svm_fpga/xillybus_wrapper.cpp as C++
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-Execute       is_encrypted hog_svm_fpga/xillybus_wrapper.cpp 
-Command       is_encrypted returned 0; 0.001 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-0] Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "hog_svm_fpga/xillybus_wrapper.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -fno-exceptions -D__llvm__ -E hog_svm_fpga/xillybus_wrapper.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp
-Command       clang returned 0; 0.76 sec.
-INFO: [HLS 200-0] Syntax Checking before pre-processing...
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp"  -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/useless.bc"  
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/useless.bc
-Command       clang returned 0; 2.675 sec.
-INFO: [HLS 200-0] GCC PP time: 3 seconds per iteration
-Execute       list_core -type functional_unit 
-Command       list_core returned 0; 0 sec.
-INFO: [HLS 200-0] CDT Preprocessing...
-INFO: [HLS 200-0] Marker-Pragma convertor: D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp.ap-line.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp.ap-line.cpp.CXX 1
-INFO: [HLS 200-0] Converting Markers to Pragmas...
-Execute       cdt  "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp.ap-line.cpp"  -m "xillybus_wrapper" -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp.ap-cdt.cpp" --pp --directive D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga.directive --source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/xillybus_wrapper.cpp --error D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSP_Macro DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_fulldsp HAddSub_meddsp HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db --ca --es --gf --pd --p2d D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db --sd --scff D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/.systemc_flag --ad 
-Command       cdt returned 0; 11.931 sec.
-INFO: [HLS 200-0] Marker-Pragma convertor: D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pp.0.cpp.ap-cdt.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.0.cpp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.0.cpp.ap-line.CXX 0
-INFO: [HLS 200-0] Converting Pragmas to Markers...
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/pragma.status.tcl 
-Command       ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-0] Pragma Handling...
-INFO: [HLS 200-0] Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.2.cpp" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -fno-exceptions -D__llvm__ -E D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.2.cpp
-Command       clang returned 0; 0.747 sec.
-Execute       get_default_platform 
-Command       get_default_platform returned 0; 0 sec.
-INFO: [HLS 200-0] Processing labels
-Execute       clang  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.g.bc" 
-INFO: [HLS 200-0] exec clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot -I C:/Xilinx/Vivado/2018.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.g.bc
-Command       clang returned 0; 2.873 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/ve_warning.tcl 
-Command       ap_source returned 0; 0.001 sec.
-INFO: [HLS 200-10] Validating synthesis directives ...
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/pragma.status.tcl 
-Command       ap_source returned 0; 0.002 sec.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'first_order_fixed_16::sin_cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K4' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K4' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'first_order_fixed_16::sin_cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K3' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K3' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K0' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K0' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_K2' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K3' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::cos_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'second_order_float::sin_K1' can not be recognized(UNKNOWN VARIABLE) in 'sincos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K2' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-WARNING: [HLS 200-40] Directive 'RESOURCE' for core 'ROM_1P_LUTRAM' cannot be applied: Variable 'fourth_order_double::sin_cos_K4' can not be recognized(UNKNOWN VARIABLE) in 'sin_or_cos_approximation'.
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 104.281 ; gain = 46.113
-INFO: [HLS 200-0] Linking Release ...
-Execute       llvm-ld D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.bc D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.bc -hls-opt -except-internalize xillybus_wrapper -LC:/Xilinx/Vivado/2018.1/win64/lib -lm_basic -lhlsmc++ -lhlsm -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o 
-Command       llvm-ld returned 0; 1.999 sec.
-Execute       disassemble D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o 
-Execute         is_encrypted D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.bc 
-Command         is_encrypted returned 0; 0 sec.
-Command       disassemble returned 0; 0.51 sec.
-INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
-INFO: [HLS 200-0] Linking Debug ...
-Execute       llvm-ld D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/hardware_approximation.g.bc D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.g.bc -hls-opt -except-internalize xillybus_wrapper -LC:/Xilinx/Vivado/2018.1/win64/lib -lm_basic -lhlsmc++ -lhlsm -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g 
-Command       llvm-ld returned 0; 1.25 sec.
-INFO: [HLS 200-0] Disassemble time: 0 seconds per iteration
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:47 . Memory (MB): peak = 104.281 ; gain = 46.113
-Execute       ::config_rtl 
-Command       config_rtl returned 0; 0.001 sec.
-Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 -enable_clang39=0 
-Execute         cleanup_all_models 
-Command         cleanup_all_models returned 0; 0 sec.
-INFO: [HLS 200-10] Starting code transformations ...
-Execute         transform -promote-dbg-pointer D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.pp.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.pp.0.bc -f 
-Command         transform returned 0; 0.244 sec.
-Execute         llvm-ld D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.1/win64/lib -lfloatconversion -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.0 
-Command         llvm-ld returned 0; 0.725 sec.
-INFO: [HLS 200-0] Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top xillybus_wrapper -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.0.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'compute_cells' (hog_svm_fpga/xillybus_wrapper.cpp:94).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'compute_cells' (hog_svm_fpga/xillybus_wrapper.cpp:94).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'fast_inv_sqrt' (hog_svm_fpga/hardware_approximation.cpp:119).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'sqrt_approx' (hog_svm_fpga/hardware_approximation.cpp:85).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'sqrt_approx' (hog_svm_fpga/hardware_approximation.cpp:84).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'sqrt_approx' (hog_svm_fpga/hardware_approximation.cpp:83).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'sqrt_approx' (hog_svm_fpga/hardware_approximation.cpp:82).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:48).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:48).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:48).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:47).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:47).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:46).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:46).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:45).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:45).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:44).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:44).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:44).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:43).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:43).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:43).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:42).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:42).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:41).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator>>' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:41).
-INFO: [XFORM 203-603] Inlining function 'sqrt_approx' into 'compute_gradients' (hog_svm_fpga/xillybus_wrapper.cpp:37).
-INFO: [XFORM 203-603] Inlining function 'quadrant' into 'find_bin' (hog_svm_fpga/hardware_approximation.cpp:27).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_float' into 'fast_inv_sqrt' (hog_svm_fpga/hardware_approximation.cpp:114).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_float' into 'fast_inv_sqrt' (hog_svm_fpga/hardware_approximation.cpp:109).
-INFO: [XFORM 203-603] Inlining function 'float_to_decimal' into 'fast_inv_sqrt' (hog_svm_fpga/hardware_approximation.cpp:110).
-INFO: [XFORM 203-603] Inlining function 'decimal_to_float' into 'fast_inv_sqrt' (hog_svm_fpga/hardware_approximation.cpp:113).
-INFO: [XFORM 203-603] Inlining function 'fast_inv_sqrt' into 'svm_detect' (hog_svm_fpga/xillybus_wrapper.cpp:131).
-INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::to_float' into 'svm_detect' (hog_svm_fpga/xillybus_wrapper.cpp:150).
-Command         transform returned 0; 3.314 sec.
-Execute         disassemble D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.1 D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.1 
-Execute           is_encrypted D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.1.bc 
-Command           is_encrypted returned 0; 0 sec.
-Command         disassemble returned 0; 0.326 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:51 . Memory (MB): peak = 312.867 ; gain = 254.699
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-0] Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.1.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform returned 0; 1.126 sec.
-INFO: [HLS 200-0] Checking Synthesizability 2/2..
-Execute         transform -syn-check D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.2.prechk.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.2.bc -f -phase syn-check 
-WARNING: [SYNCHK 200-23] hog_svm_fpga/hardware_approximation.cpp:109: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-Command         transform returned 0; 0.176 sec.
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:53 . Memory (MB): peak = 312.867 ; gain = 254.699
-INFO: [HLS 200-0] Compiler optimizing ...
-INFO: [HLS 200-0] Share syncheck's 1.bc for syn flow: copy D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.g.1.bc to D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.bc
-INFO: [HLS 200-0] Presyn 1...
-Execute         transform -hls -tmp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.tmp.bc -f 
-INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (hog_svm_fpga/xillybus_wrapper.cpp:207) to a process function for dataflow in function 'xillybus_wrapper'.
-WARNING: [XFORM 203-713] All the elements of global array 'cells.bin.V' should be updated in process function 'compute_cells', otherwise it may not be synthesized correctly.
-WARNING: [XFORM 203-713] All the elements of global array 'cells.mag_sq.V' should be updated in process function 'compute_cells', otherwise it may not be synthesized correctly.
-INFO: [XFORM 203-712] Applying dataflow to function 'xillybus_wrapper', detected/extracted 5 process function(s): 
-	 'Loop_1_proc'
-	 'compute_gradients'
-	 'compute_cells'
-	 'svm_detect'
-	 'Block_arrayctor.loop8.preheader42_proc'.
-Command         transform returned 0; 1.43 sec.
-Execute         disassemble D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.tmp D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.tmp 
-Execute           is_encrypted D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.tmp.bc 
-Command           is_encrypted returned 0; 0.001 sec.
-Command         disassemble returned 0; 0.307 sec.
-INFO: [HLS 200-0] Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.1.tmp.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:126:4) to (hog_svm_fpga/xillybus_wrapper.cpp:133:17) in function 'svm_detect'... converting 20 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:150:9) in function 'svm_detect'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (hog_svm_fpga/hardware_approximation.cpp:73:2) in function 'find_bin'... converting 9 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:10:4) to (hog_svm_fpga/xillybus_wrapper.cpp:9:26) in function 'compute_gradients'... converting 5 basic blocks.
-INFO: [XFORM 203-602] Inlining function 'find_bin' into 'compute_gradients' (hog_svm_fpga/xillybus_wrapper.cpp:38) automatically.
-INFO: [XFORM 203-11] Balancing expressions in function 'svm_detect' (hog_svm_fpga/xillybus_wrapper.cpp:109)...3 expression(s) balanced.
-Command         transform returned 0; 0.411 sec.
-Execute         disassemble D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.2 D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.2 
-Execute           is_encrypted D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.2.bc 
-Command           is_encrypted returned 0; 0.001 sec.
-Command         disassemble returned 0; 0.294 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:55 . Memory (MB): peak = 312.867 ; gain = 254.699
-INFO: [HLS 200-0] Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -read-loop-dep -dce -bitwidth -loop-dep -check-stream -norm-name -legalize -validate-dataflow -cdfg-build D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.2.bc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (hog_svm_fpga/xillybus_wrapper.cpp:7:15) in function 'compute_gradients'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1.1.2' (hog_svm_fpga/xillybus_wrapper.cpp:80:21) in function 'compute_cells'.
-                         Cannot flatten a loop nest 'Loop-1.1' (hog_svm_fpga/xillybus_wrapper.cpp:66:18) in function 'compute_cells' : 
-
-more than one sub loop.
-INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (hog_svm_fpga/xillybus_wrapper.cpp:64:17) in function 'compute_cells'.
-WARNING: [XFORM 203-631] Renaming function 'Block_arrayctor.loop8.preheader42_proc' to 'Block_arrayctor.loop' (hog_svm_fpga/xillybus_wrapper.cpp:228:2)
-Command         transform returned 0; 0.679 sec.
-Execute         disassemble D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.3 D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.3 
-Execute           is_encrypted D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.o.3.bc 
-Command           is_encrypted returned 0; 0 sec.
-Command         disassemble returned 0; 0.268 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:56 . Memory (MB): peak = 346.465 ; gain = 288.297
-INFO: [HLS 200-0] Finish building internal data model.
-Command       opt_and_import_c returned 0; 9.768 sec.
-Command     elaborate returned 0; 54.82 sec.
-Execute     autosyn 
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-0] Synthesizing C/C++ design ...
-INFO: [HLS 200-10] Synthesizing 'xillybus_wrapper' ...
-Execute       ap_set_top_model xillybus_wrapper 
-WARNING: [SYN 201-103] Legalizing function name 'Block_arrayctor.loop' to 'Block_arrayctor_loop'.
-Command       ap_set_top_model returned 0; 0.003 sec.
-Execute       get_model_list xillybus_wrapper -filter all-wo-channel -topdown 
-Command       get_model_list returned 0; 0 sec.
-Execute       preproc_iomode -model xillybus_wrapper 
-Command       preproc_iomode returned 0; 0 sec.
-Execute       preproc_iomode -model Block_arrayctor.loop 
-Command       preproc_iomode returned 0; 0 sec.
-Execute       preproc_iomode -model svm_detect 
-Command       preproc_iomode returned 0; 0 sec.
-Execute       preproc_iomode -model compute_cells 
-Command       preproc_iomode returned 0; 0 sec.
-Execute       preproc_iomode -model compute_gradients 
-Command       preproc_iomode returned 0; 0 sec.
-Execute       preproc_iomode -model Loop_1_proc 
-Command       preproc_iomode returned 0; 0 sec.
-Execute       get_model_list xillybus_wrapper -filter all-wo-channel 
-Command       get_model_list returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for configure: Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper
-INFO: [HLS 200-0] Configuring Module : Loop_1_proc ...
-Execute       set_default_model Loop_1_proc 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit Loop_1_proc 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Configuring Module : compute_gradients ...
-Execute       set_default_model compute_gradients 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit compute_gradients 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Configuring Module : compute_cells ...
-Execute       set_default_model compute_cells 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit compute_cells 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Configuring Module : svm_detect ...
-Execute       set_default_model svm_detect 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit svm_detect 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Configuring Module : Block_arrayctor.loop ...
-Execute       set_default_model Block_arrayctor.loop 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit Block_arrayctor.loop 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Configuring Module : xillybus_wrapper ...
-Execute       set_default_model xillybus_wrapper 
-Command       set_default_model returned 0; 0 sec.
-Execute       apply_spec_resource_limit xillybus_wrapper 
-Command       apply_spec_resource_limit returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for preprocess: Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper
-INFO: [HLS 200-0] Preprocessing Module: Loop_1_proc ...
-Execute       set_default_model Loop_1_proc 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model Loop_1_proc 
-Command       cdfg_preprocess returned 0; 0 sec.
-Execute       rtl_gen_preprocess Loop_1_proc 
-Command       rtl_gen_preprocess returned 0; 0.001 sec.
-INFO: [HLS 200-0] Preprocessing Module: compute_gradients ...
-Execute       set_default_model compute_gradients 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model compute_gradients 
-Command       cdfg_preprocess returned 0; 0.001 sec.
-Execute       rtl_gen_preprocess compute_gradients 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-INFO: [HLS 200-0] Preprocessing Module: compute_cells ...
-Execute       set_default_model compute_cells 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model compute_cells 
-Command       cdfg_preprocess returned 0; 0 sec.
-Execute       rtl_gen_preprocess compute_cells 
-Command       rtl_gen_preprocess returned 0; 0.001 sec.
-INFO: [HLS 200-0] Preprocessing Module: svm_detect ...
-Execute       set_default_model svm_detect 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model svm_detect 
-Command       cdfg_preprocess returned 0; 0.001 sec.
-Execute       rtl_gen_preprocess svm_detect 
-Command       rtl_gen_preprocess returned 0; 0.001 sec.
-INFO: [HLS 200-0] Preprocessing Module: Block_arrayctor.loop ...
-Execute       set_default_model Block_arrayctor.loop 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model Block_arrayctor.loop 
-Command       cdfg_preprocess returned 0; 0 sec.
-Execute       rtl_gen_preprocess Block_arrayctor.loop 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-INFO: [HLS 200-0] Preprocessing Module: xillybus_wrapper ...
-Execute       set_default_model xillybus_wrapper 
-Command       set_default_model returned 0; 0 sec.
-Execute       cdfg_preprocess -model xillybus_wrapper 
-Command       cdfg_preprocess returned 0; 0.001 sec.
-Execute       rtl_gen_preprocess xillybus_wrapper 
-WARNING: [SYN 201-107] Renaming port name 'xillybus_wrapper/in' to 'xillybus_wrapper/in_r' to avoid the conflict with HDL keywords or other object names.
-WARNING: [SYN 201-107] Renaming port name 'xillybus_wrapper/out' to 'xillybus_wrapper/out_r' to avoid the conflict with HDL keywords or other object names.
-Command       rtl_gen_preprocess returned 0; 0.019 sec.
-INFO: [HLS 200-0] Model list for synthesis: Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model Loop_1_proc 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model Loop_1_proc 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.103 sec.
-INFO: [HLS 200-111]  Elapsed time: 56.559 seconds; current allocated memory: 286.740 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.024 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.sched.adb -f 
-Command       db_write returned 0; 0.027 sec.
-INFO: [HLS 200-0] Finish scheduling Loop_1_proc.
-Execute       set_default_model Loop_1_proc 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model Loop_1_proc 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=Loop_1_proc
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.036 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.261 seconds; current allocated memory: 286.929 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.025 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.bind.adb -f 
-Command       db_write returned 0; 0.028 sec.
-INFO: [HLS 200-0] Finish binding Loop_1_proc.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'compute_gradients'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model compute_gradients 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model compute_gradients 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
-WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('image_V_load_2', hog_svm_fpga/xillybus_wrapper.cpp:36) on array 'image_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'image_V'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 6.
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.135 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.245 seconds; current allocated memory: 287.511 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.05 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.sched.adb -f 
-Command       db_write returned 0; 0.052 sec.
-INFO: [HLS 200-0] Finish scheduling compute_gradients.
-Execute       set_default_model compute_gradients 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model compute_gradients 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=compute_gradients
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.05 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.304 seconds; current allocated memory: 287.982 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.097 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.bind.adb -f 
-Command       db_write returned 0; 0.056 sec.
-INFO: [HLS 200-0] Finish binding compute_gradients.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'compute_cells'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model compute_cells 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model compute_cells 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1.2'.
-WARNING: [SCHED 204-68] Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation (hog_svm_fpga/xillybus_wrapper.cpp:86) of variable 'p_Val2_s', hog_svm_fpga/xillybus_wrapper.cpp:86 on array 'bin_vote.V', hog_svm_fpga/xillybus_wrapper.cpp:68 and 'load' operation ('__Val2__', hog_svm_fpga/xillybus_wrapper.cpp:86) on array 'bin_vote.V', hog_svm_fpga/xillybus_wrapper.cpp:68.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 4.
-INFO: [SCHED 204-61] Pipelining loop 'Loop 1.3'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.099 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.305 seconds; current allocated memory: 288.474 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.04 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.sched.adb -f 
-Command       db_write returned 0; 0.036 sec.
-INFO: [HLS 200-0] Finish scheduling compute_cells.
-Execute       set_default_model compute_cells 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model compute_cells 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=compute_cells
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.04 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.457 seconds; current allocated memory: 288.817 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.063 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.bind.adb -f 
-Command       db_write returned 0; 0.043 sec.
-INFO: [HLS 200-0] Finish binding compute_cells.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'svm_detect'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model svm_detect 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model svm_detect 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.177 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.335 seconds; current allocated memory: 289.929 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.088 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.sched.adb -f 
-Command       db_write returned 0; 0.079 sec.
-INFO: [HLS 200-0] Finish scheduling svm_detect.
-Execute       set_default_model svm_detect 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model svm_detect 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=svm_detect
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.069 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.355 seconds; current allocated memory: 290.880 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.154 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.bind.adb -f 
-Command       db_write returned 0; 0.097 sec.
-INFO: [HLS 200-0] Finish binding svm_detect.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Block_arrayctor_loop'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model Block_arrayctor.loop 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model Block_arrayctor.loop 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.053 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.363 seconds; current allocated memory: 291.045 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.01 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.sched.adb -f 
-Command       db_write returned 0; 0.012 sec.
-INFO: [HLS 200-0] Finish scheduling Block_arrayctor.loop.
-Execute       set_default_model Block_arrayctor.loop 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model Block_arrayctor.loop 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=Block_arrayctor.loop
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.029 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.207 seconds; current allocated memory: 291.080 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.007 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.bind.adb -f 
-Command       db_write returned 0; 0.009 sec.
-INFO: [HLS 200-0] Finish binding Block_arrayctor.loop.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'xillybus_wrapper'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model xillybus_wrapper 
-Command       set_default_model returned 0; 0 sec.
-Execute       schedule -model xillybus_wrapper 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule returned 0; 0.022 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.125 seconds; current allocated memory: 291.140 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.verbose.sched.rpt -verbose -f 
-Command       report returned 0; 0.014 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.sched.adb -f 
-Command       db_write returned 0; 0.017 sec.
-INFO: [HLS 200-0] Finish scheduling xillybus_wrapper.
-Execute       set_default_model xillybus_wrapper 
-Command       set_default_model returned 0; 0 sec.
-Execute       bind -model xillybus_wrapper 
-INFO: [BIND 205-110] clear=
-INFO: [BIND 205-110] debug=
-INFO: [BIND 205-110] drf=
-INFO: [BIND 205-110] effort=
-INFO: [BIND 205-110] fast_refine=
-INFO: [BIND 205-110] fu_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] global_opt=
-INFO: [BIND 205-110] gsearch=
-INFO: [BIND 205-110] help=
-INFO: [BIND 205-110] help-hidden=
-INFO: [BIND 205-110] min_mem_port=
-INFO: [BIND 205-110] min_op=
-INFO: [BIND 205-110] minreg=
-INFO: [BIND 205-110] ml=
-INFO: [BIND 205-110] model=xillybus_wrapper
-INFO: [BIND 205-110] no_false_path=
-INFO: [BIND 205-110] no_min_op=
-INFO: [BIND 205-110] normalize=
-INFO: [BIND 205-110] quiet=
-INFO: [BIND 205-110] refine=
-INFO: [BIND 205-110] reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-110] search=
-INFO: [BIND 205-110] tight_delay=
-INFO: [BIND 205-110] verbose=
-INFO: [BIND 205-110] wFF=
-INFO: [BIND 205-110] wFU=
-INFO: [BIND 205-110] wMUX=
-INFO: [BIND 205-110] wNET=
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind returned 0; 0.246 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.376 seconds; current allocated memory: 291.447 MB.
-Execute       report -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.verbose.bind.rpt -verbose -f 
-Command       report returned 0; 0.179 sec.
-Execute       db_write -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.bind.adb -f 
-Command       db_write returned 0; 0.016 sec.
-INFO: [HLS 200-0] Finish binding xillybus_wrapper.
-Execute       get_model_list xillybus_wrapper -filter all-wo-channel 
-Command       get_model_list returned 0; 0 sec.
-INFO: [HLS 200-0] Preprocessing for RTLGen ...
-Execute       rtl_gen_preprocess Loop_1_proc 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-Execute       rtl_gen_preprocess compute_gradients 
-Command       rtl_gen_preprocess returned 0; 0.001 sec.
-Execute       rtl_gen_preprocess compute_cells 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-Execute       rtl_gen_preprocess svm_detect 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-Execute       rtl_gen_preprocess Block_arrayctor.loop 
-Command       rtl_gen_preprocess returned 0; 0.001 sec.
-Execute       rtl_gen_preprocess xillybus_wrapper 
-Command       rtl_gen_preprocess returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for RTL generation: Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model Loop_1_proc -vendor xilinx -mg_file D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc'.
-Command       create_rtl_model returned 0; 0.026 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.324 seconds; current allocated memory: 291.943 MB.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       gen_rtl Loop_1_proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/systemc/Loop_1_proc -synmodules Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper 
-Command       gen_rtl returned 0; 0.007 sec.
-Execute       gen_rtl Loop_1_proc -style xilinx -f -lang vhdl -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/vhdl/Loop_1_proc 
-Command       gen_rtl returned 0; 0.006 sec.
-Execute       gen_rtl Loop_1_proc -style xilinx -f -lang vlog -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/verilog/Loop_1_proc 
-Command       gen_rtl returned 0; 0.007 sec.
-Execute       gen_tb_info Loop_1_proc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc -p D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db 
-Command       gen_tb_info returned 0; 0.01 sec.
-Execute       report -model Loop_1_proc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/Loop_1_proc_csynth.rpt -f 
-Command       report returned 0; 0.01 sec.
-Execute       report -model Loop_1_proc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/Loop_1_proc_csynth.xml -f -x 
-Command       report returned 0; 0.006 sec.
-Execute       report -model Loop_1_proc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.verbose.rpt -verbose -f 
-Command       report returned 0; 0.033 sec.
-Execute       db_write -model Loop_1_proc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.adb -f 
-Command       db_write returned 0; 0.04 sec.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'compute_gradients'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model compute_gradients -vendor xilinx -mg_file D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_gradients'.
-Command       create_rtl_model returned 0; 0.057 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.283 seconds; current allocated memory: 293.045 MB.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0 sec.
-Execute       gen_rtl compute_gradients -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/systemc/compute_gradients -synmodules Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper 
-Command       gen_rtl returned 0; 0.011 sec.
-Execute       gen_rtl compute_gradients -style xilinx -f -lang vhdl -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/vhdl/compute_gradients 
-Command       gen_rtl returned 0; 0.006 sec.
-Execute       gen_rtl compute_gradients -style xilinx -f -lang vlog -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/verilog/compute_gradients 
-Command       gen_rtl returned 0; 0.01 sec.
-Execute       gen_tb_info compute_gradients -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients -p D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db 
-Command       gen_tb_info returned 0; 0.024 sec.
-Execute       report -model compute_gradients -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/compute_gradients_csynth.rpt -f 
-Command       report returned 0; 0.029 sec.
-Execute       report -model compute_gradients -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/compute_gradients_csynth.xml -f -x 
-Command       report returned 0; 0.026 sec.
-Execute       report -model compute_gradients -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.verbose.rpt -verbose -f 
-Command       report returned 0; 0.121 sec.
-Execute       db_write -model compute_gradients -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.adb -f 
-Command       db_write returned 0; 0.103 sec.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'compute_cells'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model compute_cells -vendor xilinx -mg_file D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
-INFO: [SYN 201-210] Renamed object name 'compute_cells_bin_vote_V' to 'compute_cells_binbkb' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_cells'.
-Command       create_rtl_model returned 0; 0.035 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.977 seconds; current allocated memory: 294.160 MB.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       gen_rtl compute_cells -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/systemc/compute_cells -synmodules Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper 
-Command       gen_rtl returned 0; 0.01 sec.
-Execute       gen_rtl compute_cells -style xilinx -f -lang vhdl -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/vhdl/compute_cells 
-Command       gen_rtl returned 0; 0.006 sec.
-Execute       gen_rtl compute_cells -style xilinx -f -lang vlog -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/verilog/compute_cells 
-Command       gen_rtl returned 0; 0.005 sec.
-Execute       gen_tb_info compute_cells -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells -p D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db 
-Command       gen_tb_info returned 0; 0.016 sec.
-Execute       report -model compute_cells -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/compute_cells_csynth.rpt -f 
-Command       report returned 0; 0.018 sec.
-Execute       report -model compute_cells -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/compute_cells_csynth.xml -f -x 
-Command       report returned 0; 0.016 sec.
-Execute       report -model compute_cells -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.verbose.rpt -verbose -f 
-Command       report returned 0; 0.068 sec.
-Execute       db_write -model compute_cells -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.adb -f 
-Command       db_write returned 0; 0.081 sec.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'svm_detect'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model svm_detect -vendor xilinx -mg_file D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
-INFO: [SYN 201-210] Renamed object name 'svm_detect_SVM_detector_V' to 'svm_detect_SVM_decud' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_fsub_32ns_32ns_32_5_full_dsp_1' to 'xillybus_wrapper_dEe' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_fmul_32ns_32ns_32_4_max_dsp_1' to 'xillybus_wrapper_eOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_uitofp_32ns_32_6_1' to 'xillybus_wrapper_fYi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_fpext_32ns_64_1_1' to 'xillybus_wrapper_g8j' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'xillybus_wrapper_dEe': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'xillybus_wrapper_eOg': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'xillybus_wrapper_fYi': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'xillybus_wrapper_g8j': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'svm_detect'.
-Command       create_rtl_model returned 0; 0.125 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.623 seconds; current allocated memory: 296.111 MB.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       gen_rtl svm_detect -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/systemc/svm_detect -synmodules Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper 
-Command       gen_rtl returned 0; 0.011 sec.
-Execute       gen_rtl svm_detect -style xilinx -f -lang vhdl -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/vhdl/svm_detect 
-Command       gen_rtl returned 0; 0.007 sec.
-Execute       gen_rtl svm_detect -style xilinx -f -lang vlog -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/verilog/svm_detect 
-Command       gen_rtl returned 0; 0.012 sec.
-Execute       gen_tb_info svm_detect -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect -p D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db 
-Command       gen_tb_info returned 0; 0.034 sec.
-Execute       report -model svm_detect -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/svm_detect_csynth.rpt -f 
-Command       report returned 0; 0.039 sec.
-Execute       report -model svm_detect -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/svm_detect_csynth.xml -f -x 
-Command       report returned 0; 0.031 sec.
-Execute       report -model svm_detect -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.verbose.rpt -verbose -f 
-Command       report returned 0; 0.192 sec.
-Execute       db_write -model svm_detect -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.adb -f 
-Command       db_write returned 0; 0.174 sec.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Block_arrayctor_loop'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model Block_arrayctor.loop -vendor xilinx -mg_file D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_arrayctor_loop'.
-Command       create_rtl_model returned 0; 0.009 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 296.671 MB.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       gen_rtl Block_arrayctor.loop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/systemc/Block_arrayctor_loop -synmodules Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper 
-Command       gen_rtl returned 0; 0.005 sec.
-Execute       gen_rtl Block_arrayctor.loop -style xilinx -f -lang vhdl -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/vhdl/Block_arrayctor_loop 
-Command       gen_rtl returned 0; 0.004 sec.
-Execute       gen_rtl Block_arrayctor.loop -style xilinx -f -lang vlog -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/verilog/Block_arrayctor_loop 
-Command       gen_rtl returned 0; 0.006 sec.
-Execute       gen_tb_info Block_arrayctor.loop -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop -p D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db 
-Command       gen_tb_info returned 0; 0.006 sec.
-Execute       report -model Block_arrayctor.loop -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/Block_arrayctor_loop_csynth.rpt -f 
-Command       report returned 0; 0.005 sec.
-Execute       report -model Block_arrayctor.loop -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/Block_arrayctor_loop_csynth.xml -f -x 
-Command       report returned 0; 0.006 sec.
-Execute       report -model Block_arrayctor.loop -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.verbose.rpt -verbose -f 
-Command       report returned 0; 0.012 sec.
-Execute       db_write -model Block_arrayctor.loop -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.adb -f 
-Command       db_write returned 0; 0.051 sec.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'xillybus_wrapper'
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       create_rtl_model xillybus_wrapper -vendor xilinx -mg_file D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-INFO: [RTGEN 206-500] Setting interface mode on port 'xillybus_wrapper/in_r' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'xillybus_wrapper/out_r' to 'ap_fifo'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'xillybus_wrapper' to 'ap_ctrl_none'.
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_image_V' to 'xillybus_wrapper_hbi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_cells_bin_V' to 'xillybus_wrapper_ibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_cells_mag_sq_V' to 'xillybus_wrapper_jbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_grad_vote_magnitude_s' to 'xillybus_wrapper_kbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'xillybus_wrapper_grad_vote_bin_V' to 'xillybus_wrapper_lbW' due to the length limit 20
-INFO: [RTGEN 206-100] Finished creating RTL model for 'xillybus_wrapper'.
-Command       create_rtl_model returned 0; 0.095 sec.
-INFO: [HLS 200-111]  Elapsed time: 1.754 seconds; current allocated memory: 297.459 MB.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       gen_rtl xillybus_wrapper -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/systemc/xillybus_wrapper -synmodules Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper 
-Command       gen_rtl returned 0; 0.01 sec.
-Execute       gen_rtl xillybus_wrapper -istop -style xilinx -f -lang vhdl -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/vhdl/xillybus_wrapper 
-Command       gen_rtl returned 0; 0.018 sec.
-Execute       gen_rtl xillybus_wrapper -istop -style xilinx -f -lang vlog -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/verilog/xillybus_wrapper 
-Command       gen_rtl returned 0; 0.012 sec.
-Execute       export_constraint_db -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.constraint.tcl -f -tool general 
-Command       export_constraint_db returned 0; 0.001 sec.
-Execute       report -model xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.design.xml -verbose -f -dv 
-Command       report returned 0; 0.148 sec.
-Execute       report -model xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.sdaccel.xml -verbose -f -sdaccel 
-Command       report returned 0; 0.024 sec.
-Execute       gen_tb_info xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper -p D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db 
-Command       gen_tb_info returned 0; 0.015 sec.
-Execute       report -model xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/xillybus_wrapper_csynth.rpt -f 
-Command       report returned 0; 0.013 sec.
-Execute       report -model xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/syn/report/xillybus_wrapper_csynth.xml -f -x 
-Command       report returned 0; 0.009 sec.
-Execute       report -model xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.verbose.rpt -verbose -f 
-Command       report returned 0; 0.184 sec.
-Execute       db_write -model xillybus_wrapper -o D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.adb -f 
-Command       db_write returned 0; 0.066 sec.
-Execute       sc_get_clocks xillybus_wrapper 
-Command       sc_get_clocks returned 0; 0 sec.
-Execute       sc_get_portdomain xillybus_wrapper 
-Command       sc_get_portdomain returned 0; 0 sec.
-INFO: [HLS 200-0] Model list for RTL component generation: Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor.loop xillybus_wrapper
-INFO: [HLS 200-0] Handling components in module [Loop_1_proc] ... 
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-Command       ap_source returned 0; 0.028 sec.
-INFO: [HLS 200-0] Handling components in module [compute_gradients] ... 
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-Command       ap_source returned 0; 0.038 sec.
-INFO: [HLS 200-0] Handling components in module [compute_cells] ... 
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
-INFO: [HLS 200-0] Found component compute_cells_binbkb.
-INFO: [HLS 200-0] Append model compute_cells_binbkb
-Command       ap_source returned 0; 0.029 sec.
-INFO: [HLS 200-0] Handling components in module [svm_detect] ... 
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
-INFO: [HLS 200-0] Found component xillybus_wrapper_dEe.
-INFO: [HLS 200-0] Append model xillybus_wrapper_dEe
-INFO: [HLS 200-0] Found component xillybus_wrapper_eOg.
-INFO: [HLS 200-0] Append model xillybus_wrapper_eOg
-INFO: [HLS 200-0] Found component xillybus_wrapper_fYi.
-INFO: [HLS 200-0] Append model xillybus_wrapper_fYi
-INFO: [HLS 200-0] Found component xillybus_wrapper_g8j.
-INFO: [HLS 200-0] Append model xillybus_wrapper_g8j
-INFO: [HLS 200-0] Found component svm_detect_SVM_decud.
-INFO: [HLS 200-0] Append model svm_detect_SVM_decud
-Command       ap_source returned 0; 0.029 sec.
-INFO: [HLS 200-0] Handling components in module [Block_arrayctor_loop] ... 
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
-Command       ap_source returned 0; 0.038 sec.
-INFO: [HLS 200-0] Handling components in module [xillybus_wrapper] ... 
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-INFO: [HLS 200-0] Found component fifo_w32_d2_A.
-INFO: [HLS 200-0] Append model fifo_w32_d2_A
-Command       ap_source returned 0; 0.028 sec.
-INFO: [HLS 200-0] Append model Loop_1_proc
-INFO: [HLS 200-0] Append model compute_gradients
-INFO: [HLS 200-0] Append model compute_cells
-INFO: [HLS 200-0] Append model svm_detect
-INFO: [HLS 200-0] Append model Block_arrayctor_loop
-INFO: [HLS 200-0] Append model xillybus_wrapper
-INFO: [HLS 200-0] Generating RTL model list ...
-INFO: [HLS 200-0] All models in this session: compute_cells_binbkb xillybus_wrapper_dEe xillybus_wrapper_eOg xillybus_wrapper_fYi xillybus_wrapper_g8j svm_detect_SVM_decud fifo_w32_d2_A Loop_1_proc compute_gradients compute_cells svm_detect Block_arrayctor_loop xillybus_wrapper
-INFO: [HLS 200-0] To file: write model compute_cells_binbkb
-INFO: [HLS 200-0] To file: write model xillybus_wrapper_dEe
-INFO: [HLS 200-0] To file: write model xillybus_wrapper_eOg
-INFO: [HLS 200-0] To file: write model xillybus_wrapper_fYi
-INFO: [HLS 200-0] To file: write model xillybus_wrapper_g8j
-INFO: [HLS 200-0] To file: write model svm_detect_SVM_decud
-INFO: [HLS 200-0] To file: write model fifo_w32_d2_A
-INFO: [HLS 200-0] To file: write model Loop_1_proc
-INFO: [HLS 200-0] To file: write model compute_gradients
-INFO: [HLS 200-0] To file: write model compute_cells
-INFO: [HLS 200-0] To file: write model svm_detect
-INFO: [HLS 200-0] To file: write model Block_arrayctor_loop
-INFO: [HLS 200-0] To file: write model xillybus_wrapper
-INFO: [HLS 200-0] Finished generating RTL model list.
-
-
-INFO: [HLS 200-0] RTL Generation done.
-INFO: [HLS 200-0] CAS Generation done.
-INFO: [HLS 200-0] CBC Generation done.
-Execute       export_ssdm D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/a.export.ll 
-Command       export_ssdm returned 0; 0.006 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
-Command         ap_source returned 0; 0.005 sec.
-Command       ap_source returned 0; 0.008 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
-Command       ap_source returned 0; 0.004 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
-Command       ap_source returned 0; 0.006 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
-Command       ap_source returned 0; 0.003 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command               ap_source returned 0; 0.003 sec.
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command               ap_source returned 0; 0.006 sec.
-Command             ap_source returned 0; 0.01 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command             ap_source returned 0; 0.01 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command             ap_source returned 0; 0.007 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command             ap_source returned 0; 0.002 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source returned 0; 0.077 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command             ap_source returned 0; 0.001 sec.
-Command           ap_source returned 0; 0.112 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
 Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.115 sec.
-Command       ap_source returned 0; 0.115 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.002 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.118 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-Command       ap_source returned 0; 0 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
-INFO: [RTMG 210-278] Implementing memory 'compute_cells_binbkb_ram (RAM)' using distributed RAMs.
-Command       ap_source returned 0; 0.039 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
-INFO: [RTMG 210-279] Implementing memory 'svm_detect_SVM_decud_rom' using distributed ROMs.
-Command       ap_source returned 0; 0.33 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-INFO: [RTMG 210-278] Implementing memory 'xillybus_wrapper_hbi_memcore_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'xillybus_wrapper_ibs_memcore_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'xillybus_wrapper_jbC_memcore_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'xillybus_wrapper_kbM_memcore_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'xillybus_wrapper_lbW_memcore_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-285] Implementing FIFO 'fifo_w32_d2_A' using Shift Registers.
-Command       ap_source returned 0; 0.341 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
-Command         ap_source returned 0; 0 sec.
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
-Command       ap_source returned 0; 0 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
-Command       ap_source returned 0; 0 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command             ap_source returned 0; 0.001 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command             ap_source returned 0; 0 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command             ap_source returned 0; 0.002 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command               ap_source returned 0; 0.004 sec.
-Execute               source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command               ap_source returned 0; 0.007 sec.
-Command             ap_source returned 0; 0.011 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command             ap_source returned 0; 0.01 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command             ap_source returned 0; 0.007 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
 Command             ap_source returned 0; 0.004 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command             ap_source returned 0; 0 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source returned 0; 0.077 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command             ap_source returned 0; 0 sec.
-Command           ap_source returned 0; 0.113 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.013 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.009 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.089 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.132 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.135 sec.
+Command     ap_source returned 0; 0.135 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.002 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.008 sec.
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.008 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.09 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.132 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.135 sec.
+Command     ap_source returned 0; 0.135 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.003 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_blocks.compgen.tcl 
+Command     ap_source returned 0; 0.099 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_2_proc.compgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
+Command     ap_source returned 0; 0.242 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.constraint.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.059 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.004 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.011 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.012 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.008 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.003 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
 Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0.116 sec.
-Command       ap_source returned 0; 0.116 sec.
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command         ap_source returned 0; 0.002 sec.
-Command       ap_source returned 0; 0.002 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.rtl_wrap.cfg.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
-Command       ap_source returned 0; 0.081 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
-Command       ap_source returned 0; 0 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-Command       ap_source returned 0; 0.193 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-Command       ap_source returned 0; 0.09 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-Command       ap_source returned 0; 0.017 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.095 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.136 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.139 sec.
+Command     ap_source returned 0; 0.139 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
 Command       ap_source returned 0; 0.003 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-Command       ap_source returned 0; 0.141 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.constraint.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.tbgen.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.constraint.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       sc_get_clocks xillybus_wrapper 
-Command       sc_get_clocks returned 0; 0 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command       ap_source returned 0; 0.001 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/impl/misc/xillybus_wrapper_ap_fmul_2_max_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.083 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/impl/misc/xillybus_wrapper_ap_fpext_0_no_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.003 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/impl/misc/xillybus_wrapper_ap_fsub_3_full_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.002 sec.
-Execute       source D:/lolic/Documents/Thesis/hog_svm_fpga/hog_svm_fpga/hog_svm_fpga/impl/misc/xillybus_wrapper_ap_uitofp_4_no_dsp_32_ip.tcl 
-Command       ap_source returned 0; 0.002 sec.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:01:09 . Memory (MB): peak = 369.219 ; gain = 311.051
-INFO: [SYSC 207-301] Generating SystemC RTL for xillybus_wrapper.
-INFO: [VHDL 208-304] Generating VHDL RTL for xillybus_wrapper.
-INFO: [VLOG 209-307] Generating Verilog RTL for xillybus_wrapper.
-Command     autosyn returned 0; 12.833 sec.
-Command   csynth_design returned 0; 67.654 sec.
-Command ap_source returned 0; 68.618 sec.
+Command     ap_source returned 0; 0.003 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/ip/../../.autopilot/db/xillybus_wrapper.tbgen.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Command   export_design returned 0; 191.037 sec.
+Command ap_source returned 0; 191.437 sec.
 Execute cleanup_all 
-Command cleanup_all returned 0; 0.015 sec.
+Command cleanup_all returned 0; 0 sec.

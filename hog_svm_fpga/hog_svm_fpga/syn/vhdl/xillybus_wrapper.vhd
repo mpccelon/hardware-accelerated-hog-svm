@@ -25,7 +25,7 @@ end;
 architecture behav of xillybus_wrapper is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "xillybus_wrapper,hls_ip_2018_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.748750,HLS_SYN_LAT=25173,HLS_SYN_TPT=9922,HLS_SYN_MEM=15,HLS_SYN_DSP=32,HLS_SYN_FF=3539,HLS_SYN_LUT=7060}";
+    "xillybus_wrapper,hls_ip_2018_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010clg400-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=8.561000,HLS_SYN_LAT=27210,HLS_SYN_TPT=9922,HLS_SYN_MEM=19,HLS_SYN_DSP=35,HLS_SYN_FF=7486,HLS_SYN_LUT=13930}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
@@ -37,6 +37,9 @@ architecture behav of xillybus_wrapper is
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv6_0 : STD_LOGIC_VECTOR (5 downto 0) := "000000";
     constant ap_const_lv6_1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
+    constant ap_const_lv11_1 : STD_LOGIC_VECTOR (10 downto 0) := "00000000001";
+    constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
     signal image_V_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
@@ -51,6 +54,8 @@ architecture behav of xillybus_wrapper is
     signal cells_mag_sq_V_i_q1 : STD_LOGIC_VECTOR (63 downto 0);
     signal cells_mag_sq_V_t_q0 : STD_LOGIC_VECTOR (63 downto 0);
     signal cells_mag_sq_V_t_q1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal hog_i_q0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal hog_t_q0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grad_vote_magnitude_s_i_q0 : STD_LOGIC_VECTOR (25 downto 0);
     signal grad_vote_magnitude_s_t_q0 : STD_LOGIC_VECTOR (25 downto 0);
     signal grad_vote_bin_V_i_q0 : STD_LOGIC_VECTOR (3 downto 0);
@@ -121,30 +126,38 @@ architecture behav of xillybus_wrapper is
     signal compute_cells_U0_cells_bin_V_full_n : STD_LOGIC;
     signal ap_sync_reg_channel_write_cells_bin_V : STD_LOGIC := '0';
     signal ap_sync_channel_write_cells_bin_V : STD_LOGIC;
-    signal svm_detect_U0_ap_start : STD_LOGIC;
-    signal svm_detect_U0_ap_done : STD_LOGIC;
-    signal svm_detect_U0_ap_continue : STD_LOGIC;
-    signal svm_detect_U0_ap_idle : STD_LOGIC;
-    signal svm_detect_U0_ap_ready : STD_LOGIC;
-    signal svm_detect_U0_cells_bin_V_2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal svm_detect_U0_cells_bin_V_2_ap_vld : STD_LOGIC;
-    signal svm_detect_U0_cells_bin_V_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal svm_detect_U0_cells_bin_V_ce0 : STD_LOGIC;
-    signal svm_detect_U0_cells_bin_V_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal svm_detect_U0_cells_bin_V_ce1 : STD_LOGIC;
-    signal svm_detect_U0_cells_mag_sq_V_address0 : STD_LOGIC_VECTOR (5 downto 0);
-    signal svm_detect_U0_cells_mag_sq_V_ce0 : STD_LOGIC;
-    signal svm_detect_U0_cells_mag_sq_V_address1 : STD_LOGIC_VECTOR (5 downto 0);
-    signal svm_detect_U0_cells_mag_sq_V_ce1 : STD_LOGIC;
-    signal ap_channel_done_tmp_channel : STD_LOGIC;
-    signal tmp_channel_full_n : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_ap_start : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_ap_done : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_ap_continue : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_ap_idle : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_ap_ready : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_out_r_din : STD_LOGIC_VECTOR (31 downto 0);
-    signal Block_arrayctor_loop_U0_out_r_write : STD_LOGIC;
+    signal compute_blocks_U0_ap_start : STD_LOGIC;
+    signal compute_blocks_U0_ap_done : STD_LOGIC;
+    signal compute_blocks_U0_ap_continue : STD_LOGIC;
+    signal compute_blocks_U0_ap_idle : STD_LOGIC;
+    signal compute_blocks_U0_ap_ready : STD_LOGIC;
+    signal compute_blocks_U0_cells_bin_V_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal compute_blocks_U0_cells_bin_V_ce0 : STD_LOGIC;
+    signal compute_blocks_U0_cells_bin_V_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal compute_blocks_U0_cells_bin_V_ce1 : STD_LOGIC;
+    signal compute_blocks_U0_cells_mag_sq_V_address0 : STD_LOGIC_VECTOR (5 downto 0);
+    signal compute_blocks_U0_cells_mag_sq_V_ce0 : STD_LOGIC;
+    signal compute_blocks_U0_cells_mag_sq_V_address1 : STD_LOGIC_VECTOR (5 downto 0);
+    signal compute_blocks_U0_cells_mag_sq_V_ce1 : STD_LOGIC;
+    signal compute_blocks_U0_hog_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal compute_blocks_U0_hog_ce0 : STD_LOGIC;
+    signal compute_blocks_U0_hog_we0 : STD_LOGIC;
+    signal compute_blocks_U0_hog_d0 : STD_LOGIC_VECTOR (31 downto 0);
+    signal compute_blocks_U0_hog_address1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal compute_blocks_U0_hog_ce1 : STD_LOGIC;
+    signal compute_blocks_U0_hog_we1 : STD_LOGIC;
+    signal compute_blocks_U0_hog_d1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_channel_done_hog : STD_LOGIC;
+    signal compute_blocks_U0_hog_full_n : STD_LOGIC;
+    signal Loop_2_proc_U0_ap_start : STD_LOGIC;
+    signal Loop_2_proc_U0_ap_done : STD_LOGIC;
+    signal Loop_2_proc_U0_ap_continue : STD_LOGIC;
+    signal Loop_2_proc_U0_ap_idle : STD_LOGIC;
+    signal Loop_2_proc_U0_ap_ready : STD_LOGIC;
+    signal Loop_2_proc_U0_out_r_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal Loop_2_proc_U0_out_r_write : STD_LOGIC;
+    signal Loop_2_proc_U0_hog_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal Loop_2_proc_U0_hog_ce0 : STD_LOGIC;
     signal ap_sync_continue : STD_LOGIC;
     signal image_V_i_full_n : STD_LOGIC;
     signal image_V_t_empty_n : STD_LOGIC;
@@ -160,18 +173,18 @@ architecture behav of xillybus_wrapper is
     signal cells_mag_sq_V_t_empty_n : STD_LOGIC;
     signal cells_mag_sq_V_t_d1 : STD_LOGIC_VECTOR (63 downto 0);
     signal cells_mag_sq_V_t_we1 : STD_LOGIC;
-    signal tmp_channel_dout : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_channel_empty_n : STD_LOGIC;
+    signal hog_i_full_n : STD_LOGIC;
+    signal hog_t_empty_n : STD_LOGIC;
     signal Loop_1_proc_U0_start_full_n : STD_LOGIC;
     signal Loop_1_proc_U0_start_write : STD_LOGIC;
     signal compute_gradients_U0_start_full_n : STD_LOGIC;
     signal compute_gradients_U0_start_write : STD_LOGIC;
     signal compute_cells_U0_start_full_n : STD_LOGIC;
     signal compute_cells_U0_start_write : STD_LOGIC;
-    signal svm_detect_U0_start_full_n : STD_LOGIC;
-    signal svm_detect_U0_start_write : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_start_full_n : STD_LOGIC;
-    signal Block_arrayctor_loop_U0_start_write : STD_LOGIC;
+    signal compute_blocks_U0_start_full_n : STD_LOGIC;
+    signal compute_blocks_U0_start_write : STD_LOGIC;
+    signal Loop_2_proc_U0_start_full_n : STD_LOGIC;
+    signal Loop_2_proc_U0_start_write : STD_LOGIC;
 
     component Loop_1_proc IS
     port (
@@ -248,7 +261,7 @@ architecture behav of xillybus_wrapper is
     end component;
 
 
-    component svm_detect IS
+    component compute_blocks IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -257,8 +270,6 @@ architecture behav of xillybus_wrapper is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        cells_bin_V_2 : OUT STD_LOGIC_VECTOR (31 downto 0);
-        cells_bin_V_2_ap_vld : OUT STD_LOGIC;
         cells_bin_V_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
         cells_bin_V_ce0 : OUT STD_LOGIC;
         cells_bin_V_q0 : IN STD_LOGIC_VECTOR (31 downto 0);
@@ -270,11 +281,19 @@ architecture behav of xillybus_wrapper is
         cells_mag_sq_V_q0 : IN STD_LOGIC_VECTOR (63 downto 0);
         cells_mag_sq_V_address1 : OUT STD_LOGIC_VECTOR (5 downto 0);
         cells_mag_sq_V_ce1 : OUT STD_LOGIC;
-        cells_mag_sq_V_q1 : IN STD_LOGIC_VECTOR (63 downto 0) );
+        cells_mag_sq_V_q1 : IN STD_LOGIC_VECTOR (63 downto 0);
+        hog_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        hog_ce0 : OUT STD_LOGIC;
+        hog_we0 : OUT STD_LOGIC;
+        hog_d0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        hog_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        hog_ce1 : OUT STD_LOGIC;
+        hog_we1 : OUT STD_LOGIC;
+        hog_d1 : OUT STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
-    component Block_arrayctor_loop IS
+    component Loop_2_proc IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -283,14 +302,16 @@ architecture behav of xillybus_wrapper is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        tmp : IN STD_LOGIC_VECTOR (31 downto 0);
         out_r_din : OUT STD_LOGIC_VECTOR (31 downto 0);
         out_r_full_n : IN STD_LOGIC;
-        out_r_write : OUT STD_LOGIC );
+        out_r_write : OUT STD_LOGIC;
+        hog_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        hog_ce0 : OUT STD_LOGIC;
+        hog_q0 : IN STD_LOGIC_VECTOR (31 downto 0) );
     end component;
 
 
-    component xillybus_wrapper_hbi IS
+    component xillybus_wrapper_g8j IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -327,7 +348,7 @@ architecture behav of xillybus_wrapper is
     end component;
 
 
-    component xillybus_wrapper_ibs IS
+    component xillybus_wrapper_hbi IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -360,7 +381,7 @@ architecture behav of xillybus_wrapper is
     end component;
 
 
-    component xillybus_wrapper_jbC IS
+    component xillybus_wrapper_ibs IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -384,6 +405,41 @@ architecture behav of xillybus_wrapper is
         t_address1 : IN STD_LOGIC_VECTOR (5 downto 0);
         t_ce1 : IN STD_LOGIC;
         t_q1 : OUT STD_LOGIC_VECTOR (63 downto 0);
+        i_ce : IN STD_LOGIC;
+        t_ce : IN STD_LOGIC;
+        i_full_n : OUT STD_LOGIC;
+        i_write : IN STD_LOGIC;
+        t_empty_n : OUT STD_LOGIC;
+        t_read : IN STD_LOGIC );
+    end component;
+
+
+    component xillybus_wrapper_jbC IS
+    generic (
+        DataWidth : INTEGER;
+        AddressRange : INTEGER;
+        AddressWidth : INTEGER );
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        i_address0 : IN STD_LOGIC_VECTOR (10 downto 0);
+        i_ce0 : IN STD_LOGIC;
+        i_we0 : IN STD_LOGIC;
+        i_d0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        i_q0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        i_address1 : IN STD_LOGIC_VECTOR (10 downto 0);
+        i_ce1 : IN STD_LOGIC;
+        i_we1 : IN STD_LOGIC;
+        i_d1 : IN STD_LOGIC_VECTOR (31 downto 0);
+        t_address0 : IN STD_LOGIC_VECTOR (10 downto 0);
+        t_ce0 : IN STD_LOGIC;
+        t_we0 : IN STD_LOGIC;
+        t_d0 : IN STD_LOGIC_VECTOR (31 downto 0);
+        t_q0 : OUT STD_LOGIC_VECTOR (31 downto 0);
+        t_address1 : IN STD_LOGIC_VECTOR (10 downto 0);
+        t_ce1 : IN STD_LOGIC;
+        t_we1 : IN STD_LOGIC;
+        t_d1 : IN STD_LOGIC_VECTOR (31 downto 0);
         i_ce : IN STD_LOGIC;
         t_ce : IN STD_LOGIC;
         i_full_n : OUT STD_LOGIC;
@@ -447,24 +503,9 @@ architecture behav of xillybus_wrapper is
     end component;
 
 
-    component fifo_w32_d2_A IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (31 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (31 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
 
 begin
-    image_V_U : component xillybus_wrapper_hbi
+    image_V_U : component xillybus_wrapper_g8j
     generic map (
         DataWidth => 8,
         AddressRange => 4096,
@@ -499,7 +540,7 @@ begin
         t_empty_n => image_V_t_empty_n,
         t_read => compute_gradients_U0_ap_ready);
 
-    cells_bin_V_U : component xillybus_wrapper_ibs
+    cells_bin_V_U : component xillybus_wrapper_hbi
     generic map (
         DataWidth => 32,
         AddressRange => 576,
@@ -515,22 +556,22 @@ begin
         i_address1 => ap_const_lv10_0,
         i_ce1 => ap_const_logic_0,
         i_q1 => cells_bin_V_i_q1,
-        t_address0 => svm_detect_U0_cells_bin_V_address0,
-        t_ce0 => svm_detect_U0_cells_bin_V_ce0,
+        t_address0 => compute_blocks_U0_cells_bin_V_address0,
+        t_ce0 => compute_blocks_U0_cells_bin_V_ce0,
         t_we0 => ap_const_logic_0,
         t_d0 => ap_const_lv32_0,
         t_q0 => cells_bin_V_t_q0,
-        t_address1 => svm_detect_U0_cells_bin_V_address1,
-        t_ce1 => svm_detect_U0_cells_bin_V_ce1,
+        t_address1 => compute_blocks_U0_cells_bin_V_address1,
+        t_ce1 => compute_blocks_U0_cells_bin_V_ce1,
         t_q1 => cells_bin_V_t_q1,
         i_ce => ap_const_logic_1,
         t_ce => ap_const_logic_1,
         i_full_n => cells_bin_V_i_full_n,
         i_write => ap_channel_done_cells_bin_V,
         t_empty_n => cells_bin_V_t_empty_n,
-        t_read => svm_detect_U0_ap_ready);
+        t_read => compute_blocks_U0_ap_ready);
 
-    cells_mag_sq_V_U : component xillybus_wrapper_jbC
+    cells_mag_sq_V_U : component xillybus_wrapper_ibs
     generic map (
         DataWidth => 64,
         AddressRange => 64,
@@ -546,20 +587,53 @@ begin
         i_address1 => ap_const_lv6_0,
         i_ce1 => ap_const_logic_0,
         i_q1 => cells_mag_sq_V_i_q1,
-        t_address0 => svm_detect_U0_cells_mag_sq_V_address0,
-        t_ce0 => svm_detect_U0_cells_mag_sq_V_ce0,
+        t_address0 => compute_blocks_U0_cells_mag_sq_V_address0,
+        t_ce0 => compute_blocks_U0_cells_mag_sq_V_ce0,
         t_we0 => ap_const_logic_0,
         t_d0 => ap_const_lv64_0,
         t_q0 => cells_mag_sq_V_t_q0,
-        t_address1 => svm_detect_U0_cells_mag_sq_V_address1,
-        t_ce1 => svm_detect_U0_cells_mag_sq_V_ce1,
+        t_address1 => compute_blocks_U0_cells_mag_sq_V_address1,
+        t_ce1 => compute_blocks_U0_cells_mag_sq_V_ce1,
         t_q1 => cells_mag_sq_V_t_q1,
         i_ce => ap_const_logic_1,
         t_ce => ap_const_logic_1,
         i_full_n => cells_mag_sq_V_i_full_n,
         i_write => ap_channel_done_cells_mag_sq_V,
         t_empty_n => cells_mag_sq_V_t_empty_n,
-        t_read => svm_detect_U0_ap_ready);
+        t_read => compute_blocks_U0_ap_ready);
+
+    hog_U : component xillybus_wrapper_jbC
+    generic map (
+        DataWidth => 32,
+        AddressRange => 1764,
+        AddressWidth => 11)
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        i_address0 => compute_blocks_U0_hog_address0,
+        i_ce0 => compute_blocks_U0_hog_ce0,
+        i_we0 => compute_blocks_U0_hog_we0,
+        i_d0 => compute_blocks_U0_hog_d0,
+        i_q0 => hog_i_q0,
+        i_address1 => compute_blocks_U0_hog_address1,
+        i_ce1 => compute_blocks_U0_hog_ce1,
+        i_we1 => compute_blocks_U0_hog_we1,
+        i_d1 => compute_blocks_U0_hog_d1,
+        t_address0 => Loop_2_proc_U0_hog_address0,
+        t_ce0 => Loop_2_proc_U0_hog_ce0,
+        t_we0 => ap_const_logic_0,
+        t_d0 => ap_const_lv32_0,
+        t_q0 => hog_t_q0,
+        t_address1 => ap_const_lv11_0,
+        t_ce1 => ap_const_logic_0,
+        t_we1 => ap_const_logic_0,
+        t_d1 => ap_const_lv32_0,
+        i_ce => ap_const_logic_1,
+        t_ce => ap_const_logic_1,
+        i_full_n => hog_i_full_n,
+        i_write => compute_blocks_U0_ap_done,
+        t_empty_n => hog_t_empty_n,
+        t_read => Loop_2_proc_U0_ap_ready);
 
     grad_vote_magnitude_s_U : component xillybus_wrapper_kbM
     generic map (
@@ -680,56 +754,51 @@ begin
         cells_mag_sq_V_we0 => compute_cells_U0_cells_mag_sq_V_we0,
         cells_mag_sq_V_d0 => compute_cells_U0_cells_mag_sq_V_d0);
 
-    svm_detect_U0 : component svm_detect
+    compute_blocks_U0 : component compute_blocks
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => svm_detect_U0_ap_start,
-        ap_done => svm_detect_U0_ap_done,
-        ap_continue => svm_detect_U0_ap_continue,
-        ap_idle => svm_detect_U0_ap_idle,
-        ap_ready => svm_detect_U0_ap_ready,
-        cells_bin_V_2 => svm_detect_U0_cells_bin_V_2,
-        cells_bin_V_2_ap_vld => svm_detect_U0_cells_bin_V_2_ap_vld,
-        cells_bin_V_address0 => svm_detect_U0_cells_bin_V_address0,
-        cells_bin_V_ce0 => svm_detect_U0_cells_bin_V_ce0,
+        ap_start => compute_blocks_U0_ap_start,
+        ap_done => compute_blocks_U0_ap_done,
+        ap_continue => compute_blocks_U0_ap_continue,
+        ap_idle => compute_blocks_U0_ap_idle,
+        ap_ready => compute_blocks_U0_ap_ready,
+        cells_bin_V_address0 => compute_blocks_U0_cells_bin_V_address0,
+        cells_bin_V_ce0 => compute_blocks_U0_cells_bin_V_ce0,
         cells_bin_V_q0 => cells_bin_V_t_q0,
-        cells_bin_V_address1 => svm_detect_U0_cells_bin_V_address1,
-        cells_bin_V_ce1 => svm_detect_U0_cells_bin_V_ce1,
+        cells_bin_V_address1 => compute_blocks_U0_cells_bin_V_address1,
+        cells_bin_V_ce1 => compute_blocks_U0_cells_bin_V_ce1,
         cells_bin_V_q1 => cells_bin_V_t_q1,
-        cells_mag_sq_V_address0 => svm_detect_U0_cells_mag_sq_V_address0,
-        cells_mag_sq_V_ce0 => svm_detect_U0_cells_mag_sq_V_ce0,
+        cells_mag_sq_V_address0 => compute_blocks_U0_cells_mag_sq_V_address0,
+        cells_mag_sq_V_ce0 => compute_blocks_U0_cells_mag_sq_V_ce0,
         cells_mag_sq_V_q0 => cells_mag_sq_V_t_q0,
-        cells_mag_sq_V_address1 => svm_detect_U0_cells_mag_sq_V_address1,
-        cells_mag_sq_V_ce1 => svm_detect_U0_cells_mag_sq_V_ce1,
-        cells_mag_sq_V_q1 => cells_mag_sq_V_t_q1);
+        cells_mag_sq_V_address1 => compute_blocks_U0_cells_mag_sq_V_address1,
+        cells_mag_sq_V_ce1 => compute_blocks_U0_cells_mag_sq_V_ce1,
+        cells_mag_sq_V_q1 => cells_mag_sq_V_t_q1,
+        hog_address0 => compute_blocks_U0_hog_address0,
+        hog_ce0 => compute_blocks_U0_hog_ce0,
+        hog_we0 => compute_blocks_U0_hog_we0,
+        hog_d0 => compute_blocks_U0_hog_d0,
+        hog_address1 => compute_blocks_U0_hog_address1,
+        hog_ce1 => compute_blocks_U0_hog_ce1,
+        hog_we1 => compute_blocks_U0_hog_we1,
+        hog_d1 => compute_blocks_U0_hog_d1);
 
-    Block_arrayctor_loop_U0 : component Block_arrayctor_loop
+    Loop_2_proc_U0 : component Loop_2_proc
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => Block_arrayctor_loop_U0_ap_start,
-        ap_done => Block_arrayctor_loop_U0_ap_done,
-        ap_continue => Block_arrayctor_loop_U0_ap_continue,
-        ap_idle => Block_arrayctor_loop_U0_ap_idle,
-        ap_ready => Block_arrayctor_loop_U0_ap_ready,
-        tmp => tmp_channel_dout,
-        out_r_din => Block_arrayctor_loop_U0_out_r_din,
+        ap_start => Loop_2_proc_U0_ap_start,
+        ap_done => Loop_2_proc_U0_ap_done,
+        ap_continue => Loop_2_proc_U0_ap_continue,
+        ap_idle => Loop_2_proc_U0_ap_idle,
+        ap_ready => Loop_2_proc_U0_ap_ready,
+        out_r_din => Loop_2_proc_U0_out_r_din,
         out_r_full_n => out_r_full_n,
-        out_r_write => Block_arrayctor_loop_U0_out_r_write);
-
-    tmp_channel_U : component fifo_w32_d2_A
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => svm_detect_U0_cells_bin_V_2,
-        if_full_n => tmp_channel_full_n,
-        if_write => svm_detect_U0_ap_done,
-        if_dout => tmp_channel_dout,
-        if_empty_n => tmp_channel_empty_n,
-        if_read => Block_arrayctor_loop_U0_ap_ready);
+        out_r_write => Loop_2_proc_U0_out_r_write,
+        hog_address0 => Loop_2_proc_U0_hog_address0,
+        hog_ce0 => Loop_2_proc_U0_hog_ce0,
+        hog_q0 => hog_t_q0);
 
 
 
@@ -810,20 +879,20 @@ begin
         end if;
     end process;
 
-    Block_arrayctor_loop_U0_ap_continue <= ap_const_logic_1;
-    Block_arrayctor_loop_U0_ap_start <= tmp_channel_empty_n;
-    Block_arrayctor_loop_U0_start_full_n <= ap_const_logic_1;
-    Block_arrayctor_loop_U0_start_write <= ap_const_logic_0;
     Loop_1_proc_U0_ap_continue <= image_V_i_full_n;
     Loop_1_proc_U0_image_V_full_n <= image_V_i_full_n;
     Loop_1_proc_U0_start_full_n <= ap_const_logic_1;
     Loop_1_proc_U0_start_write <= ap_const_logic_0;
+    Loop_2_proc_U0_ap_continue <= ap_const_logic_1;
+    Loop_2_proc_U0_ap_start <= hog_t_empty_n;
+    Loop_2_proc_U0_start_full_n <= ap_const_logic_1;
+    Loop_2_proc_U0_start_write <= ap_const_logic_0;
     ap_channel_done_cells_bin_V <= ((ap_sync_reg_channel_write_cells_bin_V xor ap_const_logic_1) and compute_cells_U0_ap_done);
     ap_channel_done_cells_mag_sq_V <= ((ap_sync_reg_channel_write_cells_mag_sq_V xor ap_const_logic_1) and compute_cells_U0_ap_done);
     ap_channel_done_grad_vote_bin_V <= ((ap_sync_reg_channel_write_grad_vote_bin_V xor ap_const_logic_1) and compute_gradients_U0_ap_done);
     ap_channel_done_grad_vote_magnitude_s <= ((ap_sync_reg_channel_write_grad_vote_magnitude_s xor ap_const_logic_1) and compute_gradients_U0_ap_done);
+    ap_channel_done_hog <= compute_blocks_U0_ap_done;
     ap_channel_done_image_V <= Loop_1_proc_U0_ap_done;
-    ap_channel_done_tmp_channel <= svm_detect_U0_ap_done;
     ap_sync_channel_write_cells_bin_V <= ((compute_cells_U0_cells_bin_V_full_n and ap_channel_done_cells_bin_V) or ap_sync_reg_channel_write_cells_bin_V);
     ap_sync_channel_write_cells_mag_sq_V <= ((compute_cells_U0_cells_mag_sq_V_full_n and ap_channel_done_cells_mag_sq_V) or ap_sync_reg_channel_write_cells_mag_sq_V);
     ap_sync_channel_write_grad_vote_bin_V <= ((compute_gradients_U0_grad_vote_bin_V_full_n and ap_channel_done_grad_vote_bin_V) or ap_sync_reg_channel_write_grad_vote_bin_V);
@@ -833,6 +902,11 @@ begin
     cells_bin_V_t_we1 <= ap_const_logic_0;
     cells_mag_sq_V_t_d1 <= ap_const_lv64_0;
     cells_mag_sq_V_t_we1 <= ap_const_logic_0;
+    compute_blocks_U0_ap_continue <= hog_i_full_n;
+    compute_blocks_U0_ap_start <= (cells_mag_sq_V_t_empty_n and cells_bin_V_t_empty_n);
+    compute_blocks_U0_hog_full_n <= hog_i_full_n;
+    compute_blocks_U0_start_full_n <= ap_const_logic_1;
+    compute_blocks_U0_start_write <= ap_const_logic_0;
     compute_cells_U0_ap_continue <= (ap_sync_channel_write_cells_mag_sq_V and ap_sync_channel_write_cells_bin_V);
     compute_cells_U0_ap_start <= (grad_vote_magnitude_s_t_empty_n and grad_vote_bin_V_t_empty_n);
     compute_cells_U0_cells_bin_V_full_n <= cells_bin_V_i_full_n;
@@ -846,10 +920,6 @@ begin
     compute_gradients_U0_start_full_n <= ap_const_logic_1;
     compute_gradients_U0_start_write <= ap_const_logic_0;
     in_r_read <= Loop_1_proc_U0_in_r_read;
-    out_r_din <= Block_arrayctor_loop_U0_out_r_din;
-    out_r_write <= Block_arrayctor_loop_U0_out_r_write;
-    svm_detect_U0_ap_continue <= tmp_channel_full_n;
-    svm_detect_U0_ap_start <= (cells_mag_sq_V_t_empty_n and cells_bin_V_t_empty_n);
-    svm_detect_U0_start_full_n <= ap_const_logic_1;
-    svm_detect_U0_start_write <= ap_const_logic_0;
+    out_r_din <= Loop_2_proc_U0_out_r_din;
+    out_r_write <= Loop_2_proc_U0_out_r_write;
 end behav;

@@ -13,9 +13,9 @@ use ieee.std_logic_unsigned.all;
 entity xillybus_wrapper_ibs_memcore_ram is 
     generic(
             mem_type    : string := "block"; 
-            dwidth     : integer := 32; 
-            awidth     : integer := 10; 
-            mem_size    : integer := 576
+            dwidth     : integer := 64; 
+            awidth     : integer := 6; 
+            mem_size    : integer := 64
     ); 
     port (
           addr0     : in std_logic_vector(awidth-1 downto 0); 
@@ -100,9 +100,9 @@ use IEEE.std_logic_1164.all;
 
 entity xillybus_wrapper_ibs_memcore is
     generic (
-        DataWidth : INTEGER := 32;
-        AddressRange : INTEGER := 576;
-        AddressWidth : INTEGER := 10);
+        DataWidth : INTEGER := 64;
+        AddressRange : INTEGER := 64;
+        AddressWidth : INTEGER := 6);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

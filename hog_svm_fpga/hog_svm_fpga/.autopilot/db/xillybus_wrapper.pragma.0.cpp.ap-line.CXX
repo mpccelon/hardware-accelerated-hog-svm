@@ -1444,7 +1444,8 @@
 #pragma line 5 "hog_svm_fpga/xillybus_wrapper.h" 2 ::: 45113
 #pragma line 1 "hog_svm_fpga/hardware_approximation.h" 1 ::: 45114
 #pragma line 6 "hog_svm_fpga/xillybus_wrapper.h" 2 ::: 45130
-#pragma line 2 "hog_svm_fpga/xillybus_wrapper.cpp" 2 ::: 45139
-#pragma line 113 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45253
-#pragma line 115 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45258
-#pragma line 238 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45374
+#pragma line 2 "hog_svm_fpga/xillybus_wrapper.cpp" 2 ::: 45142
+#pragma line 38 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45153
+#pragma line 117 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45235
+#pragma line 119 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45240
+#pragma line 239 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 45352

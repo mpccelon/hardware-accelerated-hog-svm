@@ -30,9 +30,10 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/etc"/>
-									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga"/>
+									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.2025811063" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -48,9 +49,10 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/etc"/>
-									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga"/>
+									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/Xilinx/hog_svm_fpga"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1118967087" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -116,6 +118,7 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/etc"/>
+									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/systemc/include"/>
 								</option>
@@ -133,6 +136,7 @@
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include/etc"/>
+									<listOptionValue builtIn="false" value="D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/include"/>
 									<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.1/win64/tools/systemc/include"/>
 								</option>

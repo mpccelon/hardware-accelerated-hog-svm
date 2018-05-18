@@ -4,6 +4,9 @@
 #include "hls_hog.h"
 #include "hardware_approximation.h"
 
+//determine whether output is HOG or SVM
+#define HOG
+
 void compute_gradients(byte image[IMAGE_HEIGHT][IMAGE_WIDTH], gradient_vote grad_vote[IMAGE_HEIGHT][IMAGE_WIDTH]);
 void initialize_cells(cell_histogram cells[IMAGE_HEIGHT/CELL_SIZE][IMAGE_WIDTH/CELL_SIZE]);
 void compute_cells(gradient_vote grad_vote[IMAGE_HEIGHT][IMAGE_WIDTH], cell_histogram cells[IMAGE_HEIGHT/CELL_SIZE][IMAGE_WIDTH/CELL_SIZE]);

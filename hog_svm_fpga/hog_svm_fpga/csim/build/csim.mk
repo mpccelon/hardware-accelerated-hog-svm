@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../tb_xillybus_wrapper.cpp ../../../xillybus_wrapper.cpp ../../../hardware_approximation.cpp
+HLS_SOURCES = ../../../tb_xillybus_wrapper.cpp ../../../hardware_approximation.cpp ../../../xillybus_wrapper.cpp
 
 TARGET := csim.exe
 
@@ -78,14 +78,14 @@ $(ObjDir)/tb_xillybus_wrapper.o: ../../../tb_xillybus_wrapper.cpp $(ObjDir)/.dir
 
 -include $(ObjDir)/tb_xillybus_wrapper.d
 
-$(ObjDir)/xillybus_wrapper.o: ../../../xillybus_wrapper.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../xillybus_wrapper.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
-
--include $(ObjDir)/xillybus_wrapper.d
-
 $(ObjDir)/hardware_approximation.o: ../../../hardware_approximation.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../hardware_approximation.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/hardware_approximation.d
+
+$(ObjDir)/xillybus_wrapper.o: ../../../xillybus_wrapper.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../xillybus_wrapper.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
+
+-include $(ObjDir)/xillybus_wrapper.d

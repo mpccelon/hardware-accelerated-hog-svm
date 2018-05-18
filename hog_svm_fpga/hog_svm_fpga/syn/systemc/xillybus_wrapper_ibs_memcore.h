@@ -21,9 +21,9 @@ using namespace sc_dt;
 
 struct xillybus_wrapper_ibs_memcore_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 32;
-  static const unsigned AddressRange = 576;
-  static const unsigned AddressWidth = 10;
+  static const unsigned DataWidth = 64;
+  static const unsigned AddressRange = 64;
+  static const unsigned AddressWidth = 6;
 
 //latency = 1
 //input_reg = 1
@@ -97,9 +97,9 @@ void prc_write_1()
 SC_MODULE(xillybus_wrapper_ibs_memcore) {
 
 
-static const unsigned DataWidth = 32;
-static const unsigned AddressRange = 576;
-static const unsigned AddressWidth = 10;
+static const unsigned DataWidth = 64;
+static const unsigned AddressRange = 64;
+static const unsigned AddressWidth = 6;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;

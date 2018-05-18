@@ -45,14 +45,14 @@
 						<id>2</id>
 						<name>image_V</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>202</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>206</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="8" tracking_level="0" version="0">
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second class_id="9" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -61,7 +61,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>202</second>
+										<second>206</second>
 									</item>
 								</second>
 							</item>
@@ -152,16 +152,16 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>exitcond_i</name>
+						<name>exitcond1_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -170,7 +170,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -199,14 +199,14 @@
 						<id>9</id>
 						<name>i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -215,7 +215,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -244,14 +244,14 @@
 						<id>10</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -260,7 +260,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -288,16 +288,16 @@
 					<Obj>
 						<type>0</type>
 						<id>12</id>
-						<name>tmp</name>
+						<name>tmp_s</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -306,7 +306,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -334,16 +334,16 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>tmp_117_cast</name>
+						<name>tmp_129_cast</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -352,7 +352,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -410,14 +410,14 @@
 						<id>16</id>
 						<name>p_1_rec_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>212</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>216</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -426,7 +426,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>212</second>
+										<second>216</second>
 									</item>
 								</second>
 							</item>
@@ -488,16 +488,16 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>exitcond</name>
+						<name>exitcond1</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>213</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -506,7 +506,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>209</second>
+										<second>213</second>
 									</item>
 								</second>
 							</item>
@@ -533,16 +533,16 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>p_rec_i</name>
+						<name>p_rec1_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>212</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>216</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -551,7 +551,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>212</second>
+										<second>216</second>
 									</item>
 								</second>
 							</item>
@@ -580,14 +580,14 @@
 						<id>21</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>213</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -596,7 +596,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>209</second>
+										<second>213</second>
 									</item>
 								</second>
 							</item>
@@ -626,14 +626,14 @@
 						<id>23</id>
 						<name>temp</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>212</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>216</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -642,7 +642,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>212</second>
+										<second>216</second>
 									</item>
 								</second>
 							</item>
@@ -669,16 +669,16 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_125</name>
+						<name>tmp</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>213</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>217</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -687,7 +687,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>213</second>
+										<second>217</second>
 									</item>
 								</second>
 							</item>
@@ -713,16 +713,16 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>tmp_3_i_cast</name>
+						<name>tmp_2_i_cast</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>213</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>217</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -731,7 +731,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>213</second>
+										<second>217</second>
 									</item>
 								</second>
 							</item>
@@ -757,16 +757,16 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>tmp_s</name>
+						<name>tmp_121</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>213</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>217</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -775,7 +775,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>213</second>
+										<second>217</second>
 									</item>
 								</second>
 							</item>
@@ -802,16 +802,16 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>tmp_118_cast</name>
+						<name>tmp_130_cast</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>213</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>217</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -820,7 +820,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>213</second>
+										<second>217</second>
 									</item>
 								</second>
 							</item>
@@ -848,14 +848,14 @@
 						<id>28</id>
 						<name>image_V_addr</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>213</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>217</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -864,7 +864,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>213</second>
+										<second>217</second>
 									</item>
 								</second>
 							</item>
@@ -894,14 +894,14 @@
 						<id>29</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>213</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>217</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -910,7 +910,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>213</second>
+										<second>217</second>
 									</item>
 								</second>
 							</item>
@@ -937,16 +937,16 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp_126</name>
+						<name>tmp_220</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>213</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -955,7 +955,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>209</second>
+										<second>213</second>
 									</item>
 								</second>
 							</item>
@@ -981,16 +981,16 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_4_i</name>
+						<name>tmp_3_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>214</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>218</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -999,7 +999,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>214</second>
+										<second>218</second>
 									</item>
 								</second>
 							</item>
@@ -1026,16 +1026,16 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>tmp_111</name>
+						<name>tmp_122</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1044,7 +1044,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -1072,16 +1072,16 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>tmp_112</name>
+						<name>tmp_123</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>214</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>218</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1090,7 +1090,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>214</second>
+										<second>218</second>
 									</item>
 								</second>
 							</item>
@@ -1118,14 +1118,14 @@
 						<id>34</id>
 						<name>image_V_addr_1</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>214</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>218</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1134,7 +1134,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>214</second>
+										<second>218</second>
 									</item>
 								</second>
 							</item>
@@ -1164,14 +1164,14 @@
 						<id>35</id>
 						<name>p_1_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>214</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>218</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1180,7 +1180,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>214</second>
+										<second>218</second>
 									</item>
 								</second>
 							</item>
@@ -1211,14 +1211,14 @@
 						<id>36</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>214</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>218</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1227,7 +1227,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>214</second>
+										<second>218</second>
 									</item>
 								</second>
 							</item>
@@ -1254,16 +1254,16 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>tmp_7_i</name>
+						<name>tmp_6_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>215</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1272,7 +1272,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>215</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -1299,16 +1299,16 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>tmp_113</name>
+						<name>tmp_124</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1317,7 +1317,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -1345,16 +1345,16 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>tmp_114</name>
+						<name>tmp_125</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>215</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1363,7 +1363,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>215</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -1391,14 +1391,14 @@
 						<id>40</id>
 						<name>image_V_addr_2</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>215</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1407,7 +1407,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>215</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -1437,14 +1437,14 @@
 						<id>41</id>
 						<name>p_2_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>215</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1453,7 +1453,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>215</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -1484,14 +1484,14 @@
 						<id>42</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>215</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>219</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1500,7 +1500,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>215</second>
+										<second>219</second>
 									</item>
 								</second>
 							</item>
@@ -1527,16 +1527,16 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>tmp_i</name>
+						<name>tmp_9_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>220</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1545,7 +1545,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>216</second>
+										<second>220</second>
 									</item>
 								</second>
 							</item>
@@ -1572,16 +1572,16 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>tmp_115</name>
+						<name>tmp_126</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>207</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>211</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1590,7 +1590,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>207</second>
+										<second>211</second>
 									</item>
 								</second>
 							</item>
@@ -1618,16 +1618,16 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>tmp_116</name>
+						<name>tmp_127</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>220</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1636,7 +1636,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>216</second>
+										<second>220</second>
 									</item>
 								</second>
 							</item>
@@ -1664,14 +1664,14 @@
 						<id>46</id>
 						<name>image_V_addr_3</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>220</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1680,7 +1680,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>216</second>
+										<second>220</second>
 									</item>
 								</second>
 							</item>
@@ -1710,14 +1710,14 @@
 						<id>47</id>
 						<name>p_3_i</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>220</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1726,7 +1726,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>216</second>
+										<second>220</second>
 									</item>
 								</second>
 							</item>
@@ -1757,14 +1757,14 @@
 						<id>48</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>216</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>220</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1773,7 +1773,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>216</second>
+										<second>220</second>
 									</item>
 								</second>
 							</item>
@@ -1802,14 +1802,14 @@
 						<id>49</id>
 						<name>j</name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>213</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1818,7 +1818,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>209</second>
+										<second>213</second>
 									</item>
 								</second>
 							</item>
@@ -1847,14 +1847,14 @@
 						<id>50</id>
 						<name></name>
 						<fileName>hog_svm_fpga/xillybus_wrapper.cpp</fileName>
-						<fileDirectory>D:\lolic\Documents\Thesis\hog_svm_fpga</fileDirectory>
-						<lineNumber>209</lineNumber>
+						<fileDirectory>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</fileDirectory>
+						<lineNumber>213</lineNumber>
 						<contextFuncName>xillybus_wrapper</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>D:\lolic\Documents\Thesis\hog_svm_fpga</first>
+								<first>D:\lolic\Documents\Thesis\hardware-accelerated-hog-svm</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1863,7 +1863,7 @@
 											<first>hog_svm_fpga/xillybus_wrapper.cpp</first>
 											<second>xillybus_wrapper</second>
 										</first>
-										<second>209</second>
+										<second>213</second>
 									</item>
 								</second>
 							</item>
@@ -2392,7 +2392,7 @@
 				<Obj>
 					<type>3</type>
 					<id>11</id>
-					<name>.preheader50.i</name>
+					<name>.preheader54.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2520,7 +2520,7 @@
 				<Obj>
 					<type>3</type>
 					<id>53</id>
-					<name>.preheader50.i.loopexit</name>
+					<name>.preheader54.i.loopexit</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

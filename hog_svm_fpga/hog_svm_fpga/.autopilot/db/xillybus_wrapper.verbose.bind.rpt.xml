@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'xillybus_wrapper'" level="0">
-<item name = "Date">Thu May 17 18:21:37 2018
+<item name = "Date">Fri May 18 16:31:13 2018
 </item>
 <item name = "Version">2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)</item>
 <item name = "Project">hog_svm_fpga</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.75, 1.25</column>
+<column name="ap_clk">10.00, 8.56, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,18 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">25173, 25173, 9922, 9922, dataflow</column>
+<column name="">27210, 27210, 9922, 9922, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_svm_detect_fu_62">svm_detect, 4874, 4874, 4874, 4874, none</column>
-<column name="grp_compute_gradients_fu_71">compute_gradients, 8197, 8197, 8197, 8197, none</column>
-<column name="grp_compute_cells_fu_78">compute_cells, 9921, 9921, 9921, 9921, none</column>
-<column name="grp_Loop_1_proc_fu_86">Loop_1_proc, 2177, 2177, 2177, 2177, none</column>
-<column name="StgValue_31_Block_arrayctor_loop_fu_94">Block_arrayctor_loop, 0, 0, 0, 0, none</column>
+<column name="grp_compute_blocks_fu_60">compute_blocks, 3382, 3382, 3382, 3382, none</column>
+<column name="grp_compute_gradients_fu_67">compute_gradients, 8197, 8197, 8197, 8197, none</column>
+<column name="grp_compute_cells_fu_74">compute_cells, 9921, 9921, 9921, 9921, none</column>
+<column name="grp_Loop_1_proc_fu_82">Loop_1_proc, 2177, 2177, 2177, 2177, none</column>
+<column name="grp_Loop_2_proc_fu_90">Loop_2_proc, 3529, 3529, 3529, 3529, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

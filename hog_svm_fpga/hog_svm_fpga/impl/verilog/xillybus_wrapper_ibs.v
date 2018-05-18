@@ -10,9 +10,9 @@
 
 module xillybus_wrapper_ibs
 #(parameter
-    DataWidth    = 32,
+    DataWidth    = 64,
     AddressRange = 32,
-    AddressWidth = 10,
+    AddressWidth = 6,
     BufferCount  = 2,
     MemLatency   = 1,
     IndexWidth   = 1

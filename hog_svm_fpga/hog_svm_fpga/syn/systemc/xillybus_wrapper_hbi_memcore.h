@@ -21,9 +21,9 @@ using namespace sc_dt;
 
 struct xillybus_wrapper_hbi_memcore_ram : public sc_core::sc_module {
 
-  static const unsigned DataWidth = 8;
-  static const unsigned AddressRange = 4096;
-  static const unsigned AddressWidth = 12;
+  static const unsigned DataWidth = 32;
+  static const unsigned AddressRange = 576;
+  static const unsigned AddressWidth = 10;
 
 //latency = 1
 //input_reg = 1
@@ -36,8 +36,6 @@ sc_core::sc_in<sc_lv<DataWidth> > d0;
 sc_core::sc_in <sc_lv<AddressWidth> > address1;
 sc_core::sc_in <sc_logic> ce1;
 sc_core::sc_out <sc_lv<DataWidth> > q1;
-sc_core::sc_in<sc_logic> we1;
-sc_core::sc_in<sc_lv<DataWidth> > d1;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -85,22 +83,10 @@ void prc_write_1()
 {
     if (ce1.read() == sc_dt::Log_1) 
     {
-        if (we1.read() == sc_dt::Log_1) 
-        {
-           if(address1.read().is_01() && address1.read().to_uint()<AddressRange)
-           {
-              ram[address1.read().to_uint()] = d1.read(); 
-              q1 = d1.read();
-           }
-           else
-              q1 = sc_lv<DataWidth>();
-        }
-        else {
             if(address1.read().is_01() && address1.read().to_uint()<AddressRange)
               q1 = ram[address1.read().to_uint()];
             else
               q1 = sc_lv<DataWidth>();
-        }
     }
 }
 
@@ -111,9 +97,9 @@ void prc_write_1()
 SC_MODULE(xillybus_wrapper_hbi_memcore) {
 
 
-static const unsigned DataWidth = 8;
-static const unsigned AddressRange = 4096;
-static const unsigned AddressWidth = 12;
+static const unsigned DataWidth = 32;
+static const unsigned AddressRange = 576;
+static const unsigned AddressWidth = 10;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;
@@ -123,8 +109,6 @@ sc_core::sc_in<sc_lv<DataWidth> > d0;
 sc_core::sc_in <sc_lv<AddressWidth> > address1;
 sc_core::sc_in<sc_logic> ce1;
 sc_core::sc_out <sc_lv<DataWidth> > q1;
-sc_core::sc_in<sc_logic> we1;
-sc_core::sc_in<sc_lv<DataWidth> > d1;
 sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
@@ -143,8 +127,6 @@ meminst->d0(d0);
 meminst->address1(address1);
 meminst->ce1(ce1);
 meminst->q1(q1);
-meminst->we1(we1);
-meminst->d1(d1);
 
 meminst->reset(reset);
 meminst->clk(clk);

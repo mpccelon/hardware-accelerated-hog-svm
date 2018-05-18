@@ -11,9 +11,9 @@ use ieee.numeric_std.all;
 
 entity xillybus_wrapper_ibs  is
     generic (
-        DataWidth    : integer := 32;
+        DataWidth    : integer := 64;
         AddressRange : integer := 32;
-        AddressWidth : integer := 10;
+        AddressWidth : integer := 6;
         BufferCount  : integer := 2;
         MemLatency   : integer := 1;
         IndexWidth   : integer := 1
@@ -57,12 +57,12 @@ port (
     reset    : in  std_logic;
     ce0      : in  std_logic;
     we0      : in  std_logic;
-    address0 : in  std_logic_vector(9 downto 0);
-    d0       : in  std_logic_vector(31 downto 0);
-    q0       : out std_logic_vector(31 downto 0);
+    address0 : in  std_logic_vector(5 downto 0);
+    d0       : in  std_logic_vector(63 downto 0);
+    q0       : out std_logic_vector(63 downto 0);
     ce1      : in  std_logic;
-    address1 : in  std_logic_vector(9 downto 0);
-    q1       : out std_logic_vector(31 downto 0)
+    address1 : in  std_logic_vector(5 downto 0);
+    q1       : out std_logic_vector(63 downto 0)
 );
 end component;
 
