@@ -10,8 +10,8 @@
 
 module xillybus_wrapper_dEe
 #(parameter
-    ID         = 12,
-    NUM_STAGE  = 4,
+    ID         = 11,
+    NUM_STAGE  = 5,
     din0_WIDTH = 32,
     din1_WIDTH = 32,
     dout_WIDTH = 32
@@ -38,7 +38,7 @@ reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-xillybus_wrapper_ap_fmul_2_max_dsp_32 xillybus_wrapper_ap_fmul_2_max_dsp_32_u (
+xillybus_wrapper_ap_fsub_3_full_dsp_32 xillybus_wrapper_ap_fsub_3_full_dsp_32_u (
     .aclk                 ( aclk ),
     .aclken               ( aclken ),
     .s_axis_a_tvalid      ( a_tvalid ),

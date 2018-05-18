@@ -10,9 +10,9 @@
 
 module xillybus_wrapper_hbi
 #(parameter
-    DataWidth    = 32,
+    DataWidth    = 8,
     AddressRange = 32,
-    AddressWidth = 10,
+    AddressWidth = 12,
     BufferCount  = 2,
     MemLatency   = 1,
     IndexWidth   = 1
@@ -30,7 +30,9 @@ module xillybus_wrapper_hbi
     input  wire [DataWidth-1:0]    i_d0,
     output wire [DataWidth-1:0]    i_q0,
     input  wire                    i_ce1,
+    input  wire                    i_we1,
     input  wire [AddressWidth-1:0] i_address1,
+    input  wire [DataWidth-1:0]    i_d1,
     output wire [DataWidth-1:0]    i_q1,
     // target
     input  wire                    t_ce,
@@ -42,7 +44,9 @@ module xillybus_wrapper_hbi
     input  wire [DataWidth-1:0]    t_d0,
     output wire [DataWidth-1:0]    t_q0,
     input  wire                    t_ce1,
+    input  wire                    t_we1,
     input  wire [AddressWidth-1:0] t_address1,
+    input  wire [DataWidth-1:0]    t_d1,
     output wire [DataWidth-1:0]    t_q1
 );
 //------------------------Local signal-------------------
@@ -62,7 +66,9 @@ wire [AddressWidth-1:0] buf_a0[0:BufferCount-1];
 wire [DataWidth-1:0]    buf_d0[0:BufferCount-1];
 wire [DataWidth-1:0]    buf_q0[0:BufferCount-1];
 wire                    buf_ce1[0:BufferCount-1];
+wire                    buf_we1[0:BufferCount-1];
 wire [AddressWidth-1:0] buf_a1[0:BufferCount-1];
+wire [DataWidth-1:0]    buf_d1[0:BufferCount-1];
 wire [DataWidth-1:0]    buf_q1[0:BufferCount-1];
 //------------------------Instantiation------------------
 genvar i;
@@ -77,7 +83,9 @@ generate
             .d0       ( buf_d0[i] ),
             .q0       ( buf_q0[i] ),
             .ce1      ( buf_ce1[i] ),
+            .we1      ( buf_we1[i] ),
             .address1 ( buf_a1[i] ),
+            .d1       ( buf_d1[i] ),
             .q1       ( buf_q1[i] )
         );
     end
@@ -97,7 +105,11 @@ generate
         assign buf_ce1[i] = (iptr == i) ? i_ce1 :
                             (tptr == i && empty_n)? t_ce1 :
                             1'b0;
+        assign buf_we1[i] = (iptr == i) ? i_we1 :
+                            (tptr == i && empty_n)? t_we1 :
+                            1'b0;
         assign buf_a1[i]  = (iptr == i) ? i_address1 : t_address1;
+        assign buf_d1[i]  = (iptr == i) ? i_d1       : t_d1;
     end
 endgenerate
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++

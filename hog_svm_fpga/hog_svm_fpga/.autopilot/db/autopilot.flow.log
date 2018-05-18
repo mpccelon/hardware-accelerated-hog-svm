@@ -1,4 +1,4 @@
-INFO: [HLS 200-0] Workspace D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga opened at Fri May 18 16:31:27 +0800 2018
+INFO: [HLS 200-0] Workspace D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga opened at Sat May 19 01:16:24 +0800 2018
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Command     config_clock returned 0; 0 sec.
@@ -14,32 +14,32 @@ Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.lib 
 Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.lib 
-Command           ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.lib 
 Command           ap_source returned 0; 0 sec.
 Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.lib 
-Command         ap_source returned 0; 0.001 sec.
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.lib 
 Command         ap_source returned 0; 0 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.lib 
+Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.lib 
 Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.lib 
-Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.004 sec.
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.005 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_old.lib 
 Command       ap_source returned 0; 0.001 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_vivado.lib 
 Command       ap_source returned 0; 0.001 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command         ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
 Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
 Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
 Command         ap_source returned 0; 0.001 sec.
 Command       ap_source returned 0; 0.004 sec.
@@ -53,16 +53,16 @@ Execute       config_chip_info -quiet -speed medium
 Command       config_chip_info returned 0; 0 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command         ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
 Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
 Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.001 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
 Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.005 sec.
+Command       ap_source returned 0; 0.004 sec.
 Command     import_lib returned 0; 0.018 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
@@ -70,32 +70,32 @@ Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/x
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
 Command           ap_source returned 0; 0.002 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command           ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
 Command           ap_source returned 0; 0.002 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command             ap_source returned 0; 0.004 sec.
+Command             ap_source returned 0; 0.003 sec.
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command             ap_source returned 0; 0.008 sec.
-Command           ap_source returned 0; 0.012 sec.
+Command             ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.011 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command           ap_source returned 0; 0.012 sec.
+Command           ap_source returned 0; 0.011 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command           ap_source returned 0; 0.008 sec.
+Command           ap_source returned 0; 0.009 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command           ap_source returned 0; 0.004 sec.
+Command           ap_source returned 0; 0.003 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command           ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source returned 0; 0.102 sec.
+Command           ap_source returned 0; 0.088 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source returned 0; 0 sec.
-Command         ap_source returned 0; 0.144 sec.
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.129 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source returned 0; 0 sec.
-Command       ap_source returned 0; 0.147 sec.
-Command     ap_source returned 0; 0.147 sec.
+Command         ap_source returned 0; 0.001 sec.
+Command       ap_source returned 0; 0.132 sec.
+Command     ap_source returned 0; 0.132 sec.
 Execute     open_platform DefaultPlatform 
 Command     open_platform returned 0; 0 sec.
 Execute     import_lib C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6 
@@ -106,20 +106,20 @@ Command       ap_source returned 0; 0.004 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
-Command           ap_source returned 0; 0.037 sec.
+Command           ap_source returned 0; 0.033 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
 Command             ap_source returned 0; 0 sec.
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
 Command             ap_source returned 0; 0 sec.
-Command           ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
-Command           ap_source returned 0; 0.002 sec.
-Command         ap_source returned 0; 0.042 sec.
-Command       ap_source returned 0; 0.042 sec.
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.035 sec.
+Command       ap_source returned 0; 0.036 sec.
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_hp.hlp 
-Command       ap_source returned 0; 0.002 sec.
-Command     import_lib returned 0; 0.058 sec.
+Command       ap_source returned 0; 0.001 sec.
+Command     import_lib returned 0; 0.05 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
 Command       ap_source returned 0; 0.002 sec.
@@ -144,84 +144,29 @@ Command       add_library returned 0; 0.003 sec.
 INFO: [HLS 200-10] Setting target device to 'xc7z010clg400-1'
 Execute       get_default_platform 
 Command       get_default_platform returned 0; 0 sec.
-Command     set_part returned 0; 0.099 sec.
+Command     set_part returned 0; 0.084 sec.
 Execute     get_default_platform 
 Command     get_default_platform returned 0; 0 sec.
 Execute     config_chip_info -quiet -resource  {SLICE 4400}   {LUT 17600}     {FF 35200}  {DSP48E 80}    {BRAM 120}  
 Command     config_chip_info returned 0; 0 sec.
 Execute     config_chip_info -quiet -speed slow 
 Command     config_chip_info returned 0; 0 sec.
-Command   open_solution returned 0; 0.395 sec.
+Command   open_solution returned 0; 0.365 sec.
 Execute   export_design -rtl verilog -format syn_dcp 
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
 Command     ap_source returned 0; 0.001 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
 Command       ap_source returned 0; 0.001 sec.
-Command     ap_source returned 0; 0.002 sec.
-Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
-Command     ap_source returned 0; 0 sec.
-Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
 Command     ap_source returned 0; 0.001 sec.
-Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
-Command     ap_source returned 0; 0.001 sec.
-Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command     ap_source returned 0; 0.001 sec.
-Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
-Command           ap_source returned 0; 0.001 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
-Command           ap_source returned 0; 0.001 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command           ap_source returned 0; 0.002 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command             ap_source returned 0; 0.004 sec.
-Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
-Command             ap_source returned 0; 0.007 sec.
-Command           ap_source returned 0; 0.012 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command           ap_source returned 0; 0.013 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command           ap_source returned 0; 0.009 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command           ap_source returned 0; 0.003 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command           ap_source returned 0; 0.001 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source returned 0; 0.089 sec.
-Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.132 sec.
-Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source returned 0; 0 sec.
-Command       ap_source returned 0; 0.135 sec.
-Command     ap_source returned 0; 0.135 sec.
-Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command       ap_source returned 0; 0.001 sec.
-Command     ap_source returned 0; 0.002 sec.
-Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command     ap_source returned 0; 0.001 sec.
-INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
-Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command     ap_source returned 0; 0.002 sec.
-Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command     ap_source returned 0; 0.001 sec.
-Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
-Command       ap_source returned 0; 0.001 sec.
-Command     ap_source returned 0; 0.002 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
 Command     ap_source returned 0; 0.001 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
-Command     ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.001 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
 Command     ap_source returned 0; 0 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command     ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.002 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
@@ -244,34 +189,89 @@ Command           ap_source returned 0; 0.008 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
 Command           ap_source returned 0; 0.003 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
-Command           ap_source returned 0; 0.001 sec.
+Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source returned 0; 0.09 sec.
+Command           ap_source returned 0; 0.087 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
 Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.132 sec.
+Command         ap_source returned 0; 0.13 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
 Command         ap_source returned 0; 0 sec.
-Command       ap_source returned 0; 0.135 sec.
-Command     ap_source returned 0; 0.135 sec.
+Command       ap_source returned 0; 0.132 sec.
+Command     ap_source returned 0; 0.132 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
 Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.002 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0.001 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.003 sec.
+Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.007 sec.
+Command           ap_source returned 0; 0.011 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.007 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0.002 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0.001 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.085 sec.
+Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.001 sec.
+Command         ap_source returned 0; 0.121 sec.
+Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.123 sec.
+Command     ap_source returned 0; 0.123 sec.
+Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.003 sec.
 Command     ap_source returned 0; 0.003 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
 Command     ap_source returned 0; 0.001 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_1_proc.compgen.tcl 
-Command     ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_gradients.compgen.tcl 
-Command     ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_cells.compgen.tcl 
 Command     ap_source returned 0; 0.001 sec.
-Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/compute_blocks.compgen.tcl 
-Command     ap_source returned 0; 0.099 sec.
-Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Loop_2_proc.compgen.tcl 
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/svm_detect.compgen.tcl 
+Command     ap_source returned 0; 0.082 sec.
+Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/Block_arrayctor_loop.compgen.tcl 
 Command     ap_source returned 0; 0.001 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.compgen.tcl 
-Command     ap_source returned 0; 0.242 sec.
+Command     ap_source returned 0; 0.172 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
 Command     ap_source returned 0; 0.001 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/xillybus_wrapper.constraint.tcl 
@@ -287,11 +287,11 @@ Command     ap_source returned 0; 0.001 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
 Command     ap_source returned 0; 0 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
-Command     ap_source returned 0; 0.001 sec.
+Command     ap_source returned 0; 0.002 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
 Command     ap_source returned 0; 0 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
-Command     ap_source returned 0; 0.059 sec.
+Command     ap_source returned 0; 0.04 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
@@ -300,39 +300,39 @@ Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
 Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
-Command           ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0.001 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
-Command             ap_source returned 0; 0.004 sec.
+Command             ap_source returned 0; 0.003 sec.
 Execute             source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
 Command             ap_source returned 0; 0.007 sec.
-Command           ap_source returned 0; 0.011 sec.
+Command           ap_source returned 0; 0.01 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Command           ap_source returned 0; 0.012 sec.
+Command           ap_source returned 0; 0.01 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Command           ap_source returned 0; 0.008 sec.
+Command           ap_source returned 0; 0.007 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
-Command           ap_source returned 0; 0.003 sec.
+Command           ap_source returned 0; 0.002 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
 Command           ap_source returned 0; 0 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
-Command           ap_source returned 0; 0.095 sec.
+Command           ap_source returned 0; 0.084 sec.
 Execute           source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
 Command           ap_source returned 0; 0.001 sec.
-Command         ap_source returned 0; 0.136 sec.
+Command         ap_source returned 0; 0.119 sec.
 Execute         source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source returned 0; 0.001 sec.
-Command       ap_source returned 0; 0.139 sec.
-Command     ap_source returned 0; 0.139 sec.
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.121 sec.
+Command     ap_source returned 0; 0.122 sec.
 Execute     source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
-Command       ap_source returned 0; 0.003 sec.
-Command     ap_source returned 0; 0.003 sec.
+Command       ap_source returned 0; 0.002 sec.
+Command     ap_source returned 0; 0.002 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/.autopilot/db/global.setting.tcl 
 Command     ap_source returned 0; 0.001 sec.
 Execute     source D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/ip/../../.autopilot/db/xillybus_wrapper.tbgen.tcl 
 Command     ap_source returned 0; 0.001 sec.
-Command   export_design returned 0; 191.037 sec.
-Command ap_source returned 0; 191.437 sec.
+Command   export_design returned 0; 168.793 sec.
+Command ap_source returned 0; 169.163 sec.
 Execute cleanup_all 
 Command cleanup_all returned 0; 0 sec.

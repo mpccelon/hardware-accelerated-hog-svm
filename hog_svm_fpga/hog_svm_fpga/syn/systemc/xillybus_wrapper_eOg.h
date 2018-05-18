@@ -7,31 +7,34 @@
 
 #ifndef __xillybus_wrapper_eOg__HH__
 #define __xillybus_wrapper_eOg__HH__
-#include "ACMP_uitofp.h"
+#include "ACMP_fmul.h"
 #include <systemc>
 
 template<
     int ID,
     int NUM_STAGE,
     int din0_WIDTH,
+    int din1_WIDTH,
     int dout_WIDTH>
 SC_MODULE(xillybus_wrapper_eOg) {
     sc_core::sc_in_clk clk;
     sc_core::sc_in<sc_dt::sc_logic> reset;
     sc_core::sc_in<sc_dt::sc_logic> ce;
     sc_core::sc_in< sc_dt::sc_lv<din0_WIDTH> >   din0;
+    sc_core::sc_in< sc_dt::sc_lv<din1_WIDTH> >   din1;
     sc_core::sc_out< sc_dt::sc_lv<dout_WIDTH> >   dout;
 
 
 
-    ACMP_uitofp<ID, 6, din0_WIDTH, dout_WIDTH> ACMP_uitofp_U;
+    ACMP_fmul<ID, 4, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_fmul_U;
 
-    SC_CTOR(xillybus_wrapper_eOg):  ACMP_uitofp_U ("ACMP_uitofp_U") {
-        ACMP_uitofp_U.clk(clk);
-        ACMP_uitofp_U.reset(reset);
-        ACMP_uitofp_U.ce(ce);
-        ACMP_uitofp_U.din0(din0);
-        ACMP_uitofp_U.dout(dout);
+    SC_CTOR(xillybus_wrapper_eOg):  ACMP_fmul_U ("ACMP_fmul_U") {
+        ACMP_fmul_U.clk(clk);
+        ACMP_fmul_U.reset(reset);
+        ACMP_fmul_U.ce(ce);
+        ACMP_fmul_U.din0(din0);
+        ACMP_fmul_U.din1(din1);
+        ACMP_fmul_U.dout(dout);
 
     }
 

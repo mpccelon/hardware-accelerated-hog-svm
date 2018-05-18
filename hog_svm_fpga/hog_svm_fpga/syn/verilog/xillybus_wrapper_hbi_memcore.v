@@ -6,11 +6,11 @@
 // ==============================================================
 
 `timescale 1 ns / 1 ps
-module xillybus_wrapper_hbi_memcore_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
+module xillybus_wrapper_hbi_memcore_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
-parameter DWIDTH = 32;
-parameter AWIDTH = 10;
-parameter MEM_SIZE = 576;
+parameter DWIDTH = 8;
+parameter AWIDTH = 12;
+parameter MEM_SIZE = 4096;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -19,6 +19,8 @@ input we0;
 output reg[DWIDTH-1:0] q0;
 input[AWIDTH-1:0] addr1;
 input ce1;
+input[DWIDTH-1:0] d1;
+input we1;
 output reg[DWIDTH-1:0] q1;
 input clk;
 
@@ -46,6 +48,12 @@ always @(posedge clk)
 begin 
     if (ce1) 
     begin
+        if (we1) 
+        begin 
+            ram[addr1] <= d1; 
+            q1 <= d1;
+        end 
+        else 
             q1 <= ram[addr1];
     end
 end
@@ -65,11 +73,13 @@ module xillybus_wrapper_hbi_memcore(
     q0,
     address1,
     ce1,
+    we1,
+    d1,
     q1);
 
-parameter DataWidth = 32'd32;
-parameter AddressRange = 32'd576;
-parameter AddressWidth = 32'd10;
+parameter DataWidth = 32'd8;
+parameter AddressRange = 32'd4096;
+parameter AddressWidth = 32'd12;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;
@@ -79,6 +89,8 @@ input[DataWidth - 1:0] d0;
 output[DataWidth - 1:0] q0;
 input[AddressWidth - 1:0] address1;
 input ce1;
+input we1;
+input[DataWidth - 1:0] d1;
 output[DataWidth - 1:0] q1;
 
 
@@ -92,6 +104,8 @@ xillybus_wrapper_hbi_memcore_ram xillybus_wrapper_hbi_memcore_ram_U(
     .q0( q0 ),
     .addr1( address1 ),
     .ce1( ce1 ),
+    .d1( d1 ),
+    .we1( we1 ),
     .q1( q1 ));
 
 endmodule

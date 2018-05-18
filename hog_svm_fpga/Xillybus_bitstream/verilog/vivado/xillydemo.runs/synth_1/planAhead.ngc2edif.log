@@ -42,7 +42,7 @@ WARNING:NetListWriters:306 - Signal bus messages_ins/msg_buf_w0[26 : 0] on block
    signals.
   finished :Prep
 Writing EDIF netlist file xillybus_core.edif ...
-ngc2edif: Total memory usage is 144004 kilobytes
+ngc2edif: Total memory usage is 140144 kilobytes
 
 Release 14.7 - ngc2edif P_INT.20180321 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -54,7 +54,7 @@ Processing design ...
    Preping design's macros ...
   finished :Prep
 Writing EDIF netlist file xillybus_lite.edif ...
-ngc2edif: Total memory usage is 129860 kilobytes
+ngc2edif: Total memory usage is 126000 kilobytes
 
 Release 14.7 - ngc2edif P_INT.20180321 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
@@ -111,5 +111,5 @@ WARNING:NetListWriters:306 - Signal bus
    signals.
   finished :Prep
 Writing EDIF netlist file xillyvga_core.edif ...
-ngc2edif: Total memory usage is 132804 kilobytes
+ngc2edif: Total memory usage is 128880 kilobytes
 

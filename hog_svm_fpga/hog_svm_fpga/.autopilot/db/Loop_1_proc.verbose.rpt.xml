@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_1_proc'" level="0">
-<item name = "Date">Fri May 18 16:31:13 2018
+<item name = "Date">Sat May 19 01:16:04 2018
 </item>
 <item name = "Version">2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)</item>
 <item name = "Project">hog_svm_fpga</item>
@@ -81,15 +81,15 @@
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="i_fu_145_p2">+, 0, 0, 15, 7, 1</column>
 <column name="j_fu_248_p2">+, 0, 0, 15, 3, 7</column>
-<column name="p_rec1_i_fu_169_p2">+, 0, 0, 15, 5, 1</column>
-<column name="tmp_121_fu_184_p2">+, 0, 0, 19, 14, 14</column>
+<column name="p_rec_i_fu_169_p2">+, 0, 0, 15, 5, 1</column>
+<column name="tmp_s_fu_184_p2">+, 0, 0, 19, 14, 14</column>
 <column name="ap_block_state3">and, 0, 0, 2, 1, 1</column>
-<column name="exitcond1_fu_163_p2">icmp, 0, 0, 11, 5, 6</column>
-<column name="exitcond1_i_fu_139_p2">icmp, 0, 0, 11, 7, 8</column>
+<column name="exitcond_fu_163_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="exitcond_i_fu_139_p2">icmp, 0, 0, 11, 7, 8</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_3_i_fu_198_p2">or, 0, 0, 6, 6, 1</column>
-<column name="tmp_6_i_fu_254_p2">or, 0, 0, 6, 6, 2</column>
-<column name="tmp_9_i_fu_272_p2">or, 0, 0, 6, 6, 2</column>
+<column name="tmp_4_i_fu_198_p2">or, 0, 0, 6, 6, 1</column>
+<column name="tmp_7_i_fu_254_p2">or, 0, 0, 6, 6, 2</column>
+<column name="tmp_i_fu_272_p2">or, 0, 0, 6, 6, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -117,9 +117,9 @@
 <column name="p_1_rec_i_reg_117">5, 0, 5, 0</column>
 <column name="p_2_i_reg_317">8, 0, 8, 0</column>
 <column name="p_3_i_reg_322">8, 0, 8, 0</column>
-<column name="p_rec1_i_reg_306">5, 0, 5, 0</column>
-<column name="tmp_129_cast_reg_298">7, 0, 14, 7</column>
-<column name="tmp_220_reg_311">6, 0, 6, 0</column>
+<column name="p_rec_i_reg_306">5, 0, 5, 0</column>
+<column name="tmp_117_cast_reg_298">7, 0, 14, 7</column>
+<column name="tmp_126_reg_311">6, 0, 6, 0</column>
 </table>
 </item>
 </section>

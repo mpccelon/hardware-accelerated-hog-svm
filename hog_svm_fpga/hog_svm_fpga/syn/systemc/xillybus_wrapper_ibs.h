@@ -16,9 +16,9 @@
 #include "xillybus_wrapper_ibs_memcore.h"
 
 SC_MODULE(xillybus_wrapper_ibs) {
-    static const unsigned int DataWidth    = 64;
+    static const unsigned int DataWidth    = 32;
     static const unsigned int AddressRange = 32;
-    static const unsigned int AddressWidth = 6;
+    static const unsigned int AddressWidth = 10;
     static const unsigned int BufferCount  = 2;
     static const unsigned int IndexWidth   = 1;
 

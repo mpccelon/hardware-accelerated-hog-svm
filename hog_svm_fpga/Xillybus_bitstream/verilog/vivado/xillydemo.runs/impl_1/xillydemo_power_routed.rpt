@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Fri May 18 18:33:30 2018
+| Date             : Sat May 19 01:37:26 2018
 | Host             : DESKTOP-O713GGV running 64-bit major release  (build 9200)
 | Command          : report_power -file xillydemo_power_routed.rpt -pb xillydemo_power_summary_routed.pb -rpx xillydemo_power_routed.rpx
 | Design           : xillydemo
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.072        |
+| Total On-Chip Power (W)  | 2.096        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.938        |
+| Dynamic (W)              | 1.962        |
 | Device Static (W)        | 0.134        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 61.1         |
-| Junction Temperature (C) | 48.9         |
+| Max Ambient (C)          | 60.8         |
+| Junction Temperature (C) | 49.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.029 |       11 |       --- |             --- |
-| Slice Logic              |     0.011 |    25065 |       --- |             --- |
-|   LUT as Logic           |     0.009 |    11816 |     17600 |           67.14 |
-|   CARRY4                 |     0.001 |      755 |      4400 |           17.16 |
-|   Register               |    <0.001 |     9417 |     35200 |           26.75 |
+| Clocks                   |     0.025 |       11 |       --- |             --- |
+| Slice Logic              |     0.025 |    18786 |       --- |             --- |
+|   LUT as Logic           |     0.023 |     8391 |     17600 |           47.68 |
+|   CARRY4                 |     0.001 |      616 |      4400 |           14.00 |
+|   F7/F8 Muxes            |     0.001 |      517 |     17600 |            2.94 |
+|   Register               |    <0.001 |     7022 |     35200 |           19.95 |
 |   LUT as Distributed RAM |    <0.001 |      302 |      6000 |            5.03 |
-|   F7/F8 Muxes            |    <0.001 |       66 |     17600 |            0.38 |
-|   LUT as Shift Register  |    <0.001 |       68 |      6000 |            1.13 |
-|   Others                 |     0.000 |      877 |       --- |             --- |
-| Signals                  |     0.019 |    20874 |       --- |             --- |
-| Block RAM                |     0.007 |       21 |        60 |           35.00 |
+|   LUT as Shift Register  |    <0.001 |       72 |      6000 |            1.20 |
+|   Others                 |     0.000 |      801 |       --- |             --- |
+| Signals                  |     0.032 |    14891 |       --- |             --- |
+| Block RAM                |     0.007 |       17 |        60 |           28.33 |
 | MMCM                     |     0.105 |        1 |         2 |           50.00 |
 | PLL                      |     0.102 |        1 |         2 |           50.00 |
-| DSPs                     |     0.005 |       17 |        80 |           21.25 |
+| DSPs                     |     0.006 |       25 |        80 |           31.25 |
 | I/O                      |     0.143 |       98 |       100 |           98.00 |
 | PS7                      |     1.516 |        1 |       --- |             --- |
 | Static Power             |     0.134 |          |           |                 |
-| Total                    |     2.072 |          |           |                 |
+| Total                    |     2.096 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.095 |       0.085 |      0.009 |
+| Vccint    |       1.000 |     0.118 |       0.109 |      0.009 |
 | Vccaux    |       1.800 |     0.123 |       0.114 |      0.009 |
 | Vcco33    |       3.300 |     0.041 |       0.040 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -92,7 +92,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.742 |       0.707 |      0.035 |
+| Vccpint   |       1.000 |     0.743 |       0.707 |      0.035 |
 | Vccpaux   |       1.800 |     0.061 |       0.050 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.458 |       0.456 |      0.002 |
@@ -163,22 +163,69 @@ Table of Contents
 +--------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                             | Power (W) |
 +--------------------------------------------------------------------------------------------------+-----------+
-| xillydemo                                                                                        |     1.938 |
-|   HLS_wrapper                                                                                    |     0.024 |
+| xillydemo                                                                                        |     1.962 |
+|   HLS_wrapper                                                                                    |     0.046 |
 |     Loop_1_proc_U0                                                                               |    <0.001 |
-|     Loop_2_proc_U0                                                                               |    <0.001 |
 |     cells_bin_V_U                                                                                |    <0.001 |
-|       gen_buffer[0].xillybus_wrapper_hbi_memcore_U                                               |    <0.001 |
-|         xillybus_wrapper_hbi_memcore_ram_U                                                       |    <0.001 |
-|       gen_buffer[1].xillybus_wrapper_hbi_memcore_U                                               |    <0.001 |
-|         xillybus_wrapper_hbi_memcore_ram_U                                                       |    <0.001 |
-|     cells_mag_sq_V_U                                                                             |    <0.001 |
 |       gen_buffer[0].xillybus_wrapper_ibs_memcore_U                                               |    <0.001 |
 |         xillybus_wrapper_ibs_memcore_ram_U                                                       |    <0.001 |
 |       gen_buffer[1].xillybus_wrapper_ibs_memcore_U                                               |    <0.001 |
 |         xillybus_wrapper_ibs_memcore_ram_U                                                       |    <0.001 |
-|     compute_blocks_U0                                                                            |     0.021 |
-|       xillybus_wrapper_cud_U11                                                                   |     0.003 |
+|     cells_mag_sq_V_U                                                                             |    <0.001 |
+|       gen_buffer[0].xillybus_wrapper_jbC_memcore_U                                               |    <0.001 |
+|         xillybus_wrapper_jbC_memcore_ram_U                                                       |    <0.001 |
+|       gen_buffer[1].xillybus_wrapper_jbC_memcore_U                                               |    <0.001 |
+|         xillybus_wrapper_jbC_memcore_ram_U                                                       |    <0.001 |
+|     compute_cells_U0                                                                             |     0.001 |
+|       bin_vote_V_U                                                                               |    <0.001 |
+|         compute_cells_binbkb_ram_U                                                               |    <0.001 |
+|           ram_reg_0_15_10_10                                                                     |    <0.001 |
+|           ram_reg_0_15_11_11                                                                     |    <0.001 |
+|           ram_reg_0_15_12_12                                                                     |    <0.001 |
+|           ram_reg_0_15_13_13                                                                     |    <0.001 |
+|           ram_reg_0_15_14_14                                                                     |    <0.001 |
+|           ram_reg_0_15_15_15                                                                     |    <0.001 |
+|           ram_reg_0_15_16_16                                                                     |    <0.001 |
+|           ram_reg_0_15_17_17                                                                     |    <0.001 |
+|           ram_reg_0_15_18_18                                                                     |    <0.001 |
+|           ram_reg_0_15_19_19                                                                     |    <0.001 |
+|           ram_reg_0_15_1_1                                                                       |    <0.001 |
+|           ram_reg_0_15_20_20                                                                     |    <0.001 |
+|           ram_reg_0_15_21_21                                                                     |    <0.001 |
+|           ram_reg_0_15_22_22                                                                     |    <0.001 |
+|           ram_reg_0_15_23_23                                                                     |    <0.001 |
+|           ram_reg_0_15_24_24                                                                     |    <0.001 |
+|           ram_reg_0_15_25_25                                                                     |    <0.001 |
+|           ram_reg_0_15_26_26                                                                     |    <0.001 |
+|           ram_reg_0_15_27_27                                                                     |    <0.001 |
+|           ram_reg_0_15_28_28                                                                     |    <0.001 |
+|           ram_reg_0_15_29_29                                                                     |    <0.001 |
+|           ram_reg_0_15_2_2                                                                       |    <0.001 |
+|           ram_reg_0_15_30_30                                                                     |    <0.001 |
+|           ram_reg_0_15_31_31                                                                     |    <0.001 |
+|           ram_reg_0_15_3_3                                                                       |    <0.001 |
+|           ram_reg_0_15_4_4                                                                       |    <0.001 |
+|           ram_reg_0_15_5_5                                                                       |    <0.001 |
+|           ram_reg_0_15_6_6                                                                       |    <0.001 |
+|           ram_reg_0_15_7_7                                                                       |    <0.001 |
+|           ram_reg_0_15_8_8                                                                       |    <0.001 |
+|           ram_reg_0_15_9_9                                                                       |    <0.001 |
+|     compute_gradients_U0                                                                         |     0.001 |
+|     grad_vote_bin_V_U                                                                            |    <0.001 |
+|       xillybus_wrapper_lbW_memcore_U                                                             |    <0.001 |
+|         xillybus_wrapper_lbW_memcore_ram_U                                                       |    <0.001 |
+|     grad_vote_magnitude_s_U                                                                      |    <0.001 |
+|       xillybus_wrapper_kbM_memcore_U                                                             |    <0.001 |
+|         xillybus_wrapper_kbM_memcore_ram_U                                                       |    <0.001 |
+|     image_V_U                                                                                    |    <0.001 |
+|       gen_buffer[0].xillybus_wrapper_hbi_memcore_U                                               |    <0.001 |
+|         xillybus_wrapper_hbi_memcore_ram_U                                                       |    <0.001 |
+|       gen_buffer[1].xillybus_wrapper_hbi_memcore_U                                               |    <0.001 |
+|         xillybus_wrapper_hbi_memcore_ram_U                                                       |    <0.001 |
+|     svm_detect_U0                                                                                |     0.042 |
+|       SVM_detector_V_U                                                                           |     0.025 |
+|         svm_detect_SVM_decud_rom_U                                                               |     0.025 |
+|       xillybus_wrapper_dEe_U11                                                                   |     0.003 |
 |         xillybus_wrapper_ap_fsub_3_full_dsp_32_u                                                 |     0.003 |
 |           U0                                                                                     |     0.003 |
 |             i_synth                                                                              |     0.003 |
@@ -239,8 +286,8 @@ Table of Contents
 |                       i_pipe                                                                     |    <0.001 |
 |                     FULL_USAGE_DSP.ROUND_BIT_DELAY                                               |    <0.001 |
 |                       i_pipe                                                                     |    <0.001 |
-|                     FULL_USAGE_DSP.SHIFT_RND                                                     |     0.001 |
-|       xillybus_wrapper_dEe_U12                                                                   |     0.004 |
+|                     FULL_USAGE_DSP.SHIFT_RND                                                     |    <0.001 |
+|       xillybus_wrapper_eOg_U12                                                                   |     0.004 |
 |         xillybus_wrapper_ap_fmul_2_max_dsp_32_u                                                  |     0.004 |
 |           U0                                                                                     |     0.004 |
 |             i_synth                                                                              |     0.004 |
@@ -269,48 +316,7 @@ Table of Contents
 |                 R_AND_R                                                                          |    <0.001 |
 |                   LAT_OPT.FULL.R_AND_R                                                           |    <0.001 |
 |                     DSP48E1_SGL_EXP_IP.OLD_ADD.ADD                                               |    <0.001 |
-|       xillybus_wrapper_eOg_U13                                                                   |     0.001 |
-|         xillybus_wrapper_ap_uitofp_4_no_dsp_32_u                                                 |    <0.001 |
-|           U0                                                                                     |    <0.001 |
-|             i_synth                                                                              |    <0.001 |
-|               FIX_TO_FLT_OP.SPD.OP                                                               |    <0.001 |
-|                 EXP                                                                              |    <0.001 |
-|                   ZERO_DELAY                                                                     |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                 FIXED_DATA_SIGNED.M_ABS                                                          |    <0.001 |
-|                 LZE                                                                              |    <0.001 |
-|                   ENCODE[0].DIST_DEL                                                             |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                   ENCODE[1].DIST_DEL                                                             |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                   ENCODE[1].MUX_0                                                                |    <0.001 |
-|                     OP_DEL                                                                       |    <0.001 |
-|                       i_pipe                                                                     |    <0.001 |
-|                   TWO.DIST_DEL                                                                   |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                   ZERO_DET_CC_1                                                                  |    <0.001 |
-|                   ZERO_DET_CC_2.CC                                                               |    <0.001 |
-|                 NEED_Z_DET.Z_DET                                                                 |    <0.001 |
-|                   ENCODE[1].Z_DET_DEL                                                            |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                   ENCODE[2].Z_DET_DEL                                                            |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                   Z_C_DEL                                                                        |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                 NORM_SHIFT                                                                       |    <0.001 |
-|                   MUX_LOOP[1].DEL_SHIFT                                                          |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                   MUX_LOOP[2].DEL_SHIFT                                                          |    <0.001 |
-|                     i_pipe                                                                       |    <0.001 |
-|                 OP                                                                               |    <0.001 |
-|                 ROUND                                                                            |    <0.001 |
-|                   LOGIC.RND1                                                                     |    <0.001 |
-|                   LOGIC.RND2                                                                     |    <0.001 |
-|                   RND_BIT_GEN                                                                    |     0.000 |
-|                     NORM_1_OR_0.STRUCT_REQ.GENERAL.RND1                                          |     0.000 |
-|                 Z_C_DEL                                                                          |    <0.001 |
-|                   i_pipe                                                                         |    <0.001 |
-|       xillybus_wrapper_eOg_U14                                                                   |    <0.001 |
+|       xillybus_wrapper_fYi_U13                                                                   |    <0.001 |
 |         xillybus_wrapper_ap_uitofp_4_no_dsp_32_u                                                 |    <0.001 |
 |           U0                                                                                     |    <0.001 |
 |             i_synth                                                                              |    <0.001 |
@@ -351,7 +357,7 @@ Table of Contents
 |                     NORM_1_OR_0.STRUCT_REQ.GENERAL.RND1                                          |     0.000 |
 |                 Z_C_DEL                                                                          |    <0.001 |
 |                   i_pipe                                                                         |    <0.001 |
-|       xillybus_wrapper_fYi_U15                                                                   |     0.000 |
+|       xillybus_wrapper_g8j_U14                                                                   |     0.000 |
 |         xillybus_wrapper_ap_fpext_0_no_dsp_32_u                                                  |     0.000 |
 |           U0                                                                                     |     0.000 |
 |             i_synth                                                                              |     0.000 |
@@ -360,57 +366,8 @@ Table of Contents
 |                   COND_DET                                                                       |     0.000 |
 |                     MANT_CARRY.MANT_ALL_ZERO_DET                                                 |     0.000 |
 |                       CARRY_ZERO_DET                                                             |     0.000 |
-|     compute_cells_U0                                                                             |     0.001 |
-|       bin_vote_V_U                                                                               |    <0.001 |
-|         compute_cells_binbkb_ram_U                                                               |    <0.001 |
-|           ram_reg_0_15_10_10                                                                     |    <0.001 |
-|           ram_reg_0_15_11_11                                                                     |    <0.001 |
-|           ram_reg_0_15_12_12                                                                     |    <0.001 |
-|           ram_reg_0_15_13_13                                                                     |    <0.001 |
-|           ram_reg_0_15_14_14                                                                     |    <0.001 |
-|           ram_reg_0_15_15_15                                                                     |    <0.001 |
-|           ram_reg_0_15_16_16                                                                     |    <0.001 |
-|           ram_reg_0_15_17_17                                                                     |    <0.001 |
-|           ram_reg_0_15_18_18                                                                     |    <0.001 |
-|           ram_reg_0_15_19_19                                                                     |    <0.001 |
-|           ram_reg_0_15_1_1                                                                       |    <0.001 |
-|           ram_reg_0_15_20_20                                                                     |    <0.001 |
-|           ram_reg_0_15_21_21                                                                     |    <0.001 |
-|           ram_reg_0_15_22_22                                                                     |    <0.001 |
-|           ram_reg_0_15_23_23                                                                     |    <0.001 |
-|           ram_reg_0_15_24_24                                                                     |    <0.001 |
-|           ram_reg_0_15_25_25                                                                     |    <0.001 |
-|           ram_reg_0_15_26_26                                                                     |    <0.001 |
-|           ram_reg_0_15_27_27                                                                     |    <0.001 |
-|           ram_reg_0_15_28_28                                                                     |    <0.001 |
-|           ram_reg_0_15_29_29                                                                     |    <0.001 |
-|           ram_reg_0_15_2_2                                                                       |    <0.001 |
-|           ram_reg_0_15_30_30                                                                     |    <0.001 |
-|           ram_reg_0_15_31_31                                                                     |    <0.001 |
-|           ram_reg_0_15_3_3                                                                       |    <0.001 |
-|           ram_reg_0_15_4_4                                                                       |    <0.001 |
-|           ram_reg_0_15_5_5                                                                       |    <0.001 |
-|           ram_reg_0_15_6_6                                                                       |    <0.001 |
-|           ram_reg_0_15_7_7                                                                       |    <0.001 |
-|           ram_reg_0_15_8_8                                                                       |    <0.001 |
-|           ram_reg_0_15_9_9                                                                       |    <0.001 |
-|     compute_gradients_U0                                                                         |    <0.001 |
-|     grad_vote_bin_V_U                                                                            |    <0.001 |
-|       xillybus_wrapper_lbW_memcore_U                                                             |    <0.001 |
-|         xillybus_wrapper_lbW_memcore_ram_U                                                       |    <0.001 |
-|     grad_vote_magnitude_s_U                                                                      |    <0.001 |
-|       xillybus_wrapper_kbM_memcore_U                                                             |    <0.001 |
-|         xillybus_wrapper_kbM_memcore_ram_U                                                       |    <0.001 |
-|     hog_U                                                                                        |    <0.001 |
-|       gen_buffer[0].xillybus_wrapper_jbC_memcore_U                                               |    <0.001 |
-|         xillybus_wrapper_jbC_memcore_ram_U                                                       |    <0.001 |
-|       gen_buffer[1].xillybus_wrapper_jbC_memcore_U                                               |    <0.001 |
-|         xillybus_wrapper_jbC_memcore_ram_U                                                       |    <0.001 |
-|     image_V_U                                                                                    |    <0.001 |
-|       gen_buffer[0].xillybus_wrapper_g8j_memcore_U                                               |    <0.001 |
-|         xillybus_wrapper_g8j_memcore_ram_U                                                       |    <0.001 |
-|       gen_buffer[1].xillybus_wrapper_g8j_memcore_U                                               |    <0.001 |
-|         xillybus_wrapper_g8j_memcore_ram_U                                                       |    <0.001 |
+|     tmp_channel_U                                                                                |    <0.001 |
+|       U_fifo_w32_d2_A_ram                                                                        |    <0.001 |
 |   PS_GPIO_IOBUF[0]_inst                                                                          |     0.002 |
 |   PS_GPIO_IOBUF[10]_inst                                                                         |     0.002 |
 |   PS_GPIO_IOBUF[11]_inst                                                                         |     0.002 |
@@ -490,11 +447,11 @@ Table of Contents
 |                       valid.cstr                                                                 |     0.002 |
 |                         ramloop[0].ram.r                                                         |     0.002 |
 |                           prim_noinit.ram                                                        |     0.002 |
-|     record_fifo                                                                                  |    <0.001 |
-|       U0                                                                                         |    <0.001 |
-|         inst_fifo_gen                                                                            |    <0.001 |
-|           gconvfifo.rf                                                                           |    <0.001 |
-|             grf.rf                                                                               |    <0.001 |
+|     record_fifo                                                                                  |     0.001 |
+|       U0                                                                                         |     0.001 |
+|         inst_fifo_gen                                                                            |     0.001 |
+|           gconvfifo.rf                                                                           |     0.001 |
+|             grf.rf                                                                               |     0.001 |
 |               gntv_or_sync_fifo.gl0.rd                                                           |    <0.001 |
 |                 grss.rsts                                                                        |    <0.001 |
 |                   c1                                                                             |    <0.001 |
@@ -620,9 +577,9 @@ Table of Contents
 |                       valid.cstr                                                                 |    <0.001 |
 |                         ramloop[0].ram.r                                                         |    <0.001 |
 |                           prim_noinit.ram                                                        |    <0.001 |
-|   xillybus_ins                                                                                   |     1.665 |
-|     system_i                                                                                     |     1.644 |
-|       vivado_system_i                                                                            |     1.644 |
+|   xillybus_ins                                                                                   |     1.666 |
+|     system_i                                                                                     |     1.645 |
+|       vivado_system_i                                                                            |     1.645 |
 |         processing_system7_0                                                                     |     1.521 |
 |           inst                                                                                   |     1.521 |
 |         ps7_0_axi_periph                                                                         |     0.005 |
@@ -705,7 +662,7 @@ Table of Contents
 |                           ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd |    <0.001 |
 |                           ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst                    |    <0.001 |
 |         xlconcat_0                                                                               |     0.000 |
-|     xillybus_core_ins                                                                            |     0.020 |
+|     xillybus_core_ins                                                                            |     0.021 |
 |       axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram1                                     |    <0.001 |
 |       axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram2                                     |    <0.001 |
 |       axi4_send_dma_ins/xillybus_wr_fifo/ram0/Mram_fifo_ram3                                     |    <0.001 |

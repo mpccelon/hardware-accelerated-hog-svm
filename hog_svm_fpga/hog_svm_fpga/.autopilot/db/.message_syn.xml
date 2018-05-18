@@ -1,37 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Messages>
-	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;hog_svm_fpga/xillybus_wrapper.cpp&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;hog_svm_fpga/hardware_approximation.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;hog_svm_fpga/xillybus_wrapper.cpp&apos; ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
 	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;first_order_fixed_16::sin_cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
 	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K4&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K3&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K4&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;first_order_fixed_16::sin_cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K3&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
 	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K4&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;first_order_fixed_16::sin_cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K3&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
 	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K3&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:47 . Memory (MB): peak = 103.844 ; gain = 45.660" tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 103.883 ; gain = 45.699" tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K0&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K3&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::cos_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;second_order_float::sin_K1&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sincos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K2&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-40]" severity="WARNING" keynum="HLS_40_1852" content="Directive &apos;RESOURCE&apos; for core &apos;ROM_1P_LUTRAM&apos; cannot be applied: Variable &apos;fourth_order_double::sin_cos_K4&apos; can not be recognized(UNKNOWN VARIABLE) in &apos;sin_or_cos_approximation&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:44 . Memory (MB): peak = 103.711 ; gain = 45.570" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:47 . Memory (MB): peak = 103.711 ; gain = 45.570" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;compute_cells&apos; (hog_svm_fpga/xillybus_wrapper.cpp:99)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;compute_cells&apos; (hog_svm_fpga/xillybus_wrapper.cpp:99)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;fast_inv_sqrt&apos; (hog_svm_fpga/hardware_approximation.cpp:119)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;sqrt_approx&apos; (hog_svm_fpga/hardware_approximation.cpp:85)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;sqrt_approx&apos; (hog_svm_fpga/hardware_approximation.cpp:84)." tag=""/>
@@ -56,54 +58,46 @@
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;find_bin&apos; (hog_svm_fpga/hardware_approximation.cpp:42)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;find_bin&apos; (hog_svm_fpga/hardware_approximation.cpp:41)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;find_bin&apos; (hog_svm_fpga/hardware_approximation.cpp:41)." tag=""/>
-	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;compute_cells&apos; (hog_svm_fpga/xillybus_wrapper.cpp:98)." tag=""/>
-	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::operator&gt;&gt;&apos; into &apos;compute_cells&apos; (hog_svm_fpga/xillybus_wrapper.cpp:98)." tag=""/>
-	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;sqrt_approx&apos; into &apos;compute_gradients&apos; (hog_svm_fpga/xillybus_wrapper.cpp:41)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;sqrt_approx&apos; into &apos;compute_gradients&apos; (hog_svm_fpga/xillybus_wrapper.cpp:42)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;quadrant&apos; into &apos;find_bin&apos; (hog_svm_fpga/hardware_approximation.cpp:27)." tag=""/>
-	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_float&apos; into &apos;compute_blocks&apos; (hog_svm_fpga/xillybus_wrapper.cpp:185)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_float&apos; into &apos;fast_inv_sqrt&apos; (hog_svm_fpga/hardware_approximation.cpp:114)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;64, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_float&apos; into &apos;fast_inv_sqrt&apos; (hog_svm_fpga/hardware_approximation.cpp:109)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;float_to_decimal&apos; into &apos;fast_inv_sqrt&apos; (hog_svm_fpga/hardware_approximation.cpp:110)." tag=""/>
 	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;decimal_to_float&apos; into &apos;fast_inv_sqrt&apos; (hog_svm_fpga/hardware_approximation.cpp:113)." tag=""/>
-	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;fast_inv_sqrt&apos; into &apos;compute_blocks&apos; (hog_svm_fpga/xillybus_wrapper.cpp:176)." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:54 . Memory (MB): peak = 298.758 ; gain = 240.574" tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;fast_inv_sqrt&apos; into &apos;svm_detect&apos; (hog_svm_fpga/xillybus_wrapper.cpp:136)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="INFO" keynum="792" content="Inlining function &apos;ap_fixed_base&lt;32, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::to_float&apos; into &apos;svm_detect&apos; (hog_svm_fpga/xillybus_wrapper.cpp:155)." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:52 . Memory (MB): peak = 313.000 ; gain = 254.859" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
 	<Message prefix="[SYNCHK 200-23]" severity="WARNING" keynum="579" content="hog_svm_fpga/hardware_approximation.cpp:109: variable-indexed range selection may cause suboptimal QoR." tag=""/>
 	<Message prefix="[SYNCHK 200-10]" severity="INFO" keynum="597" content="0 error(s), 1 warning(s)." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:56 . Memory (MB): peak = 298.758 ; gain = 240.574" tag=""/>
-	<Message prefix="[XFORM 203-502]" severity="INFO" keynum="813" content="Unrolling all sub-loops inside loop &apos;Loop-1.1.1.1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:180) in function &apos;compute_blocks&apos; for pipelining." tag=""/>
-	<Message prefix="[XFORM 203-501]" severity="INFO" keynum="891" content="Unrolling loop &apos;Loop-1.1.1.1.1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:183) in function &apos;compute_blocks&apos; completely." tag=""/>
-	<Message prefix="[XFORM 203-721]" severity="INFO" keynum="875" content="Changing loop &apos;Loop_1_proc&apos; (hog_svm_fpga/xillybus_wrapper.cpp:211) to a process function for dataflow in function &apos;xillybus_wrapper&apos;." tag=""/>
-	<Message prefix="[XFORM 203-721]" severity="INFO" keynum="875" content="Changing loop &apos;Loop_2_proc&apos; (hog_svm_fpga/xillybus_wrapper.cpp:240) to a process function for dataflow in function &apos;xillybus_wrapper&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:54 . Memory (MB): peak = 313.000 ; gain = 254.859" tag=""/>
+	<Message prefix="[XFORM 203-721]" severity="INFO" keynum="875" content="Changing loop &apos;Loop_1_proc&apos; (hog_svm_fpga/xillybus_wrapper.cpp:212) to a process function for dataflow in function &apos;xillybus_wrapper&apos;." tag=""/>
 	<Message prefix="[XFORM 203-713]" severity="WARNING" keynum="768" content="All the elements of global array &apos;cells.bin.V&apos; should be updated in process function &apos;compute_cells&apos;, otherwise it may not be synthesized correctly." tag=""/>
 	<Message prefix="[XFORM 203-713]" severity="WARNING" keynum="768" content="All the elements of global array &apos;cells.mag_sq.V&apos; should be updated in process function &apos;compute_cells&apos;, otherwise it may not be synthesized correctly." tag=""/>
 	<Message prefix="[XFORM 203-712]" severity="INFO" keynum="801" content="Applying dataflow to function &apos;xillybus_wrapper&apos;, detected/extracted 5 process function(s): 
 	 &apos;Loop_1_proc&apos;
 	 &apos;compute_gradients&apos;
 	 &apos;compute_cells&apos;
-	 &apos;compute_blocks&apos;
-	 &apos;Loop_2_proc&apos;." tag=""/>
+	 &apos;svm_detect&apos;
+	 &apos;Block_arrayctor.loop8.preheader42_proc&apos;." tag=""/>
+	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:131:4) to (hog_svm_fpga/xillybus_wrapper.cpp:138:17) in function &apos;svm_detect&apos;... converting 20 basic blocks." tag=""/>
+	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:155:9) in function &apos;svm_detect&apos;... converting 3 basic blocks." tag=""/>
 	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock to (hog_svm_fpga/hardware_approximation.cpp:73:2) in function &apos;find_bin&apos;... converting 9 basic blocks." tag=""/>
-	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:10:4) to (hog_svm_fpga/xillybus_wrapper.cpp:9:26) in function &apos;compute_gradients&apos;... converting 9 basic blocks." tag=""/>
-	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:181:6) to (hog_svm_fpga/xillybus_wrapper.cpp:180:32) in function &apos;compute_blocks&apos;... converting 46 basic blocks." tag=""/>
-	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:171:4) to (hog_svm_fpga/xillybus_wrapper.cpp:178:18) in function &apos;compute_blocks&apos;... converting 20 basic blocks." tag=""/>
-	<Message prefix="[XFORM 203-602]" severity="INFO" keynum="794" content="Inlining function &apos;find_bin&apos; into &apos;compute_gradients&apos; (hog_svm_fpga/xillybus_wrapper.cpp:42) automatically." tag=""/>
-	<Message prefix="[XFORM 203-11]" severity="INFO" keynum="754" content="Balancing expressions in function &apos;compute_blocks&apos; (hog_svm_fpga/xillybus_wrapper.cpp:157)...3 expression(s) balanced." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:01:00 . Memory (MB): peak = 298.758 ; gain = 240.574" tag=""/>
+	<Message prefix="[XFORM 203-401]" severity="INFO" keynum="809" content="Performing if-conversion on hyperblock from (hog_svm_fpga/xillybus_wrapper.cpp:10:4) to (hog_svm_fpga/xillybus_wrapper.cpp:9:26) in function &apos;compute_gradients&apos;... converting 5 basic blocks." tag=""/>
+	<Message prefix="[XFORM 203-602]" severity="INFO" keynum="794" content="Inlining function &apos;find_bin&apos; into &apos;compute_gradients&apos; (hog_svm_fpga/xillybus_wrapper.cpp:43) automatically." tag=""/>
+	<Message prefix="[XFORM 203-11]" severity="INFO" keynum="754" content="Balancing expressions in function &apos;svm_detect&apos; (hog_svm_fpga/xillybus_wrapper.cpp:114)...3 expression(s) balanced." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:56 . Memory (MB): peak = 313.000 ; gain = 254.859" tag=""/>
 	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:7:15) in function &apos;compute_gradients&apos;." tag=""/>
-	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1.1.2&apos; (hog_svm_fpga/xillybus_wrapper.cpp:84:21) in function &apos;compute_cells&apos;." tag=""/>
-	<Message prefix="[XFORM 203-542]" severity="WARNING" keynum="790" content="Cannot flatten a loop nest &apos;Loop-1.1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:70:18) in function &apos;compute_cells&apos; : 
+	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1.1.2&apos; (hog_svm_fpga/xillybus_wrapper.cpp:85:21) in function &apos;compute_cells&apos;." tag=""/>
+	<Message prefix="[XFORM 203-542]" severity="WARNING" keynum="790" content="Cannot flatten a loop nest &apos;Loop-1.1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:71:18) in function &apos;compute_cells&apos; : 
 
 more than one sub loop." tag=""/>
-	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:68:17) in function &apos;compute_cells&apos;." tag=""/>
-	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1.1.1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:178:18) in function &apos;compute_blocks&apos;." tag=""/>
-	<Message prefix="[XFORM 203-542]" severity="WARNING" keynum="790" content="Cannot flatten a loop nest &apos;Loop-1.1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:165:16) in function &apos;compute_blocks&apos; : 
-
-the outer loop is not a perfect loop." tag=""/>
-	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:163:15) in function &apos;compute_blocks&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:01:01 . Memory (MB): peak = 340.289 ; gain = 282.105" tag=""/>
+	<Message prefix="[XFORM 203-541]" severity="INFO" keynum="789" content="Flattening a loop nest &apos;Loop-1&apos; (hog_svm_fpga/xillybus_wrapper.cpp:69:17) in function &apos;compute_cells&apos;." tag=""/>
+	<Message prefix="[XFORM 203-631]" severity="WARNING" keynum="902" content="Renaming function &apos;Block_arrayctor.loop8.preheader42_proc&apos; to &apos;Block_arrayctor.loop&apos; (hog_svm_fpga/xillybus_wrapper.cpp:234:2)" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:57 . Memory (MB): peak = 346.699 ; gain = 288.559" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1385" content="Synthesizing &apos;xillybus_wrapper&apos; ..." tag=""/>
+	<Message prefix="[SYN 201-103]" severity="WARNING" keynum="534" content="Legalizing function name &apos;Block_arrayctor.loop&apos; to &apos;Block_arrayctor_loop&apos;." tag=""/>
 	<Message prefix="[SYN 201-107]" severity="WARNING" keynum="557" content="Renaming port name &apos;xillybus_wrapper/in&apos; to &apos;xillybus_wrapper/in_r&apos; to avoid the conflict with HDL keywords or other object names." tag=""/>
 	<Message prefix="[SYN 201-107]" severity="WARNING" keynum="557" content="Renaming port name &apos;xillybus_wrapper/out&apos; to &apos;xillybus_wrapper/out_r&apos; to avoid the conflict with HDL keywords or other object names." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
@@ -111,143 +105,141 @@ the outer loop is not a perfect loop." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 61.414 seconds; current allocated memory: 282.784 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 57.636 seconds; current allocated memory: 286.775 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.225 seconds; current allocated memory: 282.973 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.193 seconds; current allocated memory: 286.948 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;compute_gradients&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="107" content="Pipelining loop &apos;Loop 1&apos;." tag=""/>
-	<Message prefix="[SCHED 204-69]" severity="WARNING" keynum="104" content="Unable to schedule &apos;load&apos; operation (&apos;image_V_load&apos;, hog_svm_fpga/xillybus_wrapper.cpp:39) on array &apos;image_V&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;image_V&apos;." tag=""/>
+	<Message prefix="[SCHED 204-69]" severity="WARNING" keynum="104" content="Unable to schedule &apos;load&apos; operation (&apos;image_V_load_2&apos;, hog_svm_fpga/xillybus_wrapper.cpp:36) on array &apos;image_V&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;image_V&apos;." tag=""/>
 	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="110" content="Pipelining result : Target II = 1, Final II = 2, Depth = 6." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.241 seconds; current allocated memory: 283.566 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.254 seconds; current allocated memory: 287.566 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.271 seconds; current allocated memory: 284.033 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.345 seconds; current allocated memory: 288.022 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;compute_cells&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="107" content="Pipelining loop &apos;Loop 1.2&apos;." tag=""/>
 	<Message prefix="[SCHED 204-68]" severity="WARNING" keynum="98" content="Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between &apos;store&apos; operation (hog_svm_fpga/xillybus_wrapper.cpp:90) of variable &apos;p_Val2_s&apos;, hog_svm_fpga/xillybus_wrapper.cpp:90 on array &apos;bin_vote.V&apos;, hog_svm_fpga/xillybus_wrapper.cpp:72 and &apos;load&apos; operation (&apos;__Val2__&apos;, hog_svm_fpga/xillybus_wrapper.cpp:90) on array &apos;bin_vote.V&apos;, hog_svm_fpga/xillybus_wrapper.cpp:72." tag=""/>
+   between &apos;store&apos; operation (hog_svm_fpga/xillybus_wrapper.cpp:91) of variable &apos;p_Val2_s&apos;, hog_svm_fpga/xillybus_wrapper.cpp:91 on array &apos;bin_vote.V&apos;, hog_svm_fpga/xillybus_wrapper.cpp:73 and &apos;load&apos; operation (&apos;__Val2__&apos;, hog_svm_fpga/xillybus_wrapper.cpp:91) on array &apos;bin_vote.V&apos;, hog_svm_fpga/xillybus_wrapper.cpp:73." tag=""/>
 	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="110" content="Pipelining result : Target II = 1, Final II = 2, Depth = 4." tag=""/>
 	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="107" content="Pipelining loop &apos;Loop 1.3&apos;." tag=""/>
 	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="110" content="Pipelining result : Target II = 1, Final II = 1, Depth = 4." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.319 seconds; current allocated memory: 284.544 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.319 seconds; current allocated memory: 288.533 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.281 seconds; current allocated memory: 284.871 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.237 seconds; current allocated memory: 288.861 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;compute_blocks&apos;" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
-	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="107" content="Pipelining loop &apos;Loop 1.1&apos;." tag=""/>
-	<Message prefix="[SCHED 204-69]" severity="WARNING" keynum="104" content="Unable to schedule &apos;load&apos; operation (&apos;cells_bin_V_load_2&apos;, hog_svm_fpga/xillybus_wrapper.cpp:185) on array &apos;cells_bin_V&apos; due to limited memory ports. Please consider using a memory core with more ports or partitioning the array &apos;cells_bin_V&apos;." tag=""/>
-	<Message prefix="[SCHED 204-61]" severity="INFO" keynum="110" content="Pipelining result : Target II = 1, Final II = 5, Depth = 18." tag=""/>
-	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.714 seconds; current allocated memory: 287.487 MB." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
-	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
-	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.909 seconds; current allocated memory: 289.379 MB." tag=""/>
-	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;Loop_2_proc&apos;" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;svm_detect&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.603 seconds; current allocated memory: 289.718 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.412 seconds; current allocated memory: 289.997 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.18 seconds; current allocated memory: 289.777 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.442 seconds; current allocated memory: 290.945 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;Block_arrayctor_loop&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.411 seconds; current allocated memory: 291.110 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.179 seconds; current allocated memory: 291.145 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;xillybus_wrapper&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
 	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.122 seconds; current allocated memory: 289.844 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.166 seconds; current allocated memory: 291.224 MB." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
 	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
 	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.564 seconds; current allocated memory: 290.284 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.521 seconds; current allocated memory: 291.516 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;Loop_1_proc&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;Loop_1_proc&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.495 seconds; current allocated memory: 290.937 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.362 seconds; current allocated memory: 292.028 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;compute_gradients&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;compute_gradients&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.301 seconds; current allocated memory: 291.947 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.285 seconds; current allocated memory: 293.129 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;compute_cells&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;compute_cells_bin_vote_V&apos; to &apos;compute_cells_binbkb&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;compute_cells&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.736 seconds; current allocated memory: 293.048 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.831 seconds; current allocated memory: 294.244 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;compute_blocks&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;svm_detect&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_fsub_32ns_32ns_32_5_full_dsp_1&apos; to &apos;xillybus_wrapper_cud&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_fmul_32ns_32ns_32_4_max_dsp_1&apos; to &apos;xillybus_wrapper_dEe&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_uitofp_32ns_32_6_1&apos; to &apos;xillybus_wrapper_eOg&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_fpext_32ns_64_1_1&apos; to &apos;xillybus_wrapper_fYi&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;xillybus_wrapper_cud&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;svm_detect_SVM_detector_V&apos; to &apos;svm_detect_SVM_decud&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_fsub_32ns_32ns_32_5_full_dsp_1&apos; to &apos;xillybus_wrapper_dEe&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_fmul_32ns_32ns_32_4_max_dsp_1&apos; to &apos;xillybus_wrapper_eOg&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_uitofp_32ns_32_6_1&apos; to &apos;xillybus_wrapper_fYi&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_fpext_32ns_64_1_1&apos; to &apos;xillybus_wrapper_g8j&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;xillybus_wrapper_dEe&apos;: 1 instance(s)." tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;xillybus_wrapper_eOg&apos;: 2 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;xillybus_wrapper_eOg&apos;: 1 instance(s)." tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;xillybus_wrapper_fYi&apos;: 1 instance(s)." tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;compute_blocks&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.679 seconds; current allocated memory: 296.764 MB." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="368" content="Generating core module &apos;xillybus_wrapper_g8j&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;svm_detect&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.799 seconds; current allocated memory: 296.195 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;Loop_2_proc&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;Block_arrayctor_loop&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
-	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;Loop_2_proc&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 1.979 seconds; current allocated memory: 298.097 MB." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;Block_arrayctor_loop&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 1.052 seconds; current allocated memory: 296.739 MB." tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;xillybus_wrapper&apos;" tag=""/>
 	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;xillybus_wrapper/in_r&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;xillybus_wrapper/out_r&apos; to &apos;ap_fifo&apos;." tag=""/>
 	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on function &apos;xillybus_wrapper&apos; to &apos;ap_ctrl_none&apos;." tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_image_V&apos; to &apos;xillybus_wrapper_g8j&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_cells_bin_V&apos; to &apos;xillybus_wrapper_hbi&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_cells_mag_sq_V&apos; to &apos;xillybus_wrapper_ibs&apos; due to the length limit 20" tag=""/>
-	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_hog&apos; to &apos;xillybus_wrapper_jbC&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_image_V&apos; to &apos;xillybus_wrapper_hbi&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_cells_bin_V&apos; to &apos;xillybus_wrapper_ibs&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_cells_mag_sq_V&apos; to &apos;xillybus_wrapper_jbC&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_grad_vote_magnitude_s&apos; to &apos;xillybus_wrapper_kbM&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[SYN 201-210]" severity="INFO" keynum="402" content="Renamed object name &apos;xillybus_wrapper_grad_vote_bin_V&apos; to &apos;xillybus_wrapper_lbW&apos; due to the length limit 20" tag=""/>
 	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;xillybus_wrapper&apos;." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.362 seconds; current allocated memory: 298.963 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.404 seconds; current allocated memory: 297.528 MB." tag=""/>
 	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;compute_cells_binbkb_ram (RAM)&apos; using distributed RAMs." tag=""/>
-	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;xillybus_wrapper_g8j_memcore_ram (RAM)&apos; using block RAMs." tag=""/>
+	<Message prefix="[RTMG 210-279]" severity="INFO" keynum="RTMG_279_1793" content="Implementing memory &apos;svm_detect_SVM_decud_rom&apos; using distributed ROMs." tag=""/>
 	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;xillybus_wrapper_hbi_memcore_ram (RAM)&apos; using block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;xillybus_wrapper_ibs_memcore_ram (RAM)&apos; using block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;xillybus_wrapper_jbC_memcore_ram (RAM)&apos; using block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;xillybus_wrapper_kbM_memcore_ram (RAM)&apos; using block RAMs." tag=""/>
 	<Message prefix="[RTMG 210-278]" severity="INFO" keynum="RTMG_278_1790" content="Implementing memory &apos;xillybus_wrapper_lbW_memcore_ram (RAM)&apos; using block RAMs." tag=""/>
-	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:00:19 ; elapsed = 00:01:15 . Memory (MB): peak = 374.668 ; gain = 316.484" tag=""/>
+	<Message prefix="[RTMG 210-285]" severity="INFO" keynum="RTMG_285_1799" content="Implementing FIFO &apos;fifo_w32_d2_A&apos; using Shift Registers." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:01:09 . Memory (MB): peak = 370.051 ; gain = 311.910" tag=""/>
 	<Message prefix="[SYSC 207-301]" severity="INFO" keynum="SYSC_301_1065" content="Generating SystemC RTL for xillybus_wrapper." tag=""/>
 	<Message prefix="[VHDL 208-304]" severity="INFO" keynum="VHDL_304_1066" content="Generating VHDL RTL for xillybus_wrapper." tag=""/>
 	<Message prefix="[VLOG 209-307]" severity="INFO" keynum="VLOG_307_1067" content="Generating Verilog RTL for xillybus_wrapper." tag=""/>
-	<Message prefix="[HLS 200-112]" severity="INFO" keynum="472" content="Total elapsed time: 75.326 seconds; peak allocated memory: 298.963 MB." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="INFO" keynum="472" content="Total elapsed time: 69.433 seconds; peak allocated memory: 297.528 MB." tag=""/>
 </Messages>

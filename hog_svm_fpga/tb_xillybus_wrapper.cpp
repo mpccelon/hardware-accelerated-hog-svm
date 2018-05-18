@@ -15,9 +15,13 @@ int main()
 //	memset(image, 0, IMAGE_HEIGHT*IMAGE_WIDTH*sizeof(unsigned char));
 
 	ifstream data;
-	data.open("vehicle.txt");
+#ifdef SVM
+	data.open("test_pos.txt");
+#endif
 
-	const int size = 1007;
+#ifdef HOG
+	data.open("vehicle.txt");
+#endif
 
 	unsigned char image[IMAGE_HEIGHT][IMAGE_WIDTH] = {};
 	float descriptor[SVM_DESC_SIZE] = {};

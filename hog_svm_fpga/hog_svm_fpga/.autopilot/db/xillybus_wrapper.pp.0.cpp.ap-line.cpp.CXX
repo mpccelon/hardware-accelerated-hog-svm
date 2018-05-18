@@ -1242,5 +1242,4 @@
 #pragma line 1 "hog_svm_fpga/hardware_approximation.h" 1 ::: 44417
 #pragma line 6 "hog_svm_fpga/xillybus_wrapper.h" 2 ::: 44433
 #pragma line 2 "hog_svm_fpga/xillybus_wrapper.cpp" 2 ::: 44445
-#pragma line 38 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 44456
-#pragma line 239 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 44649
+#pragma line 247 "hog_svm_fpga/xillybus_wrapper.cpp" ::: 44680

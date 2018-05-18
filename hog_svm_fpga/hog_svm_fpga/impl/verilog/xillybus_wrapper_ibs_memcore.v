@@ -8,9 +8,9 @@
 `timescale 1 ns / 1 ps
 module xillybus_wrapper_ibs_memcore_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
 
-parameter DWIDTH = 64;
-parameter AWIDTH = 6;
-parameter MEM_SIZE = 64;
+parameter DWIDTH = 32;
+parameter AWIDTH = 10;
+parameter MEM_SIZE = 576;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -67,9 +67,9 @@ module xillybus_wrapper_ibs_memcore(
     ce1,
     q1);
 
-parameter DataWidth = 32'd64;
-parameter AddressRange = 32'd64;
-parameter AddressWidth = 32'd6;
+parameter DataWidth = 32'd32;
+parameter AddressRange = 32'd576;
+parameter AddressWidth = 32'd10;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

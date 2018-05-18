@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Fri May 18 16:31:30 2018
-# Process ID: 8868
+# Start of session at: Sat May 19 01:16:27 2018
+# Process ID: 15936
 # Current directory: D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog
 # Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
 # Log file: D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/vivado.log

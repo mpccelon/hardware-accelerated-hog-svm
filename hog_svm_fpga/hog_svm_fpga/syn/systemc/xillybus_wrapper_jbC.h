@@ -16,9 +16,9 @@
 #include "xillybus_wrapper_jbC_memcore.h"
 
 SC_MODULE(xillybus_wrapper_jbC) {
-    static const unsigned int DataWidth    = 32;
+    static const unsigned int DataWidth    = 64;
     static const unsigned int AddressRange = 32;
-    static const unsigned int AddressWidth = 11;
+    static const unsigned int AddressWidth = 6;
     static const unsigned int BufferCount  = 2;
     static const unsigned int IndexWidth   = 1;
 
@@ -36,9 +36,8 @@ SC_MODULE(xillybus_wrapper_jbC) {
     sc_core::sc_in<  sc_dt::sc_lv<DataWidth> >    i_d0;
     sc_core::sc_out< sc_dt::sc_lv<DataWidth> >    i_q0;
     sc_core::sc_in<  sc_dt::sc_logic >            i_ce1;
-    sc_core::sc_in<  sc_dt::sc_logic >            i_we1;
     sc_core::sc_in<  sc_dt::sc_lv<AddressWidth> > i_address1;
-    sc_core::sc_in<  sc_dt::sc_lv<DataWidth> >    i_d1;
+    sc_core::sc_out< sc_dt::sc_lv<DataWidth> >    i_q1;
 
     // target
     sc_core::sc_in<  sc_dt::sc_logic >            t_ce;
@@ -50,9 +49,8 @@ SC_MODULE(xillybus_wrapper_jbC) {
     sc_core::sc_in<  sc_dt::sc_lv<DataWidth> >    t_d0;
     sc_core::sc_out< sc_dt::sc_lv<DataWidth> >    t_q0;
     sc_core::sc_in<  sc_dt::sc_logic >            t_ce1;
-    sc_core::sc_in<  sc_dt::sc_logic >            t_we1;
     sc_core::sc_in<  sc_dt::sc_lv<AddressWidth> > t_address1;
-    sc_core::sc_in<  sc_dt::sc_lv<DataWidth> >    t_d1;
+    sc_core::sc_out< sc_dt::sc_lv<DataWidth> >    t_q1;
 
 protected:
     // control/status
@@ -74,9 +72,8 @@ protected:
     sc_core::sc_signal< sc_dt::sc_lv<DataWidth> >      buf_d0[BufferCount];
     sc_core::sc_signal< sc_dt::sc_lv<DataWidth> >      buf_q0[BufferCount];
     sc_core::sc_signal< sc_dt::sc_logic >              buf_ce1[BufferCount];
-    sc_core::sc_signal< sc_dt::sc_logic >              buf_we1[BufferCount];
     sc_core::sc_signal< sc_dt::sc_lv<AddressWidth> >   buf_a1[BufferCount];
-    sc_core::sc_signal< sc_dt::sc_lv<DataWidth> >      buf_d1[BufferCount];
+    sc_core::sc_signal< sc_dt::sc_lv<DataWidth> >      buf_q1[BufferCount];
 
     // buffer signals
     void proc_buffer_signals();
@@ -84,6 +81,8 @@ protected:
     // output
     void proc_i_q0();
     void proc_t_q0();
+    void proc_i_q1();
+    void proc_t_q1();
 
     void proc_i_full_n();
     void proc_t_empty_n();
@@ -117,9 +116,8 @@ public:
             buffer[i]->d0       ( buf_d0[i] );
             buffer[i]->q0       ( buf_q0[i] );
             buffer[i]->ce1      ( buf_ce1[i] );
-            buffer[i]->we1      ( buf_we1[i] );
             buffer[i]->address1 ( buf_a1[i] );
-            buffer[i]->d1       ( buf_d1[i] );
+            buffer[i]->q1       ( buf_q1[i] );
 
         }
 
@@ -136,13 +134,25 @@ public:
             sensitive << buf_q0[i];
         }
 
+        SC_METHOD(proc_i_q1);
+        sensitive << iptr;
+        for (unsigned i = 0; i < BufferCount; i++) {
+            sensitive << buf_q1[i];
+        }
+
+        SC_METHOD(proc_t_q1);
+        sensitive << tptr;
+        for (unsigned i = 0; i < BufferCount; i++) {
+            sensitive << buf_q1[i];
+        }
+
         // buffer signals
         SC_METHOD(proc_buffer_signals);
         sensitive << iptr << tptr << empty_n;
         sensitive << i_ce0 << i_we0 << i_address0 << i_d0;
         sensitive << t_ce0 << t_we0 << t_address0 << t_d0;
-        sensitive << i_ce1 << i_we1 << i_address1 << i_d1;
-        sensitive << t_ce1 << t_we1 << t_address1 << t_d1;
+        sensitive << i_ce1  << i_address1;
+        sensitive << t_ce1  << t_address1;
 
         // power-on initialization
         iptr    = 0;
@@ -195,9 +205,8 @@ public:
             sc_trace(m_trace_file, i_d0,       "(port)i_d0");
             sc_trace(m_trace_file, i_q0,       "(port)i_q0");
             sc_trace(m_trace_file, i_ce1,      "(port)i_ce1");
-            sc_trace(m_trace_file, i_we1,      "(port)i_we0");
             sc_trace(m_trace_file, i_address1, "(port)i_address1");
-            sc_trace(m_trace_file, i_d1,       "(port)i_d1");
+            sc_trace(m_trace_file, i_q1,       "(port)i_q1");
             sc_trace(m_trace_file, t_read,     "(port)t_read");
             sc_trace(m_trace_file, t_empty_n,  "(port)t_empty_n");
             sc_trace(m_trace_file, t_ce0,      "(port)t_ce0");
@@ -206,9 +215,8 @@ public:
             sc_trace(m_trace_file, t_d0,       "(port)t_d0");
             sc_trace(m_trace_file, t_q0,       "(port)t_q0");
             sc_trace(m_trace_file, t_ce1,      "(port)t_ce1");
-            sc_trace(m_trace_file, t_we1,      "(port)t_we0");
             sc_trace(m_trace_file, t_address1, "(port)t_address1");
-            sc_trace(m_trace_file, t_d1,       "(port)t_d1");
+            sc_trace(m_trace_file, t_q1,       "(port)t_q1");
             // control/status
             sc_trace(m_trace_file, iptr,     "iptr");
             sc_trace(m_trace_file, tptr,     "tptr");
@@ -228,9 +236,8 @@ public:
                 sc_trace(m_trace_file, buf_d0[i],  strcat(strcpy(szTmp, "buf_d0" ), szIndex));
                 sc_trace(m_trace_file, buf_q0[i],  strcat(strcpy(szTmp, "buf_q0" ), szIndex));
             sc_trace(m_trace_file, t_ce1,      "(port)t_ce1");
-            sc_trace(m_trace_file, t_we1,      "(port)t_we0");
             sc_trace(m_trace_file, t_address1, "(port)t_address1");
-            sc_trace(m_trace_file, t_d1,       "(port)t_d1");
+            sc_trace(m_trace_file, t_q1,       "(port)t_q1");
             }
         } // Trace End.
 

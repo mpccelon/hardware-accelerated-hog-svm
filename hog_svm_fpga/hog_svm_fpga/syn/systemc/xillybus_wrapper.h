@@ -14,14 +14,14 @@
 #include "Loop_1_proc.h"
 #include "compute_gradients.h"
 #include "compute_cells.h"
-#include "compute_blocks.h"
-#include "Loop_2_proc.h"
-#include "xillybus_wrapper_g8j.h"
+#include "svm_detect.h"
+#include "Block_arrayctor_loop.h"
 #include "xillybus_wrapper_hbi.h"
 #include "xillybus_wrapper_ibs.h"
 #include "xillybus_wrapper_jbC.h"
 #include "xillybus_wrapper_kbM.h"
 #include "xillybus_wrapper_lbW.h"
+#include "fifo_w32_d2_A.h"
 
 namespace ap_rtl {
 
@@ -39,12 +39,11 @@ struct xillybus_wrapper : public sc_module {
     sc_signal< sc_logic > ap_var_for_const0;
     sc_signal< sc_lv<32> > ap_var_for_const4;
     sc_signal< sc_lv<8> > ap_var_for_const1;
-    sc_signal< sc_lv<26> > ap_var_for_const8;
-    sc_signal< sc_lv<4> > ap_var_for_const9;
+    sc_signal< sc_lv<26> > ap_var_for_const7;
+    sc_signal< sc_lv<4> > ap_var_for_const8;
     sc_signal< sc_lv<64> > ap_var_for_const6;
     sc_signal< sc_lv<10> > ap_var_for_const3;
     sc_signal< sc_lv<6> > ap_var_for_const5;
-    sc_signal< sc_lv<11> > ap_var_for_const7;
 
 
     // Module declarations
@@ -57,17 +56,17 @@ struct xillybus_wrapper : public sc_module {
 
     ofstream mHdltvinHandle;
     ofstream mHdltvoutHandle;
-    xillybus_wrapper_g8j* image_V_U;
-    xillybus_wrapper_hbi* cells_bin_V_U;
-    xillybus_wrapper_ibs* cells_mag_sq_V_U;
-    xillybus_wrapper_jbC* hog_U;
+    xillybus_wrapper_hbi* image_V_U;
+    xillybus_wrapper_ibs* cells_bin_V_U;
+    xillybus_wrapper_jbC* cells_mag_sq_V_U;
     xillybus_wrapper_kbM* grad_vote_magnitude_s_U;
     xillybus_wrapper_lbW* grad_vote_bin_V_U;
     Loop_1_proc* Loop_1_proc_U0;
     compute_gradients* compute_gradients_U0;
     compute_cells* compute_cells_U0;
-    compute_blocks* compute_blocks_U0;
-    Loop_2_proc* Loop_2_proc_U0;
+    svm_detect* svm_detect_U0;
+    Block_arrayctor_loop* Block_arrayctor_loop_U0;
+    fifo_w32_d2_A* tmp_channel_U;
     sc_signal< sc_lv<8> > image_V_i_q0;
     sc_signal< sc_lv<8> > image_V_i_q1;
     sc_signal< sc_lv<8> > image_V_t_q0;
@@ -80,8 +79,6 @@ struct xillybus_wrapper : public sc_module {
     sc_signal< sc_lv<64> > cells_mag_sq_V_i_q1;
     sc_signal< sc_lv<64> > cells_mag_sq_V_t_q0;
     sc_signal< sc_lv<64> > cells_mag_sq_V_t_q1;
-    sc_signal< sc_lv<32> > hog_i_q0;
-    sc_signal< sc_lv<32> > hog_t_q0;
     sc_signal< sc_lv<26> > grad_vote_magnitude_s_i_q0;
     sc_signal< sc_lv<26> > grad_vote_magnitude_s_t_q0;
     sc_signal< sc_lv<4> > grad_vote_bin_V_i_q0;
@@ -152,38 +149,30 @@ struct xillybus_wrapper : public sc_module {
     sc_signal< sc_logic > compute_cells_U0_cells_bin_V_full_n;
     sc_signal< sc_logic > ap_sync_reg_channel_write_cells_bin_V;
     sc_signal< sc_logic > ap_sync_channel_write_cells_bin_V;
-    sc_signal< sc_logic > compute_blocks_U0_ap_start;
-    sc_signal< sc_logic > compute_blocks_U0_ap_done;
-    sc_signal< sc_logic > compute_blocks_U0_ap_continue;
-    sc_signal< sc_logic > compute_blocks_U0_ap_idle;
-    sc_signal< sc_logic > compute_blocks_U0_ap_ready;
-    sc_signal< sc_lv<10> > compute_blocks_U0_cells_bin_V_address0;
-    sc_signal< sc_logic > compute_blocks_U0_cells_bin_V_ce0;
-    sc_signal< sc_lv<10> > compute_blocks_U0_cells_bin_V_address1;
-    sc_signal< sc_logic > compute_blocks_U0_cells_bin_V_ce1;
-    sc_signal< sc_lv<6> > compute_blocks_U0_cells_mag_sq_V_address0;
-    sc_signal< sc_logic > compute_blocks_U0_cells_mag_sq_V_ce0;
-    sc_signal< sc_lv<6> > compute_blocks_U0_cells_mag_sq_V_address1;
-    sc_signal< sc_logic > compute_blocks_U0_cells_mag_sq_V_ce1;
-    sc_signal< sc_lv<11> > compute_blocks_U0_hog_address0;
-    sc_signal< sc_logic > compute_blocks_U0_hog_ce0;
-    sc_signal< sc_logic > compute_blocks_U0_hog_we0;
-    sc_signal< sc_lv<32> > compute_blocks_U0_hog_d0;
-    sc_signal< sc_lv<11> > compute_blocks_U0_hog_address1;
-    sc_signal< sc_logic > compute_blocks_U0_hog_ce1;
-    sc_signal< sc_logic > compute_blocks_U0_hog_we1;
-    sc_signal< sc_lv<32> > compute_blocks_U0_hog_d1;
-    sc_signal< sc_logic > ap_channel_done_hog;
-    sc_signal< sc_logic > compute_blocks_U0_hog_full_n;
-    sc_signal< sc_logic > Loop_2_proc_U0_ap_start;
-    sc_signal< sc_logic > Loop_2_proc_U0_ap_done;
-    sc_signal< sc_logic > Loop_2_proc_U0_ap_continue;
-    sc_signal< sc_logic > Loop_2_proc_U0_ap_idle;
-    sc_signal< sc_logic > Loop_2_proc_U0_ap_ready;
-    sc_signal< sc_lv<32> > Loop_2_proc_U0_out_r_din;
-    sc_signal< sc_logic > Loop_2_proc_U0_out_r_write;
-    sc_signal< sc_lv<11> > Loop_2_proc_U0_hog_address0;
-    sc_signal< sc_logic > Loop_2_proc_U0_hog_ce0;
+    sc_signal< sc_logic > svm_detect_U0_ap_start;
+    sc_signal< sc_logic > svm_detect_U0_ap_done;
+    sc_signal< sc_logic > svm_detect_U0_ap_continue;
+    sc_signal< sc_logic > svm_detect_U0_ap_idle;
+    sc_signal< sc_logic > svm_detect_U0_ap_ready;
+    sc_signal< sc_lv<32> > svm_detect_U0_cells_bin_V_2;
+    sc_signal< sc_logic > svm_detect_U0_cells_bin_V_2_ap_vld;
+    sc_signal< sc_lv<10> > svm_detect_U0_cells_bin_V_address0;
+    sc_signal< sc_logic > svm_detect_U0_cells_bin_V_ce0;
+    sc_signal< sc_lv<10> > svm_detect_U0_cells_bin_V_address1;
+    sc_signal< sc_logic > svm_detect_U0_cells_bin_V_ce1;
+    sc_signal< sc_lv<6> > svm_detect_U0_cells_mag_sq_V_address0;
+    sc_signal< sc_logic > svm_detect_U0_cells_mag_sq_V_ce0;
+    sc_signal< sc_lv<6> > svm_detect_U0_cells_mag_sq_V_address1;
+    sc_signal< sc_logic > svm_detect_U0_cells_mag_sq_V_ce1;
+    sc_signal< sc_logic > ap_channel_done_tmp_channel;
+    sc_signal< sc_logic > tmp_channel_full_n;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_ap_start;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_ap_done;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_ap_continue;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_ap_idle;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_ap_ready;
+    sc_signal< sc_lv<32> > Block_arrayctor_loop_U0_out_r_din;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_out_r_write;
     sc_signal< sc_logic > ap_sync_continue;
     sc_signal< sc_logic > image_V_i_full_n;
     sc_signal< sc_logic > image_V_t_empty_n;
@@ -199,18 +188,18 @@ struct xillybus_wrapper : public sc_module {
     sc_signal< sc_logic > cells_mag_sq_V_t_empty_n;
     sc_signal< sc_lv<64> > cells_mag_sq_V_t_d1;
     sc_signal< sc_logic > cells_mag_sq_V_t_we1;
-    sc_signal< sc_logic > hog_i_full_n;
-    sc_signal< sc_logic > hog_t_empty_n;
+    sc_signal< sc_lv<32> > tmp_channel_dout;
+    sc_signal< sc_logic > tmp_channel_empty_n;
     sc_signal< sc_logic > Loop_1_proc_U0_start_full_n;
     sc_signal< sc_logic > Loop_1_proc_U0_start_write;
     sc_signal< sc_logic > compute_gradients_U0_start_full_n;
     sc_signal< sc_logic > compute_gradients_U0_start_write;
     sc_signal< sc_logic > compute_cells_U0_start_full_n;
     sc_signal< sc_logic > compute_cells_U0_start_write;
-    sc_signal< sc_logic > compute_blocks_U0_start_full_n;
-    sc_signal< sc_logic > compute_blocks_U0_start_write;
-    sc_signal< sc_logic > Loop_2_proc_U0_start_full_n;
-    sc_signal< sc_logic > Loop_2_proc_U0_start_write;
+    sc_signal< sc_logic > svm_detect_U0_start_full_n;
+    sc_signal< sc_logic > svm_detect_U0_start_write;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_start_full_n;
+    sc_signal< sc_logic > Block_arrayctor_loop_U0_start_write;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
     static const sc_lv<32> ap_const_lv32_0;
@@ -222,36 +211,32 @@ struct xillybus_wrapper : public sc_module {
     static const sc_lv<10> ap_const_lv10_1;
     static const sc_lv<6> ap_const_lv6_0;
     static const sc_lv<6> ap_const_lv6_1;
-    static const sc_lv<11> ap_const_lv11_0;
-    static const sc_lv<11> ap_const_lv11_1;
-    static const sc_lv<32> ap_const_lv32_1;
     static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_var_for_const2();
     void thread_ap_var_for_const0();
     void thread_ap_var_for_const4();
     void thread_ap_var_for_const1();
+    void thread_ap_var_for_const7();
     void thread_ap_var_for_const8();
-    void thread_ap_var_for_const9();
     void thread_ap_var_for_const6();
     void thread_ap_var_for_const3();
     void thread_ap_var_for_const5();
-    void thread_ap_var_for_const7();
     void thread_ap_clk_no_reset_();
+    void thread_Block_arrayctor_loop_U0_ap_continue();
+    void thread_Block_arrayctor_loop_U0_ap_start();
+    void thread_Block_arrayctor_loop_U0_start_full_n();
+    void thread_Block_arrayctor_loop_U0_start_write();
     void thread_Loop_1_proc_U0_ap_continue();
     void thread_Loop_1_proc_U0_image_V_full_n();
     void thread_Loop_1_proc_U0_start_full_n();
     void thread_Loop_1_proc_U0_start_write();
-    void thread_Loop_2_proc_U0_ap_continue();
-    void thread_Loop_2_proc_U0_ap_start();
-    void thread_Loop_2_proc_U0_start_full_n();
-    void thread_Loop_2_proc_U0_start_write();
     void thread_ap_channel_done_cells_bin_V();
     void thread_ap_channel_done_cells_mag_sq_V();
     void thread_ap_channel_done_grad_vote_bin_V();
     void thread_ap_channel_done_grad_vote_magnitude_s();
-    void thread_ap_channel_done_hog();
     void thread_ap_channel_done_image_V();
+    void thread_ap_channel_done_tmp_channel();
     void thread_ap_sync_channel_write_cells_bin_V();
     void thread_ap_sync_channel_write_cells_mag_sq_V();
     void thread_ap_sync_channel_write_grad_vote_bin_V();
@@ -261,11 +246,6 @@ struct xillybus_wrapper : public sc_module {
     void thread_cells_bin_V_t_we1();
     void thread_cells_mag_sq_V_t_d1();
     void thread_cells_mag_sq_V_t_we1();
-    void thread_compute_blocks_U0_ap_continue();
-    void thread_compute_blocks_U0_ap_start();
-    void thread_compute_blocks_U0_hog_full_n();
-    void thread_compute_blocks_U0_start_full_n();
-    void thread_compute_blocks_U0_start_write();
     void thread_compute_cells_U0_ap_continue();
     void thread_compute_cells_U0_ap_start();
     void thread_compute_cells_U0_cells_bin_V_full_n();
@@ -281,6 +261,10 @@ struct xillybus_wrapper : public sc_module {
     void thread_in_r_read();
     void thread_out_r_din();
     void thread_out_r_write();
+    void thread_svm_detect_U0_ap_continue();
+    void thread_svm_detect_U0_ap_start();
+    void thread_svm_detect_U0_start_full_n();
+    void thread_svm_detect_U0_start_write();
     void thread_hdltv_gen();
 };
 

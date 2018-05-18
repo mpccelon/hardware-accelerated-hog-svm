@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/verilog/vivado/xillydemo.runs/synth_1'
+HD_PWD='D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/verilog/vivado/xillydemo.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

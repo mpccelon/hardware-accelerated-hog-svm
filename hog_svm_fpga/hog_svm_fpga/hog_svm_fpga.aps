@@ -55,7 +55,7 @@
         </SimFlow>
     </Simulation>
     <clockList>
-        <clock name="default" default="false" period="10"/>
+        <clock default="false" name="default" period="10"/>
     </clockList>
     <name>
         <value string="hog_svm_fpga"/>

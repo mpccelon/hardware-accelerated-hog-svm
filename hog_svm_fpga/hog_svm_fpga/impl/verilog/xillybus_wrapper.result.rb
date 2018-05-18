@@ -4,11 +4,11 @@ $Description = "by Vivado"
 
 #=== Resource usage ===
 $SLICE = "0"
-$LUT = "7869"
-$FF = "4787"
-$DSP = "17"
-$BRAM ="33"
-$SRL ="4"
+$LUT = "4340"
+$FF = "2377"
+$DSP = "25"
+$BRAM ="25"
+$SRL ="6"
 #=== Final timing ===
 $TargetCP = "10.000"
-$CP = "9.536"
+$CP = "9.654"

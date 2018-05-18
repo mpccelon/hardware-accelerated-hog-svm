@@ -51,20 +51,25 @@ void xillybus_wrapper_hbi::proc_buffer_signals() {
             buf_a0[i].write(i_address0.read());
             buf_d0[i].write(i_d0.read());
             buf_ce1[i].write(i_ce1.read());
+            buf_we1[i].write(i_we1.read());
             buf_a1[i].write(i_address1.read());
+            buf_d1[i].write(i_d1.read());
         } else {
             if (tptr.read() == i && empty_n.read() == SC_LOGIC_1) {
                 buf_ce0[i].write(t_ce0.read());
                 buf_we0[i].write(t_we0.read());
                 buf_ce1[i].write(t_ce1.read());
+                buf_we1[i].write(t_we1.read());
             } else {
                 buf_ce0[i].write(SC_LOGIC_0);
                 buf_we0[i].write(SC_LOGIC_0);
                 buf_ce1[i].write(SC_LOGIC_0);
+                buf_we1[i].write(SC_LOGIC_0);
             }
             buf_a0[i].write(t_address0.read());
             buf_d0[i].write(t_d0.read());
             buf_a1[i].write(t_address1.read());
+            buf_d1[i].write(t_d1.read());
         }
     }
 }

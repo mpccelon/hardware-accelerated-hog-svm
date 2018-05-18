@@ -20,7 +20,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "27210",
+    "Latency": "25173",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -36,22 +36,22 @@
   },
   "Files": {
     "CSource": [
-      "..\/xillybus_wrapper.cpp",
-      "..\/hardware_approximation.cpp"
+      "..\/hardware_approximation.cpp",
+      "..\/xillybus_wrapper.cpp"
     ],
     "Vhdl": [
-      "impl\/vhdl\/compute_blocks.vhd",
+      "impl\/vhdl\/Block_arrayctor_loop.vhd",
       "impl\/vhdl\/compute_cells.vhd",
       "impl\/vhdl\/compute_cells_binbkb.vhd",
       "impl\/vhdl\/compute_gradients.vhd",
+      "impl\/vhdl\/fifo_w32_d2_A.vhd",
       "impl\/vhdl\/Loop_1_proc.vhd",
-      "impl\/vhdl\/Loop_2_proc.vhd",
-      "impl\/vhdl\/xillybus_wrapper_cud.vhd",
+      "impl\/vhdl\/svm_detect.vhd",
+      "impl\/vhdl\/svm_detect_SVM_decud.vhd",
       "impl\/vhdl\/xillybus_wrapper_dEe.vhd",
       "impl\/vhdl\/xillybus_wrapper_eOg.vhd",
       "impl\/vhdl\/xillybus_wrapper_fYi.vhd",
       "impl\/vhdl\/xillybus_wrapper_g8j.vhd",
-      "impl\/vhdl\/xillybus_wrapper_g8j_memcore.vhd",
       "impl\/vhdl\/xillybus_wrapper_hbi.vhd",
       "impl\/vhdl\/xillybus_wrapper_hbi_memcore.vhd",
       "impl\/vhdl\/xillybus_wrapper_ibs.vhd",
@@ -65,18 +65,19 @@
       "impl\/vhdl\/xillybus_wrapper.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/compute_blocks.v",
+      "impl\/verilog\/Block_arrayctor_loop.v",
       "impl\/verilog\/compute_cells.v",
       "impl\/verilog\/compute_cells_binbkb.v",
       "impl\/verilog\/compute_gradients.v",
+      "impl\/verilog\/fifo_w32_d2_A.v",
       "impl\/verilog\/Loop_1_proc.v",
-      "impl\/verilog\/Loop_2_proc.v",
-      "impl\/verilog\/xillybus_wrapper_cud.v",
+      "impl\/verilog\/svm_detect.v",
+      "impl\/verilog\/svm_detect_SVM_decud.v",
+      "impl\/verilog\/svm_detect_SVM_decud_rom.dat",
       "impl\/verilog\/xillybus_wrapper_dEe.v",
       "impl\/verilog\/xillybus_wrapper_eOg.v",
       "impl\/verilog\/xillybus_wrapper_fYi.v",
       "impl\/verilog\/xillybus_wrapper_g8j.v",
-      "impl\/verilog\/xillybus_wrapper_g8j_memcore.v",
       "impl\/verilog\/xillybus_wrapper_hbi.v",
       "impl\/verilog\/xillybus_wrapper_hbi_memcore.v",
       "impl\/verilog\/xillybus_wrapper_ibs.v",
@@ -203,7 +204,7 @@
     "out_r": {
       "interfaceRef": "out_r",
       "dir": "out",
-      "firstOutLatency": "2"
+      "firstOutLatency": "0"
     }
   },
   "ModuleInfo": {
@@ -211,8 +212,8 @@
       "ModuleName": "xillybus_wrapper",
       "Instances": [
         {
-          "ModuleName": "compute_blocks",
-          "InstanceName": "compute_blocks_U0"
+          "ModuleName": "svm_detect",
+          "InstanceName": "svm_detect_U0"
         },
         {
           "ModuleName": "compute_gradients",
@@ -227,8 +228,8 @@
           "InstanceName": "Loop_1_proc_U0"
         },
         {
-          "ModuleName": "Loop_2_proc",
-          "InstanceName": "Loop_2_proc_U0"
+          "ModuleName": "Block_arrayctor_loop",
+          "InstanceName": "Block_arrayctor_loop_U0"
         }
       ]
     },
@@ -280,7 +281,7 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "7.96"
+          "Estimate": "8.75"
         },
         "Loops": [{
             "Name": "Loop 1",
@@ -291,8 +292,8 @@
           }],
         "Area": {
           "BRAM_18K": "0",
-          "FF": "234",
-          "LUT": "1146",
+          "FF": "340",
+          "LUT": "1211",
           "DSP48E": "0"
         }
       },
@@ -347,12 +348,12 @@
           "LUT": "738"
         }
       },
-      "compute_blocks": {
+      "svm_detect": {
         "Latency": {
-          "LatencyBest": "3382",
-          "LatencyAvg": "3382",
-          "LatencyWorst": "3382",
-          "PipelineII": "3382",
+          "LatencyBest": "4874",
+          "LatencyAvg": "4874",
+          "LatencyWorst": "4874",
+          "PipelineII": "4874",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -363,58 +364,58 @@
         },
         "Loops": [{
             "Name": "Loop 1",
-            "TripCount": "49",
-            "Latency": "3381",
+            "TripCount": "7",
+            "Latency": "4865",
             "PipelineII": "",
-            "PipelineDepth": "69",
+            "PipelineDepth": "695",
             "Loops": [{
                 "Name": "Loop 1.1",
-                "TripCount": "4",
-                "Latency": "32",
-                "PipelineII": "5",
-                "PipelineDepth": "18"
+                "TripCount": "7",
+                "Latency": "693",
+                "PipelineII": "",
+                "PipelineDepth": "99",
+                "Loops": [{
+                    "Name": "Loop 1.1.1",
+                    "TripCount": "9",
+                    "Latency": "63",
+                    "PipelineII": "",
+                    "PipelineDepth": "7"
+                  }]
               }]
           }],
         "Area": {
-          "BRAM_18K": "0",
-          "DSP48E": "32",
-          "FF": "6696",
-          "LUT": "11670"
+          "DSP48E": "29",
+          "FF": "2662",
+          "LUT": "4747",
+          "BRAM_18K": "0"
         }
       },
-      "Loop_2_proc": {
+      "Block_arrayctor_loop": {
         "Latency": {
-          "LatencyBest": "3529",
-          "LatencyAvg": "3529",
-          "LatencyWorst": "3529",
-          "PipelineII": "3529",
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "6.89"
+          "Estimate": "3.63"
         },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "1764",
-            "Latency": "3528",
-            "PipelineII": "",
-            "PipelineDepth": "2"
-          }],
         "Area": {
-          "FF": "26",
-          "LUT": "76",
+          "FF": "2",
+          "LUT": "20",
           "BRAM_18K": "0",
           "DSP48E": "0"
         }
       },
       "xillybus_wrapper": {
         "Latency": {
-          "LatencyBest": "27210",
-          "LatencyAvg": "27210",
-          "LatencyWorst": "27210",
+          "LatencyBest": "25173",
+          "LatencyAvg": "25173",
+          "LatencyWorst": "25173",
           "PipelineII": "9922",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
@@ -422,20 +423,20 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.56"
+          "Estimate": "8.75"
         },
         "Area": {
-          "BRAM_18K": "19",
-          "DSP48E": "35",
-          "FF": "7486",
-          "LUT": "13930"
+          "BRAM_18K": "15",
+          "DSP48E": "32",
+          "FF": "3539",
+          "LUT": "7060"
         }
       }
     }
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2018-05-18 16:31:22 +0800",
+    "Time": "2018-05-19 01:16:11 +0800",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.1"
   }

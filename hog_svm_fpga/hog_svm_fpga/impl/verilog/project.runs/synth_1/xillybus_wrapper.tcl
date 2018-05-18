@@ -30,19 +30,19 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/Block_arrayctor_loop.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/Loop_1_proc.v
-  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/Loop_2_proc.v
-  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/compute_blocks.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/compute_cells.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/compute_cells_binbkb.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/compute_gradients.v
+  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/fifo_w32_d2_A.v
+  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/svm_detect.v
+  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/svm_detect_SVM_decud.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper.v
-  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_cud.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_dEe.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_eOg.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_fYi.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_g8j.v
-  D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_g8j_memcore.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_hbi.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_hbi_memcore.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper_ibs.v

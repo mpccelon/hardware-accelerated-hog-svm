@@ -11,9 +11,9 @@ use ieee.numeric_std.all;
 
 entity xillybus_wrapper_jbC  is
     generic (
-        DataWidth    : integer := 32;
+        DataWidth    : integer := 64;
         AddressRange : integer := 32;
-        AddressWidth : integer := 11;
+        AddressWidth : integer := 6;
         BufferCount  : integer := 2;
         MemLatency   : integer := 1;
         IndexWidth   : integer := 1
@@ -32,9 +32,8 @@ entity xillybus_wrapper_jbC  is
         i_d0       : in  std_logic_vector(DataWidth-1 downto 0);
         i_q0       : out std_logic_vector(DataWidth-1 downto 0);
         i_ce1      : in  std_logic;
-        i_we1      : in  std_logic;
         i_address1 : in  std_logic_vector(AddressWidth-1 downto 0);
-        i_d1       : in  std_logic_vector(DataWidth-1 downto 0);
+        i_q1       : out std_logic_vector(DataWidth-1 downto 0);
         -- target
         t_ce       : in  std_logic;
         t_read     : in  std_logic;
@@ -45,9 +44,8 @@ entity xillybus_wrapper_jbC  is
         t_d0       : in  std_logic_vector(DataWidth-1 downto 0);
         t_q0       : out std_logic_vector(DataWidth-1 downto 0);
         t_ce1      : in  std_logic;
-        t_we1      : in  std_logic;
         t_address1 : in  std_logic_vector(AddressWidth-1 downto 0);
-        t_d1       : in  std_logic_vector(DataWidth-1 downto 0)
+        t_q1       : out std_logic_vector(DataWidth-1 downto 0)
     );
 end entity;
 
@@ -59,13 +57,12 @@ port (
     reset    : in  std_logic;
     ce0      : in  std_logic;
     we0      : in  std_logic;
-    address0 : in  std_logic_vector(10 downto 0);
-    d0       : in  std_logic_vector(31 downto 0);
-    q0       : out std_logic_vector(31 downto 0);
+    address0 : in  std_logic_vector(5 downto 0);
+    d0       : in  std_logic_vector(63 downto 0);
+    q0       : out std_logic_vector(63 downto 0);
     ce1      : in  std_logic;
-    we1      : in  std_logic;
-    address1 : in  std_logic_vector(10 downto 0);
-    d1       : in  std_logic_vector(31 downto 0)
+    address1 : in  std_logic_vector(5 downto 0);
+    q1       : out std_logic_vector(63 downto 0)
 );
 end component;
 
@@ -89,9 +86,8 @@ signal buf_a0  : AddrArray;
 signal buf_d0  : DataArray;
 signal buf_q0  : DataArray;
 signal buf_ce1 : BitArray;
-signal buf_we1 : BitArray;
 signal buf_a1  : AddrArray;
-signal buf_d1  : DataArray;
+signal buf_q1  : DataArray;
 
 begin
     ----------------- instantiate buffers -----------------
@@ -106,9 +102,8 @@ begin
             d0       => buf_d0(i),
             q0       => buf_q0(i),
             ce1      => buf_ce1(i),
-            we1      => buf_we1(i),
             address1 => buf_a1(i),
-            d1       => buf_d1(i)
+            q1       => buf_q1(i)
         );
     end generate;
 
@@ -127,18 +122,15 @@ begin
         buf_ce1(i) <= i_ce1 when iptr = i else
                       t_ce1 when tptr = i and empty_n = '1' else
                       '0';
-        buf_we1(i) <= i_we1 when iptr = i else
-                      t_we1 when tptr = i and empty_n = '1' else
-                      '0';
         buf_a1(i)  <= i_address1 when iptr = i else
                       t_address1;
-        buf_d1(i)  <= i_d1 when iptr = i else
-                      t_d1;
     end generate;
 
     ----------------- output ------------------------------
     i_q0      <= buf_q0(to_integer(iptr));
     t_q0      <= buf_q0(to_integer(tptr));
+    i_q1      <= buf_q1(to_integer(iptr));
+    t_q1      <= buf_q1(to_integer(tptr));
     i_full_n  <= full_n;
     t_empty_n <= empty_n;
 

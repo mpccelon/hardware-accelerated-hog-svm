@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'xillybus_wrapper'" level="0">
-<item name = "Date">Fri May 18 16:31:18 2018
+<item name = "Date">Sat May 19 01:16:07 2018
 </item>
 <item name = "Version">2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)</item>
 <item name = "Project">hog_svm_fpga</item>
@@ -15,25 +15,25 @@
 <section name = "" level="1">
 <item name = "Target clock period (ns)">10.00</item>
 <item name = "Clock uncertainty (ns)">1.25</item>
-<item name = "Estimated clock period (ns)">8.56</item>
+<item name = "Estimated clock period (ns)">8.75</item>
 </section>
 </item>
 <item name = "Latency (clock cycles)">
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">27210, 27210, 9922, 9922, dataflow</column>
+<column name="">25173, 25173, 9922, 9922, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="compute_blocks_U0">compute_blocks, 3382, 3382, 3382, 3382, none</column>
+<column name="svm_detect_U0">svm_detect, 4874, 4874, 4874, 4874, none</column>
 <column name="compute_gradients_U0">compute_gradients, 8197, 8197, 8197, 8197, none</column>
 <column name="compute_cells_U0">compute_cells, 9921, 9921, 9921, 9921, none</column>
 <column name="Loop_1_proc_U0">Loop_1_proc, 2177, 2177, 2177, 2177, none</column>
-<column name="Loop_2_proc_U0">Loop_2_proc, 3529, 3529, 3529, 3529, none</column>
+<column name="Block_arrayctor_loop_U0">Block_arrayctor_loop, 0, 0, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -51,24 +51,24 @@
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
 <column name="Expression">-, -, 0, 24</column>
-<column name="FIFO">-, -, -, -</column>
-<column name="Instance">0, 35, 7481, 13870</column>
-<column name="Memory">19, -, 0, 0</column>
+<column name="FIFO">0, -, 5, 44</column>
+<column name="Instance">0, 32, 3529, 6956</column>
+<column name="Memory">15, -, 0, 0</column>
 <column name="Multiplexer">-, -, -, 36</column>
 <column name="Register">-, -, 5, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600</specialColumn>
-<specialColumn name="Utilization (%)">15, 43, 21, 79</specialColumn>
+<specialColumn name="Utilization (%)">12, 40, 10, 40</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Block_arrayctor_loop_U0">Block_arrayctor_loop, 0, 0, 2, 20</column>
 <column name="Loop_1_proc_U0">Loop_1_proc, 0, 0, 72, 240</column>
-<column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 26, 76</column>
-<column name="compute_blocks_U0">compute_blocks, 0, 32, 6696, 11670</column>
 <column name="compute_cells_U0">compute_cells, 0, 3, 453, 738</column>
-<column name="compute_gradients_U0">compute_gradients, 0, 0, 234, 1146</column>
+<column name="compute_gradients_U0">compute_gradients, 0, 0, 340, 1211</column>
+<column name="svm_detect_U0">svm_detect, 0, 29, 2662, 4747</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -77,16 +77,16 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="image_V_U">xillybus_wrapper_g8j, 2, 0, 0, 4096, 8, 2, 65536</column>
-<column name="cells_bin_V_U">xillybus_wrapper_hbi, 2, 0, 0, 576, 32, 2, 36864</column>
-<column name="cells_mag_sq_V_U">xillybus_wrapper_ibs, 4, 0, 0, 64, 64, 2, 8192</column>
-<column name="hog_U">xillybus_wrapper_jbC, 4, 0, 0, 1764, 32, 2, 112896</column>
+<column name="image_V_U">xillybus_wrapper_hbi, 2, 0, 0, 4096, 8, 2, 65536</column>
+<column name="cells_bin_V_U">xillybus_wrapper_ibs, 2, 0, 0, 576, 32, 2, 36864</column>
+<column name="cells_mag_sq_V_U">xillybus_wrapper_jbC, 4, 0, 0, 64, 64, 2, 8192</column>
 <column name="grad_vote_magnitude_s_U">xillybus_wrapper_kbM, 6, 0, 0, 4096, 26, 2, 212992</column>
 <column name="grad_vote_bin_V_U">xillybus_wrapper_lbW, 1, 0, 0, 4096, 4, 2, 32768</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="tmp_channel_U">0, 5, 44, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
@@ -95,10 +95,10 @@
 <column name="ap_channel_done_cells_mag_sq_V">and, 0, 0, 2, 1, 1</column>
 <column name="ap_channel_done_grad_vote_bin_V">and, 0, 0, 2, 1, 1</column>
 <column name="ap_channel_done_grad_vote_magnitude_s">and, 0, 0, 2, 1, 1</column>
-<column name="compute_blocks_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="compute_cells_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
 <column name="compute_cells_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="compute_gradients_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="svm_detect_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_channel_write_cells_bin_V">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_channel_write_cells_mag_sq_V">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_channel_write_grad_vote_bin_V">or, 0, 0, 2, 1, 1</column>
@@ -142,10 +142,10 @@
 </section>
 
 <section name = "Critical Path" level="0">
-<item name = "Max Delay">3.25</item>
+<item name = "Max Delay">4.37</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'image_V'">alloca, 3.25, 3.25, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="hog_svm_fpga/xillybus_wrapper.cpp:234">call, 4.37, 4.37, -, -, -, -, -, -, -, -, -, svm_detect, -</column>
 </table>
 </item>
 </section>

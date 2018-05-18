@@ -1,11 +1,13 @@
 compute_cells_binbkb
-xillybus_wrapper_cud
 xillybus_wrapper_dEe
 xillybus_wrapper_eOg
 xillybus_wrapper_fYi
+xillybus_wrapper_g8j
+svm_detect_SVM_decud
+fifo_w32_d2_A
 Loop_1_proc
 compute_gradients
 compute_cells
-compute_blocks
-Loop_2_proc
+svm_detect
+Block_arrayctor_loop
 xillybus_wrapper

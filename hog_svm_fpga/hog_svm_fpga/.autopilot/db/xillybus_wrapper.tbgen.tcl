@@ -43,35 +43,37 @@ set NewPortList {[
  	{ "name": "out_r_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_r", "role": "write" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "11", "17"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "10", "16", "17"],
 		"CDFG" : "xillybus_wrapper",
 		"Protocol" : "ap_ctrl_none",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "Dataflow", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "1",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "27210", "EstimateLatencyMax" : "27210",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "25173", "EstimateLatencyMax" : "25173",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
 		"InDataflowNetwork" : "0",
 		"InputProcess" : [
-			{"ID" : "7", "Name" : "Loop_1_proc_U0"}],
+			{"ID" : "6", "Name" : "Loop_1_proc_U0"}],
 		"OutputProcess" : [
-			{"ID" : "17", "Name" : "Loop_2_proc_U0"}],
+			{"ID" : "16", "Name" : "Block_arrayctor_loop_U0"}],
 		"Port" : [
 			{"Name" : "in_r", "Type" : "Fifo", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "Loop_1_proc_U0", "Port" : "in_r"}]},
+					{"ID" : "6", "SubInstance" : "Loop_1_proc_U0", "Port" : "in_r"}]},
 			{"Name" : "out_r", "Type" : "Fifo", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "17", "SubInstance" : "Loop_2_proc_U0", "Port" : "out_r"}]}]},
+					{"ID" : "16", "SubInstance" : "Block_arrayctor_loop_U0", "Port" : "out_r"}]},
+			{"Name" : "SVM_detector_V", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "10", "SubInstance" : "svm_detect_U0", "Port" : "SVM_detector_V"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.image_V_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.cells_bin_V_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.cells_mag_sq_V_U", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hog_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grad_vote_magnitude_s_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grad_vote_bin_V_U", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_1_proc_U0", "Parent" : "0",
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grad_vote_magnitude_s_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grad_vote_bin_V_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_1_proc_U0", "Parent" : "0",
 		"CDFG" : "Loop_1_proc",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -86,8 +88,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "in_r", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "in_r_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "image_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "8", "DependentChan" : "1"}]},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compute_gradients_U0", "Parent" : "0",
+			{"Name" : "image_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "7", "DependentChan" : "1"}]},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compute_gradients_U0", "Parent" : "0",
 		"CDFG" : "compute_gradients",
 		"Protocol" : "ap_ctrl_none",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -99,10 +101,10 @@ set RtlHierarchyInfo {[
 		"ClockEnable" : "0",
 		"InDataflowNetwork" : "1",
 		"Port" : [
-			{"Name" : "image_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "7", "DependentChan" : "1"},
-			{"Name" : "grad_vote_magnitude_s", "Type" : "Memory", "Direction" : "O", "DependentProc" : "9", "DependentChan" : "5"},
-			{"Name" : "grad_vote_bin_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "9", "DependentChan" : "6"}]},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compute_cells_U0", "Parent" : "0", "Child" : ["10"],
+			{"Name" : "image_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "6", "DependentChan" : "1"},
+			{"Name" : "grad_vote_magnitude_s", "Type" : "Memory", "Direction" : "O", "DependentProc" : "8", "DependentChan" : "4"},
+			{"Name" : "grad_vote_bin_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "8", "DependentChan" : "5"}]},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compute_cells_U0", "Parent" : "0", "Child" : ["9"],
 		"CDFG" : "compute_cells",
 		"Protocol" : "ap_ctrl_none",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -114,53 +116,56 @@ set RtlHierarchyInfo {[
 		"ClockEnable" : "0",
 		"InDataflowNetwork" : "1",
 		"Port" : [
-			{"Name" : "grad_vote_magnitude_s", "Type" : "Memory", "Direction" : "I", "DependentProc" : "8", "DependentChan" : "5"},
-			{"Name" : "grad_vote_bin_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "8", "DependentChan" : "6"},
-			{"Name" : "cells_bin_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "11", "DependentChan" : "2"},
-			{"Name" : "cells_mag_sq_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "11", "DependentChan" : "3"}]},
-	{"ID" : "10", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_cells_U0.bin_vote_V_U", "Parent" : "9"},
-	{"ID" : "11", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.compute_blocks_U0", "Parent" : "0", "Child" : ["12", "13", "14", "15", "16"],
-		"CDFG" : "compute_blocks",
+			{"Name" : "grad_vote_magnitude_s", "Type" : "Memory", "Direction" : "I", "DependentProc" : "7", "DependentChan" : "4"},
+			{"Name" : "grad_vote_bin_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "7", "DependentChan" : "5"},
+			{"Name" : "cells_bin_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "10", "DependentChan" : "2"},
+			{"Name" : "cells_mag_sq_V", "Type" : "Memory", "Direction" : "O", "DependentProc" : "10", "DependentChan" : "3"}]},
+	{"ID" : "9", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_cells_U0.bin_vote_V_U", "Parent" : "8"},
+	{"ID" : "10", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.svm_detect_U0", "Parent" : "0", "Child" : ["11", "12", "13", "14", "15"],
+		"CDFG" : "svm_detect",
 		"Protocol" : "ap_ctrl_none",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3382", "EstimateLatencyMax" : "3382",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4874", "EstimateLatencyMax" : "4874",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
 		"InDataflowNetwork" : "1",
 		"Port" : [
-			{"Name" : "cells_bin_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "9", "DependentChan" : "2"},
-			{"Name" : "cells_mag_sq_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "9", "DependentChan" : "3"},
-			{"Name" : "hog", "Type" : "Memory", "Direction" : "O", "DependentProc" : "17", "DependentChan" : "4"}]},
-	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_blocks_U0.xillybus_wrapper_cud_U11", "Parent" : "11"},
-	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_blocks_U0.xillybus_wrapper_dEe_U12", "Parent" : "11"},
-	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_blocks_U0.xillybus_wrapper_eOg_U13", "Parent" : "11"},
-	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_blocks_U0.xillybus_wrapper_eOg_U14", "Parent" : "11"},
-	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.compute_blocks_U0.xillybus_wrapper_fYi_U15", "Parent" : "11"},
-	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_2_proc_U0", "Parent" : "0",
-		"CDFG" : "Loop_2_proc",
+			{"Name" : "cells_bin_V_2", "Type" : "Vld", "Direction" : "O", "DependentProc" : "16", "DependentChan" : "17"},
+			{"Name" : "cells_bin_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "8", "DependentChan" : "2"},
+			{"Name" : "cells_mag_sq_V", "Type" : "Memory", "Direction" : "I", "DependentProc" : "8", "DependentChan" : "3"},
+			{"Name" : "SVM_detector_V", "Type" : "Memory", "Direction" : "I"}]},
+	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.svm_detect_U0.SVM_detector_V_U", "Parent" : "10"},
+	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.svm_detect_U0.xillybus_wrapper_dEe_U11", "Parent" : "10"},
+	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.svm_detect_U0.xillybus_wrapper_eOg_U12", "Parent" : "10"},
+	{"ID" : "14", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.svm_detect_U0.xillybus_wrapper_fYi_U13", "Parent" : "10"},
+	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.svm_detect_U0.xillybus_wrapper_g8j_U14", "Parent" : "10"},
+	{"ID" : "16", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Block_arrayctor_loop_U0", "Parent" : "0",
+		"CDFG" : "Block_arrayctor_loop",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3529", "EstimateLatencyMax" : "3529",
+		"II" : "1",
+		"VariableLatency" : "0", "ExactLatency" : "0", "EstimateLatencyMin" : "0", "EstimateLatencyMax" : "0",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
 		"InDataflowNetwork" : "1",
 		"Port" : [
+			{"Name" : "tmp", "Type" : "None", "Direction" : "I", "DependentProc" : "10", "DependentChan" : "17"},
 			{"Name" : "out_r", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
-					{"Name" : "out_r_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "hog", "Type" : "Memory", "Direction" : "I", "DependentProc" : "11", "DependentChan" : "4"}]}]}
+					{"Name" : "out_r_blk_n", "Type" : "RtlSignal"}]}]},
+	{"ID" : "17", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.tmp_channel_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	xillybus_wrapper {
 		in_r {Type I LastRead 2 FirstWrite -1}
-		out_r {Type O LastRead -1 FirstWrite 2}}
+		out_r {Type O LastRead -1 FirstWrite 0}
+		SVM_detector_V {Type I LastRead -1 FirstWrite -1}}
 	Loop_1_proc {
 		in_r {Type I LastRead 2 FirstWrite -1}
 		image_V {Type O LastRead -1 FirstWrite 2}}
@@ -173,18 +178,19 @@ set ArgLastReadFirstWriteLatency {
 		grad_vote_bin_V {Type I LastRead 4 FirstWrite -1}
 		cells_bin_V {Type O LastRead -1 FirstWrite 6}
 		cells_mag_sq_V {Type O LastRead -1 FirstWrite 6}}
-	compute_blocks {
-		cells_bin_V {Type I LastRead 42 FirstWrite -1}
-		cells_mag_sq_V {Type I LastRead 3 FirstWrite -1}
-		hog {Type O LastRead -1 FirstWrite 49}}
-	Loop_2_proc {
-		out_r {Type O LastRead -1 FirstWrite 2}
-		hog {Type I LastRead 1 FirstWrite -1}}}
+	svm_detect {
+		cells_bin_V_2 {Type O LastRead -1 FirstWrite 9}
+		cells_bin_V {Type I LastRead 39 FirstWrite -1}
+		cells_mag_sq_V {Type I LastRead 5 FirstWrite -1}
+		SVM_detector_V {Type I LastRead -1 FirstWrite -1}}
+	Block_arrayctor_loop {
+		tmp {Type I LastRead 0 FirstWrite -1}
+		out_r {Type O LastRead -1 FirstWrite 0}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "27210", "Max" : "27210"}
+	{"Name" : "Latency", "Min" : "25173", "Max" : "25173"}
 	, {"Name" : "Interval", "Min" : "9922", "Max" : "9922"}
 ]}
 

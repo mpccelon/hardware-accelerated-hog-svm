@@ -2,16 +2,16 @@
 
 Implementation tool: Xilinx Vivado v.2018.1
 Device target:       xc7z010clg400-1
-Report date:         Fri May 18 16:34:37 +0800 2018
+Report date:         Sat May 19 01:19:13 +0800 2018
 
 #=== Resource usage ===
 SLICE:            0
-LUT:           7869
-FF:            4787
-DSP:             17
-BRAM:            33
-SRL:              4
+LUT:           4340
+FF:            2377
+DSP:             25
+BRAM:            25
+SRL:              6
 #=== Final timing ===
 CP required:    10.000
-CP achieved:    9.536
+CP achieved:    9.654
 Timing met

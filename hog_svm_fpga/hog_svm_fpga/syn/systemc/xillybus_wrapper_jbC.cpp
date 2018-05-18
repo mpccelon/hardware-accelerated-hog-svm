@@ -35,6 +35,14 @@ void xillybus_wrapper_jbC::proc_t_q0() {
     t_q0.write(buf_q0[tptr.read()].read());
 }
 
+void xillybus_wrapper_jbC::proc_i_q1() {
+    i_q1.write(buf_q1[iptr.read()].read());
+}
+
+void xillybus_wrapper_jbC::proc_t_q1() {
+    t_q1.write(buf_q1[tptr.read()].read());
+}
+
 void xillybus_wrapper_jbC::proc_buffer_signals() {
     for (unsigned i = 0; i < BufferCount; i++) {
         if (iptr.read() == i) {
@@ -43,25 +51,20 @@ void xillybus_wrapper_jbC::proc_buffer_signals() {
             buf_a0[i].write(i_address0.read());
             buf_d0[i].write(i_d0.read());
             buf_ce1[i].write(i_ce1.read());
-            buf_we1[i].write(i_we1.read());
             buf_a1[i].write(i_address1.read());
-            buf_d1[i].write(i_d1.read());
         } else {
             if (tptr.read() == i && empty_n.read() == SC_LOGIC_1) {
                 buf_ce0[i].write(t_ce0.read());
                 buf_we0[i].write(t_we0.read());
                 buf_ce1[i].write(t_ce1.read());
-                buf_we1[i].write(t_we1.read());
             } else {
                 buf_ce0[i].write(SC_LOGIC_0);
                 buf_we0[i].write(SC_LOGIC_0);
                 buf_ce1[i].write(SC_LOGIC_0);
-                buf_we1[i].write(SC_LOGIC_0);
             }
             buf_a0[i].write(t_address0.read());
             buf_d0[i].write(t_d0.read());
             buf_a1[i].write(t_address1.read());
-            buf_d1[i].write(t_d1.read());
         }
     }
 }

@@ -10,8 +10,8 @@ use ieee.std_logic_1164.all;
 
 entity xillybus_wrapper_dEe is
     generic (
-        ID         : integer := 12;
-        NUM_STAGE  : integer := 4;
+        ID         : integer := 11;
+        NUM_STAGE  : integer := 5;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;
         dout_WIDTH : integer := 32
@@ -28,7 +28,7 @@ end entity;
 
 architecture arch of xillybus_wrapper_dEe is
     --------------------- Component ---------------------
-    component xillybus_wrapper_ap_fmul_2_max_dsp_32 is
+    component xillybus_wrapper_ap_fsub_3_full_dsp_32 is
         port (
             aclk                 : in  std_logic;
             aclken               : in  std_logic;
@@ -56,7 +56,7 @@ architecture arch of xillybus_wrapper_dEe is
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    xillybus_wrapper_ap_fmul_2_max_dsp_32_u : component xillybus_wrapper_ap_fmul_2_max_dsp_32
+    xillybus_wrapper_ap_fsub_3_full_dsp_32_u : component xillybus_wrapper_ap_fsub_3_full_dsp_32
     port map (
         aclk                 => aclk,
         aclken               => aclken,

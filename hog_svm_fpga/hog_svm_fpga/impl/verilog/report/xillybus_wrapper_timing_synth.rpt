@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Fri May 18 16:34:35 2018
+| Date         : Sat May 19 01:19:11 2018
 | Host         : DESKTOP-O713GGV running 64-bit major release  (build 9200)
 | Command      : report_timing -file ./report/xillybus_wrapper_timing_synth.rpt
 | Design       : xillybus_wrapper
@@ -11,16 +11,16 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 Timing Report
 
-Slack (MET) :             0.464ns  (required time - arrival time)
-  Source:                 compute_blocks_U0/p_Val2_55_2_fu_1432_p2__1/CLK
+Slack (MET) :             0.346ns  (required time - arrival time)
+  Source:                 svm_detect_U0/p_Val2_2_fu_1230_p2__1/CLK
                             (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            compute_blocks_U0/p_Val2_55_4_reg_3729_reg[61]/D
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            svm_detect_U0/p_Val2_4_reg_2020_reg__0/A[12]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        9.239ns  (logic 7.886ns (85.358%)  route 1.353ns (14.642%))
-  Logic Levels:           14  (CARRY4=12 DSP48E1=1 LUT2=1)
+  Data Path Delay:        9.029ns  (logic 7.430ns (82.286%)  route 1.599ns (17.714%))
+  Logic Levels:           10  (CARRY4=8 DSP48E1=1 LUT2=1)
   Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
     Source Clock Delay      (SCD):    0.973ns
@@ -35,68 +35,57 @@ Slack (MET) :             0.464ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=4903, unset)         0.973     0.973    compute_blocks_U0/ap_clk
-                         DSP48E1                                      r  compute_blocks_U0/p_Val2_55_2_fu_1432_p2__1/CLK
+                         net (fo=2495, unset)         0.973     0.973    svm_detect_U0/ap_clk
+                         DSP48E1                                      r  svm_detect_U0/p_Val2_2_fu_1230_p2__1/CLK
   -------------------------------------------------------------------    -------------------
                          DSP48E1 (Prop_dsp48e1_CLK_PCOUT[47])
-                                                      4.206     5.179 r  compute_blocks_U0/p_Val2_55_2_fu_1432_p2__1/PCOUT[47]
-                         net (fo=1, unplaced)         0.000     5.179    compute_blocks_U0/p_Val2_55_2_fu_1432_p2__1_n_109
+                                                      4.206     5.179 r  svm_detect_U0/p_Val2_2_fu_1230_p2__1/PCOUT[47]
+                         net (fo=1, unplaced)         0.000     5.179    svm_detect_U0/p_Val2_2_fu_1230_p2__1_n_112
                          DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
-                                                      1.518     6.697 r  compute_blocks_U0/p_Val2_55_2_fu_1432_p2__2/P[0]
-                         net (fo=2, unplaced)         0.800     7.497    compute_blocks_U0/p_Val2_55_2_fu_1432_p2__2_n_108
-                         LUT2 (Prop_lut2_I0_O)        0.124     7.621 r  compute_blocks_U0/p_Val2_55_2_reg_3633[16]_i_4/O
-                         net (fo=1, unplaced)         0.000     7.621    compute_blocks_U0/p_Val2_55_2_reg_3633[16]_i_4_n_3
+                                                      1.518     6.697 r  svm_detect_U0/p_Val2_2_fu_1230_p2__2/P[0]
+                         net (fo=2, unplaced)         0.800     7.497    svm_detect_U0/p_Val2_2_fu_1230_p2__2_n_111
+                         LUT2 (Prop_lut2_I0_O)        0.124     7.621 r  svm_detect_U0/p_Val2_9_fu_1323_p2_i_24/O
+                         net (fo=1, unplaced)         0.000     7.621    svm_detect_U0/p_Val2_9_fu_1323_p2_i_24_n_6
                          CARRY4 (Prop_carry4_S[1]_CO[3])
-                                                      0.550     8.171 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[16]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.171    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[16]_i_1_n_3
+                                                      0.550     8.171 r  svm_detect_U0/p_Val2_9_fu_1323_p2_i_5/CO[3]
+                         net (fo=1, unplaced)         0.000     8.171    svm_detect_U0/p_Val2_9_fu_1323_p2_i_5_n_6
                          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.285 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[20]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.285    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[20]_i_1_n_3
+                                                      0.114     8.285 r  svm_detect_U0/p_Val2_9_fu_1323_p2_i_4/CO[3]
+                         net (fo=1, unplaced)         0.000     8.285    svm_detect_U0/p_Val2_9_fu_1323_p2_i_4_n_6
                          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.399 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[24]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.399    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[24]_i_1_n_3
+                                                      0.114     8.399 r  svm_detect_U0/p_Val2_9_fu_1323_p2_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     8.399    svm_detect_U0/p_Val2_9_fu_1323_p2_i_3_n_6
                          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.513 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[28]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.513    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[28]_i_1_n_3
+                                                      0.114     8.513 r  svm_detect_U0/p_Val2_9_fu_1323_p2_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     8.513    svm_detect_U0/p_Val2_9_fu_1323_p2_i_2_n_6
                          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.627 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[35]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.627    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[35]_i_1_n_3
+                                                      0.114     8.627 r  svm_detect_U0/p_Val2_9_fu_1323_p2_i_1/CO[3]
+                         net (fo=1, unplaced)         0.000     8.627    svm_detect_U0/p_Val2_9_fu_1323_p2_i_1_n_6
                          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.741 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[39]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.741    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[39]_i_1_n_3
+                                                      0.114     8.741 r  svm_detect_U0/p_Val2_9_reg_2005_reg__0_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     8.741    svm_detect_U0/p_Val2_9_reg_2005_reg__0_i_3_n_6
                          CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.855 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[43]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.855    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[43]_i_1_n_3
-                         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     8.969 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[46]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     8.969    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[46]_i_1_n_3
-                         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     9.083 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[51]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     9.083    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[51]_i_1_n_3
-                         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     9.197 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[55]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     9.197    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[55]_i_1_n_3
-                         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     9.311 r  compute_blocks_U0/p_Val2_55_2_reg_3633_reg[59]_i_1/CO[3]
-                         net (fo=1, unplaced)         0.000     9.311    compute_blocks_U0/p_Val2_55_2_reg_3633_reg[59]_i_1_n_3
+                                                      0.114     8.855 r  svm_detect_U0/p_Val2_9_reg_2005_reg__0_i_2/CO[3]
+                         net (fo=1, unplaced)         0.000     8.855    svm_detect_U0/p_Val2_9_reg_2005_reg__0_i_2_n_6
                          CARRY4 (Prop_carry4_CI_O[1])
-                                                      0.348     9.659 r  compute_blocks_U0/tmp_166_reg_3740_reg[0]_i_1/O[1]
-                         net (fo=5, unplaced)         0.553    10.212    compute_blocks_U0/tmp_166_reg_3740_reg[0]_i_1_n_9
-                         FDRE                                         r  compute_blocks_U0/p_Val2_55_4_reg_3729_reg[61]/D
+                                                      0.348     9.203 r  svm_detect_U0/p_Val2_9_reg_2005_reg__0_i_1/O[1]
+                         net (fo=2, unplaced)         0.800    10.002    svm_detect_U0/p_Val2_2_fu_1230_p2__3[45]
+                         DSP48E1                                      r  svm_detect_U0/p_Val2_4_reg_2020_reg__0/A[12]
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=4903, unset)         0.924    10.924    compute_blocks_U0/ap_clk
-                         FDRE                                         r  compute_blocks_U0/p_Val2_55_4_reg_3729_reg[61]/C
+                         net (fo=2495, unset)         0.924    10.924    svm_detect_U0/ap_clk
+                         DSP48E1                                      r  svm_detect_U0/p_Val2_4_reg_2020_reg__0/CLK
                          clock pessimism              0.000    10.924    
                          clock uncertainty           -0.035    10.889    
-                         FDRE (Setup_fdre_C_D)       -0.213    10.676    compute_blocks_U0/p_Val2_55_4_reg_3729_reg[61]
+                         DSP48E1 (Setup_dsp48e1_CLK_A[12])
+                                                     -0.541    10.348    svm_detect_U0/p_Val2_4_reg_2020_reg__0
   -------------------------------------------------------------------
-                         required time                         10.676    
-                         arrival time                         -10.212    
+                         required time                         10.348    
+                         arrival time                         -10.002    
   -------------------------------------------------------------------
-                         slack                                  0.464    
+                         slack                                  0.346    
 
 
 

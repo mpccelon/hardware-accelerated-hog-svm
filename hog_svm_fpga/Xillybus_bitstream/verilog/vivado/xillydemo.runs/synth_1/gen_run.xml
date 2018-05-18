@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1526353780">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1526664745">
   <File Type="PA-TCL" Name="xillydemo.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="xillydemo_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="xillydemo_reports.tcl"/>
   <File Type="RDS-RDS" Name="xillydemo.vds"/>
   <File Type="RDS-UTIL" Name="xillydemo_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="xillydemo_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="xillydemo.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="xillydemo_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="xillydemo_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../src/xillydemo.v">
@@ -57,7 +60,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../../../Xilinx/hog_svm_fpga/hog_svm_fpga/impl/ip/xillybus_wrapper.dcp">
+    <File Path="$PPRDIR/../../../hog_svm_fpga/impl/ip/xillybus_wrapper.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
