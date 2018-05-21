@@ -41,8 +41,8 @@ void sample_neg(const String & dirname, vector< Mat > & neg_lst, const Size & si
 
 			neg_lst.push_back(roi.clone());
 
-			imshow("Sampling...", roi);
-			waitKey(1);
+			/*imshow("Sampling...", roi);
+			waitKey(1);*/
 		}
 	}
 }

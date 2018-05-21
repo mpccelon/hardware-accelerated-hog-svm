@@ -40,6 +40,7 @@ int main(int argc, char* argv[])
 
 	//get files
 	std::vector <cv::String> files;
+	std::cout << "\nBENCHMARK: " << argv[1] << std::endl;
 	cv::glob(argv[1], files);
 
 	//open file descriptors

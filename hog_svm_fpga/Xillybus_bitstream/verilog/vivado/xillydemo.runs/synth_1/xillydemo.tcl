@@ -49,6 +49,19 @@ read_verilog -library xil_defaultlib {
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/verilog/src/xillybus_core.v
   D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/system.v
 }
+read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo.xci
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo.xdc]
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo_ooc.xdc]
+
+read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048.xdc]
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048_ooc.xdc]
+
+read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512.xci
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512.xdc]
+set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512_ooc.xdc]
+
 add_files D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/vivado_system.bd
 set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/ip/vivado_system_processing_system7_0_0/vivado_system_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/ip/vivado_system_rst_processing_system7_0_100M_0/vivado_system_rst_processing_system7_0_100M_0_board.xdc]
@@ -58,20 +71,7 @@ set_property used_in_implementation false [get_files -all d:/lolic/Documents/The
 set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/ip/vivado_system_auto_pc_0/vivado_system_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/vivado_system_ooc.xdc]
 
-read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo.xci
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo.xdc]
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo_ooc.xdc]
-
-read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512.xci
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512.xdc]
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512_ooc.xdc]
-
-read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048.xdc]
-set_property used_in_implementation false [get_files -all d:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048_ooc.xdc]
-
-set_property edif_extra_search_paths D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/cores [current_fileset]
+set_property edif_extra_search_paths D:/lolic/Documents/Thesis/Repositories/bitstream_backup/cores [current_fileset]
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be

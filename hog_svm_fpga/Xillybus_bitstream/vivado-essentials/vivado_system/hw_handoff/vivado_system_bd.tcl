@@ -666,7 +666,7 @@ proc create_root_design { parentCell } {
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {3} \
+   CONFIG.NUM_MI {4} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_processing_system7_0_100M, and set properties
@@ -676,8 +676,10 @@ proc create_root_design { parentCell } {
   set xillybus_ip_0 [ create_bd_cell -type ip -vlnv xillybus:xillybus:xillybus_ip:1.0 xillybus_ip_0 ]
 
   set_property -dict [ list \
+   CONFIG.SUPPORTS_NARROW_BURST {0} \
    CONFIG.NUM_READ_OUTSTANDING {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {1} \
+   CONFIG.MAX_BURST_LENGTH {1} \
  ] [get_bd_intf_pins /xillybus_ip_0/S_AXI]
 
   set_property -dict [ list \
@@ -688,8 +690,10 @@ proc create_root_design { parentCell } {
  ] [get_bd_intf_pins /xillybus_ip_0/m_axi]
 
   set_property -dict [ list \
+   CONFIG.SUPPORTS_NARROW_BURST {1} \
    CONFIG.NUM_READ_OUTSTANDING {2} \
    CONFIG.NUM_WRITE_OUTSTANDING {2} \
+   CONFIG.MAX_BURST_LENGTH {16} \
  ] [get_bd_intf_pins /xillybus_ip_0/xillybus_M_AXI]
 
   set_property -dict [ list \
@@ -703,16 +707,20 @@ proc create_root_design { parentCell } {
   set xillybus_lite_0 [ create_bd_cell -type ip -vlnv xillybus:xillybus:xillybus_lite:1.0 xillybus_lite_0 ]
 
   set_property -dict [ list \
+   CONFIG.SUPPORTS_NARROW_BURST {0} \
    CONFIG.NUM_READ_OUTSTANDING {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {1} \
+   CONFIG.MAX_BURST_LENGTH {1} \
  ] [get_bd_intf_pins /xillybus_lite_0/S_AXI]
 
   # Create instance: xillyvga_0, and set properties
   set xillyvga_0 [ create_bd_cell -type ip -vlnv xillybus:xillybus:xillyvga:1.0 xillyvga_0 ]
 
   set_property -dict [ list \
+   CONFIG.SUPPORTS_NARROW_BURST {0} \
    CONFIG.NUM_READ_OUTSTANDING {1} \
    CONFIG.NUM_WRITE_OUTSTANDING {1} \
+   CONFIG.MAX_BURST_LENGTH {1} \
  ] [get_bd_intf_pins /xillyvga_0/S_AXI]
 
   set_property -dict [ list \
@@ -744,10 +752,10 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net clk_in_1 [get_bd_ports clk_in] [get_bd_pins xillyvga_0/clk_in]
-  connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_ACP_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP2_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk] [get_bd_pins xillybus_ip_0/S_AXI_ACLK] [get_bd_pins xillybus_ip_0/m_axi_aclk] [get_bd_pins xillybus_lite_0/S_AXI_ACLK] [get_bd_pins xillyvga_0/S_AXI_ACLK] [get_bd_pins xillyvga_0/m_axi_aclk]
+  connect_bd_net -net processing_system7_0_FCLK_CLK1 [get_bd_pins processing_system7_0/FCLK_CLK1] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins processing_system7_0/S_AXI_ACP_ACLK] [get_bd_pins processing_system7_0/S_AXI_HP2_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_processing_system7_0_100M/slowest_sync_clk] [get_bd_pins xillybus_ip_0/S_AXI_ACLK] [get_bd_pins xillybus_ip_0/m_axi_aclk] [get_bd_pins xillybus_lite_0/S_AXI_ACLK] [get_bd_pins xillyvga_0/S_AXI_ACLK] [get_bd_pins xillyvga_0/m_axi_aclk]
   connect_bd_net -net processing_system7_0_FCLK_RESET1_N [get_bd_pins processing_system7_0/FCLK_RESET1_N] [get_bd_pins rst_processing_system7_0_100M/ext_reset_in]
   connect_bd_net -net rst_processing_system7_0_100M_interconnect_aresetn [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins rst_processing_system7_0_100M/interconnect_aresetn]
-  connect_bd_net -net rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn] [get_bd_pins xillybus_ip_0/S_AXI_ARESETN] [get_bd_pins xillybus_ip_0/m_axi_aresetn] [get_bd_pins xillybus_lite_0/S_AXI_ARESETN] [get_bd_pins xillyvga_0/S_AXI_ARESETN] [get_bd_pins xillyvga_0/m_axi_aresetn]
+  connect_bd_net -net rst_processing_system7_0_100M_peripheral_aresetn [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_processing_system7_0_100M/peripheral_aresetn] [get_bd_pins xillybus_ip_0/S_AXI_ARESETN] [get_bd_pins xillybus_ip_0/m_axi_aresetn] [get_bd_pins xillybus_lite_0/S_AXI_ARESETN] [get_bd_pins xillyvga_0/S_AXI_ARESETN] [get_bd_pins xillyvga_0/m_axi_aresetn]
   connect_bd_net -net user_irq_1 [get_bd_ports user_irq] [get_bd_pins xillybus_lite_0/user_irq]
   connect_bd_net -net user_rd_data_1 [get_bd_ports user_rd_data] [get_bd_pins xillybus_lite_0/user_rd_data]
   connect_bd_net -net xillybus_host_interrupt_1 [get_bd_ports xillybus_host_interrupt] [get_bd_pins xillybus_ip_0/xillybus_host_interrupt]

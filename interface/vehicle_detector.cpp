@@ -32,6 +32,8 @@
 
 #define LANE_SIZE 3
 
+// #define _VISUALIZE
+
 //lock and condition variable for threading
 std::mutex queue_lock;
 std::condition_variable queue_condition;
@@ -48,7 +50,7 @@ namespace Sock = ThorsAnvil::Socket;
 
 //if acting as server
 Sock::DataSocket *connection = NULL;
-Sock::ServerSocket server(8080);
+Sock::ServerSocket *server;
 
 //image data and sliding window CHANGE CONTENTS DEPENDING ON PROTOCOL
 typedef struct
@@ -110,9 +112,9 @@ typedef struct
 //LANE EQUATIONS FOR SETUP
 //CHANGE IF USING DIFFERENT ROAD
 lane road[] = {
-	{-14.906, -1, 7414.76},
+	{14.4267, 1, -7181.79},
 	{1, 0, -514},
-	{13.2424, -1, -6980}
+	{-14.8888, 1, 7862}
 };
 
 void exit_handler(int s = 99)
@@ -160,9 +162,11 @@ void downstream()
 			lk.unlock();
 
 			// debug
-			// cv::Mat colored_test_image;
-			// cv::cvtColor(temp.cur_img, colored_test_image, cv::COLOR_GRAY2BGR);
-			// cv::namedWindow("Test_Image", cv::WINDOW_AUTOSIZE);
+			#ifdef _VISUALIZE
+			cv::Mat colored_test_image;
+			cv::cvtColor(temp.cur_img, colored_test_image, cv::COLOR_GRAY2BGR);
+			cv::namedWindow("Test_Image", cv::WINDOW_AUTOSIZE);
+			#endif
 
 			int size_bytes = temp.windows.size()*sizeof(float);
 			// std::cout << "Receiving " << size_bytes << " bytes from fpga..." << std::endl;
@@ -195,6 +199,7 @@ void downstream()
 				//non maximum suppression
 				std::vector< cv::Rect > bboxes;
 				std::vector< cv::Rect > resboxes;
+				std::vector<float>		pos_scores;
 
 				for(size_t offset = lane_windows_size*i; offset < lane_windows_size*(i + 1); offset++)
 				{
@@ -203,34 +208,40 @@ void downstream()
 					{
 					// printf("\t%6f\n", confidences[i]);
 						bboxes.push_back(temp.windows[offset]);
+						pos_scores.push_back(confidences[offset]);
 
 						// cv::rectangle(colored_test_image, temp.windows[offset], cv::Scalar(255,0,0), 1, 8, 0);
 						// cv::imshow("Test_Image", colored_test_image);
 						// cv::waitKey(0);
 					}
 				}
-				nms(bboxes, resboxes, 0.05f, 0);
+				// nms(bboxes, resboxes, 0.05f, 0);
+				nms2(bboxes, pos_scores, resboxes, 0.10f);
 				
 				// debug
-				// for(size_t j = 0; j < resboxes.size(); j++)
-				// {
-				// 	cv::rectangle(colored_test_image, resboxes[j], cv::Scalar(255,0,0), 1, 8, 0);
-				// 	// cv::imshow("Test_Image", colored_test_image);
-				// 	// cv::waitKey(0);
-				// }
+				#ifdef _VISUALIZE
+				for(size_t j = 0; j < resboxes.size(); j++)
+				{
+					cv::rectangle(colored_test_image, resboxes[j], cv::Scalar(255,0,0), 1, 8, 0);
+					// cv::imshow("Test_Image", colored_test_image);
+					// cv::waitKey(0);
+				}
+				#endif
 				
 				vehicle_detections[i] = resboxes.size();
 			}
 
 			output_time();
+			printf("Detections for road %c:\n", temp.lane);
+			for(int i = 0; i < LANE_SIZE; i++)
+			{
+				printf("\tLane %d: %d\n", i + 1, vehicle_detections[i]);
+			}
 			// debug
-			// printf("Detections for road %c:\n", temp.lane);
-			// for(int i = 0; i < LANE_SIZE; i++)
-			// {
-			// 	printf("\tLane %d: %d\n", i + 1, vehicle_detections[i]);
-			// }
-			// cv::imshow("Test_Image", colored_test_image);
-			// cv::waitKey(0);
+			#ifdef _VISUALIZE
+			cv::imshow("Test_Image", colored_test_image);
+			cv::waitKey(0);
+			#endif
 
 			//check if connection is alive
 			if(connection == NULL)
@@ -302,7 +313,7 @@ void generateROIs(cv::Mat &img, std::vector <cv::Rect> &ROIs, std::vector< char 
 	float y_mid, width = 20, length = 27;
 	for(int i = 0; i < LANE_SIZE; i++)
 	{
-		for(y_mid = 144; y_mid + width/2 <= img.rows; y_mid += width/4)
+		for(y_mid = 144; y_mid + width/2 <= img.rows; y_mid += width/12)
 		{
 			float x_mid = (y_mid*road[i].b + road[i].c)/(-road[i].a);
 			float ROI_area = ( 510 * pow(1.00347438, y_mid));
@@ -334,20 +345,21 @@ void generateROIs(cv::Mat &img, std::vector <cv::Rect> &ROIs, std::vector< char 
 		}
 	}
 
-	// for(size_t j = 0; j < ROIs.size(); j++)
-	// {
-	// 	cv::rectangle(colored_test_image, ROIs[j], cv::Scalar(255,0,0), 1, 8, 0);
-	// 	cv::imshow("Test_Image", colored_test_image);
-	// 	cv::waitKey(1);
-	// }
-	// cv::waitKey(0);
+	#ifdef _VISUALIZE
+	for(size_t j = 0; j < ROIs.size(); j++)
+	{
+		cv::rectangle(colored_test_image, ROIs[j], cv::Scalar(255,0,0), 1, 8, 0);
+	}
+	cv::imshow("Test_Image", colored_test_image);
+	cv::waitKey(0);
+	#endif
 }
 
 int main(int argc, char* argv[])
 {
-	if(argc != 3)
+	if(argc != 4)
 	{
-		std::cout << "Usage: " << argv[0] << " <IP> " << " <port> \n";
+		std::cout << "Usage: " << argv[0] << " <port> <read_dev> <write_dev>\n";
 		return 1;
 	}
 
@@ -355,11 +367,14 @@ int main(int argc, char* argv[])
 	init_signal();
 
 	//set up file descriptors
-	fpga_read = open("/dev/xillybus_read_32", O_RDONLY);
-	fpga_write = open("/dev/xillybus_write_32", O_WRONLY);
+	fpga_read = open(argv[2], O_RDONLY);
+	fpga_write = open(argv[3], O_WRONLY);
 
 	//start downstream function
 	downloader = new std::thread(downstream);
+
+	//set up server
+	server = new Sock::ServerSocket(atoi(argv[1]));
 
 	//if as client
 	//set up connection with wrapper
@@ -368,7 +383,7 @@ int main(int argc, char* argv[])
 	//if as server
 	//set up accept() connection
 	std::cout << "Waiting for connections..." << std::endl;
-	Sock::DataSocket newCon = server.accept();
+	Sock::DataSocket newCon = server->accept();
 	connection = &newCon;
 
 	std::cout << "Connected successfully!" << std::endl;
@@ -385,7 +400,7 @@ int main(int argc, char* argv[])
 			//if as server
 			//set up accept() connection
 			std::cout << "Waiting for connections..." << std::endl;
-			newCon = server.accept();
+			newCon = server->accept();
 			connection = &newCon;
 
 			std::cout << "Connected successfully!" << std::endl;

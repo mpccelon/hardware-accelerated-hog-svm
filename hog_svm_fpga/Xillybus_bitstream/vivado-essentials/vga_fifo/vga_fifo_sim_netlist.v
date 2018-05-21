@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-// Date        : Tue May 15 04:08:05 2018
+// Date        : Tue May  1 22:26:34 2018
 // Host        : DESKTOP-O713GGV running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/vivado-essentials/vga_fifo/vga_fifo_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top vga_fifo -prefix
+//               vga_fifo_ vga_fifo_sim_netlist.v
 // Design      : vga_fifo
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -606,8 +606,8 @@ module vga_fifo
 endmodule
 
 (* DEF_VAL = "1'b0" *) (* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) 
-(* INV_DEF_VAL = "1'b1" *) (* ORIG_REF_NAME = "xpm_cdc_async_rst" *) (* RST_ACTIVE_HIGH = "1" *) 
-(* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "ASYNC_RST" *) 
+(* INV_DEF_VAL = "1'b1" *) (* RST_ACTIVE_HIGH = "1" *) (* VERSION = "0" *) 
+(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "ASYNC_RST" *) 
 module vga_fifo_xpm_cdc_async_rst
    (src_arst,
     dest_clk,
@@ -685,10 +685,9 @@ module vga_fifo_xpm_cdc_async_rst__1
         .Q(arststages_ff[1]));
 endmodule
 
-(* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_gray" *) 
-(* REG_OUTPUT = "1" *) (* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) 
-(* VERSION = "0" *) (* WIDTH = "9" *) (* XPM_MODULE = "TRUE" *) 
-(* xpm_cdc = "GRAY" *) 
+(* DEST_SYNC_FF = "2" *) (* INIT_SYNC_FF = "0" *) (* REG_OUTPUT = "1" *) 
+(* SIM_ASSERT_CHK = "0" *) (* SIM_LOSSLESS_GRAY_CHK = "0" *) (* VERSION = "0" *) 
+(* WIDTH = "9" *) (* XPM_MODULE = "TRUE" *) (* xpm_cdc = "GRAY" *) 
 module vga_fifo_xpm_cdc_gray
    (src_clk,
     src_in_bin,
@@ -1511,9 +1510,9 @@ module vga_fifo_xpm_cdc_gray__1
         .R(1'b0));
 endmodule
 
-(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* ORIG_REF_NAME = "xpm_cdc_single" *) 
-(* SIM_ASSERT_CHK = "0" *) (* SRC_INPUT_REG = "0" *) (* VERSION = "0" *) 
-(* XPM_MODULE = "TRUE" *) (* xpm_cdc = "SINGLE" *) 
+(* DEST_SYNC_FF = "4" *) (* INIT_SYNC_FF = "0" *) (* SIM_ASSERT_CHK = "0" *) 
+(* SRC_INPUT_REG = "0" *) (* VERSION = "0" *) (* XPM_MODULE = "TRUE" *) 
+(* xpm_cdc = "SINGLE" *) 
 module vga_fifo_xpm_cdc_single
    (src_clk,
     src_in,
@@ -1623,7 +1622,6 @@ module vga_fifo_xpm_cdc_single__1
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module vga_fifo_blk_mem_gen_generic_cstr
    (dout,
     rd_clk,
@@ -1666,7 +1664,6 @@ module vga_fifo_blk_mem_gen_generic_cstr
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module vga_fifo_blk_mem_gen_prim_width
    (dout,
     rd_clk,
@@ -1709,7 +1706,6 @@ module vga_fifo_blk_mem_gen_prim_width
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module vga_fifo_blk_mem_gen_prim_wrapper
    (dout,
     rd_clk,
@@ -1866,7 +1862,6 @@ module vga_fifo_blk_mem_gen_prim_wrapper
         .WEBWE({E,E,E,E}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module vga_fifo_blk_mem_gen_top
    (dout,
     rd_clk,
@@ -1909,7 +1904,6 @@ module vga_fifo_blk_mem_gen_top
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_1" *) 
 module vga_fifo_blk_mem_gen_v8_4_1
    (dout,
     rd_clk,
@@ -1952,7 +1946,6 @@ module vga_fifo_blk_mem_gen_v8_4_1
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_1_synth" *) 
 module vga_fifo_blk_mem_gen_v8_4_1_synth
    (dout,
     rd_clk,
@@ -1995,7 +1988,6 @@ module vga_fifo_blk_mem_gen_v8_4_1_synth
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "clk_x_pntrs" *) 
 module vga_fifo_clk_x_pntrs
    (S,
     RD_PNTR_WR,
@@ -2200,7 +2192,6 @@ module vga_fifo_clk_x_pntrs
         .src_in_bin(\gic0.gc0.count_d2_reg[8] ));
 endmodule
 
-(* ORIG_REF_NAME = "compare" *) 
 module vga_fifo_compare
    (comp1,
     \dest_out_bin_ff_reg[6] ,
@@ -2408,7 +2399,6 @@ module vga_fifo_compare_2
         .S({\NLW_gmux.gm[4].gms.ms_CARRY4_S_UNCONNECTED [3:1],\dest_out_bin_ff_reg[8] }));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_ramfifo" *) 
 module vga_fifo_fifo_generator_ramfifo
    (wr_rst_busy,
     AR,
@@ -2537,7 +2527,6 @@ module vga_fifo_fifo_generator_ramfifo
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_top" *) 
 module vga_fifo_fifo_generator_top
    (wr_rst_busy,
     AR,
@@ -2659,7 +2648,7 @@ endmodule
 (* C_WR_DEPTH_WRCH = "16" *) (* C_WR_FREQ = "1" *) (* C_WR_PNTR_WIDTH = "9" *) 
 (* C_WR_PNTR_WIDTH_AXIS = "10" *) (* C_WR_PNTR_WIDTH_RACH = "4" *) (* C_WR_PNTR_WIDTH_RDCH = "10" *) 
 (* C_WR_PNTR_WIDTH_WACH = "4" *) (* C_WR_PNTR_WIDTH_WDCH = "10" *) (* C_WR_PNTR_WIDTH_WRCH = "4" *) 
-(* C_WR_RESPONSE_LATENCY = "1" *) (* ORIG_REF_NAME = "fifo_generator_v13_2_2" *) 
+(* C_WR_RESPONSE_LATENCY = "1" *) 
 module vga_fifo_fifo_generator_v13_2_2
    (backup,
     backup_marker,
@@ -3670,7 +3659,6 @@ module vga_fifo_fifo_generator_v13_2_2
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_2_2_synth" *) 
 module vga_fifo_fifo_generator_v13_2_2_synth
    (wr_rst_busy,
     AR,
@@ -3725,7 +3713,6 @@ module vga_fifo_fifo_generator_v13_2_2_synth
         .wr_rst_busy(wr_rst_busy));
 endmodule
 
-(* ORIG_REF_NAME = "memory" *) 
 module vga_fifo_memory
    (dout,
     rd_clk,
@@ -3768,7 +3755,6 @@ module vga_fifo_memory
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "rd_bin_cntr" *) 
 module vga_fifo_rd_bin_cntr
    (Q,
     v1_reg,
@@ -4091,7 +4077,6 @@ module vga_fifo_rd_bin_cntr
         .O(v1_reg_0[3]));
 endmodule
 
-(* ORIG_REF_NAME = "rd_logic" *) 
 module vga_fifo_rd_logic
    (empty,
     tmp_ram_rd_en,
@@ -4150,7 +4135,6 @@ module vga_fifo_rd_logic
         .v1_reg_0(\c1/v1_reg ));
 endmodule
 
-(* ORIG_REF_NAME = "rd_status_flags_as" *) 
 module vga_fifo_rd_status_flags_as
    (empty,
     tmp_ram_rd_en,
@@ -4236,7 +4220,6 @@ module vga_fifo_rd_status_flags_as
         .Q(ram_empty_i));
 endmodule
 
-(* ORIG_REF_NAME = "reset_blk_ramfifo" *) 
 module vga_fifo_reset_blk_ramfifo
    (AR,
     \syncstages_ff_reg[0] ,
@@ -4460,7 +4443,6 @@ module vga_fifo_reset_blk_ramfifo
         .src_arst(rst));
 endmodule
 
-(* ORIG_REF_NAME = "wr_bin_cntr" *) 
 module vga_fifo_wr_bin_cntr
    (v1_reg,
     \gdiff.diff_pntr_pad_reg[9] ,
@@ -4816,7 +4798,6 @@ module vga_fifo_wr_bin_cntr
         .O(\gdiff.diff_pntr_pad_reg[9] ));
 endmodule
 
-(* ORIG_REF_NAME = "wr_logic" *) 
 module vga_fifo_wr_logic
    (full,
     E,
@@ -4909,7 +4890,6 @@ module vga_fifo_wr_logic
         .wr_clk(wr_clk));
 endmodule
 
-(* ORIG_REF_NAME = "wr_pf_as" *) 
 module vga_fifo_wr_pf_as
    (prog_full,
     E,
@@ -5050,7 +5030,6 @@ module vga_fifo_wr_pf_as
         .S({1'b0,1'b0,1'b0,\gic0.gc0.count_d1_reg[8] }));
 endmodule
 
-(* ORIG_REF_NAME = "wr_status_flags_as" *) 
 module vga_fifo_wr_status_flags_as
    (full,
     out,

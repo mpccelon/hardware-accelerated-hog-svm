@@ -1,0 +1,278 @@
+Benchmarking...
+
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40853/Negatives
+Read data: 05/21/18 08:42:10.523564366
+Detected 39 out of 1590 windows.
+Accuracy: 0.024528
+Writing data: 05/21/18 08:42:10.358485856
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39361/Negatives
+Read data: 05/21/18 08:42:17.582669987
+Detected 18 out of 2029 windows.
+Accuracy: 0.008871
+Writing data: 05/21/18 08:42:17.375805113
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39401/Negatives
+Read data: 05/21/18 08:42:22.892238440
+Detected 27 out of 1385 windows.
+Accuracy: 0.019495
+Writing data: 05/21/18 08:42:22.750244625
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40772/Negatives
+Read data: 05/21/18 08:42:27.662891648
+Detected 25 out of 1200 windows.
+Accuracy: 0.020833
+Writing data: 05/21/18 08:42:27.536347867
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40742/Negatives
+Read data: 05/21/18 08:42:34.573608512
+Detected 18 out of 1655 windows.
+Accuracy: 0.010876
+Writing data: 05/21/18 08:42:34.408157900
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40864/Negatives
+Read data: 05/21/18 08:42:40.102330436
+Detected 14 out of 1514 windows.
+Accuracy: 0.009247
+Writing data: 05/21/18 08:42:39.944708162
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40851/Negatives
+Read data: 05/21/18 08:42:44.003291452
+Detected 11 out of 1139 windows.
+Accuracy: 0.009658
+Writing data: 05/21/18 08:42:43.887553489
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40793/Negatives
+Read data: 05/21/18 08:42:51.702144810
+Detected 25 out of 1960 windows.
+Accuracy: 0.012755
+Writing data: 05/21/18 08:42:51.497987890
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40773/Negatives
+Read data: 05/21/18 08:42:55.383857299
+Detected 10 out of 985 windows.
+Accuracy: 0.010152
+Writing data: 05/21/18 08:42:55.277258426
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40761/Negatives
+Read data: 05/21/18 08:43:03.122711116
+Detected 6 out of 2030 windows.
+Accuracy: 0.002956
+Writing data: 05/21/18 08:43:02.913656817
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40854/Negatives
+Read data: 05/21/18 08:43:07.262648048
+Detected 26 out of 1195 windows.
+Accuracy: 0.021757
+Writing data: 05/21/18 08:43:07.143322156
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40714/Negatives
+Read data: 05/21/18 08:43:11.984159604
+Detected 34 out of 1180 windows.
+Accuracy: 0.028814
+Writing data: 05/21/18 08:43:11.858897730
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39211/Negatives
+Read data: 05/21/18 08:43:18.414096634
+Detected 9 out of 1660 windows.
+Accuracy: 0.005422
+Writing data: 05/21/18 08:43:18.247248838
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40863/Negatives
+Read data: 05/21/18 08:43:24.961903452
+Detected 14 out of 1670 windows.
+Accuracy: 0.008383
+Writing data: 05/21/18 08:43:24.794917480
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40763/Negatives
+Read data: 05/21/18 08:43:31.563017439
+Detected 4 out of 1745 windows.
+Accuracy: 0.002292
+Writing data: 05/21/18 08:43:31.388395230
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40771/Negatives
+Read data: 05/21/18 08:43:37.943798208
+Detected 15 out of 1720 windows.
+Accuracy: 0.008721
+Writing data: 05/21/18 08:43:37.770039012
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40762/Negatives
+Read data: 05/21/18 08:43:45.021470432
+Detected 5 out of 1825 windows.
+Accuracy: 0.002740
+Writing data: 05/21/18 08:43:44.831350072
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40774/Negatives
+Read data: 05/21/18 08:43:48.623505282
+Detected 12 out of 950 windows.
+Accuracy: 0.012632
+Writing data: 05/21/18 08:43:48.516073977
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40712/Negatives
+Read data: 05/21/18 08:44:00.386060313
+Detected 30 out of 2400 windows.
+Accuracy: 0.012500
+Writing data: 05/21/18 08:44:00.147140895
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40892/Negatives
+Read data: 05/21/18 08:44:07.034334587
+Detected 17 out of 1790 windows.
+Accuracy: 0.009497
+Writing data: 05/21/18 08:44:06.855783467
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40901/Negatives
+Read data: 05/21/18 08:44:12.023663330
+Detected 12 out of 1335 windows.
+Accuracy: 0.008989
+Writing data: 05/21/18 08:44:11.890213539
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40891/Negatives
+Read data: 05/21/18 08:44:17.542244411
+Detected 19 out of 1545 windows.
+Accuracy: 0.012298
+Writing data: 05/21/18 08:44:17.387321934
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39371/Negatives
+Read data: 05/21/18 08:44:23.282747698
+Detected 5 out of 1390 windows.
+Accuracy: 0.003597
+Writing data: 05/21/18 08:44:23.143328393
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40852/Negatives
+Read data: 05/21/18 08:44:27.354353812
+Detected 24 out of 1150 windows.
+Accuracy: 0.020870
+Writing data: 05/21/18 08:44:27.233218280
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40903/Negatives
+Read data: 05/21/18 08:44:31.351804144
+Detected 4 out of 1060 windows.
+Accuracy: 0.003774
+Writing data: 05/21/18 08:44:31.245226966
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40775/Negatives
+Read data: 05/21/18 08:44:34.972812545
+Detected 12 out of 975 windows.
+Accuracy: 0.012308
+Writing data: 05/21/18 08:44:34.868921502
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40711/Negatives
+Read data: 05/21/18 08:44:38.911952841
+Detected 17 out of 1030 windows.
+Accuracy: 0.016505
+Writing data: 05/21/18 08:44:38.807727622
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39051/Negatives
+Read data: 05/21/18 08:44:43.819843578
+Detected 3 out of 1120 windows.
+Accuracy: 0.002679
+Writing data: 05/21/18 08:44:43.707967344
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39311/Negatives
+Read data: 05/21/18 08:44:49.901622464
+Detected 25 out of 1505 windows.
+Accuracy: 0.016611
+Writing data: 05/21/18 08:44:49.751519074
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39031/Negatives
+Read data: 05/21/18 08:44:55.972098009
+Detected 6 out of 1416 windows.
+Accuracy: 0.004237
+Writing data: 05/21/18 08:44:55.826170948
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40743/Negatives
+Read data: 05/21/18 08:45:07.744281108
+Detected 15 out of 1630 windows.
+Accuracy: 0.009202
+Writing data: 05/21/18 08:45:07.572627890
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40905/Negatives
+Read data: 05/21/18 08:45:14.042697416
+Detected 12 out of 1710 windows.
+Accuracy: 0.007018
+Writing data: 05/21/18 08:45:13.867078496
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40855/Negatives
+Read data: 05/21/18 08:45:17.891554078
+Detected 18 out of 1090 windows.
+Accuracy: 0.016514
+Writing data: 05/21/18 08:45:17.778087112
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39511/Negatives
+Read data: 05/21/18 08:45:19.354149540
+Detected 3 out of 380 windows.
+Accuracy: 0.007895
+Writing data: 05/21/18 08:45:19.314810999
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40792/Negatives
+Read data: 05/21/18 08:45:26.483137785
+Detected 7 out of 1810 windows.
+Accuracy: 0.003867
+Writing data: 05/21/18 08:45:26.296314352
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39501/Negatives
+Read data: 05/21/18 08:45:28.584120373
+Detected 11 out of 540 windows.
+Accuracy: 0.020370
+Writing data: 05/21/18 08:45:28.524929253
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40904/Negatives
+Read data: 05/21/18 08:45:33.453521264
+Detected 8 out of 1270 windows.
+Accuracy: 0.006299
+Writing data: 05/21/18 08:45:33.319271440
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39271/Negatives
+Read data: 05/21/18 08:45:39.521539772
+Detected 9 out of 1570 windows.
+Accuracy: 0.005732
+Writing data: 05/21/18 08:45:39.360719615
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40902/Negatives
+Read data: 05/21/18 08:45:43.642598941
+Detected 9 out of 1005 windows.
+Accuracy: 0.008955
+Writing data: 05/21/18 08:45:43.536506077
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40701/Negatives
+Read data: 05/21/18 08:45:47.672326781
+Detected 26 out of 1130 windows.
+Accuracy: 0.023009
+Writing data: 05/21/18 08:45:47.552011904
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3017/Negatives
+Read data: 05/21/18 08:46:34.093342909
+Detected 130 out of 13235 windows.
+Accuracy: 0.009822
+Writing data: 05/21/18 08:46:32.773397157
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3035/Negatives
+Read data: 05/21/18 08:47:11.523882422
+Detected 66 out of 9464 windows.
+Accuracy: 0.006974
+Writing data: 05/21/18 08:47:10.581986873
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3075/Negatives
+Read data: 05/21/18 08:47:53.322327911
+Detected 117 out of 11498 windows.
+Accuracy: 0.010176
+Writing data: 05/21/18 08:47:52.172402737
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_4079/Negatives
+Read data: 05/21/18 08:48:33.744516906
+Detected 119 out of 10527 windows.
+Accuracy: 0.011304
+Writing data: 05/21/18 08:48:32.691096972
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3100/Negatives
+Read data: 05/21/18 08:49:11.534258524
+Detected 292 out of 10173 windows.
+Accuracy: 0.028703
+Writing data: 05/21/18 08:49:10.518478522
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3023/Negatives
+Read data: 05/21/18 08:50:00.733467416
+Detected 179 out of 12788 windows.
+Accuracy: 0.013997
+Writing data: 05/21/18 08:49:59.457544701

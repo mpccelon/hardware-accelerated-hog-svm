@@ -1242,6 +1242,8 @@ set_property src_info {type:XDC file:2 line:8 export:INPUT save:INPUT read:READ}
 set_false_path -from [get_clocks clk_fpga_1] -to [get_clocks vga_clk_ins/*]
 set_property src_info {type:XDC file:2 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_false_path -from [get_clocks vga_clk_ins/*] -to [get_clocks clk_fpga_1]
+set_property src_info {type:XDC file:2 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_output_delay 5.5 [get_ports {vga*}]
 set_property src_info {type:XDC file:2 line:20 export:INPUT save:INPUT read:READ} [current_design]
 set_property LOC MMCME2_ADV_X0Y1 [get_cells -match_style ucf */vga_clk_ins/vga_mmcm]
 set_property src_info {type:XDC file:2 line:21 export:INPUT save:INPUT read:READ} [current_design]

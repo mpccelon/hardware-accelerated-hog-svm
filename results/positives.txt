@@ -1,0 +1,140 @@
+Benchmarking...
+
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39361/Positives
+Read data: 05/21/18 08:42:17.712443497
+Detected 11 out of 11 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:42:17.701964171
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39401/Positives
+Read data: 05/21/18 08:42:23.094044252
+Detected 27 out of 27 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:42:23.084472292
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40772/Positives
+Read data: 05/21/18 08:42:27.802614036
+Detected 13 out of 13 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:42:27.797859439
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40854/Positives
+Read data: 05/21/18 08:43:07.412900728
+Detected 16 out of 16 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:43:07.407703155
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40714/Positives
+Read data: 05/21/18 08:43:12.081818595
+Detected 5 out of 5 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:43:12.075256567
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39211/Positives
+Read data: 05/21/18 08:43:18.692377797
+Detected 38 out of 43 windows.
+Accuracy: 0.883721
+Writing data: 05/21/18 08:43:18.677796379
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40771/Positives
+Read data: 05/21/18 08:43:38.123246350
+Detected 18 out of 19 windows.
+Accuracy: 0.947368
+Writing data: 05/21/18 08:43:38.118626697
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40712/Positives
+Read data: 05/21/18 08:44:00.613614036
+Detected 23 out of 23 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:44:00.604381362
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40892/Positives
+Read data: 05/21/18 08:44:07.182744808
+Detected 14 out of 14 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:44:07.172888362
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40775/Positives
+Read data: 05/21/18 08:44:35.082167360
+Detected 8 out of 8 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:44:35.078486474
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_40711/Positives
+Read data: 05/21/18 08:44:39.022206877
+Detected 9 out of 9 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:44:39.020645523
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39051/Positives
+Read data: 05/21/18 08:44:44.163174931
+Detected 35 out of 50 windows.
+Accuracy: 0.700000
+Writing data: 05/21/18 08:44:44.152313559
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39311/Positives
+Read data: 05/21/18 08:44:50.352747974
+Detected 69 out of 78 windows.
+Accuracy: 0.884615
+Writing data: 05/21/18 08:44:50.342038525
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39031/Positives
+Read data: 05/21/18 08:45:01.353352453
+Detected 1106 out of 1172 windows.
+Accuracy: 0.943686
+Writing data: 05/21/18 08:45:01.234682484
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39511/Positives
+Read data: 05/21/18 08:45:19.441700485
+Detected 4 out of 4 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:45:19.433979125
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39501/Positives
+Read data: 05/21/18 08:45:28.692008289
+Detected 7 out of 7 windows.
+Accuracy: 1.000000
+Writing data: 05/21/18 08:45:28.687064683
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/DETRAC/MVI_39271/Positives
+Read data: 05/21/18 08:45:39.921422220
+Detected 50 out of 65 windows.
+Accuracy: 0.769231
+Writing data: 05/21/18 08:45:39.907941639
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3017/Positives
+Read data: 05/21/18 08:46:35.211613781
+Detected 90 out of 131 windows.
+Accuracy: 0.687023
+Writing data: 05/21/18 08:46:35.191217144
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3035/Positives
+Read data: 05/21/18 08:47:12.914349531
+Detected 39 out of 222 windows.
+Accuracy: 0.175676
+Writing data: 05/21/18 08:47:12.886337836
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3075/Positives
+Read data: 05/21/18 08:47:56.363627494
+Detected 238 out of 567 windows.
+Accuracy: 0.419753
+Writing data: 05/21/18 08:47:56.300784408
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_4079/Positives
+Read data: 05/21/18 08:48:35.154415861
+Detected 198 out of 287 windows.
+Accuracy: 0.689895
+Writing data: 05/21/18 08:48:35.123821064
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3100/Positives
+Read data: 05/21/18 08:49:13.382205305
+Detected 265 out of 329 windows.
+Accuracy: 0.805471
+Writing data: 05/21/18 08:49:13.346777121
+
+BENCHMARK: /root/Documents/Thesis/datasets/Test/MMDA/MMDA_3023/Positives
+Read data: 05/21/18 08:50:03.781863550
+Detected 263 out of 517 windows.
+Accuracy: 0.508704
+Writing data: 05/21/18 08:50:03.724690055

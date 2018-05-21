@@ -1,0 +1,140 @@
+Benchmarking...
+
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40771/Positives
+Loaded 19 windows. Processing...
+		05/21/18 08:41:42.662157634 UTC
+		05/21/18 08:41:42.689623396 UTC
+Detected 17 out of 19 processed.
+HIT RATE: 0.894737
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39311/Positives
+Loaded 78 windows. Processing...
+		05/21/18 08:41:51.467140899 UTC
+		05/21/18 08:41:51.579114806 UTC
+Detected 71 out of 78 processed.
+HIT RATE: 0.910256
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40775/Positives
+Loaded 8 windows. Processing...
+		05/21/18 08:42:00.860587770 UTC
+		05/21/18 08:42:00.872509500 UTC
+Detected 8 out of 8 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39271/Positives
+Loaded 65 windows. Processing...
+		05/21/18 08:42:17.495409144 UTC
+		05/21/18 08:42:17.588150681 UTC
+Detected 32 out of 65 processed.
+HIT RATE: 0.492308
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40854/Positives
+Loaded 16 windows. Processing...
+		05/21/18 08:42:56.410144323 UTC
+		05/21/18 08:42:56.433763414 UTC
+Detected 16 out of 16 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39211/Positives
+Loaded 43 windows. Processing...
+		05/21/18 08:43:13.712781422 UTC
+		05/21/18 08:43:13.775055776 UTC
+Detected 41 out of 43 processed.
+HIT RATE: 0.953488
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39501/Positives
+Loaded 7 windows. Processing...
+		05/21/18 08:43:19.020350645 UTC
+		05/21/18 08:43:19.031045360 UTC
+Detected 7 out of 7 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39361/Positives
+Loaded 11 windows. Processing...
+		05/21/18 08:43:20.899573524 UTC
+		05/21/18 08:43:20.916101867 UTC
+Detected 11 out of 11 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39401/Positives
+Loaded 27 windows. Processing...
+		05/21/18 08:43:27.108969713 UTC
+		05/21/18 08:43:27.148355749 UTC
+Detected 27 out of 27 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40892/Positives
+Loaded 14 windows. Processing...
+		05/21/18 08:43:31.569526824 UTC
+		05/21/18 08:43:31.590078712 UTC
+Detected 14 out of 14 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40711/Positives
+Loaded 9 windows. Processing...
+		05/21/18 08:43:42.967070735 UTC
+		05/21/18 08:43:42.980424533 UTC
+Detected 9 out of 9 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39051/Positives
+Loaded 50 windows. Processing...
+		05/21/18 08:44:02.059729873 UTC
+		05/21/18 08:44:02.131600154 UTC
+Detected 29 out of 50 processed.
+HIT RATE: 0.58
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40712/Positives
+Loaded 23 windows. Processing...
+		05/21/18 08:44:05.994926284 UTC
+		05/21/18 08:44:06.028702492 UTC
+Detected 23 out of 23 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39511/Positives
+Loaded 4 windows. Processing...
+		05/21/18 08:44:13.399425143 UTC
+		05/21/18 08:44:13.405705172 UTC
+Detected 4 out of 4 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40714/Positives
+Loaded 5 windows. Processing...
+		05/21/18 08:44:18.704840148 UTC
+		05/21/18 08:44:18.712447765 UTC
+Detected 5 out of 5 processed.
+HIT RATE: 1
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_39031/Positives
+Loaded 1172 windows. Processing...
+		05/21/18 08:44:24.877910462 UTC
+		05/21/18 08:44:26.551710862 UTC
+Detected 1129 out of 1172 processed.
+HIT RATE: 0.963311
+Starting testing for directory /home/pi/Documents/datasets/DETRAC/MVI_40772/Positives
+Loaded 13 windows. Processing...
+		05/21/18 08:44:34.500739590 UTC
+		05/21/18 08:44:34.519873006 UTC
+Detected 12 out of 13 processed.
+HIT RATE: 0.923077
+Starting testing for directory /home/pi/Documents/datasets/MMDA/MMDA_4079/Positives
+Loaded 287 windows. Processing...
+		05/21/18 08:44:38.912931829 UTC
+		05/21/18 08:44:39.323475907 UTC
+Detected 185 out of 287 processed.
+HIT RATE: 0.644599
+Starting testing for directory /home/pi/Documents/datasets/MMDA/MMDA_3035/Positives
+Loaded 222 windows. Processing...
+		05/21/18 08:45:11.010962780 UTC
+		05/21/18 08:45:11.331008417 UTC
+Detected 35 out of 222 processed.
+HIT RATE: 0.157658
+Starting testing for directory /home/pi/Documents/datasets/MMDA/MMDA_3023/Positives
+Loaded 517 windows. Processing...
+		05/21/18 08:45:41.584790602 UTC
+		05/21/18 08:45:42.330131245 UTC
+Detected 385 out of 517 processed.
+HIT RATE: 0.744681
+Starting testing for directory /home/pi/Documents/datasets/MMDA/MMDA_3100/Positives
+Loaded 329 windows. Processing...
+		05/21/18 08:46:21.621840388 UTC
+		05/21/18 08:46:22.096614700 UTC
+Detected 259 out of 329 processed.
+HIT RATE: 0.787234
+Starting testing for directory /home/pi/Documents/datasets/MMDA/MMDA_3017/Positives
+Loaded 131 windows. Processing...
+		05/21/18 08:46:52.642282092 UTC
+		05/21/18 08:46:52.828591632 UTC
+Detected 94 out of 131 processed.
+HIT RATE: 0.717557
+Starting testing for directory /home/pi/Documents/datasets/MMDA/MMDA_3075/Positives
+Loaded 567 windows. Processing...
+		05/21/18 08:47:33.262479759 UTC
+		05/21/18 08:47:34.067147790 UTC
+Detected 179 out of 567 processed.
+HIT RATE: 0.315697

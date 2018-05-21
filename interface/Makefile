@@ -1,7 +1,7 @@
 
 all:	Socket.o Protocol.o ProtocolSimple.o vehicle_detector.o vehicle_detector 
 clean:
-	rm -f *.o client server
+	rm -f *.o vehicle_detector 
 
 CC			= $(CXX)
 CXXFLAGS	= $(shell pkg-config --libs --cflags opencv)

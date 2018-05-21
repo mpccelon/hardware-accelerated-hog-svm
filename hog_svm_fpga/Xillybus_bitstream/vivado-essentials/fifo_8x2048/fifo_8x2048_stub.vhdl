@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Tue May 15 04:08:01 2018
+-- Date        : Tue May  1 22:26:29 2018
 -- Host        : DESKTOP-O713GGV running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top fifo_8x2048 -prefix
+--               fifo_8x2048_ fifo_8x2048_stub.vhdl
 -- Design      : fifo_8x2048
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

@@ -1,0 +1,5 @@
+#FOR FPGA
+ echo -e "Benchmarking...\n" > positives.txt; echo -e "Benchmarking...\n" > negatives.txt; for dir_name in $(find /root/Documents/Thesis/datasets/Test/ -mindepth 3 -maxdepth 3); do if [ $(basename $dir_name) = Positives ]; then $(./fpga_perf_benchmark $dir_name >> positives.txt); fi; if [ $(basename $dir_name) = Negatives ]; then $(./fpga_perf_benchmark $dir_name >> negatives.txt); fi; done
+
+#FOR RASPI
+ echo -e "Benchmarking...\n" > rpi_positives.txt; echo -e "Benchmarking...\n" > rpi_negatives.txt; for dir_name in $(find ~/Documents/datasets -mindepth 3 -maxdepth 3); do if [ $(basename $dir_name) = Positives ]; then $(./opencv_window_benchmark --dir=$dir_name --hog=hog_descriptor.xml >> rpi_positives.txt); fi; if [ $(basename $dir_name) = Negatives ]; then $(./opencv_window_benchmark --dir=$dir_name --hog=hog_descriptor.xml >> rpi_negatives.txt); fi;  done;

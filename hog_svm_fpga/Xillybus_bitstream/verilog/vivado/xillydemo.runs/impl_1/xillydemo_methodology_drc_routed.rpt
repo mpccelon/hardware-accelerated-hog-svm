@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Sat May 19 01:37:20 2018
+| Date         : Sat May 19 05:02:17 2018
 | Host         : DESKTOP-O713GGV running 64-bit major release  (build 9200)
 | Command      : report_methodology -file xillydemo_methodology_drc_routed.rpt -pb xillydemo_methodology_drc_routed.pb -rpx xillydemo_methodology_drc_routed.rpx
 | Design       : xillydemo
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 47
+             Violations found: 19
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
@@ -32,11 +32,11 @@ Table of Contents
 | TIMING-7  | Warning  | No common node between related clocks                | 2          |
 | TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
-| TIMING-18 | Warning  | Missing input or output delay                        | 11         |
+| TIMING-18 | Warning  | Missing input or output delay                        | 4          |
 | TIMING-24 | Warning  | Overridden Max delay datapath only                   | 2          |
 | TIMING-27 | Warning  | Invalid primary clock on hierarchical pin            | 1          |
-| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 8          |
-| XDCH-2    | Warning  | Same min and max delay values on IO port             | 18         |
+| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 4          |
+| XDCC-4    | Warning  | User Clock constraint overwritten with the same name | 1          |
 +-----------+----------+------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -78,57 +78,22 @@ Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on audio_adc relative to clock(s) clk_fpga_1
+An output delay is missing on GPIO_LED[0] relative to clock(s) clk_fpga_1
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on audio_adc_lrclk relative to clock(s) clk_fpga_1
+An output delay is missing on GPIO_LED[1] relative to clock(s) clk_fpga_1
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An input delay is missing on audio_bclk relative to clock(s) clk_fpga_1
+An output delay is missing on GPIO_LED[2] relative to clock(s) clk_fpga_1
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An input delay is missing on audio_dac_lrclk relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#5 Warning
-Missing input or output delay  
-An input delay is missing on smb_sclk relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#6 Warning
-Missing input or output delay  
-An input delay is missing on smb_sdata relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#7 Warning
-Missing input or output delay  
-An output delay is missing on GPIO_LED[0] relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#8 Warning
-Missing input or output delay  
-An output delay is missing on GPIO_LED[1] relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#9 Warning
-Missing input or output delay  
-An output delay is missing on GPIO_LED[2] relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#10 Warning
-Missing input or output delay  
 An output delay is missing on GPIO_LED[3] relative to clock(s) clk_fpga_1
-Related violations: <none>
-
-TIMING-18#11 Warning
-Missing input or output delay  
-An output delay is missing on audio_dac relative to clock(s) clk_fpga_1
 Related violations: <none>
 
 TIMING-24#1 Warning
@@ -143,7 +108,7 @@ Related violations: <none>
 
 TIMING-27#1 Warning
 Invalid primary clock on hierarchical pin  
-A primary clock ap_clk is created on an inappropriate internal pin HLS_wrapper/ap_clk. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+A primary clock ap_clk is created on an inappropriate internal pin HLS_wrapper_2/ap_clk. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
 Related violations: <none>
 
 TIMING-28#1 Warning
@@ -158,158 +123,19 @@ Related violations: <none>
 
 TIMING-28#3 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock vga_clk_ins/clkout0 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT0]
+The auto-derived clock vga_clk_ins/clkout2 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT2]
 Related violations: <none>
 
 TIMING-28#4 Warning
 Auto-derived clock referenced by a timing constraint  
-The auto-derived clock vga_clk_ins/clkout0 is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT0]
-Related violations: <none>
-
-TIMING-28#5 Warning
-Auto-derived clock referenced by a timing constraint  
-The auto-derived clock vga_clk_ins/clkout1 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT1]
-Related violations: <none>
-
-TIMING-28#6 Warning
-Auto-derived clock referenced by a timing constraint  
-The auto-derived clock vga_clk_ins/clkout1 is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT1]
-Related violations: <none>
-
-TIMING-28#7 Warning
-Auto-derived clock referenced by a timing constraint  
-The auto-derived clock vga_clk_ins/clkout2 is referenced by name inside timing constraint (see constraint position 5 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT2]
-Related violations: <none>
-
-TIMING-28#8 Warning
-Auto-derived clock referenced by a timing constraint  
 The auto-derived clock vga_clk_ins/clkout2 is referenced by name inside timing constraint (see constraint position 6 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins xillybus_ins/system_i/vivado_system_i/xillyvga_0/inst/xillyvga_core_ins/vga_clk_ins/vga_mmcm/CLKOUT2]
 Related violations: <none>
 
-XDCH-2#1 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_blue[0]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#2 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_blue[1]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#3 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_blue[2]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#4 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_blue[3]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#5 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_blue[4]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#6 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_green[0]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#7 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_green[1]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#8 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_green[2]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#9 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_green[3]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#10 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_green[4]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#11 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_green[5]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#12 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_red[0]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#13 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_red[1]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#14 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_red[2]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#15 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_red[3]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#16 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga4_red[4]' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#17 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga_hsync' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
-Related violations: <none>
-
-XDCH-2#18 Warning
-Same min and max delay values on IO port  
-The same output delay of 5.500 ns has been defined on port 'vga_vsync' for both max and min. Make sure this reflects the design intent.
-set_output_delay 5.500 [get_ports vga*]
-D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc (Line: 15)
+XDCC-4#1 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 10.000 -name ap_clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance ap_clk] (Source: D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper.xdc (Line: 1))
+Previous: create_clock -period 10.000 -name ap_clk -waveform {0.000 5.000} [get_ports -scoped_to_current_instance ap_clk] (Source: D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/verilog/xillybus_wrapper.xdc (Line: 1))
 Related violations: <none>
 
 

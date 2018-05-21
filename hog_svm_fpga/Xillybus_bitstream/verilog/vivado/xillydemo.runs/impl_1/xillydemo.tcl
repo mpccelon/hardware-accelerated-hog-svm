@@ -86,12 +86,12 @@ set rc [catch {
   add_files -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/verilog/vivado/xillydemo.runs/synth_1/xillydemo.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/vivado_system.bd
   read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vga_fifo/vga_fifo.xci
-  read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512.xci
   read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_8x2048/fifo_8x2048.xci
+  read_ip -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/fifo_32x512/fifo_32x512.xci
+  add_files D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/vivado_system/vivado_system.bd
   set_param project.isImplRun false
-  set_property edif_extra_search_paths D:/lolic/Documents/Thesis/Zybo_FPGA_bitstream/cores [current_fileset]
+  set_property edif_extra_search_paths D:/lolic/Documents/Thesis/Repositories/bitstream_backup/cores [current_fileset]
   add_files -quiet D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/hog_svm_fpga/impl/ip/xillybus_wrapper.dcp
   read_xdc D:/lolic/Documents/Thesis/hardware-accelerated-hog-svm/hog_svm_fpga/Xillybus_bitstream/vivado-essentials/xillydemo.xdc
   set_param project.isImplRun true
@@ -115,9 +115,6 @@ set rc [catch {
   opt_design 
   write_checkpoint -force xillydemo_opt.dcp
   create_report "impl_1_opt_report_drc_0" "report_drc -file xillydemo_drc_opted.rpt -pb xillydemo_drc_opted.pb -rpx xillydemo_drc_opted.rpx"
-  create_report "impl_1_opt_report_timing_summary_1" "report_timing_summary -max_paths 10 -file xillydemo_timing_summary_opted.rpt -pb xillydemo_timing_summary_opted.pb -rpx xillydemo_timing_summary_opted.rpx"
-  create_report "impl_1_opt_report_timing_summary_2" "report_timing_summary -setup -hold -max_paths 10 -file xillydemo_timing_summary_opted_1.rpt -pb xillydemo_timing_summary_opted_1.pb -rpx xillydemo_timing_summary_opted_1.rpx"
-  create_report "impl_1_opt_report_timing_summary_3" "report_timing_summary -check_timing_verbose -setup -hold -max_paths 10 -file xillydemo_timing_summary_opted_2.rpt -pb xillydemo_timing_summary_opted_2.pb -rpx xillydemo_timing_summary_opted_2.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
