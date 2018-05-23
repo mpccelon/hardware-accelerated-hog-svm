@@ -1,6 +1,6 @@
 # Results  
 
-##Robustness
+## Robustness
 | Dataset | Images | FPGA F1 score | FPGA MCC | RasPi F1 score | RasPi MCC
 | MVI 39031 | 2568 | 0.97 | 0.95 | 0.98 | 0.96  
 | MVI 39211 | 1703 | 0.84 | 0.84 | 0.85 | 0.85 
@@ -12,7 +12,7 @@
 We used the [F1 score](https://en.wikipedia.org/wiki/F1_score) and the [Matthews Correlation Coefficient](https://en.wikipedia.org/wiki/Matthews_correlation_coefficient) to describe the accuracy and robustness of the system. 
 Note that the FPGA is less robust than the Raspberry Pi, and both models take a hit in accuracy on the MMDA datasets. This is due to the unoptimal camera angles used in the MMDA datasets.
 
-##Performance
+## Performance
 | Dataset | Images | FPGA processing time | RasPi processing time | Speedup 
 | MVI 39031 | 2568 | 0.2661 | 3.6345 | 13.65602469
 | MVI 39211 | 1703 | 0.1880 | 2.3629 | 12.56460667

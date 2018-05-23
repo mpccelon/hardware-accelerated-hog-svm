@@ -2,7 +2,7 @@
 An implementation of the [Histogram of Oriented Gradients](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) algorithm, along with [Support Vector Machine](https://en.wikipedia.org/wiki/Support_vector_machine) classification model.  
 Created for our undergraduate thesis project dealing with dynamic traffic management based on embedded hardware-accelerated vehicle detection with SUMo and Unity simulations.
 
-#Results
+# Results
 The FPGA hardware acceleration achieves a **13x** speedup compared to the software Raspberry Pi implementation. While this does result in decreased robustness (decrease in F1/MCC scores), the throughput increase in the resulting [dynamic traffic managment simulation](https://gitlab.com/pgilaga/ITMS-UCL04) is still maintained.
 
 Implemented using the ff:
