@@ -1,3 +1,10 @@
+/*
+	vehicle_detector.cpp
+
+	Interface to communicate with the RasPi node
+	Currently accepts an 1024x768 photo of the road, with three lanes (determined at compile time).
+*/
+
 #include <iostream>
 #include <queue>
 #include <mutex>
@@ -292,6 +299,7 @@ cv::Rect calcROI(float y, lane &l)
 }
 
 //generate detection windows from image
+//CHANGE IF USING DIFFERENT ROAD
 void generateROIs(cv::Mat &img, std::vector <cv::Rect> &ROIs, std::vector< char > &windowData)
 {
 	//

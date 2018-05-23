@@ -1,15 +1,9 @@
 # hardware-accelerated-hog-svm
 An implementation of the [Histogram of Oriented Gradients](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) algorithm, along with [Support Vector Machine](https://en.wikipedia.org/wiki/Support_vector_machine) classification model.  
 Created for our undergraduate thesis project dealing with dynamic traffic management based on embedded hardware-accelerated vehicle detection with SUMo and Unity simulations.
-  
 
-Still WIP - as of May 17, 2018, the ff. tasks have been finished:  
-- [x] Implemented HOG-SVM algorithm in OpenCV (Desktop/RasPi)
-- [x] Completed HOG implementation in hardware (FPGA)
-- [x] Trained SVM for hardware offline
-- [x] Completed integrated HOG-SVM in hardware (FPGA)
-- [x] Interfaced ZYBO hardware code with the rest of our [Undergraduate Thesis](https://gitlab.com/pgilaga/ITMS-UCL04).
-- [ ] Testing for throughput, accuracy, and speedup is currently ongoing.
+#Results
+The FPGA hardware acceleration achieves a **13x** speedup compared to the software Raspberry Pi implementation. While this does result in decreased robustness (decrease in F1/MCC scores), the throughput increase in the resulting [dynamic traffic managment simulation](https://gitlab.com/pgilaga/ITMS-UCL04) is still maintained.
 
 Implemented using the ff:
 * [Digilent Zybo with Zynq 7000 All-Programmable SoC](https://reference.digilentinc.com/reference/programmable-logic/zybo/start)

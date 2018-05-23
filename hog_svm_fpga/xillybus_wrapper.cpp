@@ -1,3 +1,19 @@
+/*
+	xillybus_wrapper.cpp
+
+	Implementation of the HOG-SVM algorithm on the Zynq 7000 FPGA
+	There are four major parts:
+
+	Gradient calculation (in compute_gradients module)
+	Orientation binning (in compute_cells module)
+
+	Normalization and Classification (in SVM_detect module)
+	- or -
+	Block normalization to output (in compute_blocks module)
+
+	Change the #define macro in the xillybus_wrapper.h header to HOG if you want to output the raw HOG data from the Block normalization module.
+*/
+
 #include "xillybus_wrapper.h"
 
 void compute_gradients(byte image[IMAGE_HEIGHT][IMAGE_WIDTH], gradient_vote grad_vote[IMAGE_HEIGHT][IMAGE_WIDTH])

@@ -1,3 +1,11 @@
+/*
+	hardware_approximation.cpp
+
+	Contains the hardware approximations of select functions in the HOG algorithm
+	find_bin is the approximation of the quantization of angles (replacing the arctangent function)
+	sqrt_approx is the approximation of the square root formula
+	fast_inv_sqrt uses Carmack's algorithm to simplify the inverse square root function
+*/
 #include "hardware_approximation.h"
 
 bool quadrant(int gradX, int gradY)
